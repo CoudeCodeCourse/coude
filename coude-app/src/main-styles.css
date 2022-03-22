@@ -1,0 +1,78 @@
+@font-face {
+    font-family: RobotoBlack;
+    src: url(./assets/fonts/roboto/Roboto-Black.ttf);
+}
+@font-face {
+    font-family: RobotoBold;
+    src: url(./assets/fonts/roboto/Roboto-Bold.ttf);
+}
+@font-face {
+    font-family: RobotoRegular;
+    src: url(./assets/fonts/roboto/Roboto-Regular.ttf);
+}
+@font-face {
+    font-family: RobotoMedium;
+    src: url(./assets/fonts/roboto/Roboto-Medium.ttf);
+}
+
+@font-face {
+    font-family: RobotoLight;
+    src: url(./assets/fonts/roboto/Roboto-Light.ttf);
+}
+
+@font-face {
+    font-family: MontserratBlack;
+    src: url(./assets/fonts/montserrat/Montserrat-Black.ttf);
+}
+@font-face {
+    font-family: MontserratBold;
+    src: url(./assets/fonts/montserrat/Montserrat-Bold.ttf);
+}
+@font-face {
+    font-family: MontserratMedium;
+    src: url(./assets/fonts/montserrat/Montserrat-Medium.ttf);
+}
+@font-face {
+    font-family: MontserratRegular;
+    src: url(./assets/fonts/montserrat/Montserrat-Regular.ttf);
+}
+@font-face {
+    font-family: MontserratSemiBold;
+    src: url(./assets/fonts/montserrat/Montserrat-SemiBold.ttf);
+}
+
+.button--green{
+    background-color: #2ea44f;
+    font-family: RobotoBold;
+}
+.button--grey{
+    background-color: #DFDFE1;  
+    font-family: RobotoMedium;
+}
+.background__whale--color{
+    background-color: #000000;
+}
+.header--color{
+    background-color: #303342;
+}
+.footer--color{
+    background-color: #757682;
+}
+.heart--color{
+    background-color: #FF0F0F;
+}
+.input--style{
+    background-color: #E7E7EA;
+}
+.background__login--frame{
+    background-color: #F5F5FA;
+}
+.btn{
+    border-radius: 10px;
+}
+.box__course{
+    border: 3px;
+}
+.box__payment{
+    border: 1px;
+}
