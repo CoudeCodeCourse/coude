@@ -1,0 +1,120 @@
+.footer__container {
+    background-color: #757682;
+    opacity: 0.9;
+    color: white;
+    font-family: 'Gothic A1', sans-serif;
+    padding: 10px 40px;
+    position: relative;
+    bottom: 0;
+}
+
+.footer__subcontainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__item-contact {
+    flex: 0.7;
+    min-width: 250px;
+}
+
+.footer__item-other,
+.footer__item-company {
+    flex: 1;
+    max-width: 40%;
+    min-width: 300px;
+}
+
+.footer__container h2 {
+    letter-spacing: 1.5px;
+    margin-top: 10px;
+}
+
+.footer__container a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer__container a:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+.footer__container p {
+    font-size: 14px;
+}
+
+.footer__container hr {
+    border: 0.5px solid;
+    background-color: white;
+    width: 100%;
+}
+
+.footer__item--bottom {
+    text-align: center;
+}
+
+.footer__item-title {
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.footer__icon-container {
+    display: flex;
+}
+
+.footer__icon-container button {
+    margin-right: 5%;
+    background: transparent;
+    border: none;
+}
+
+.footer__icon-container button:hover img {
+    opacity: 0.8;
+}
+
+#payment {
+    width: 60%;
+    max-width: auto;
+    height: auto;
+}
+
+.footer__container.footer-mini {
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+@media screen and (max-width: 992px) {
+    .footer__subcontainer {
+        flex-wrap: wrap;
+        /* flex: 1 !important; */
+        justify-content: space-between;
+    }
+    .footer__subcontainer>div {
+        margin-top: 25px;
+    }
+    .footer__container.footer-mini {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .footer-mini .footer__icon-container {
+        margin-bottom: 10px
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .footer__subcontainer {
+        flex-direction: column;
+    }
+    .footer__subcontainer>div {
+        margin-top: 25px;
+        max-width: 100%;
+    }
+    .footer__icon-container {
+        flex-wrap: nowrap;
+    }
+}
