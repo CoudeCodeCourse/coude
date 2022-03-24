@@ -1,0 +1,61 @@
+<nav class="header__container navbar fluid-container header--color py-0" id="navbar">
+    <a href="javascript:void(0)" class="icon" onclick="collapseHeader('navbar')">☰</a>
+
+    <a class="navbar-brand" id="logo"><img src="../../assets/images/logo.png" alt="Logo"></a>
+
+    <div class="navbar__link-container" id="navbar">
+        <ul class="navbar-nav d-flex flex-row">
+            <li class="nav-item"><a class="nav-link" href="">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="">Catalog</a></li>
+            <li class="nav-item"><a class="nav-link" href="">Forum</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Resources</a></li>
+        </ul>
+    </div>
+
+    <form class="search-box d-flex" id="navbar">
+        <input type="text" name="search" id="searchBox" placeholder="Search here">
+        <button>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search"
+                viewBox="0  0 16 16">
+                <path
+                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+            </svg>
+        </button>
+    </form>
+    <div *ngIf="!login">
+        <div class="header__button-container d-flex">
+            <button id="login">Log in</button>
+            <button id="signup" class="button--green">Sign up</button>
+        </div>
+    </div>
+    <div *ngIf="login">
+        <div class="d-flex header__button-container">
+            <div class="header__noti-container ">
+                <svg style="width: 20px; fill: white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M224 512c35.32 0 63.97-28.65 63.97-64H160.03c0 35.35 28.65 64 63.97 64zm215.39-149.71c-19.32-20.76-55.47-51.99-55.47-154.29 0-77.7-54.48-139.9-127.94-155.16V32c0-17.67-14.32-32-31.98-32s-31.98 14.33-31.98 32v20.84C118.56 68.1 64.08 130.3 64.08 208c0 102.3-36.15 133.53-55.47 154.29-6 6.45-8.66 14.16-8.61 21.71.11 16.4 12.98 32 32.1 32h383.8c19.12 0 32-15.6 32.1-32 .05-7.55-2.61-15.27-8.61-21.71z"/></svg>            
+            </div>
+            <button class="btn-user circle" style="background: white; width: 20px"></button>
+        </div>
+    </div>
+        <!-- <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>Toggle dropdown</button>
+        <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+          <button ngbDropdownItem>Action - 1</button>
+          <button ngbDropdownItem>Another Action</button>
+          <button ngbDropdownItem>Something else is here</button>
+        </div> -->
+    <!-- <div class="header__account-container">
+            <button class="btn-user" onclick="dropdownClick()"></button>
+            <div class="dropdown-user" id="dropdownAccount">
+                <a href="#">ndtlquynh07</a>
+                <hr>
+                <a href="/app/General-information/general-information.html">Personal Info</a>
+                <a href="/app/My-course/my-course.html">My Learning</a>
+                <a href="/app/Billing/Billing.html">My Purchase</a>
+                <a href="#">Setting</a>
+                <a href="/app/contact/contact.html">Support</a>
+                <hr>
+                <a href="/app/Login/Login.html">Sign out</a>
+            </div>
+        </div> -->
+    <!-- </div> -->
+
+</nav>
