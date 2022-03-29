@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { LandingComponent } from './landing/landing.component';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,16 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'coude-app';
+  static path: any;
+  // static path1: any;
+  apppath = AppComponent.path;
+  get IsLanding(): boolean {
+    console.log(AppComponent.path);
+    if (this.apppath === LandingComponent) {
+      return true;
+    }
+    else 
+      return false;
+  
+}
 }

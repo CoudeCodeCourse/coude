@@ -7,6 +7,8 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
+import { LandingComponent } from './landing/landing.component';
+import { RouterModule } from '@angular/router';
 
 
 @NgModule({
@@ -15,10 +17,15 @@ import { FooterComponent } from './footer/footer.component';
     HeaderComponent,
     ContactComponent,
     FooterComponent,
+    LandingComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+     RouterModule.forRoot([
+      { path: 'landing', component: LandingComponent },
+      { path: '**', redirectTo: 'landing' }
+    ]),
   ],
   providers: [],
   bootstrap: [AppComponent]

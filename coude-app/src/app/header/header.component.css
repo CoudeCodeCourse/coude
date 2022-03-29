@@ -8,23 +8,7 @@
     z-index: 99;
     font-family: 'RobotoRegular';
     align-content: space-around;
-    /* align-items: center; */
-    /* justify-content: space-around; */
-    /* overflow: hidden; */
-    /* display: flex; */
 }
-
-
-/* .header__container a{
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: auto 10px;
-    text-decoration: none;
-    font-size: 17px;
-} */
-
 
 /* Logo coude tren header */
 .header__container>a>img {
@@ -51,6 +35,9 @@
 .header__container .icon {
     display: none;
     font-size: 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 .icon>div {
@@ -86,13 +73,18 @@
     vertical-align: middle;
 }
 
-
 /* Thuộc tính của button */
-
 .header__container button {
     font-family: 'RobotoRegular';
     background-color: transparent;
     border: none;
+}
+.header__button-container>:nth-child(n){
+    margin-right: 5px;
+}
+.header__button-container>.btn--s {
+    padding: 0;
+    height: 25px;
 }
 #signup, #login{
     border-radius: 5px;
@@ -100,7 +92,7 @@
 #signup {
     color: white;
     width: 85px;
-    margin-right: 3%;
+    /* margin-right: 3%; */
     background-color: #2ea44f;
 }
 
@@ -109,22 +101,20 @@
     border: 0.5px solid white;
     color: white;
     width: 70px;
-    margin-right: 3%;
+    /* margin-right: 3%; */
     
 }
 
-.header__button-container>.btn--s {
-    padding: 0;
-    height: 25px;
-}
+
 
 @media screen and (max-width: 992px) {
-    .header__container>:not(:last-child) {
-        display: none;
-    }
-    .header__container {
+    .header__container>div:not(:last-child), .search-box {
+        display: none!important;
         transition: 0.5s;
     }
+    /* .header__container {
+        transition: 0.5s;
+    } */
     .header__container,
     .header__container.responsive {
         justify-content: space-between;
@@ -134,7 +124,7 @@
         display: block;
     }
     a.icon:hover {
-        text-decoration: none;
+        opacity: 0.8;
     }
 }
 
@@ -146,12 +136,9 @@
     .header__container.responsive>div:not(:last-child) {
         position: inherit;
         top: 55px;
-        width: 100%;
-        height: fit-content;
         width: 100vw;
         height: fit-content;
         font-size: 20px;
-      
     }
     .header__container.responsive .navbar__link-container {
         color: black;

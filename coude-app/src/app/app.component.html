@@ -1,2 +1,6 @@
-<app-header></app-header>
-<app-contact></app-contact>
+
+<div *ngIf="!IsLanding">
+    <app-header ></app-header>
+</div>
+
+<router-outlet></router-outlet>
