@@ -9,6 +9,7 @@ import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
 import { LandingComponent } from './landing/landing.component';
 import { RouterModule } from '@angular/router';
+import { WhoWeAreComponent } from './who-we-are/who-we-are.component';
 
 
 @NgModule({
@@ -18,13 +19,15 @@ import { RouterModule } from '@angular/router';
     ContactComponent,
     FooterComponent,
     LandingComponent,
+    WhoWeAreComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
      RouterModule.forRoot([
       { path: 'landing', component: LandingComponent },
-      { path: '**', redirectTo: 'landing' }
+      { path: '**', redirectTo: 'landing' },
+      { path: 'contact', component: ContactComponent }
     ]),
   ],
   providers: [],
