@@ -26,8 +26,8 @@ import { WhoWeAreComponent } from './who-we-are/who-we-are.component';
     AppRoutingModule,
      RouterModule.forRoot([
       { path: 'landing', component: LandingComponent },
+      { path: 'contact', component: ContactComponent },
       { path: '**', redirectTo: 'landing' },
-      { path: 'contact', component: ContactComponent }
     ]),
   ],
   providers: [],

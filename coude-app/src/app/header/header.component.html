@@ -1,4 +1,5 @@
-<nav class="header__container navbar fluid-container header--color py-0" id="navbar">
+<!-- <nav class="header__container navbar fluid-container py-0 position-fixed w-100" id="navbar"> -->
+    <nav class="header__container navbar fluid-container py-0 position-fixed align-content-around w-100" id="navbar">
     <a href="javascript:void(0)" class="icon" onclick="collapseHeader('navbar')">☰</a>
 
 
@@ -13,7 +14,7 @@
         </ul>
     </div>
 
-    <form class="search-box d-flex" id="navbar">
+    <form class="search-box d-flex justify-content-around align-items-center" id="navbar">
         <input type="text" name="search" id="searchBox" placeholder="Search here">
         <button>
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search"
@@ -26,7 +27,7 @@
     <div *ngIf="login">
         <div class="header__button-container d-flex">
             <button id="login">Log in</button>
-            <button id="signup" class="button--green">Sign up</button>
+            <button id="signup">Sign up</button>
         </div>
     </div>
     <div *ngIf="!login">
