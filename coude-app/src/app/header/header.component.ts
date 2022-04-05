@@ -6,7 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-  login = false;
+  login = true;
+
   constructor() { }
   
   // collapseHeader(id: any) {
@@ -18,6 +19,8 @@ export class HeaderComponent implements OnInit {
   //       x.className = "header__container";
   //   }
   ngOnInit(): void {
+    console.log(this.login);
+
   }
 
 }

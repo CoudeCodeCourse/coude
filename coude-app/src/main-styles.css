@@ -52,20 +52,13 @@
 .background__whale--color{
     background-color: #000000;
 }
-.header--color{
-    background-color: #303342;
-}
-.footer--color{
-    background-color: #757682;
-}
-.heart--color{
-    background-color: #FF0F0F;
-}
-.input--style{
-    background-color: #E7E7EA;
-}
-.background__login--frame{
-    background-color: #F5F5FA;
+:root{
+    --header-color: #303342;
+    --footer-color: #757682;
+    --heart-color: #FF0F0F;
+    --input-style: #E7E7EA;
+    --background-login-frame: #F5F5FA;
+    --green: #2ea44f;
 }
 .btn{
     border-radius: 10px;

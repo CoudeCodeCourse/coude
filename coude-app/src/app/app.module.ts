@@ -9,6 +9,9 @@ import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
 import { ForumMainComponent } from './forum-main/forum-main.component';
 import { ForumViewtopicComponent } from './forum-viewtopic/forum-viewtopic.component';
+import { LandingComponent } from './landing/landing.component';
+import { RouterModule } from '@angular/router';
+import { WhoWeAreComponent } from './who-we-are/who-we-are.component';
 
 
 @NgModule({
@@ -19,10 +22,17 @@ import { ForumViewtopicComponent } from './forum-viewtopic/forum-viewtopic.compo
     FooterComponent,
     ForumMainComponent,
     ForumViewtopicComponent,
+    LandingComponent,
+    WhoWeAreComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+     RouterModule.forRoot([
+      { path: 'landing', component: LandingComponent },
+      { path: 'contact', component: ContactComponent },
+      { path: '**', redirectTo: 'landing' },
+    ]),
   ],
   providers: [],
   bootstrap: [AppComponent]

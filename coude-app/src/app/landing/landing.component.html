@@ -1,0 +1,186 @@
+<nav class="d-flex position-fixed w-100" style="background: var(--header-color)">
+    <img class="header__logo" src="../../assets/images/logo.png" alt="Loading...">
+    <div class="navbar-link ">
+        <ul class="d-flex my-0">
+            <li><a href="/app/Catalog/Catalog.html">Catalog</a></li>
+            <li><a href="/app/forum/mainforum.html">Forum</a></li>
+            <li><a href="/app/WhoWeAre/who-we-are.html">About us</a></li>
+        </ul>
+    </div>
+    <div class="search-box form-inline">
+        <input type="text" id="search">
+        <button>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search"
+                viewBox="0 0 16 16">
+                <path
+                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+            </svg>
+        </button>
+    </div>
+    <div class="header__button-container">
+        <!-- dẫn lại link -->
+        <button class="btn position-absolute" id="login" onclick="window.location.href='/app/Login/Login.html'">
+            Login
+        </button>
+    </div>
+</nav>
+<!-- <div> -->
+    <!-- Main content of part 1 -->
+<div class="frame frame__clr--dark frame__top pt-10 text-white">
+    <div class="sub-container d-flex justify-content-evenly flex-wrap align-self-center">
+        <div class="rec-frame__shape py-4 px-2">
+            <p class="text-center" style="font-size: 18px;">
+                <!-- margin: 50px 30px; -->
+                We envision a world where anyone, anywhere has the power to transform their life through learning. Make things possible with us!
+            </p>
+        </div>
+        <div class="cta-container position-relative">
+            <div class="slogan position-absolute">
+                <h2>No Pain No Gain</h2>
+                <p>with <span>Coudé</span></p>
+            </div>
+            <!-- <button class="btn-create-account button--green text-white" (click)="window.location.href='/app/Signup/sign-up.html'"> -->
+                <button class="btn-create-account button--green text-white">
+                Create An Account
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z" />
+                </svg>
+            </button>
+        </div>
+    </div>
+</div>
+
+<div class="frame frame__mid frame__clr--dark">
+    <div class="sub-container d-flex course">
+        <div class="course-container d-flex">
+            <div class="course__left-col">
+                <div class="course-container__item">
+                    <div class="course__tag">Pro</div>
+                    <div>
+                        <h3>Learn Sass</h3>
+                        <ul>
+                            <li>Intermediate</li>
+                            <li>4 lessons</li>
+                        </ul>
+                    </div>
+                    <div class="course__coude-tag">Coudé</div>
+                </div>
+                <div class="course-container__item">
+                    <div class="course__tag">Pro</div>
+                    <div>
+                        <h3>Learn Intermediate CSS</h3>
+                        <ul>
+                            <li>Intermediate</li>
+                            <li>10 lessons</li>
+                        </ul>
+                    </div>
+                    <div class="course__coude-tag">Coudé</div>
+                </div>
+            </div>
+            <div class="course__right-col">
+                <div class="course-container__item">
+                    <div class="course__tag">Pro</div>
+                    <div>
+                        <h3>Learn Bootstrap</h3>
+                        <ul>
+                            <li>Intermediate</li>
+                            <li>2 lessons</li>
+                        </ul>
+                    </div>
+                    <div class="course__coude-tag">Coudé</div>
+                    <img src="/assets/images/landing/course_img.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <h2 style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                        margin: 5px 0 15px 0;">
+                What are you looking for?</h2>
+            <ul style="font-size: 18px;">
+                <li>Learn a languague</li>
+                <li>Develop your carreer</li>
+                <li>Explore something new</li>
+            </ul>
+            <a class="link-catalog" href="/app/Catalog/Catalog.html">Go to our catalog →</a>
+        </div>
+    </div>
+    <div class="d-flex">
+        <ul class="d-flex field-container justify-content-center flex-wrap">FIELDS TO DIG IN
+            <li><a href="">Data Sciene</a></li>
+            <li><a href="">Machine Learning</a></li>
+            <li><a href="">Other</a></li>
+        </ul>
+    </div>
+</div>
+
+<!-- part 3 -->
+<div class="frame frame__mid">
+    <div class="d-flex row--align-bottom">
+        <div class="people">
+            <div class="title">
+                <h1>People & Coudé</h1>
+                <p>Let's see what users think about Coude!</p>
+            </div>
+            <div class="people-container">
+                <div class="people-container__item d-flex">
+                    <img src="/assets/images/landing/people.png" alt="avatar">
+                    <div>
+                        <h5>Sara Hahaha</h5>
+                        <p>IT Director</p>
+                        <p> Coude là một nền tảng tốt cho những ai đam mê lập trình và mong muốn trở thành một developer.</p>
+                    </div>
+                </div>
+                <div class="people-container__item d-flex">
+                    <img src="/assets/images/landing/people.png" alt="avatar">
+                    <div>
+                        <h5>Sara Hahaha</h5>
+                        <p>IT Director</p>
+                        <p> Coude là một nền tảng tốt cho những ai đam mê lập trình và mong muốn trở thành một developer.</p>
+                    </div>
+                </div>
+                <div class="people-container__item d-flex">
+                    <img src="/assets/images/landing/people.png" alt="avatar">
+                    <div>
+                        <h5>Sara Hahaha</h5>
+                        <p>IT Director</p>
+                        <p>Khóa học thât bổ ích. Coude là một nền tảng tốt cho những ai đam mê lập trình và mong muốn trở thành một developer.</p>
+                    </div>
+                </div>
+                <div class="people-container__item"></div>
+            </div>
+        </div>
+
+        <div class="milestone-container">
+            <div class="title">
+                <h1>Milestone to recall</h1>
+                <p>Join for something bigger.</p>
+            </div>
+            <div class="milestone__content">
+                <div class="milestone__item">
+                    <p>12 MONTHS</p>
+                    <p>LAUNCHED</p>
+                </div>
+                <div class="milestone__item">
+                    <p>1.5M USERS</p>
+                    <p>REGISTER</p>
+                </div>
+                <div class="milestone__item">
+                    <p>100+ COURSE</p>
+                    <p>AVAILABLE</p>
+                </div>
+            </div>
+            <div class="text-end">
+                <a href="/app/forum/mainforum.html" style="color: var(--green)">Explore more ↳</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- part 4 code editor -->
+<div class="frame frame__font--black code-frame">
+    <h1>Let's create your own project!</h1>
+    <!-- <iframe src="/app/online-code-editor/online-code-editor.html" scrolling="no" frameborder="0">
+        </iframe> -->
+</div>
