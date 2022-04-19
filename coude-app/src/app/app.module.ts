@@ -12,6 +12,7 @@ import { ForumViewtopicComponent } from './forum-viewtopic/forum-viewtopic.compo
 import { LandingComponent } from './landing/landing.component';
 import { RouterModule } from '@angular/router';
 import { WhoWeAreComponent } from './who-we-are/who-we-are.component';
+import { LoginComponent } from './login/login.component';
 
 
 @NgModule({
@@ -24,6 +25,7 @@ import { WhoWeAreComponent } from './who-we-are/who-we-are.component';
     ForumViewtopicComponent,
     LandingComponent,
     WhoWeAreComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
@@ -31,6 +33,8 @@ import { WhoWeAreComponent } from './who-we-are/who-we-are.component';
      RouterModule.forRoot([
       { path: 'landing', component: LandingComponent },
       { path: 'contact', component: ContactComponent },
+      { path: 'login', component: LoginComponent },
+
       { path: '**', redirectTo: 'landing' },
     ]),
   ],
