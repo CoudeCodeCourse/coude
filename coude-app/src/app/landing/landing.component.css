@@ -3,7 +3,7 @@
     height: fit-content;
     min-width: 300px;
     filter: drop-shadow(0px 10px 4px rgba(0, 0, 0, 0.25));
-    width: 40%
+    width: 35%
 }
 ::-webkit-scrollbar {
     display: none;
@@ -334,10 +334,10 @@ iframe {
 /* Medium devices (landscape tablets, 768px and up) */
 
 @media only screen and (max-width: 768px) {
-    .flex--row {
+    .d-flex {
         flex-wrap: wrap;
     }
-    .flex--row.sub-container.course {
+    .d-flex.sub-container.course {
         flex-wrap: wrap-reverse;
     }
     .rec-frame__shape {
@@ -370,7 +370,7 @@ iframe {
     .people-container {
         width: 95%;
     }
-    .flex--row.people-container__item {
+    .people-container__item {
         flex-wrap: nowrap;
     }
     .row--align-bottom {
