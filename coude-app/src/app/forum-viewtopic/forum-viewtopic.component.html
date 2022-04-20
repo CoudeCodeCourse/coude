@@ -1,0 +1,111 @@
+<body ng-app="angularApp" ng-controller="TopicDetailsController">
+    <div class="forum__intro">
+        <div class="coude__intro">
+            <h2>Coudé Forum</h2>
+            <p>Welcome to the friendliest place for anyone learning code!</p>
+        </div>
+        <div class="topic__search-box">
+            <input type="text" class="topic__search-input" id="" placeholder="Search the topic here">
+            <i class="bi bi-search topic__search-icon"></i>
+        </div>
+    </div>
+    <div class="content">
+        <!-- topic's title -->
+        <div class="div-background ">
+            <div class="topic__title">
+                <span><i class="bi bi-three-dots-vertical"></i></span>
+                <div>
+                    <div class="name " id="title "></div>
+                    <div class="tags " id="tag "></div>
+                </div>
+            </div>
+        </div>
+        <!-- topic's content -->
+        <div class="div-background">
+            <div class="topic__infor ">
+                <div class="topic__infor-user ">
+                    <img class="user-avt" src="" alt="">
+                    <div class="user-name "></div>
+                </div>
+                <div class="topic__infor-history  ">
+                    <span><i class="bi bi-pencil-fill"></i></span>
+                    <span id="history" class="history-txt"></span>
+                </div>
+            </div>
+            <div class="topic__content ">
+                <p>{{selectedTopic.content}}</p>
+            </div>
+        </div>
+        <div class="topic__interacts">
+            <div class="topic__interacts--data">
+                <div class="data-number" id="replies"></div>
+                <div>replies</div>
+            </div>
+            <div class="topic__interacts--data">
+                <div class="data-number" id="views"></div>
+                <div>views</div>
+            </div>
+            <div class="topic__interacts--data">
+                <div class="data-number" id="likes"></div>
+                <div>likes</div>
+            </div>
+            <div class="reply__operation">
+                <div class="interacts">
+                    <i class="bi bi-heart"></i>
+                    <i class="bi bi-bookmark"></i>
+                </div>
+                <button class="reply__btn" id="myCreateTopicBtn" type="button">
+                    <i class="bi bi-reply"></i>
+                    <span>Reply</span>    
+                </button>
+            </div>
+        </div>
+        <div class="div-background">
+            <div class="topic__infor">
+                <div class="topic__infor-user">
+                    <div class="user-avt">
+                        <i class="bi bi-person-circle"></i>
+                    </div>
+                    <div class="user-name"></div>
+                </div>
+                <div class="topic__infor-history"></div>
+            </div>
+            <div class="topic__content">
+                <p></p>
+            </div>
+            <div class="reply__operation">
+                <div class="interacts">
+                    <span>10</span>
+                    <i class="bi bi-heart"></i>
+                    <i class="bi bi-bookmark"></i>
+                    <button class="reply__btn no-bg" id="myCreateTopicBtn" type="button">
+                        <i class="bi bi-reply" ></i>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+        <!-- Popup -->
+        <div id="myPopup" class="popup-div">
+            <!-- Popup content -->
+            <div class="popup-content">
+                <div class="popup-header">
+                    <i class="bi bi-x-circle close"></i>
+                    <div class="popup-header--title">[Reply to] </div>
+                </div>
+                <div class="popup-body">
+                    <div class="input-content" w3-include-html='./text-editor.html'>
+                    </div>
+                </div>
+                <div class="popup-footer">
+                    <button class="cancel__btn">Cancel</button>
+                    <div class="create-topic">
+                        <button class="createTopic__btn" id="myCreateTopicBtn" type="button">
+                            <span>Reply</span>  
+                            <i class="bi bi-reply"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

@@ -1,0 +1,268 @@
+body {
+    padding: 0px;
+    border: 0px;
+    font-family: Roboto-Regular;
+}
+
+@import url(/main-style.css);
+@font-face {
+    font-family: Roboto-Regular;
+    src: url(/assets/fonts/roboto/Roboto-Regular.ttf);
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+    margin: auto;
+}
+
+.forum__intro {
+    margin-bottom: 20px;
+}
+
+.div-background {
+    display: flex;
+    flex-direction: column;
+    background-color: #F7F7F7;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+.topic__title {
+    padding-left: 30px;
+}
+
+.name {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.topic__infor {
+    display: flex;
+    flex-direction: row;
+}
+
+.bi-three-dots-vertical {
+    float: right;
+}
+
+.tags {
+    border: 1px solid #2C14BC;
+    font-size: 13px;
+    width: fit-content;
+    padding: 0px 10px;
+    color: #2C14BC;
+    background-color: #E9EAF2;
+    margin-top: 5px;
+}
+
+.topic__infor .topic__content {
+    padding: 20px;
+}
+
+.topic__infor-history {
+    vertical-align: middle;
+    margin-left: auto;
+    font-size: 10px;
+    color: #303342;
+}
+
+.bi-pencil-fill {
+    font-size: 10px !important;
+}
+
+.topic__infor-user {
+    display: flex;
+    padding-left: 30px;
+    align-items: center;
+}
+
+.user-avt {
+    width: 40px;
+    height: 40px;
+}
+
+.bi-person-circle {
+    font-size: 40px !important;
+}
+
+.user-name {
+    text-align: center;
+    vertical-align: middle;
+    margin: 10px;
+    margin-left: 20px;
+    color: #303342;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.topic__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 13px;
+    width: 70%;
+    margin: auto;
+}
+
+
+/* .topic__image {
+    width: 80%;
+    margin: 10px;
+} */
+
+.topic__interacts {
+    display: flex;
+    flex-direction: row;
+    width: 400px;
+    border: 2px solid #303342;
+    margin-right: 0px;
+    margin-left: auto;
+    margin-bottom: 10px;
+}
+
+.topic__interacts--data {
+    display: flex;
+    flex-direction: column;
+    color: #303342;
+    font-size: 10px;
+    margin: 10px;
+    text-align: center;
+    width: 15%;
+}
+
+.data-number {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.interacts {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: auto;
+}
+
+.bi-heart,
+.bi-bookmark,
+.bi-reply {
+    font-size: 18px !important;
+    margin: 10px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+
+/* .bi-heart:focus {
+    color: #2C14BC;
+} */
+
+.reply__operation {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.reply__interacts {
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+}
+
+.reply__btn {
+    display: flex;
+    align-items: center;
+    border: none;
+    background-color: #fff;
+    margin-right: 10px;
+    margin-left: auto;
+    padding: 0 !important;
+}
+
+.no-bg {
+    background-color: #F7F7F7;
+}
+
+.reply__btn span .reply__operation span {
+    color: #303342;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+
+@media only screen and (max-width: 600px) {
+    .content {
+        width: 95%;
+    }
+    .topic__interacts {
+        width: 90%;
+    }
+    .topic__infor-user {
+        padding-left: 10px;
+    }
+}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+
+@media only screen and (max-width: 1200px) {
+    .content {
+        width: 70%;
+    }
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+@media only screen and (max-width: 922px) {
+    .content {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .content {
+        width: 90%;
+    }
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+@media only screen and (max-width: 490px) {
+    .content {
+        width: 95%;
+    }
+    .topic__infor-user {
+        padding-left: 0;
+    }
+    .topic__title {
+        padding-left: 10px;
+    }
+    .user-avt {
+        width: 25px;
+        height: 25px;
+    }
+    .bi-person-circle {
+        font-size: 25px !important;
+    }
+    .user-name {
+        font-size: smaller;
+    }
+    .topic__content {
+        width: 100%;
+    }
+    .reply__btn span {
+        display: none;
+    }
+    .topic__interacts {
+        min-width: fit-content;
+        max-width: 90%;
+    }
+}
