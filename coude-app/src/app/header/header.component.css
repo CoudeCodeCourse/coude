@@ -10,7 +10,11 @@
 /* Logo coude tren header */
 .header__container>a>img {
     width: 138px;
+    height: 55px;
+    object-fit: cover;
+    /* object-position: 20px 0; */
     margin-left: 20px;
+    padding: 0
 }
 
 .navbar__link-container a {
@@ -49,7 +53,7 @@
     background: #E5E5E5;
     box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 5px;
-    margin-left: 2%;
+    margin-right: 2%;
 }
 
 .search-box input {
@@ -81,9 +85,10 @@
 #signup, #login{
     border-radius: 5px;
     color: white;
+    padding: 1px 10px
 }
 #signup {
-    width: 85px;
+    /* width: 85px; */
     /* margin-right: 3%; */
     background-color: var(--green);
 }
@@ -91,61 +96,63 @@
 #login {
     background-color: transparent;
     border: 0.5px solid white;
-    width: 85px;
+    /* width: 85px; */
     /* margin-right: 3%; */
 }
 
 
 
 @media screen and (max-width: 992px) {
-    .header__container>div:not(:last-child), .search-box {
+    /* .header__container>div:not(:last-child), .search-box {
         transition: 0.5s;
         display: none!important;
+    } */
+    .search-box{
+        width: 99%;
+        margin: 0 5px;
     }
-    .header__container,
+    /* .header__container,
     .header__container.responsive {
         justify-content: space-between!important;
-    }
+    } */
     .header__container .icon {
         display: block;
     }
     a.icon:hover {
         opacity: 0.8;
     }
-}
-
-@media screen and (max-width: 992px) {
     .header__container.responsive>div,
     .header__container {
         transition: 0.5s;
     }
-    .header__container.responsive>div:not(:last-child) {
+    .header__container {
         position: inherit;
-        top: 55px;
+        /* top: 55px; */
         width: 100vw;
-        height: fit-content;
+        /* max-height: fit-content; */
         font-size: 20px;
     }
-    .header__container.responsive .navbar__link-container {
+    .header__container .navbar__link-container {
         color: black;
         background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(0deg, rgba(55, 73, 168, 0.2), rgba(55, 73, 168, 0.2)), rgba(0, 0, 0, 0.76);
     }
-    .header__container.responsive .navbar__link-container {
+    /* .header__container .navbar__link-container { 
         flex-direction: column;
         top: 80px !important;
-    }
-    .header__container.responsive .navbar__link-container a {
+     } */
+    /* .header__container.responsive .navbar__link-container a {
         padding: 10px 1%;
-    }
-    .header__container.responsive .search-box {
+    } */
+    /* .header__container.responsive .search-box {
         margin: 0;
         top: 0;
         height: 25px;
-    }
-    .header__container.responsive>div {
+    } */
+    /* .header__container.responsive>div {
         display: flex;
         transition: 0.5s;
         text-align: left;
-        /* flex-direction: column; */
-    }
+        flex-direction: column;
+    } */
 }
+
