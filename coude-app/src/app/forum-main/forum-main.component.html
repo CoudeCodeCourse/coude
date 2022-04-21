@@ -1,0 +1,82 @@
+<div class="content">
+    <div class="forum__intro">
+        <div class="coude__intro">
+            <h2>Coudé Forum</h2>
+            <p>Welcome to the friendliest place for anyone learning code!</p>
+        </div>
+        <div class="topic__search-box">
+            <input type="text" class="topic__search-input" id="" placeholder="Search the topic here">
+            <i class="bi bi-search topic__search-icon"></i>
+        </div>
+    </div>
+    <div class="navigation">
+        <div class="navbar">
+            <button type="button" class="nav__btn" >Popular</button>
+            <button type="button" class="nav__btn">Lastest</button>
+            <button type="button" class="nav__btn">Marked</button>
+            <button type="button" class="nav__btn">My questions</button>
+        </div>
+        <div class=" navbutton flex--row">
+            <div class="dropdown">
+                <select ng-model="selectedTag">
+                    <option value="">TAGS</option>
+                    <option value="c#">C#</option>                       
+                    <option value="c++">C++</option>
+                    <option value="python">Python</option>
+                    <option value="java">Java</option>
+                    <option value="sql">SQL</option>
+                    <option value="kotlin">Kotlin</option>
+                    <option value="html">HTML</option>
+                    <option value="css">CSS</option>
+                    <option value="javascript">Javascript</option>
+                </select>
+            </div>
+            <button type="button" class="createTopic__btn" id="myCreateTopicBtn">New Topic 
+                    <i class="bi bi-plus"></i>
+            </button>
+        </div>
+    </div>
+    <!-- Popup -->
+    <div id="myPopup" class="popup-div">
+        <!-- Popup content -->
+        <div class="popup-content">
+            <div class="popup-header">
+                <i class="bi bi-x-circle close"></i>
+                <div class="popup-header--title">Create a new topic</div>
+            </div>
+            <div class="popup-body">
+                <input type="text" name="" id="title" placeholder="Type your title here..." class="input-title">
+                <div class="input-content" w3-include-html='./text-editor.html'>
+                </div>
+            </div>
+            <div class="popup-footer">
+                <button class="cancel__btn">Cancel</button>
+                <div class="create-topic">
+                    <button type="button" class="createTopic__btn" id="myCreateTopicBtn">New Topic 
+                        <i class="bi bi-plus"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="topic-title">
+        <div class="topic__name-smallsize">Topic</div>
+        <div class="topic__replies">Replies</div>
+        <div class="topic__views">Views</div>
+        <div class="topic__times">Time</div>
+    </div>
+    <div class="list-topic" ng-repeat="topic in forum | filter: {tag: selectedTag} | orderBy: val:reverse">
+        <a href="">
+            <div class="topic-child">
+                <div class="topic__col">
+                    <div class="topic__name"></div>
+                    <div class="topic__tags"></div>
+                </div>
+                <div class="topic__replies"></div>
+                <div class="topic__views"></div>
+                <div class="topic__times"></div>
+            </div>
+        </a>
+    </div>
+
+</div>

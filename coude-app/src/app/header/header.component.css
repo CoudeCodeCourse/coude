@@ -1,13 +1,10 @@
 .header__container {
-    /* background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(0deg, rgba(55, 73, 168, 0.2), rgba(55, 73, 168, 0.2)), rgba(0, 0, 0, 0.76); */
+    background: var(--header-color);    
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    position: fixed;
     top: 0px;
     max-height: 55px;
-    width: 100%;
     z-index: 99;
     font-family: 'RobotoRegular';
-    align-content: space-around;
 }
 
 /* Logo coude tren header */
@@ -18,8 +15,6 @@
 
 .navbar__link-container a {
     color: white;
-    /* text-decoration: none; */
-    /* margin: auto 15px; */
     font-size: 15px;
 }
 .navbar__link-container li {
@@ -28,7 +23,6 @@
 .navbar__link-container li:hover {
     background-color:rgba(10, 10, 27, 0.76);
     transition: 0.7s;
-    /* color: white; */
     opacity: 0.7
 }
 
@@ -56,8 +50,6 @@
     box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 5px;
     margin-left: 2%;
-    justify-content: space-around;
-    align-items: center;
 }
 
 .search-box input {
@@ -88,39 +80,33 @@
 }
 #signup, #login{
     border-radius: 5px;
+    color: white;
 }
 #signup {
-    color: white;
     width: 85px;
     /* margin-right: 3%; */
-    background-color: #2ea44f;
+    background-color: var(--green);
 }
 
 #login {
     background-color: transparent;
     border: 0.5px solid white;
-    color: white;
-    width: 70px;
+    width: 85px;
     /* margin-right: 3%; */
-    
 }
 
 
 
 @media screen and (max-width: 992px) {
     .header__container>div:not(:last-child), .search-box {
+        transition: 0.5s;
         display: none!important;
-        transition: 0.5s;
     }
-    /* .header__container {
-        transition: 0.5s;
-    } */
     .header__container,
     .header__container.responsive {
-        justify-content: space-between;
+        justify-content: space-between!important;
     }
     .header__container .icon {
-        /* float: right; */
         display: block;
     }
     a.icon:hover {
