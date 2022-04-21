@@ -9,6 +9,7 @@ import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
 import { LandingComponent } from './landing/landing.component';
 import { RouterModule } from '@angular/router';
+import { CatalogComponent } from './catalog/catalog.component';
 
 
 @NgModule({
@@ -18,6 +19,7 @@ import { RouterModule } from '@angular/router';
     ContactComponent,
     FooterComponent,
     LandingComponent,
+    CatalogComponent,
   ],
   imports: [
     BrowserModule,
