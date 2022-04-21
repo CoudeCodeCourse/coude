@@ -136,6 +136,7 @@ ul {
 }
 
 .banner1 {
+    background-image: url("../../assets/images/catalog/banner1.PNG");
     width: 700px;
     height: 100px;
     background-repeat: no-repeat;
