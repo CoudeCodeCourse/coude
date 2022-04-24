@@ -78,10 +78,10 @@
 .header__button-container>:nth-child(n){
     margin-right: 5px;
 }
-.header__button-container>.btn--s {
+/* .header__button-container>.btn--s {
     padding: 0;
     height: 25px;
-}
+} */
 #signup, #login{
     border-radius: 5px;
     color: white;
