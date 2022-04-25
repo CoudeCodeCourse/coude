@@ -3,8 +3,8 @@
 .container {
     display: flex;
     justify-content: space-between;
-    margin: auto 5%;
-    font-family: 'Gothic A1', sans-serif;
+    margin: 70px 5%;
+    font-family: RobotoRegular
     /* position: relative; */
 }
 
@@ -17,14 +17,14 @@
 
 .container__item>h2>a {
     font-size: 13px;
-    color: blue;
+    color: var(--green);
     margin-left: 10px;
     text-decoration: none;
 }
 
-.container__item>h2>a:hover {
+/* .container__item>h2>a:hover {
     text-decoration: underline;
-}
+} */
 
 .container__left-col {
     width: 80%;
@@ -35,9 +35,7 @@
     width: 25%;
 }
 
-
 /* element bao xung quanh các khóa học nằm trong một mục chung */
-
 .course-container {
     justify-content: space-between;
 }
@@ -133,7 +131,7 @@ img.advertise {
 .popup-content {
     padding-left: 5%;
     padding-bottom: 20px;
-    font-family: 'Gothic A1', sans-serif;
+    font-family: Roboto;
     font-weight: 600;
     top: 15%;
     /* left: auto;
@@ -230,7 +228,7 @@ img.advertise {
     .course__item {
         width: 55%;
     }
-    .flex--row.goal-input {
+    .goal-input {
         flex-wrap: wrap;
     }
     #btn-confirm {
