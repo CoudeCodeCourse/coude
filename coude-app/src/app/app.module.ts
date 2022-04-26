@@ -1,8 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
-import { MdbCollapseModule } from 'mdb-angular-ui-kit/collapse';
-// import { MdbDropdownModule } from 'mdb-angular-ui-kit/dropdown';
 import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
@@ -13,6 +11,7 @@ import { FooterComponent } from './footer/footer.component';
 import { ForumMainComponent } from './forum-main/forum-main.component';
 import { ForumViewtopicComponent } from './forum-viewtopic/forum-viewtopic.component';
 import { LandingComponent } from './landing/landing.component';
+import { CatalogComponent } from './catalog/catalog.component';
 import { WhoWeAreComponent } from './who-we-are/who-we-are.component';
 import { Header1Component } from './header1/header1.component';
 import { HomepageComponent } from './homepage/homepage.component';
@@ -27,6 +26,7 @@ import { HomepageComponent } from './homepage/homepage.component';
     ForumMainComponent,
     ForumViewtopicComponent,
     LandingComponent,
+    CatalogComponent,
     WhoWeAreComponent,
     Header1Component,
     HomepageComponent,
@@ -41,8 +41,6 @@ import { HomepageComponent } from './homepage/homepage.component';
       { path: 'homepage', component: HomepageComponent },
       { path: '**', redirectTo: 'landing' },
     ]),
-    MdbCollapseModule,
-    // MdbDropdownModule
   ],
   providers: [],
   bootstrap: [AppComponent]
