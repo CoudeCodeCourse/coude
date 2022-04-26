@@ -14,6 +14,7 @@ import { LandingComponent } from './landing/landing.component';
 import { CatalogComponent } from './catalog/catalog.component';
 import { WhoWeAreComponent } from './who-we-are/who-we-are.component';
 import { Header1Component } from './header1/header1.component';
+import { HomepageComponent } from './homepage/homepage.component';
 
 
 @NgModule({
@@ -28,6 +29,7 @@ import { Header1Component } from './header1/header1.component';
     CatalogComponent,
     WhoWeAreComponent,
     Header1Component,
+    HomepageComponent,
   ],
   imports: [
     BrowserModule,
@@ -36,7 +38,7 @@ import { Header1Component } from './header1/header1.component';
       { path: 'landing', component: LandingComponent },
       { path: 'contact', component: ContactComponent },
       { path: 'header', component: HeaderComponent },
-      { path: 'header1', component: Header1Component },
+      { path: 'homepage', component: HomepageComponent },
       { path: '**', redirectTo: 'landing' },
     ]),
   ],
