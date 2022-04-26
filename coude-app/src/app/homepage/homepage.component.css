@@ -1,9 +1,9 @@
 /* style bao xung quanh các element trong homepage */
 
-.container {
+.page-container {
     display: flex;
     justify-content: space-between;
-    margin: 70px 5%;
+    margin: 70px 3%;
     font-family: RobotoRegular
     /* position: relative; */
 }
@@ -43,7 +43,7 @@
 .course__item {
     border: 2px solid black;
     padding: 5px;
-    font-family: Roboto;
+    font-family: RobotoRegular;
     font-size: 14px;
     margin: 5px;
     width: 25%;
@@ -62,7 +62,6 @@
 }
 
 .course__content {
-    /* text-align: center; */
     margin: auto 20px;
 }
 
@@ -124,7 +123,6 @@ img.advertise {
     z-index: 3;
     width: 100vw;
     height: 100vh;
-    /* overflow: auto; */
     background-color: rgba(0, 0, 0, 0.4);
 }
 
@@ -184,14 +182,14 @@ img.advertise {
 
 @media only screen and (max-width: 1200px) {
     .container__left-col {
-        width: 100%;
+        width: 100%!important;
     }
     .container__right-col {
         display: flex;
         flex-direction: row;
         width: auto;
         flex: 1;
-        justify-content: space-between;
+        /* justify-content: space-between; */
     }
     .container {
         display: flex;
@@ -206,7 +204,6 @@ img.advertise {
 
 
 /* responsive test  */
-
 @media only screen and (max-width: 768px) {
     /* .container{
         margin:auto 5px;
@@ -217,7 +214,7 @@ img.advertise {
         justify-content: center;
     }
     .course__item {
-        width: 40%;
+        width: 48%;
     }
 }
 
@@ -227,6 +224,9 @@ img.advertise {
     }
     .course__item {
         width: 55%;
+    }
+    .goal-container{
+        width: 100%;
     }
     .goal-input {
         flex-wrap: wrap;
