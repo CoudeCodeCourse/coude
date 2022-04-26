@@ -1,4 +1,4 @@
-<div class="container page-container">
+<div class="page-container">
     <div class="container__left-col">
         <div class="container__item">
             <h2>My Learning <a href="../My-course/my-course.html">See all</a></h2>
@@ -108,31 +108,31 @@
                     <p><b>DAILY LOGIN</b></p>
                     <div class="daily-login__container d-flex">
                         <div class="daily-login__item">
-                            <div id="loginMon" class="daily-login__item--cirle"></div>
+                            <div id="loginMon" class="daily-login__item--cirle" [ngClass]="{'daily-login__item--login': login_dates[1]}"></div>
                             <div>MON</div>
                         </div>
                         <div class="daily-login__item">
-                            <div id="loginTue" class="daily-login__item--cirle"></div>
+                            <div id="loginTue" class="daily-login__item--cirle" [ngClass]="{'daily-login__item--login': login_dates[2]}"></div>
                             <div>TUE</div>
                         </div>
                         <div class="daily-login__item">
-                            <div id="loginWed" class="daily-login__item--cirle"></div>
+                            <div id="loginWed" class="daily-login__item--cirle" [ngClass]="{'daily-login__item--login': login_dates[3]}"></div>
                             <div>WED</div>
                         </div>
                         <div class="daily-login__item">
-                            <div id="loginThu" class="daily-login__item--cirle"></div>
+                            <div id="loginThu" class="daily-login__item--cirle" [ngClass]="{'daily-login__item--login': login_dates[4]}"></div>
                             <div>THU</div>
                         </div>
                         <div class="daily-login__item">
-                            <div id="loginFri" class="daily-login__item--cirle"></div>
+                            <div id="loginFri" class="daily-login__item--cirle" [ngClass]="{'daily-login__item--login': login_dates[5]}"></div>
                             <div>FRI</div>
                         </div>
                         <div class="daily-login__item">
-                            <div id="loginSat" class="daily-login__item--cirle"></div>
+                            <div id="loginSat" class="daily-login__item--cirle" [ngClass]="{'daily-login__item--login': login_dates[6]}"></div>
                             <div>SAT</div>
                         </div>
                         <div class="daily-login__item">
-                            <div id="loginSun" class="daily-login__item--cirle"></div>
+                            <div id="loginSun" class="daily-login__item--cirle" [ngClass]="{'daily-login__item--login': login_dates[0]}"></div>
                             <div>SUN</div>
                         </div>
                     </div>
@@ -148,10 +148,10 @@
 </div>
 
 <!-- popup -->
-<div id="popup" class="popup-container">
+<!-- <div id="popup" class="popup-container">
     <!-- Popup content -->
-    <div class="popup-content">
-        <div class="popup-header flex--row">
+    <!-- <div class="popup-content">
+        <div class="popup-header d-flex">
             <div>
                 <h3 class="popup-header--title">Goals</h3>
                 <p>I will finish <span id="goalNumber">3</span><span id="goalType"> exercises</span> in a <span>week</span></p>
@@ -189,4 +189,4 @@
             </div>
         </div>
     </div>
-</div>
+</div> --> 
