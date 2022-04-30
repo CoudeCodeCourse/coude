@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { RouterModule } from '@angular/router';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 
@@ -16,11 +17,12 @@ import { WhoWeAreComponent } from './who-we-are/who-we-are.component';
 import { Header1Component } from './header1/header1.component';
 import { HomepageComponent } from './homepage/homepage.component';
 
-
+import {SearchFilterPipe} from './pipe/searchFilter.pipe';
 @NgModule({
   declarations: [
     AppComponent,
-   HeaderComponent,
+    SearchFilterPipe,
+    HeaderComponent,
     ContactComponent,
     FooterComponent,
     ForumMainComponent,
@@ -30,10 +32,12 @@ import { HomepageComponent } from './homepage/homepage.component';
     WhoWeAreComponent,
     Header1Component,
     HomepageComponent,
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule,
      RouterModule.forRoot([
       { path: 'landing', component: LandingComponent },
       { path: 'contact', component: ContactComponent },
