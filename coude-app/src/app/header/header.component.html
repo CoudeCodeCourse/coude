@@ -8,33 +8,41 @@
 
     <div class="navbar__link-container collapse navbar-collapse" id="navbarContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item"><a class="nav-link" href="">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="">Catalog</a></li>
-            <li class="nav-item"><a class="nav-link" href="">Forum</a></li>
-            <!-- <li class="nav-item"><a class="nav-link" href="#">Resources</a></li> -->
+            <li *ngIf="login" class="nav-item"><a class="nav-link" href="#">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="/catalog">Catalog</a></li>
+            <li class="nav-item"><a class="nav-link" href="/forum">Forum</a></li>
         </ul>
-        <form class="search-box d-flex justify-content-around align-items-center" id="navbar">
-            <input type="search" name="search" id="searchBox" placeholder="Search here">
-            <button class="" type="submit">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search"
-                    viewBox="0  0 16 16">
-                    <path
-                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
-                </svg>
-            </button>
-        </form>
+        <div>
+            <form class="search-box d-flex justify-content-around align-items-center" id="navbar">
+                <input type="search" name="searchText" [(ngModel)]="searchText" placeholder="Search...">
+                <button class="" type="submit">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search"
+                        viewBox="0  0 16 16">
+                        <path
+                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                    </svg>
+                </button>
+            </form>
+            <ul class="search-list d-flex flex-column" *ngFor="let c of courses | searchFilter: searchText">
+                <li >
+                    <img src="{{c.image}}" alt="img" style="width: 30px">
+                    {{c.name}}</li>
+            </ul>
+        </div>
+        
+        
     </div>
     <!-- <div class=""> -->
-        <div *ngIf="login">
+        <div *ngIf="!login">
             <div class="header__button-container d-flex">
                 <button id="login">Log in</button>
                 <button id="signup">Sign up</button>
             </div>
         </div>
-        <div *ngIf="!login">
+        <div *ngIf="login">
             <div class="d-flex header__button-container">
                 <div class="header__noti-container">
-                    <svg style="width: 20px; fill: white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <svg style="width: 20px; height:20px; fill: white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                         <path
                             d="M224 512c35.32 0 63.97-28.65 63.97-64H160.03c0 35.35 28.65 64 63.97 64zm215.39-149.71c-19.32-20.76-55.47-51.99-55.47-154.29 0-77.7-54.48-139.9-127.94-155.16V32c0-17.67-14.32-32-31.98-32s-31.98 14.33-31.98 32v20.84C118.56 68.1 64.08 130.3 64.08 208c0 102.3-36.15 133.53-55.47 154.29-6 6.45-8.66 14.16-8.61 21.71.11 16.4 12.98 32 32.1 32h383.8c19.12 0 32-15.6 32.1-32 .05-7.55-2.61-15.27-8.61-21.71z" />
                     </svg>
@@ -49,6 +57,7 @@
                         <li><a class="dropdown-item" href="#">My Learning</a></li>
                         <li><a class="dropdown-item" href="#">My Purchase</a></li>
                         <li><a class="dropdown-item" href="#">Setting</a></li>
+                        <!-- <li *ngIf="admin"><a class="dropdown-item" href="#">Administrator</a></li> -->
                         <li><a class="dropdown-item" href="#">Support</a></li>
                         <li>
                             <hr class="dropdown-divider">
@@ -59,5 +68,4 @@
                 </div>
             </div>
         </div>
-    <!-- </div> -->
 </nav>

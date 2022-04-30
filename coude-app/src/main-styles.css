@@ -69,3 +69,13 @@
 .box__payment{
     border: 1px;
 }
+::-webkit-scrollbar{
+    width: 10px
+}
+::-webkit-scrollbar-track{
+    background: var(--header-color)
+}
+::-webkit-scrollbar-thumb {
+    background: var(--green); 
+    border-radius: 10px;
+  }
