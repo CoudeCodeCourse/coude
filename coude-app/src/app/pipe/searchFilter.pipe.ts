@@ -18,11 +18,14 @@ export class SearchFilterPipe implements PipeTransform {
         if (!searchText) {
           return []; //chưa có keyword không trả về list
         }
-        // searchText = searchText.toLocaleLowerCase();
-        return courses.filter(course => {
-          course.name.toLocaleLowerCase().includes(searchText.toLocaleLowerCase());
-          console.log(`courses filtered: ${course.name.toLocaleLowerCase().includes(searchText.toLocaleLowerCase())}`);
-        });
-
+        else {
+          // searchText = searchText.toLocaleLowerCase();
+          return courses.filter(course => {
+            return course.name.toLocaleLowerCase().includes(searchText.toLocaleLowerCase());
+            // console.log(`courses filtered: ${course.name.toLocaleLowerCase().includes(searchText.toLocaleLowerCase())}`);
+            // console.log(courses)
+          });
+        }
       }
+
  }
