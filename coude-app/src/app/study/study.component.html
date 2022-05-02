@@ -1,0 +1,71 @@
+<div id="study--content" class="flex__item--row">
+    <div class="topnav" id="myTopnav">
+        <a id="title" href="">Options</a>
+        <a href="">Lesson 1</a>
+        <a href="">Lesson 2</a>
+        <a href="">Lesson 3</a>
+        <a href="">Lesson 4</a>
+        <a href="">Lesson 5</a>
+        <a id="title" href="">Assignements</a>
+        <a href="">Lesson 1</a>
+        <a href="">Lesson 2</a>
+        <a href="">Lesson 3</a>
+        <a href="">Lesson 4</a>
+        <a href="">Lesson 5</a>
+        <a id="title" href="">Documents</a>
+        <a id="title" href="">Notes</a>
+        <a id="title" href="">Exercises</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fas fa-caret-square-down"></i>
+        </a>
+    </div>
+    <div id="content">
+        <ul class="breadcrumb">
+            <li><a href="">Back-End Engineer</a></li>
+            <li>Lesson 1</li>
+        </ul>
+        <div id="script">
+            <p>Script Lesson 1:</p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo illum, laborum hic est harum molestias maiores, rerum quaerat autem eum dolore perferendis voluptatum quis eius delectus earum libero eaque dolorem!<br> Lorem ipsum dolor sit
+            amet consectetur, adipisicing elit. Tempora illo illum quae commodi exercitationem repellat? Voluptatibus, nihil consequuntur harum quam eligendi sint facere, rerum enim rem exercitationem dolore? Ad, iure.
+        </div>
+        <div id="button" class="flex__item--row">
+            <button>Previous</button>
+            <button>Next</button>
+        </div>
+        <div id="lesson">
+            <div id="lesson-title" class="flex__item--row">
+                <p id="lesson-name">Lesson1 : Introduction about IT</p>
+            </div>
+            <iframe src="https://www.youtube.com/embed/V3ZPPPKEipA" title="Lesson 1" allowfullscreen></iframe>
+        </div>
+        <br>
+        <div id="button" class="flex__item--row">
+            <button>Save like favourite</button>
+            <button onclick="tryCode()">Try it</button>
+            <button type="button" class="createTopic__btn" id="takeNoteBtn">Take Notes</button>
+        </div>
+    </div>
+    <div id="myPopup" class="popup-div">
+        <!-- Popup content -->
+        <div class="popup-content">
+            <div class="popup-header">
+                <i class="bi bi-x-circle close"></i>
+                <div class="popup-header--title">Take note</div>
+            </div>
+            <div class="popup-body">
+                <input type="text" name="" id="title" placeholder="Type your title here..." class="input-title">
+                <div class="input-content" w3-include-html='../forum/text-editor.html'>
+                </div>
+            </div>
+            <div class="popup-footer">
+                <button type="button" class="cancel__btn">Cancel</button>
+                <div class="create-topic">
+                    <button type="button">Save 
+                        <i class="bi bi-plus"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
