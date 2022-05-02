@@ -16,9 +16,10 @@ import { CatalogComponent } from './catalog/catalog.component';
 import { WhoWeAreComponent } from './who-we-are/who-we-are.component';
 import { Header1Component } from './header1/header1.component';
 import { HomepageComponent } from './homepage/homepage.component';
+import { AdminHomeComponent } from './admin-home/admin-home.component';
+import { AdminCourseDetailsComponent } from './admin-course-details/admin-course-details.component';
 
 import {SearchFilterPipe} from './pipe/searchFilter.pipe';
-import { AdminHomeComponent } from './admin-home/admin-home.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -34,6 +35,7 @@ import { AdminHomeComponent } from './admin-home/admin-home.component';
     Header1Component,
     HomepageComponent,
     AdminHomeComponent,
+    AdminCourseDetailsComponent,
     
   ],
   imports: [
@@ -45,6 +47,7 @@ import { AdminHomeComponent } from './admin-home/admin-home.component';
       { path: 'contact', component: ContactComponent },
       { path: 'header', component: HeaderComponent },
       { path: 'homepage', component: HomepageComponent },
+      { path: 'adminCouseDetails', component: AdminCourseDetailsComponent },
       { path: '**', redirectTo: 'landing' },
     ]),
   ],
