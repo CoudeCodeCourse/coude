@@ -36,8 +36,8 @@ export class HeaderComponent implements OnInit {
   constructor() { }
   
   ngOnInit(): void {
-    console.log(this.login);
-    console.log(this.searchText)
+    // console.log(this.login);
+    // console.log(this.searchText)
   }
   
 }
