@@ -11,6 +11,7 @@ export class HeaderComponent implements OnInit {
   // guest = false;
   login = true;
   admin = false;
+  isAdmin = true;
   searchText = "";
   courses = [{
     "name": "Back-end Engineer",

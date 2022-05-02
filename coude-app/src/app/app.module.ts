@@ -18,6 +18,7 @@ import { Header1Component } from './header1/header1.component';
 import { HomepageComponent } from './homepage/homepage.component';
 
 import {SearchFilterPipe} from './pipe/searchFilter.pipe';
+import { AdminHomeComponent } from './admin-home/admin-home.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,6 +33,7 @@ import {SearchFilterPipe} from './pipe/searchFilter.pipe';
     WhoWeAreComponent,
     Header1Component,
     HomepageComponent,
+    AdminHomeComponent,
     
   ],
   imports: [

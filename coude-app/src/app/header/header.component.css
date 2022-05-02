@@ -9,7 +9,6 @@
 .header__container>a>img {
     height: 55px;
     object-fit: cover;
-    /* object-position: 20px 0; */
 }
 .navbar__link-container>ul>li>a {
     color: white;
@@ -44,19 +43,16 @@
 .search-box input {
     width: 90%;
     height: 97%;
-    text-indent: 10px;
 }
-
-.search-box input,
-.search-box svg {
+.search-box input, .search-box svg,
+.btn-user, .btn-noti {
     vertical-align: middle;
 }
-.search-box:target {
-    /* border: 2px solid blue */
+/* .search-box:target {
     background-color: rgb(121, 82, 106);
     border-radius: 5px 5px 0 0 ;
 
-}
+} */
 .search-list{
     top: 30px;
     background-color: #E5E5E5; 
@@ -67,10 +63,8 @@
 .search-list li{
     padding: 8px 25px;
 }
-/* Thuộc tính của button */
 .header__container button {
     font-family: 'RobotoRegular';
-    background-color: transparent;
     border: none;
 }
 .header__button-container>:nth-child(n){
@@ -91,6 +85,14 @@
     border: 0.5px solid white;
 }
 
+.btn-user{
+    width: 28px;
+    height: 28px;
+}
+.btn-noti{
+    width: 20px;
+    height: 20px;
+}
 @media screen and (max-width: 992px) {
     .search-box, .search-list{ 
         width: 99%;
