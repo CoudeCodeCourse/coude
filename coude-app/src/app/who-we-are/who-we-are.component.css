@@ -1,24 +1,21 @@
-.container h2 {
-    color: #199B80 !important;
-    font-family: MontseratBold;
+.container-fluid{
+    margin: 0px;
+    padding: 0px;
 }
-
-.container h3,
-h4 {
-    font-family: MontseratBold;
+h2 {
+    color: var(--green-deep);
+    font-family: MontserratBold;
+}
+h3, h4 {
+    font-family: MontserratBold;
 }
 
 img {
     width: 100%;
 }
 
-i {
-    margin-right: 5px;
-    font-size: 35px;
-}
-
 p {
-    margin: 10px;
+    margin: 20px;
 }
 
 #vision {
@@ -26,19 +23,15 @@ p {
 }
 
 #item-footer {
-    text-align: right;
     margin: 5px;
     font-size: 10px;
-    position: absolute;
-    top: 75px;
-    right: 5px;
 }
 
 #line-top {
     background-color: black;
     width: 15%;
     height: 10px;
-    top: 0;
+    top: 0px;
 }
 
 #sub-title {
@@ -52,30 +45,27 @@ p {
 }
 
 #vision-item h3 {
-    margin-left: 20px;
+    margin-left: 10px;
 }
 
+#vision-item img{
+    width: 32px;
+}
 
 .item {
     border: 1px solid black;
-    margin-right: 10px;
     width: 18%;
-    position: relative;
 }
 
 @media only screen and (max-width: 600px) {
+    #meaning{
+        display: flex;
+        flex-direction: column;
+     }  
     .item{
-        width: 50%;
-        margin: 10px;
-    }
-    #vision-item{
-        width: 60%;
-    }
-  }
-  
-@media only screen and (max-width: 768px) {
-    .item{
-        margin: 10px;
-        width: 40%;
-    }
-  } 
+        width: 70%;
+        display: block;
+        margin: auto;
+        margin-bottom: 10px;
+     } 
+}
