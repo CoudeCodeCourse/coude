@@ -18,6 +18,7 @@ import { Header1Component } from './header1/header1.component';
 import { TestComponent } from './test/test.component';
 
 import { HomepageComponent } from './homepage/homepage.component';
+import { EnrollCourseComponent } from './enroll-course/enroll-course.component';
 
 
 @NgModule({
@@ -36,6 +37,7 @@ import { HomepageComponent } from './homepage/homepage.component';
     TestComponent,
 
     HomepageComponent,
+      EnrollCourseComponent,
 
   ],
   imports: [
@@ -46,6 +48,7 @@ import { HomepageComponent } from './homepage/homepage.component';
       { path: 'contact', component: ContactComponent },
       { path: 'header', component: HeaderComponent },
       { path: 'homepage', component: HomepageComponent },
+      { path: 'catalog', component: CatalogComponent },
       { path: '**', redirectTo: 'landing' },
     ]),
   ],
