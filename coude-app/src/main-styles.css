@@ -42,11 +42,13 @@
 }
 
 .button--green{
-    background-color: #2ea44f;
-    font-family: RobotoBold;
+    background-color: var(--green)!important;
+    font-family: RobotoMedium;
+    color: white!important;
+    border: none
 }
 .button--grey{
-    background-color: #DFDFE1;  
+    background-color: #DFDFE1!important;  
     font-family: RobotoMedium;
 }
 .background__whale--color{
@@ -69,4 +71,17 @@
 }
 .box__payment{
     border: 1px;
+}
+::-webkit-scrollbar{
+    width: 5px;
+}
+::-webkit-scrollbar-track{
+    background: var(--header-color)
+}
+::-webkit-scrollbar-thumb {
+    background: var(--green); 
+    border-radius: 10px;
+  }
+.fluid-container{
+    margin-top: 55px;
 }

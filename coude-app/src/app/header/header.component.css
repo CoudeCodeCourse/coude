@@ -1,110 +1,105 @@
 .header__container {
     background: var(--header-color);    
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    top: 0px;
-    max-height: 55px;
     z-index: 99;
     font-family: 'RobotoRegular';
 }
 
 /* Logo coude tren header */
 .header__container>a>img {
-    width: 138px;
-    margin-left: 20px;
+    height: 55px;
+    object-fit: cover;
 }
-
-.navbar__link-container a {
+.navbar__link-container>ul>li>a {
     color: white;
     font-size: 15px;
 }
-.navbar__link-container li {
+.navbar__link-container>ul>li {
     padding: 8px 15px;
 }
-.navbar__link-container li:hover {
+.navbar__link-container>ul>li:hover,
+.search-list li:hover {
     background-color:rgba(10, 10, 27, 0.76);
-    transition: 0.7s;
-    opacity: 0.7
+    transition: 0.5s;
+    opacity: 0.7;
 }
-
+.search-list li:hover {
+    background-color: rgb(144, 176, 144)
+}
 .header__container .icon {
     display: none;
-    font-size: 20px;
+    font-size: 30px;
     color: white;
-    text-decoration: none;
-    font-weight: bold;
 }
-
-.icon>div {
-    width: 30px;
-    height: 4px;
-    background-color: white;
-    margin: 5px 0;
-    border-radius: 3px;
-}
-
 .search-box {
-    width: 30%;
+    width: 30vw;
     min-width: 200px;
     height: 30px;
     background: #E5E5E5;
     box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 5px;
-    margin-left: 2%;
 }
 
 .search-box input {
     width: 90%;
-    background-color: transparent;
     height: 97%;
-    border: none;
-    padding-left: 10px;
 }
-
-.search-box input,
-.search-box svg {
+.search-box input, .search-box svg,
+.btn-user, .btn-noti {
     vertical-align: middle;
 }
+/* .search-box:target {
+    background-color: rgb(121, 82, 106);
+    border-radius: 5px 5px 0 0 ;
 
-/* Thuộc tính của button */
+} */
+.search-list{
+    top: 45px;
+    background-color: #E5E5E5; 
+    border-radius: 0 0 5px 5px ;
+    list-style-type: none;
+    width: 30vw;
+}
+.search-list li{
+    padding: 8px 25px;
+}
 .header__container button {
     font-family: 'RobotoRegular';
-    background-color: transparent;
     border: none;
 }
 .header__button-container>:nth-child(n){
-    margin-right: 5px;
+    margin-right: 8px;
 }
-.header__button-container>.btn--s {
-    padding: 0;
-    height: 25px;
-}
+
 #signup, #login{
     border-radius: 5px;
     color: white;
+    padding: 1px 10px
 }
 #signup {
-    width: 85px;
-    /* margin-right: 3%; */
     background-color: var(--green);
 }
 
 #login {
     background-color: transparent;
     border: 0.5px solid white;
-    width: 85px;
-    /* margin-right: 3%; */
 }
 
-
-
+.btn-user{
+    width: 28px;
+    height: 28px;
+}
+.btn-noti{
+    width: 20px;
+    height: 20px;
+}
 @media screen and (max-width: 992px) {
-    .header__container>div:not(:last-child), .search-box {
-        transition: 0.5s;
-        display: none!important;
-    }
-    .header__container,
-    .header__container.responsive {
-        justify-content: space-between!important;
+    /* .search-box, .search-list{ 
+        width: 99%;
+        margin: 5px auto;
+    } */
+    .search-container{
+        display: none;
     }
     .header__container .icon {
         display: block;
@@ -112,40 +107,20 @@
     a.icon:hover {
         opacity: 0.8;
     }
-}
-
-@media screen and (max-width: 992px) {
-    .header__container.responsive>div,
-    .header__container {
-        transition: 0.5s;
-    }
-    .header__container.responsive>div:not(:last-child) {
-        position: inherit;
+    .navbar-collapse.show {
+        position: fixed;
         top: 55px;
-        width: 100vw;
-        height: fit-content;
-        font-size: 20px;
+        width: 100%;
     }
-    .header__container.responsive .navbar__link-container {
+    .header__container {
+        position: inherit;
+        /* top: 55px; */
+        width: 100vw;
+        /* max-height: fit-content; */
+    }
+    .header__container .navbar__link-container {
         color: black;
         background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(0deg, rgba(55, 73, 168, 0.2), rgba(55, 73, 168, 0.2)), rgba(0, 0, 0, 0.76);
     }
-    .header__container.responsive .navbar__link-container {
-        flex-direction: column;
-        top: 80px !important;
-    }
-    .header__container.responsive .navbar__link-container a {
-        padding: 10px 1%;
-    }
-    .header__container.responsive .search-box {
-        margin: 0;
-        top: 0;
-        height: 25px;
-    }
-    .header__container.responsive>div {
-        display: flex;
-        transition: 0.5s;
-        text-align: left;
-        /* flex-direction: column; */
-    }
 }
+

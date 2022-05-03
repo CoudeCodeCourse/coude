@@ -2,6 +2,9 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { RouterModule } from '@angular/router';
+import { FormsModule } from '@angular/forms';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations'
 
 import { AppComponent } from './app.component';
 
@@ -15,12 +18,17 @@ import { CatalogComponent } from './catalog/catalog.component';
 import { WhoWeAreComponent } from './who-we-are/who-we-are.component';
 import { Header1Component } from './header1/header1.component';
 import { StudyComponent } from './study/study.component';
+import { TestComponent } from './test/test.component';
+import { HomepageComponent } from './homepage/homepage.component';
+import { AdminHomeComponent } from './admin-home/admin-home.component';
+import { AdminCourseDetailsComponent } from './admin-course-details/admin-course-details.component';
 
-
+import {SearchFilterPipe} from '../pipes/searchFilter.pipe';
 @NgModule({
   declarations: [
     AppComponent,
-   HeaderComponent,
+    SearchFilterPipe,
+    HeaderComponent,
     ContactComponent,
     FooterComponent,
     ForumMainComponent,
@@ -30,15 +38,23 @@ import { StudyComponent } from './study/study.component';
     WhoWeAreComponent,
     Header1Component,
     StudyComponent,
+    TestComponent,
+    HomepageComponent,
+    AdminHomeComponent,
+    AdminCourseDetailsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule,
+    NgbModule,
+    BrowserAnimationsModule,
      RouterModule.forRoot([
       { path: 'landing', component: LandingComponent },
       { path: 'contact', component: ContactComponent },
       { path: 'header', component: HeaderComponent },
-      { path: 'header1', component: Header1Component },
+      { path: 'homepage', component: HomepageComponent },
+      { path: 'adminCouseDetails', component: AdminCourseDetailsComponent },
       { path: '**', redirectTo: 'landing' },
     ]),
   ],
