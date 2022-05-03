@@ -18,6 +18,7 @@ import { LandingComponent } from './landing/landing.component';
 import { CatalogComponent } from './catalog/catalog.component';
 import { WhoWeAreComponent } from './who-we-are/who-we-are.component';
 import { Header1Component } from './header1/header1.component';
+import { StudyComponent } from './study/study.component';
 
 import { TestComponent } from './test/test.component';
 import { HomepageComponent } from './homepage/homepage.component';
@@ -39,11 +40,11 @@ import {SearchFilterPipe} from '../pipes/searchFilter.pipe';
     CatalogComponent,
     WhoWeAreComponent,
     Header1Component,
+    StudyComponent,
     TestComponent,
     HomepageComponent,
     AdminHomeComponent,
-    AdminCourseDetailsComponent,
-    
+    AdminCourseDetailsComponent
   ],
   imports: [
     BrowserModule,

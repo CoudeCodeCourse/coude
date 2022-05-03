@@ -42,14 +42,23 @@
 }
 
 .button--green{
+<<<<<<< HEAD
+    background-color: #2ea44f;
+    color: white;
+    font-family: RobotoBold;
+    border-radius: 5px;
+    border: none;
+=======
     background-color: var(--green)!important;
     font-family: RobotoMedium;
     color: white!important;
     border: none
+>>>>>>> b61660d27b1770cc131c5877fbd3f454617fcb12
 }
 .button--grey{
     background-color: #DFDFE1!important;  
     font-family: RobotoMedium;
+    border-radius: 10px;
 }
 .background__whale--color{
     background-color: #000000;
@@ -61,10 +70,9 @@
     --input-style: #E7E7EA;
     --background-login-frame: #F5F5FA;
     --green: #2ea44f;
+    --green-deep: #199B80;
 }
-.btn{
-    border-radius: 10px;
-}
+
 .box__course{
     border: 3px;
 }

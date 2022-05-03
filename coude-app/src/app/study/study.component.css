@@ -1,0 +1,103 @@
+.container-fluid{
+    margin: 0px;
+    padding: 0px;
+    padding-top: 10px;
+}
+.nav {
+    padding-left: 25px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(0deg, rgba(55, 73, 168, 0.2), rgba(55, 73, 168, 0.2)), rgba(0, 0, 0, 0.76);
+}
+.nav a {
+    display: block;
+    text-align: left;
+    color: #f2f2f2;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: RobotoRegular;
+}
+
+button{
+    margin: 20px 0px;
+    min-width: 100px;
+}
+
+iframe {
+    width: 100%;
+    height: 516px;
+    border: none;
+    margin-top: 20px;
+}
+
+#title {
+    font-weight: bold;
+}
+
+#content {
+    margin: 0px 50px;
+    padding-left: 30px;
+    padding-top: 40px;
+    font-family: RobotoMedium;
+}
+
+#lesson {
+    padding: 50px;
+    border: 2px solid black;
+}
+
+#script {
+    background-color: #C4C4C4;
+    padding: 5px 30px;
+    margin: 0px 80px 30px 80px;
+}
+
+#lesson-title {
+    background-color: #C4C4C4;
+    padding: 10px 10px;
+}
+
+/*Breadcrumb Pagination*/
+
+ul.breadcrumb {
+    padding: 20px 16px;
+    list-style: none;
+    margin-bottom: 15px;
+    width: fit-content;
+  }
+  ul.breadcrumb li {
+    display: inline;
+    font-size: 18px;
+  }
+  ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: "/\00a0";
+  }
+  ul.breadcrumb li a {
+    color: #0275d8;
+    text-decoration: none;
+  }
+  ul.breadcrumb li a:hover {
+    color: #01447e;
+    text-decoration: underline;
+  }
+
+@media screen and (max-width: 600px) {
+    
+}
+
+@media screen and (max-width: 768px) {
+    
+}
+
+@media screen and (max-width: 768px) {
+    
+}
+
+@media screen and (max-width: 992px) {
+    
+}
+
+@media screen and (max-width: 992px) {
+    
+}
