@@ -42,14 +42,21 @@
 }
 
 .button--green{
+<<<<<<< HEAD
     background-color: #2ea44f;
     color: white;
     font-family: RobotoBold;
     border-radius: 5px;
     border: none;
+=======
+    background-color: var(--green)!important;
+    font-family: RobotoMedium;
+    color: white!important;
+    border: none
+>>>>>>> b61660d27b1770cc131c5877fbd3f454617fcb12
 }
 .button--grey{
-    background-color: #DFDFE1;  
+    background-color: #DFDFE1!important;  
     font-family: RobotoMedium;
     border-radius: 10px;
 }
@@ -71,4 +78,17 @@
 }
 .box__payment{
     border: 1px;
+}
+::-webkit-scrollbar{
+    width: 5px;
+}
+::-webkit-scrollbar-track{
+    background: var(--header-color)
+}
+::-webkit-scrollbar-thumb {
+    background: var(--green); 
+    border-radius: 10px;
+  }
+.fluid-container{
+    margin-top: 55px;
 }
