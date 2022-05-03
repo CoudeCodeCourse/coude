@@ -3,6 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations'
 
 import { AppComponent } from './app.component';
 
@@ -19,7 +21,7 @@ import { HomepageComponent } from './homepage/homepage.component';
 import { AdminHomeComponent } from './admin-home/admin-home.component';
 import { AdminCourseDetailsComponent } from './admin-course-details/admin-course-details.component';
 
-import {SearchFilterPipe} from './pipe/searchFilter.pipe';
+import {SearchFilterPipe} from '../pipes/searchFilter.pipe';
 @NgModule({
   declarations: [
     AppComponent,
@@ -42,6 +44,8 @@ import {SearchFilterPipe} from './pipe/searchFilter.pipe';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    NgbModule,
+    BrowserAnimationsModule,
      RouterModule.forRoot([
       { path: 'landing', component: LandingComponent },
       { path: 'contact', component: ContactComponent },
