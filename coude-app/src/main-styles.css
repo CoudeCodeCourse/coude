@@ -43,11 +43,15 @@
 
 .button--green{
     background-color: #2ea44f;
+    color: white;
     font-family: RobotoBold;
+    border-radius: 5px;
+    border: none;
 }
 .button--grey{
     background-color: #DFDFE1;  
     font-family: RobotoMedium;
+    border-radius: 10px;
 }
 .background__whale--color{
     background-color: #000000;
@@ -61,9 +65,7 @@
     --green: #2ea44f;
     --green-deep: #199B80;
 }
-.btn{
-    border-radius: 10px;
-}
+
 .box__course{
     border: 3px;
 }
