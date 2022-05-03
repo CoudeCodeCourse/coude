@@ -1,0 +1,71 @@
+[{
+        "category": "HTML&CSS",
+        "description": "HTML is the foundation of all web pages. It defines the structure of a page, while CSS defines its style. HTML and CSS are the beginning of everything you need to know to make your first web page! Learn both and start creating amazing websites.",
+        "courses": []
+    },
+    {
+        "category": "Python",
+        "description": "Python is a general-purpose, versatile, and powerful programming language. It’s a great first language because it’s concise and easy to read. Whatever you want to do, Python can do it. From web development to machine learning to data science, Python is the language for you.",
+        "courses": []
+    },
+    {
+        "category": "JavaScript",
+        "description": "JavaScript is a fun and flexible programming language. It’s one of the core technologies of web development and can be used on both the front-end and the back-end.",
+        "courses": []
+    },
+    {
+        "category": "Java",
+        "description": "Java is one of the most popular programming languages out there. Released in 1995 and still widely used today, Java has many applications, including software development, mobile applications, and large systems development. Knowing Java opens a lot of possibilities for you as a developer.",
+        "courses": []
+    },
+    {
+        "category": "SQL",
+        "description": "SQL is the standard relational data management language. We live in a data-driven world, and there are many businesses that store their information inside large, relational databases. This makes SQL a great skill not only for data scientists and engineers, but for anyone wanting to be data-literate.",
+        "courses": []
+    },
+    {
+        "category": "C++",
+        "description": "C++ is a very popular language for performance-critical applications that rely on speed and efficient memory management. It’s used in a wide range of industries including software and game development, VR, robotics, and scientific computing.",
+        "courses": []
+    },
+    {
+        "category": "C#",
+        "description": "C# is one of the most popular programming languages. It can be used for a variety of things, including mobile applications, game development, and enterprise software. Knowing C# opens a great deal of doors for you as a developer.",
+        "courses": []
+    },
+    {
+        "category": "R",
+        "description": "R is a widely used statistical programming language that’s beloved by people in academia and the tech industry. But that makes it sound more intimidating than it actually is. R is a great first language for anyone interested in answering questions with data analysis, data visualization, and data science.",
+        "courses": []
+    },
+    {
+        "category": "Kotlin",
+        "description": "Kotlin is a modern, general-purpose programming language developed by JetBrains. Its full compatibility with Java and concise syntax makes it an appealing language for web development, Android development, and more.",
+        "courses": []
+    },
+    {
+        "category": "Web Design",
+        "description": "Web Design is essential to bringing a website to life and creating the experience that you want for your end users. The courses here will help you polish your HTML and CSS skills while learning about color design, navigation design, and more.",
+        "courses": []
+    },
+    {
+        "category": "Data Science",
+        "description": "Data Scientists try to make sense of the data that’s all around us. Learning Data Science can help you make informed decisions, create beautiful visualizations, and even try to predict future events through Machine Learning. If you’re curious about what you can learn about the world using the data produced every day, then Data Science might be for you!",
+        "courses": []
+    },
+    {
+        "category": "Computer Science",
+        "description": "Computer Science, often referred to as “CS,” is a broad term that covers many sub-disciplines, including the worlds of software and hardware. It can be found in every piece of technology you use, from a smartphone or gaming console to a car or ATM. With so many applications for Computer Science, there’s a space for everyone!",
+        "courses": []
+    },
+    {
+        "category": "For Business",
+        "description": "From software development to data analysis—give your team the latest technical skills to tackle any business problem.",
+        "courses": []
+    },
+    {
+        "category": "Mobile Development",
+        "description": "Every year more and more people rely on mobile devices to meet their needs. Where websites used to be the gold-standard, people now rely on mobile apps. The technologies used to create these apps are expanding and improving quickly, so it’s an exciting time to start learning Mobile Development!",
+        "courses": []
+    }
+]
