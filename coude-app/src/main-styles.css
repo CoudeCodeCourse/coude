@@ -42,18 +42,11 @@
 }
 
 .button--green{
-<<<<<<< HEAD
     background-color: #2ea44f;
     color: white;
     font-family: RobotoBold;
     border-radius: 5px;
     border: none;
-=======
-    background-color: var(--green)!important;
-    font-family: RobotoMedium;
-    color: white!important;
-    border: none
->>>>>>> b61660d27b1770cc131c5877fbd3f454617fcb12
 }
 .button--grey{
     background-color: #DFDFE1!important;  
