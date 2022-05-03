@@ -1,4 +1,11 @@
 
+.navbar {
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    background-color: #7952b3;
+  transition: 0.4s;
+}
 .rec-frame__shape {
     border: 8px solid rgba(255, 255, 255, 0.86);
     min-width: 300px;
@@ -29,7 +36,6 @@
 h2 {
     margin: 0;
     padding: 0;
-    /* width: fit-content; */
 }
 
 .slogan p {
@@ -95,17 +101,21 @@ svg {
     text-align: center;
 }
 
-.course-container img {
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    width: 80%;
-    height: auto;
+#sidebar {
+    width: 15%;
+    position: fixed;
+    background-color: #7952b3;
+    transition: 0.4s;
 }
 
-.course-container__item ul {
-    list-style-position: inside;
+.nav-link {
+    font-size: 1.25em;
 }
+
+.nav-link:active,
+.nav-link:focus,
+.nav-link:hover {
+    background-color: #ffffff26;
 
 .button__create-account:hover,
 .course-container__item:hover,
@@ -264,4 +274,5 @@ iframe {
         justify-content: flex-start;
         margin-left: 2%
     }
+
 }

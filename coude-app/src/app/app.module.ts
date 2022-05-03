@@ -17,6 +17,7 @@ import { LandingComponent } from './landing/landing.component';
 import { CatalogComponent } from './catalog/catalog.component';
 import { WhoWeAreComponent } from './who-we-are/who-we-are.component';
 import { Header1Component } from './header1/header1.component';
+import { TestComponent } from './test/test.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { AdminHomeComponent } from './admin-home/admin-home.component';
 import { AdminCourseDetailsComponent } from './admin-course-details/admin-course-details.component';
@@ -35,6 +36,7 @@ import {SearchFilterPipe} from '../pipes/searchFilter.pipe';
     CatalogComponent,
     WhoWeAreComponent,
     Header1Component,
+    TestComponent,
     HomepageComponent,
     AdminHomeComponent,
     AdminCourseDetailsComponent,
