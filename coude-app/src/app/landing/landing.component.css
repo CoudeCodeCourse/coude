@@ -100,23 +100,6 @@ svg {
     margin: auto 20px;
     text-align: center;
 }
-
-#sidebar {
-    width: 15%;
-    position: fixed;
-    background-color: #7952b3;
-    transition: 0.4s;
-}
-
-.nav-link {
-    font-size: 1.25em;
-}
-
-.nav-link:active,
-.nav-link:focus,
-.nav-link:hover {
-    background-color: #ffffff26;
-
 .button__create-account:hover,
 .course-container__item:hover,
 a:hover {

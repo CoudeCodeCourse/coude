@@ -89,6 +89,6 @@
     background: var(--green); 
     border-radius: 10px;
   }
-.fluid-container{
+html{
     margin-top: 55px;
 }
