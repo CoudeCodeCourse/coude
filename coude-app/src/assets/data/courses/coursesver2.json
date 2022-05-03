@@ -1,6 +1,8 @@
 [{
         "title": "Front-End Engineer",
         "category": { "$oid": "6270e5c2b36232bdf8426d13" },
+        "admin_id": "",
+        "status": "available",
         "time": "New",
         "level": "Beginner",
         "instructor": "Ben Camden",
@@ -29,6 +31,8 @@
     {
         "title": "Learn HTML",
         "category": { "$oid": "6270e5c2b36232bdf8426d13" },
+        "admin_id": "",
+        "status": "available",
         "time": "New",
         "level": "Beginner",
         "instructor": "Aurora Diana",
@@ -56,7 +60,9 @@
     },
     {
         "title": "How to Make a Website with NameCheap",
-        "category": { "$oid": "6270e5c2b36232bdf8426d13" },
+        "category": { "$oid": "6270e5c2b36232bdf8426d13" },        
+        "admin_id": "",
+        "status": "available",
         "time": "New",
         "level": "Beginner",
         "instructor": "Abel Abram",
@@ -91,6 +97,8 @@
     {
         "title": "Learn Bootstrap",
         "category": { "$oid": "6270e5c2b36232bdf8426d13" },
+        "admin_id": "",
+        "status": "available",
         "time": "Popular",
         "instructor": "Alica Katherine",
         "user_avt": "glass_woman.png",
@@ -112,6 +120,8 @@
     {
         "title": "Visualize Data with Python",
         "category": { "$oid": "6270e5c2b36232bdf8426d14" },
+        "admin_id": "",
+        "status": "available",
         "time": "New",
         "level": "Intermediate",
         "instructor": "Cary Grant",
@@ -121,7 +131,7 @@
         "learners": [],
         "fee": "150",
         "atc": "WHAT YOU WILL LEARN Learn what data science is, the various activities of a data scientist’s job, and methodology to think and work like a data scientist Develop hands-on skills using the tools, languages, and libraries used by professional data scientists Import and clean data sets, analyze and visualize data, and build and evaluate machine learning models and pipelines using Python Apply various data science skills, techniques, and tools to complete a project and publish a report",
-        "hiw": "Build the Skills to Get Job Ready Whether you’re looking to start a new career, or change your current one, Professional Certificates on Coursera help you become job ready. Learn at your own pace, whenever and wherever it’s most convenient for you. Enroll today and explore a new career path with a 7 day free trial. You can pause your learning or end your subscription at any time.",
+        "hiw": "Build the Skills to Get Job Ready Whether youre looking to start a new career, or change your current one, Professional Certificates on Coursera help you become job ready. Learn at your own pace, whenever and wherever it’s most convenient for you. Enroll today and explore a new career path with a 7 day free trial. You can pause your learning or end your subscription at any time.",
         "degree": "degree1.png",
         "feedbacks": [{
                 "user_id": "",
@@ -147,6 +157,8 @@
     {
         "title": "Build Python Web Apps with Flask",
         "category": { "$oid": "6270e5c2b36232bdf8426d14" },
+        "admin_id": "",
+        "status": "available",
         "time": "New",
         "level": "Intermediate",
         "instructor": "Marlon Brando",
@@ -169,6 +181,8 @@
     {
         "title": "Build Deep Learning Models with TensorFlow",
         "category": { "$oid": "6270e5c2b36232bdf8426d14" },
+        "admin_id": "",
+        "status": "available",
         "time": "Popular",
         "level": "Beginner",
         "instructor": "Henry Fonda",
@@ -190,6 +204,8 @@
     {
         "title": "Build Chatbots with Python",
         "category": { "$oid": "6270e5c2b36232bdf8426d14" },
+        "admin_id": "",
+        "status": "available",
         "time": "Popular",
         "level": "Beginner",
         "instructor": "James Cagney",
@@ -211,6 +227,8 @@
     {
         "title": "Create a Front-End App with React",
         "category": { "$oid": "6270e5c2b36232bdf8426d15" },
+        "admin_id": "",
+        "status": "available",
         "time": "Popular",
         "level": "Intermediate",
         "instructor": "Charles Chaplin",
@@ -239,6 +257,8 @@
     {
         "title": "Create a Advanced Web App with React and Relux",
         "category": { "$oid": "6270e5c2b36232bdf8426d15" },
+        "admin_id": "",
+        "status": "available",
         "time": "New",
         "level": "Intermediate",
         "instructor": "Gregory Peck",
@@ -256,6 +276,8 @@
     {
         "title": "Learn React",
         "category": { "$oid": "6270e5c2b36232bdf8426d15" },
+        "admin_id": "",
+        "status": "available",
         "time": "Popular",
         "level": "Beginner",
         "instructor": "John Wayne",
@@ -272,6 +294,8 @@
     {
         "title": "Full-Stack Engineer",
         "category": { "$oid": "6270e5c2b36232bdf8426d15" },
+        "admin_id": "",        
+        "status": "available",
         "time": "Popular",
         "level": "Intermediate",
         "instructor": "Vivien Leigh",
@@ -300,6 +324,8 @@
     {
         "title": "Create REST APIs with Spring and Java",
         "category": { "$oid": "6270e5c2b36232bdf8426d16" },
+        "admin_id": "",
+        "status": "available",
         "time": "New",
         "level": "Intermediate",
         "instructor": "Lauren Bacall",
@@ -330,6 +356,8 @@
     {
         "title": "Pass the Technical Interview with Java",
         "category": { "$oid": "6270e5c2b36232bdf8426d16" },
+        "admin_id": "",
+        "status": "available",
         "time": "New",
         "level": "Intermediate",
         "instructor": "Jean Harlow",
@@ -358,6 +386,8 @@
     {
         "title": "Data Analyst Interview Preparation",
         "category": { "$oid": "6270e5c2b36232bdf8426d17" },
+        "admin_id": "",
+        "status": "available",
         "time": "Popular",
         "level": "Intermediate",
         "instructor": "Sidney Poitier",
@@ -379,6 +409,8 @@
     {
         "title": "Learn C++ Programming from Zero to Mastery in 2022 (FAANG)",
         "category": { "$oid": "6270e5c2b36232bdf8426d18" },
+        "admin_id": "",
+        "status": "available",
         "time": "New",
         "level": "Beginner",
         "instructor": "Jefferson Hall",
@@ -399,6 +431,36 @@
             {
                 "user_id": "",
                 "rate": 5,
+                "content": "Good! Thank you for the course.",
+                "createdAt": "2022-04-12T18:25:43-05:00"
+            }
+        ]
+    },
+    {
+        "title": "Crash Course on C++ Standard Template Library (STL)",
+        "category": { "$oid": "6270e5c2b36232bdf8426d18" },
+        "admin_id": "",
+        "status": "hidden",
+        "time": "New",
+        "level": "Intermediate",
+        "instructor": "Andrew Wilde",
+        "user_avt": "glass_woman.png",
+        "instruc_descript": "The computer wouldn't start. She banged on the side and tried again. Nothing. She lifted it up and dropped it to the table. Still nothing. She banged her closed fist against the top. It was at this moment she saw the irony of trying to fix the machine with violence.",
+        "languages": ["English"],
+        "learners": [],
+        "fee": 250,
+        "atc": "WHAT YOU WILL LEARN Learn what data science is, the various activities of a data scientist’s job, and methodology to think and work like a data scientist Develop hands-on skills using the tools, languages, and libraries used by professional data scientists Import and clean data sets, analyze and visualize data, and build and evaluate machine learning models and pipelines using Python Apply various data science skills, techniques, and tools to complete a project and publish a report",
+        "hiw": "Build the Skills to Get Job Ready Whether you’re looking to start a new career, or change your current one, Professional Certificates on Coursera help you become job ready. Learn at your own pace, whenever and wherever it’s most convenient for you. Enroll today and explore a new career path with a 7 day free trial. You can pause your learning or end your subscription at any time.",
+        "degree": "degree4.png",
+        "feedback": [{
+                "user_id": "",
+                "rate": 3,
+                "content": "Not worthy",
+                "createdAt": "2021-11-12T18:25:43-05:00"
+            },
+            {
+                "user_id": "",
+                "rate": 3,
                 "content": "Good! Thank you for the course.",
                 "createdAt": "2022-04-12T18:25:43-05:00"
             }
