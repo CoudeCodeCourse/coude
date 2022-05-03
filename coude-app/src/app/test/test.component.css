@@ -1,0 +1,30 @@
+.navbar {
+    width: 15%;
+    height: 100%;
+    /* position: fixed; */
+    background-color: #7952b3;
+}
+
+.nav-link {
+    font-size: 15px;
+}
+
+.nav-link:active,
+.nav-link:focus,
+.nav-link:hover {
+    background-color: #ffffff26;
+}
+
+@media screen and (max-width: 700px) {
+    .navbar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    .nav-link {
+        display: none;
+    }
+    .navbar-brand {
+        display: none;
+    }
+}
