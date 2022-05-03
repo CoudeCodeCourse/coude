@@ -14,6 +14,7 @@ import { LandingComponent } from './landing/landing.component';
 import { CatalogComponent } from './catalog/catalog.component';
 import { WhoWeAreComponent } from './who-we-are/who-we-are.component';
 import { Header1Component } from './header1/header1.component';
+import { TestComponent } from './test/test.component';
 
 
 @NgModule({
@@ -28,6 +29,7 @@ import { Header1Component } from './header1/header1.component';
     CatalogComponent,
     WhoWeAreComponent,
     Header1Component,
+    TestComponent,
   ],
   imports: [
     BrowserModule,

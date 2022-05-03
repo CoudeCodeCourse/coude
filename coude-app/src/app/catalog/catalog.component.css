@@ -8,10 +8,42 @@
     flex-direction: row;
 }
 
-#myTopnav {
+.navbar {
+    width: 15%;
+    /* position: fixed; */
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(0deg, rgba(55, 73, 168, 0.2), rgba(55, 73, 168, 0.2)), rgba(0, 0, 0, 0.76);
-    padding: 20px;
-    width: 20%;
+}
+
+.nav-link {
+    font-size: 15px;
+    font-family: RobotoRegular;
+}
+
+.nav-link:active,
+.nav-link:focus,
+.nav-link:hover {
+    background-color: #ffffff26;
+}
+
+.navbar-brand {
+    font-family: RobotoMedium;
+}
+
+@media screen and (max-width: 700px) {
+    .navbar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    .nav-link {
+        display: none;
+    }
+    .navbar-brand {
+        display: none;
+    }
+    .txtbanner1 {
+        display: none;
+    }
 }
 
 #title {
@@ -46,26 +78,6 @@
     margin: 30px;
     padding: 0px 15px;
     font-family: RobotoLight;
-}
-
-.topnav {
-    overflow: hidden;
-    position: relative;
-}
-
-.topnav a {
-    display: block;
-    text-align: left;
-    color: #f2f2f2;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 15px;
-    font-family: RobotoRegular;
-    margin-left: 20px;
-}
-
-.topnav .icon {
-    display: none;
 }
 
 .catalog {
@@ -136,30 +148,23 @@ ul {
 }
 
 .banner1 {
-    background-image: url("../../assets/images/catalog/banner1.PNG");
-    width: 700px;
-    height: 100px;
-    background-repeat: no-repeat;
-    display: block;
+    position: relative;
     text-align: center;
-    margin: auto;
 }
 
 .txtbanner1 {
-    margin-top: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     font-size: 20px;
+    position: absolute;
     font-weight: bold;
-    display: inline-block;
+    color: rgb(10, 10, 10);
 }
 
 .linkenroll {
     color: black;
-}
-
-.linkbanner {
-    font-size: 20px;
-    font-weight: bold;
-    color: cyan;
 }
 
 .blog {
