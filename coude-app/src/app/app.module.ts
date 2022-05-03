@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
-import { RouterModule } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations'
-
+import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 
 import { HeaderComponent } from './header/header.component';
@@ -47,13 +47,14 @@ import {SearchFilterPipe} from '../pipes/searchFilter.pipe';
     AppRoutingModule,
     FormsModule,
     NgbModule,
+    HttpClientModule,
     BrowserAnimationsModule,
      RouterModule.forRoot([
       { path: 'landing', component: LandingComponent },
       { path: 'contact', component: ContactComponent },
       { path: 'header', component: HeaderComponent },
       { path: 'homepage', component: HomepageComponent },
-      { path: 'adminCourseDetails', component: AdminCourseDetailsComponent },
+      { path: 'admin/courses/:id', component: AdminCourseDetailsComponent },
       { path: 'admin', component: AdminHomeComponent },
       { path: '**', redirectTo: 'landing' },
     ]),
