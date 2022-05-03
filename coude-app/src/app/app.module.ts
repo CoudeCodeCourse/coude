@@ -27,6 +27,7 @@ import { AdminCourseDetailsComponent } from './admin-course-details/admin-course
 
 
 import {SearchFilterPipe} from '../pipes/searchFilter.pipe';
+import { ScheduleComponent } from './schedule/schedule.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -44,7 +45,8 @@ import {SearchFilterPipe} from '../pipes/searchFilter.pipe';
     TestComponent,
     HomepageComponent,
     AdminHomeComponent,
-    AdminCourseDetailsComponent
+    AdminCourseDetailsComponent,
+    ScheduleComponent
   ],
   imports: [
     BrowserModule,

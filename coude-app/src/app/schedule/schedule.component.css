@@ -1,0 +1,145 @@
+.container-fluid {
+    font-family: RobotoRegular;
+    padding: 0px;
+    margin: 0px;
+}
+
+.nav a {
+    display: block;
+    text-align: left;
+    color: #f2f2f2;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.nav {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(0deg, rgba(55, 73, 168, 0.2), rgba(55, 73, 168, 0.2)), rgba(0, 0, 0, 0.76);
+}
+#title {
+    font-weight: bold;
+}
+
+.main-content {
+    width: 90%;
+    display: block;
+    margin: auto;
+}
+
+.timeline {
+    margin: 10px;
+    padding: 30px;
+    align-items: center;
+}
+
+.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+.timeline-container {
+    vertical-align: center;
+}
+
+.timeline__item {
+    margin-right: 50px;
+}
+
+.week-circle {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    background: grey;
+    margin: 0 auto;
+}
+
+#title {
+    background: rgba(196, 196, 196, 0.63);
+    padding: 10px;
+    font-weight: bold;
+}
+
+.week {
+    margin-top: 20px;
+    border: 2px solid black;
+    padding: 1%
+}
+
+.week-detail {
+    margin-top: 20px;
+    /* padding: 0 50px; */
+    border-top: 1px solid rgba(196, 196, 196, 0.63);
+    border-bottom: 1px solid rgba(196, 196, 196, 0.63);
+}
+
+.week-detail>div:first-child {
+    border-right: 1px solid rgba(196, 196, 196, 0.63);
+}
+
+.lesson {
+    align-items: center;
+}
+
+.lesson-check--circle {
+    margin-left: 30px;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    background: rgba(196, 196, 196, 0.63);
+}
+
+#grade,
+#quiz {
+    background: rgba(196, 196, 196, 0.63)
+}
+
+.video-container {
+    margin: 15px 30px;
+    overflow: auto;
+    height: 150px;
+}
+
+.video-container::-webkit-scrollbar {
+    display: none;
+}
+
+.video__item {
+    margin-bottom: 5px;
+    align-items: center;
+    background: rgba(196, 196, 196, 0.63);
+}
+
+.video__item h5 {
+    margin: 5px;
+    font-size: medium;
+}
+
+.video__item p {
+    font-size: 14px;
+    margin: 0 20px;
+}
+
+#video--content {
+    width: 60%;
+}
+
+
+@media only screen and (max-width: 600px) {
+  
+}
+
+@media screen and (max-width: 768px) {
+    
+}
+
+@media screen and (max-width: 768px) {
+    
+}
+
+@media screen and (max-width: 992px) {
+    
+}
+
+@media screen and (max-width: 992px) {
+    
+}
