@@ -12,16 +12,16 @@
             </svg>
         </div>
     </div>
-    <div class="navigation">
+    <div class="d-flex justify-content-center  align-middle navigation">
         <div class="navbar">
-            <button type="button" class="nav__btn">Popular</button>
-            <button type="button" class="nav__btn">Lastest</button>
+            <button type="button" class="nav__btn" (click)="viewsSort()">Popular</button>
+            <button type="button" class="nav__btn" (click)="dateSort()">Lastest</button>
             <button type="button" class="nav__btn">Marked</button>
-            <button type="button" class="nav__btn">My questions</button>
+            <button type="button" class="nav__btn">My Topics</button>
         </div>
-        <div class=" navbutton">
+        <div class="d-flex align-items-center navbutton">
             <div class="dropdown">
-                <select ng-model="selectedTag">
+                <select>
                     <option value="">TAGS</option>
                     <option value="c#">C#</option>
                     <option value="c++">C++</option>
@@ -35,6 +35,8 @@
                 </select>
             </div>
             <button type="button" class="createTopic__btn" id="myCreateTopicBtn">New Topic
+                <!-- <img style="width: 16px; margin: 3px; color:  #2EA44F;" src="../../assets/icon/plus-solid.svg"> -->
+                <!-- <svg class="bi-plus" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M432 256c0 17.69-14.33 32.01-32 32.01H256v144c0 17.69-14.33 31.99-32 31.99s-32-14.3-32-31.99v-144H48c-17.67 0-32-14.32-32-32.01s14.33-31.99 32-31.99H192v-144c0-17.69 14.33-32.01 32-32.01s32 14.32 32 32.01v144h144C417.7 224 432 238.3 432 256z"/></svg> -->
                 <i class="bi bi-plus"></i>
             </button>
         </div>
@@ -68,16 +70,16 @@
         <div class="topic__views">Views</div>
         <div class="topic__times">Time</div>
     </div>
-    <div class="list-topic" ng-repeat="topic in forum | filter: {tag: selectedTag} | orderBy: val:reverse">
+    <div class="list-topic" *ngFor="let t of topics">
         <a href="">
             <div class="topic-child">
                 <div class="topic__col">
-                    <div class="topic__name"></div>
-                    <div class="topic__tags"></div>
+                    <div class="topic__name">{{t.title}}</div>
+                    <div class="topic__tags">{{t.tag}}</div>
                 </div>
-                <div class="topic__replies"></div>
-                <div class="topic__views"></div>
-                <div class="topic__times"></div>
+                <div class="topic__replies">{{t.replies}}</div>
+                <div class="topic__views">{{t.views}}</div>
+                <div class="topic__times">{{t.date}}</div>
             </div>
         </a>
     </div>

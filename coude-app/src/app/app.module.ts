@@ -14,6 +14,7 @@ import { LandingComponent } from './landing/landing.component';
 import { CatalogComponent } from './catalog/catalog.component';
 import { WhoWeAreComponent } from './who-we-are/who-we-are.component';
 import { Header1Component } from './header1/header1.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -31,6 +32,7 @@ import { Header1Component } from './header1/header1.component';
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule,
      RouterModule.forRoot([
       { path: 'landing', component: LandingComponent },
