@@ -65,7 +65,7 @@
     <!-- Main content of part 1 -->
 <div class="frame frame__clr--dark frame__top pt-10 text-white">
     <div class="sub-container d-flex justify-content-evenly flex-wrap align-self-center">
-        <div class="rec-frame__shape py-4 px-3 w-md-75">
+        <div class="rec-frame__shape  py-5 px-5 w-md-75">
             <p class="text-center">
                 <!-- margin: 50px 30px; -->
                 We envision a world where anyone, anywhere has the power to transform their life through learning. Make things possible with us!
@@ -74,22 +74,23 @@
         <div class="cta-container position-relative">
             <div class="slogan position-absolute">
                 <h2>No Pain No Gain</h2>
-                <p>with <span>Coudé</span></p>
+                <p class="position-relative d-inline-block">with <span>Coudé</span></p>
             </div>
             <!-- <button class="btn-create-account button--green text-white" (click)="window.location.href='/app/Signup/sign-up.html'"> -->
-                <button class="btn-create-account button--green text-white">
+                <button class="btn btn-create-account text-white vertical-align-middle position-relative">
                 Create An Account
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                     class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
                     <path fill-rule="evenodd"
                         d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z" />
                 </svg>
+                <!-- <i class="bi bi-arrow-right-circle" style="width: 16px;"></i> -->
             </button>
         </div>
     </div>
-    <div class="logo-container text-center">
-        <img src="../../assets/images/landing/icon_html.png" alt="icon">
-        <img src="../../assets/images/landing/icon_css.png" alt="icon">
+    <div class="logo-container text-center justify-content-center">
+        <img src="/assets/images/landing/icon_html.png" alt="icon">
+        <img src="/assets/images/landing/icon_css.png" alt="icon">
         <img src="../../assets/images/landing/icon_python.png" alt="icon">
         <img src="../../assets/images/landing/icon_js.png" alt="icon">
         <img src="../../assets/images/landing/icons_c.png" alt="icon">
@@ -123,7 +124,7 @@
                     <div class="course__coude-tag">Coudé</div>
                 </div>
             </div>
-            <div class="course__right-col">
+            <div class="course__right-col d-flex flex-column">
                 <div class="course-container__item">
                     <div class="course__tag">Pro</div>
                     <div>
@@ -148,14 +149,14 @@
                 <li>Develop your carreer</li>
                 <li>Explore something new</li>
             </ul>
-            <a class="link-catalog" href="/app/Catalog/Catalog.html">Go to our catalog →</a>
+            <a class="text-white" href="/app/Catalog/Catalog.html">Go to our catalog →</a>
         </div>
     </div>
     <div class="">
         <ul class="d-flex field-container justify-content-center flex-wrap">FIELDS TO DIG IN
-            <li><a href="">Data Sciene</a></li>
-            <li><a href="">Machine Learning</a></li>
-            <li><a href="">Other</a></li>
+            <li>Data Sciene</li>
+            <li>Machine Learning</li>
+            <li>Other</li>
         </ul>
     </div>
 </div>
@@ -168,7 +169,7 @@
                 <h1>People & Coudé</h1>
                 <p>Let's see what users think about Coude!</p>
             </div>
-            <div class="people-container">
+            <div class="people-container align-items-center"> 
                 <div class="people-container__item d-flex">
                     <img src="/assets/images/landing/people.png" alt="avatar">
                     <div>
@@ -217,14 +218,15 @@
                 </div>
             </div>
             <div class="text-end">
-                <a href="/app/forum/mainforum.html" style="color: var(--green)">Explore more ↳</a>
+                <a href="/contact" style="color: var(--green)">Explore more ↳</a>
             </div>
         </div>
     </div>
 </div>
 <!-- part 4 code editor -->
-<div class="frame frame__font--black code-frame">
-    <h1>Let's create your own project!</h1>
-    <!-- <iframe src="/app/online-code-editor/online-code-editor.html" scrolling="no" frameborder="0">
-        </iframe> -->
+<div class="frame frame__font--black frame__mid code-frame text-center">
+    <h1 class="">Let's create your own project!</h1>
+    <iframe class="" src="https://stackblitz.com/edit/angular-ivy-qgbngn">
+    </iframe>
+        
 </div>

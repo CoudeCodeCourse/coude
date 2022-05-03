@@ -1,13 +1,39 @@
 body {
     padding: 0px;
+    padding-top: 50px;
     border: 0px;
-    font-family: Roboto-Regular;
+    font-family: Roboto-Regular; 
+}
+.forum__intro {
+    text-align: center;
+    margin-top: 20px;
 }
 
-@import url(/main-style.css);
-@font-face {
-    font-family: Roboto-Regular;
-    src: url(/assets/fonts/roboto/Roboto-Regular.ttf);
+.topic__search-box {
+    position: relative;
+    background: #ddd;
+    max-width: fit-content;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.topic__search-input {
+    height: fit-content;
+    padding: 3px;
+    border: 2px solid;
+    text-align: left;
+    padding-left: 10px;
+    padding-right: 25px;
+}
+
+.topic__search-icon {
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    margin: 5px;
+    width: 20px;
+    height: 20px;
 }
 
 .content {
