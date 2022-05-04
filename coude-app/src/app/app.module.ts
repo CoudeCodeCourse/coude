@@ -29,6 +29,7 @@ import { AdminCourseDetailsComponent } from './admin-course-details/admin-course
 
 
 import {SearchFilterPipe} from '../pipes/searchFilter.pipe';
+import { AdUpCourseComponent } from './ad-up-course/ad-up-course.component';
 
 @NgModule({
   declarations: [
@@ -48,7 +49,8 @@ import {SearchFilterPipe} from '../pipes/searchFilter.pipe';
     HomepageComponent,
     EnrollCourseComponent,
     AdminHomeComponent,
-    AdminCourseDetailsComponent
+    AdminCourseDetailsComponent,
+    AdUpCourseComponent
 
   ],
   imports: [
@@ -67,6 +69,8 @@ import {SearchFilterPipe} from '../pipes/searchFilter.pipe';
 
       { path: 'adminCourseDetails', component: AdminCourseDetailsComponent },
       { path: 'admin', component: AdminHomeComponent },
+      { path: 'uploadcourse', component: AdUpCourseComponent },
+
 
       { path: '**', redirectTo: 'landing' },
     ]),
