@@ -1,42 +1,35 @@
 <div class="container-fluid ">
-    <div class="container-fluid">
-        <div class="back-link">
-            <a href="">HTML&CSS</a>
-        </div>
-        <div class="row">
-            <div class="col-md-6">
-                <div class="title fw-bold fs-1">Back-End Engineer</div>
-                <div class="row">
-                    <div class="stars">
-                        <div class="rate">
-                            <input class="star star-5" id="star-5" type="radio" name="star" />
-                            <label class="star star-5" for="star-5"></label>
-                            <input class="star star-4" id="star-4" type="radio" name="star" />
-                            <label class="star star-4" for="star-4"></label>
-                            <input class="star star-3" id="star-3" type="radio" name="star" />
-                            <label class="star star-3" for="star-3"></label>
-                            <input class="star star-2" id="star-2" type="radio" name="star" />
-                            <label class="star star-2" for="star-2"></label>
-                            <input class="star star-1" id="star-1" type="radio" name="star" />
-                            <label class="star star-1" for="star-1"></label>
-                        </div>
-                    </div>
-                    <div class="rate">1000 rates</div>
-                </div>
-                <div class="instructor"></div>
-                <div class="offered">Offered By Coudé</div>
-                <div class="btn btn-success m-3 text-light text-center">
-                    Enroll for Free
-                    <br> Starts Nov 7
-                </div>
-                <div class="enrol-number">3000 already enrolled</div>
+    <div class="container">
+        <div class="container-fluid" style="background-color: rgba(196, 196, 196, 0.5);">
+            <div class="back-link d-flex">
+                <i class="bi bi-arrow-left me-2"></i>
+                <a href="">HTML&CSS</a>
             </div>
-            <div class="col-md-6 ">
-                <div class="row">
-                    <div class="col-sm-4 border-start">
-                        <img src="" alt="">
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="title fw-bold fs-1 my-1">Back-End Engineer</div>
+                    <div class="d-flex justify-content my-1">
+                        <div class="ratings me-3">
+                            <i class="bi bi-star-fill rating-color"></i>
+                            <i class="bi bi-star-fill rating-color"></i>
+                            <i class="bi bi-star-fill rating-color"></i>
+                            <i class="bi bi-star-fill rating-color"></i>
+                            <i class="bi bi-star"></i>
+                        </div>
+                        <div>1200 Reviews</div>
                     </div>
-                    <div class="col-sm-7">
+                    <div class="instructor my-1 fs-5 fw-bold">PhD Nguyen Do Thanh Nhi</div>
+                    <div class="offered my-1 fs-6 fw-light">Offered By Coudé</div>
+                    <div class="btn btn-success text-light text-center mx-auto d-block my-1 fw-bold">
+                        Enroll for Free
+                        <br> Starts Nov 7
+                    </div>
+                    <div class="enrol-number my-3 fw-normal">3000 already enrolled</div>
+                </div>
+                <div class="col-md-7 d-flex justify-content-center
+                align-items-center">
+                    <img src="../../assets/images/avatar/glass_woman.png" class="imgintro img-thumbnail" alt="">
+                    <div class="ms-4">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis nisi voluptatibus odit inventore maxime, earum asperiores aut aspernatur. Laudantium enim maxime deserunt, dolore deleniti ipsum corrupti reiciendis dicta omnis molestias! Lorem ipsum dolor
                         sit amet consectetur adipisicing elit. Dicta ea ullam vero assumenda cumque porro. Cumque dignissimos asperiores neque, obcaecati similique, consectetur odio tempore et, libero debitis unde molestiae recusandae.
                     </div>
@@ -45,57 +38,53 @@
         </div>
     </div>
     <div class="container-fluid p-5">
-        <div class="row justify-content-center border">
-            <a ng-click="selectedInfor(selectedEnroll.atc)" href="javascript:void(0)" class="infor--link">
-                            About the course
-                        </a>
-            <a ng-click="selectedInfor(selectedEnroll.hiw)" href="javascript:void(0)" class="infor--link">
-                            How it works
-                        </a>
-            <a ng-click="selectedInfor(selectedEnroll.language)" href="javascript:void(0)" class="infor--link">
-                            Language
-                        </a>
-            <a ng-click="selectedInfor(selectedEnroll.fee)" href="javascript:void(0)" class="infor--link">
-                        Tution Fee
-                        </a>
-            <a ng-click="selectedInfor(selectedEnroll.instruc_descript)" href="javascript:void(0)" class="infor--link">
-                            Instructor
-                        </a>
-            <a ng-click="selectedInfor(selectedEnroll.degree)" href="javascript:void(0)" class="infor--link">
-                            Degree/Certificate
-                        </a>
-
+        <div class="row row-cols-6 justify-content-center border border-dark">
+            <div class="col text-center">
+                <a href="">About the course</a>
+            </div>
+            <div class="col text-center">
+                <a href="">How it work</a>
+            </div>
+            <div class="col text-center">
+                <a href="">Language</a>
+            </div>
+            <div class="col text-center">
+                <a href="">Tution Fee</a>
+            </div>
+            <div class="col text-center">
+                <a href="">Instructor</a>
+            </div>
+            <div class="col text-center">
+                <a href="">Degree/Certificate</a>
+            </div>
         </div>
         <div class="detail">
-            <div class="row border">
-                <div class="col-md-7 m-3">
+            <div class="row border border-dark">
+                <div class="col-md-9 mt-4">
                     This course teaches you the simple principles expert managers use to improve and motivate employee performance. You’ll never have to avoid telling an employee “the truth” again, because the seven techniques we teach will not make employees defensive or
                     afraid. As a manager, or someone who would like to be a manager, you’ll also learn specifically what feedback is, how negative feedback is weighed more heavily than positive, and how positive feedback can super-charge behaviors such
                     as creativity and teamwork. Giving feedback is a skill which develops over time. We give you a process you can use to improve your feedback skills and deliver it with confidence. You will find that there is a scientific basis for many
                     of your observations and intuitions about feedback—such as, it is hard to give correctly, people don’t like it, and more. This will be reassuring as you learn how to overcome these difficulties. We hope you have a fantastic time becoming
                     a better manager!
                 </div>
-                <div class="col-md-4 border-start m-3">
+                <div class="col-md-3 border-start mt-4 border-dark fw-bold fs-5">
                     <div class="txtinforrg ms-3">
-                        <i class="glyphicon glyphicon-time"></i> Shareable Certificate
+                        <i class="bi bi-patch-check me-3"></i> Shareable Certificate
                     </div>
                     <div class="txtinforrg m-3">
-                        <i class="glyphicon glyphicon-star"></i> Beginner Level
+                        <i class="bi bi-person-plus me-3"></i> Beginner Level
                     </div>
                     <div class="txtinforrg m-3">
-                        <i class="glyphicon glyphicon-list-alt"></i> Flexible Schedule
+                        <i class="bi bi-table me-3"></i> Flexible Schedule
                     </div>
                     <div class="txtinforrg m-3">
-                        <i class="glyphicon glyphicon-book"></i> Approximately 4 months complete
+                        <i class="bi bi-calendar3 me-3"></i> Approximately 4 months complete
                     </div>
                     <div class="txtinforrg m-3">
-                        <i class="glyphicon glyphicon-edit"></i> Shareable Certificate
+                        <i class="bi bi-translate me-3"></i> English
                     </div>
                     <div class="txtinforrg m-3">
-                        <i class="glyphicon glyphicon-ok-circle"></i> English
-                    </div>
-                    <div class="txtinforrg m-3">
-                        <i class="glyphicon glyphicon-education"></i> 100% online course
+                        <i class="bi bi-laptop me-3"></i> 100% online course
                     </div>
                 </div>
             </div>

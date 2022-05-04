@@ -22,15 +22,14 @@ import { StudyComponent } from './study/study.component';
 
 import { TestComponent } from './test/test.component';
 import { HomepageComponent } from './homepage/homepage.component';
-
 import { EnrollCourseComponent } from './enroll-course/enroll-course.component';
-=======
 import { AdminHomeComponent } from './admin-home/admin-home.component';
 import { AdminCourseDetailsComponent } from './admin-course-details/admin-course-details.component';
 
 
 
 import {SearchFilterPipe} from '../pipes/searchFilter.pipe';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -47,10 +46,7 @@ import {SearchFilterPipe} from '../pipes/searchFilter.pipe';
     StudyComponent,
     TestComponent,
     HomepageComponent,
-
-      EnrollCourseComponent,
-
-
+    EnrollCourseComponent,
     AdminHomeComponent,
     AdminCourseDetailsComponent
 
@@ -75,6 +71,7 @@ import {SearchFilterPipe} from '../pipes/searchFilter.pipe';
       { path: '**', redirectTo: 'landing' },
     ]),
   ],
+
   providers: [],
   bootstrap: [AppComponent]
 })

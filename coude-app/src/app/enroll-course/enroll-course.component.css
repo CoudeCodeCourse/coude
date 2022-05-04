@@ -1,0 +1,19 @@
+    .btn {
+        width: 400px;
+        height: 60px;
+        border-radius: 5px;
+    }
+    
+    .ratings i {
+        color: #cecece;
+    }
+    
+    .rating-color {
+        color: #fbc634 !important;
+    }
+    /* .imgintro {
+        width: 200px;
+        height: 200px;
+        float: left;
+        margin-right: 5px;
+    } */
