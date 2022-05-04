@@ -18,14 +18,16 @@ import { LandingComponent } from './landing/landing.component';
 import { CatalogComponent } from './catalog/catalog.component';
 import { WhoWeAreComponent } from './who-we-are/who-we-are.component';
 import { Header1Component } from './header1/header1.component';
-
 import { TestComponent } from './test/test.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { AdminHomeComponent } from './admin-home/admin-home.component';
 import { AdminCourseDetailsComponent } from './admin-course-details/admin-course-details.component';
-
+import { FeedbackComponent } from './feedback/feedback.component';
 
 import {SearchFilterPipe} from '../pipes/searchFilter.pipe';
+import { CompletedCourseComponent } from './completed-course/completed-course.component';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -35,6 +37,7 @@ import {SearchFilterPipe} from '../pipes/searchFilter.pipe';
     FooterComponent,
     ForumMainComponent,
     ForumViewtopicComponent,
+    FeedbackComponent,
     LandingComponent,
     CatalogComponent,
     WhoWeAreComponent,
@@ -43,6 +46,7 @@ import {SearchFilterPipe} from '../pipes/searchFilter.pipe';
     HomepageComponent,
     AdminHomeComponent,
     AdminCourseDetailsComponent,
+    CompletedCourseComponent,
     
   ],
   imports: [
@@ -58,6 +62,10 @@ import {SearchFilterPipe} from '../pipes/searchFilter.pipe';
       { path: 'header', component: HeaderComponent },
       { path: 'homepage', component: HomepageComponent },
       { path: 'adminCouseDetails', component: AdminCourseDetailsComponent },
+      { path: 'forum', component: ForumMainComponent },
+      { path: 'forum-viewtopic', component: ForumViewtopicComponent },
+      { path: 'feedback', component: FeedbackComponent },
+      { path: 'completed-course', component: CompletedCourseComponent },
       { path: '**', redirectTo: 'landing' },
     ]),
   ],

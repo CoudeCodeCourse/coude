@@ -16,8 +16,7 @@ export class AppComponent {
     if (this.apppath === LandingComponent) {
       return true;
     }
-    else 
+    else
       return false;
-  
-}
+  }
 }

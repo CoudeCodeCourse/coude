@@ -1,0 +1,76 @@
+<body>
+    <div class="container">
+        <h4>Your Review</h4>
+        <h2 style="color: #2EA44F;">Back-End Engineer</h2>
+        <div class="d-flex flex-column">
+            <form name="form" class="d-flex flex-column" (ngSubmit)="f.form.valid && submitForm(f)" #f="ngForm"
+                novalidate>
+                <p>Your rating for the course</p>
+                <ngb-rating [max]="5" [(rate)]="rating" [readonly]="false">
+                    <ng-template let-fill="fill" let-index="index">
+                        <span class="star" [class.filled]="fill === 100" [class.bad]="index <= 5">&#9733;</span>
+                    </ng-template>
+                </ngb-rating>
+                <p>Rating: {{rating}}</p>
+                <p>Your review and feedback</p>
+                <textarea name="" id="" class="feedbackTxt"></textarea>
+                <div class="form-group">
+                    <button mdbBtn color="success" class="sendBtn" mdbWavesEffect
+                        [ngClass]="{'is-invalid': f.submitted && !f.form.valid}">Send Feedback</button>
+                </div>
+            </form>
+        </div>
+        <div class="topreview d-flex flex-column">
+            <h4>Top Reviews</h4>
+            <div class="review">
+                <div class="d-flex justify-content-evenly align-items-center" style="width: 40%">
+                    <ngb-rating class="star-fitted" [max]="5" [(rate)]="rating" [readonly]="false"></ngb-rating>
+                    <span>By Kasia M.</span>
+                    <span> - </span>
+                    <span>Feb 6, 2021</span>
+                </div>
+                <p>This is the BEST online course I've taken on Coursera - or any other online platform for that matter.
+                    I appreciate the care taken to script each lesson and I also like the animation that kept me
+                    engaged. There's nothing worse than listening to an instructor who's not even prepared and is "just
+                    sitting there" in front of a camera.
+                </p>
+            </div>
+            <div class="review">
+                <div class="d-flex justify-content-evenly align-items-center" style="width: 40%">
+                    <ngb-rating class="star-fitted" [max]="5" [(rate)]="rating" [readonly]="false"></ngb-rating>
+                    <span>By Kasia M.</span>
+                    <span> - </span>
+                    <span>Feb 6, 2021</span>
+                </div>
+                <p>This is the BEST online course I've taken on Coursera - or any other online platform for that matter.
+                    I appreciate the care taken to script each lesson and I also like the animation that kept me
+                    engaged. There's nothing worse than listening to an instructor who's not even prepared and is "just
+                    sitting there" in front of a camera.
+                </p>
+            </div>
+            <div class="review">
+                <div class="d-flex justify-content-evenly align-items-center" style="width: 40%">
+                    <ngb-rating class="star-fitted" [max]="5" [(rate)]="rating" [readonly]="false"></ngb-rating>
+                    <span>By Kasia M.</span>
+                    <span> - </span>
+                    <span>Feb 6, 2021</span>
+                </div>
+                <p>This is the BEST online course I've taken on Coursera - or any other online platform for that matter.
+                    I appreciate the care taken to script each lesson and I also like the animation that kept me
+                    engaged. There's nothing worse than listening to an instructor who's not even prepared and is "just
+                    sitting there" in front of a camera.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="overview d-flex flex-column">
+        <h2>Back-End Engineer</h2>
+        <div class="d-flex justify-content-evenly align-items-center">
+            <ngb-rating class="star-fitted" [max]="5" [(rate)]="rating" [readonly]="false"></ngb-rating>
+            <span>4.0</span>
+            <span>1000 ratings</span>
+        </div>
+        <p>Instructor: Nguyễn Hoàng Tuấn Nhi</p>
+        <p>Offered By Coudé</p>
+    </div>
+</body>
