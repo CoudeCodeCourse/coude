@@ -27,8 +27,7 @@
 }
 
 .timeline {
-    margin: 10px;
-    padding: 30px;
+    position: relative;
     align-items: center;
 }
 
@@ -120,6 +119,7 @@
 }
 
 #video--content {
+    padding-left: 20px;
     width: 60%;
 }
 
