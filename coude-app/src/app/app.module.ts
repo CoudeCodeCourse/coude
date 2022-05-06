@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
-import { RouterModule } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations'
 import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
@@ -29,7 +29,9 @@ import { AdminCourseDetailsComponent } from './admin-course-details/admin-course
 
 
 import {SearchFilterPipe} from '../pipes/searchFilter.pipe';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { AdUpCourseComponent } from './ad-up-course/ad-up-course.component';
+
 
 @NgModule({
   declarations: [
@@ -50,6 +52,7 @@ import { AdUpCourseComponent } from './ad-up-course/ad-up-course.component';
     EnrollCourseComponent,
     AdminHomeComponent,
     AdminCourseDetailsComponent,
+    PageNotFoundComponent,
     AdUpCourseComponent
 
   ],
@@ -59,20 +62,20 @@ import { AdUpCourseComponent } from './ad-up-course/ad-up-course.component';
     AppRoutingModule,
     FormsModule,
     NgbModule,
+    HttpClientModule,
     BrowserAnimationsModule,
      RouterModule.forRoot([
-      { path: 'landing', component: LandingComponent },
+      { path: '', redirectTo: 'landing'},
       { path: 'contact', component: ContactComponent },
+      { path: 'landing', component: LandingComponent },
       { path: 'header', component: HeaderComponent },
       { path: 'homepage', component: HomepageComponent },
-
-
-      { path: 'adminCourseDetails', component: AdminCourseDetailsComponent },
+      { path: 'admin/courses/:id', component: AdminCourseDetailsComponent },
       { path: 'admin', component: AdminHomeComponent },
       { path: 'uploadcourse', component: AdUpCourseComponent },
+       
+      { path: '**', component: PageNotFoundComponent},
 
-
-      { path: '**', redirectTo: 'landing' },
     ]),
   ],
 
