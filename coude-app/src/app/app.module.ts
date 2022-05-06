@@ -6,6 +6,7 @@ import { FormsModule } from '@angular/forms';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations'
 import { HttpClientModule } from '@angular/common/http';
+
 import { AppComponent } from './app.component';
 
 import { HeaderComponent } from './header/header.component';
@@ -17,13 +18,21 @@ import { LandingComponent } from './landing/landing.component';
 import { CatalogComponent } from './catalog/catalog.component';
 import { WhoWeAreComponent } from './who-we-are/who-we-are.component';
 import { Header1Component } from './header1/header1.component';
+import { StudyComponent } from './study/study.component';
+
 import { TestComponent } from './test/test.component';
 import { HomepageComponent } from './homepage/homepage.component';
+import { EnrollCourseComponent } from './enroll-course/enroll-course.component';
 import { AdminHomeComponent } from './admin-home/admin-home.component';
 import { AdminCourseDetailsComponent } from './admin-course-details/admin-course-details.component';
 
+
+
 import {SearchFilterPipe} from '../pipes/searchFilter.pipe';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { AdUpCourseComponent } from './ad-up-course/ad-up-course.component';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -37,15 +46,19 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     CatalogComponent,
     WhoWeAreComponent,
     Header1Component,
+    StudyComponent,
     TestComponent,
     HomepageComponent,
+    EnrollCourseComponent,
     AdminHomeComponent,
     AdminCourseDetailsComponent,
     PageNotFoundComponent,
-    
+    AdUpCourseComponent
+
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule,
     FormsModule,
     NgbModule,
@@ -59,9 +72,13 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
       { path: 'homepage', component: HomepageComponent },
       { path: 'admin/courses/:id', component: AdminCourseDetailsComponent },
       { path: 'admin', component: AdminHomeComponent },
+      { path: 'uploadcourse', component: AdUpCourseComponent },
+       
       { path: '**', component: PageNotFoundComponent},
+
     ]),
   ],
+
   providers: [],
   bootstrap: [AppComponent]
 })
