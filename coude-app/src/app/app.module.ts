@@ -23,6 +23,7 @@ import { AdminHomeComponent } from './admin-home/admin-home.component';
 import { AdminCourseDetailsComponent } from './admin-course-details/admin-course-details.component';
 
 import {SearchFilterPipe} from '../pipes/searchFilter.pipe';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -40,6 +41,7 @@ import {SearchFilterPipe} from '../pipes/searchFilter.pipe';
     HomepageComponent,
     AdminHomeComponent,
     AdminCourseDetailsComponent,
+    PageNotFoundComponent,
     
   ],
   imports: [
@@ -50,13 +52,14 @@ import {SearchFilterPipe} from '../pipes/searchFilter.pipe';
     HttpClientModule,
     BrowserAnimationsModule,
      RouterModule.forRoot([
-      { path: 'landing', component: LandingComponent },
+      { path: '', redirectTo: 'landing'},
       { path: 'contact', component: ContactComponent },
+      { path: 'landing', component: LandingComponent },
       { path: 'header', component: HeaderComponent },
       { path: 'homepage', component: HomepageComponent },
       { path: 'admin/courses/:id', component: AdminCourseDetailsComponent },
       { path: 'admin', component: AdminHomeComponent },
-      { path: '**', redirectTo: 'landing' },
+      { path: '**', component: PageNotFoundComponent},
     ]),
   ],
   providers: [],

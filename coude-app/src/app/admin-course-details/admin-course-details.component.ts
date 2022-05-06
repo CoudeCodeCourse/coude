@@ -10,7 +10,7 @@ import { CoursesDataService } from '../services/courses-data.service';
   styleUrls: ['./admin-course-details.component.css']
 })
 export class AdminCourseDetailsComponent implements OnInit {
-  courses!: Course[];
+  courses: any;
   errMessage = "";
   // courseDetails: any;
   selectedId: any;
@@ -38,7 +38,7 @@ export class AdminCourseDetailsComponent implements OnInit {
         // this.selectedCourse = this._activeRoute.snapshot.params
         // console.log("nnene", this.selectedCourse)
         this.getCourses();
-        this.getSelectedCourse(this.selectedId);
+        this.getSelectedCourse();
         // console.log("id", this.selectedId)
         
   }
@@ -47,7 +47,8 @@ export class AdminCourseDetailsComponent implements OnInit {
       next: data => this.courses = data,
       error: err => this.errMessage = err
     })
-    console.log("list courses: ",this.courses)
+    
+    console.log("list courses: ",this.courses, typeof(this.courses))
   }
   // getCourses(){
   //   const id = this._activeRoute.snapshot.paramMap.get('id');
@@ -57,8 +58,15 @@ export class AdminCourseDetailsComponent implements OnInit {
   //   )
   //   console.log(this.selectedCourse)
   // }
-  getSelectedCourse(id: any){
-    this.selectedCourse = this.courses.find(c => {return c._id === id} );
+  getSelectedCourse(){
+    this.selectedCourse = this.courses.filter((c: any) => {
+       return Number(c._id) == this.selectedId} );
+      // for(let i = 0; i<this.courses.length; i++){
+      //   console.log(this.courses[i])
+      //   if (this.courses[i]._id === this.selectedId){
+      //     this.selectedCourse = this.courses[i]; break;
+      //   }
+      // }
     console.log("selected là:", this.selectedCourse);
     // return this.selectedCourse;
   }
