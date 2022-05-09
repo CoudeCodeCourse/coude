@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
-import { RouterModule } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations'
 import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
@@ -22,15 +22,17 @@ import { StudyComponent } from './study/study.component';
 
 import { TestComponent } from './test/test.component';
 import { HomepageComponent } from './homepage/homepage.component';
-
 import { EnrollCourseComponent } from './enroll-course/enroll-course.component';
-=======
 import { AdminHomeComponent } from './admin-home/admin-home.component';
 import { AdminCourseDetailsComponent } from './admin-course-details/admin-course-details.component';
 
 
 
 import {SearchFilterPipe} from '../pipes/searchFilter.pipe';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { AdUpCourseComponent } from './ad-up-course/ad-up-course.component';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -47,12 +49,11 @@ import {SearchFilterPipe} from '../pipes/searchFilter.pipe';
     StudyComponent,
     TestComponent,
     HomepageComponent,
-
-      EnrollCourseComponent,
-
-
+    EnrollCourseComponent,
     AdminHomeComponent,
-    AdminCourseDetailsComponent
+    AdminCourseDetailsComponent,
+    PageNotFoundComponent,
+    AdUpCourseComponent
 
   ],
   imports: [
@@ -61,20 +62,23 @@ import {SearchFilterPipe} from '../pipes/searchFilter.pipe';
     AppRoutingModule,
     FormsModule,
     NgbModule,
+    HttpClientModule,
     BrowserAnimationsModule,
      RouterModule.forRoot([
-      { path: 'landing', component: LandingComponent },
+      { path: '', redirectTo: 'landing'},
       { path: 'contact', component: ContactComponent },
+      { path: 'landing', component: LandingComponent },
       { path: 'header', component: HeaderComponent },
       { path: 'homepage', component: HomepageComponent },
-
-
-      { path: 'adminCourseDetails', component: AdminCourseDetailsComponent },
+      { path: 'admin/courses/:id', component: AdminCourseDetailsComponent },
       { path: 'admin', component: AdminHomeComponent },
+      { path: 'uploadcourse', component: AdUpCourseComponent },
+       
+      { path: '**', component: PageNotFoundComponent},
 
-      { path: '**', redirectTo: 'landing' },
     ]),
   ],
+
   providers: [],
   bootstrap: [AppComponent]
 })

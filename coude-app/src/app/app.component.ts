@@ -7,6 +7,9 @@ import { LandingComponent } from './landing/landing.component';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+
+
+
   title = 'coude-app';
   static path: any;
   // static path1: any;
