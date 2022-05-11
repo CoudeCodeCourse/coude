@@ -52,6 +52,7 @@
     background-color: #DFDFE1!important;  
     font-family: RobotoMedium;
     border-radius: 10px;
+    border: none;
 }
 .background__whale--color{
     background-color: #000000;
@@ -61,6 +62,7 @@
     --footer-color: #757682;
     --heart-color: #FF0F0F;
     --input-style: #E7E7EA;
+    --login-color: #F2F2F9;
     --background-login-frame: #F5F5FA;
     --green: #2ea44f;
     --green-deep: #199B80;
