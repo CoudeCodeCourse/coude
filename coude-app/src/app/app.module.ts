@@ -31,6 +31,7 @@ import { AdminCourseDetailsComponent } from './admin-course-details/admin-course
 import {SearchFilterPipe} from '../pipes/searchFilter.pipe';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { AdUpCourseComponent } from './ad-up-course/ad-up-course.component';
+import { GeneralInformationComponent } from './general-information/general-information.component';
 
 
 @NgModule({
@@ -53,7 +54,8 @@ import { AdUpCourseComponent } from './ad-up-course/ad-up-course.component';
     AdminHomeComponent,
     AdminCourseDetailsComponent,
     PageNotFoundComponent,
-    AdUpCourseComponent
+    AdUpCourseComponent,
+    GeneralInformationComponent
 
   ],
   imports: [
@@ -65,7 +67,7 @@ import { AdUpCourseComponent } from './ad-up-course/ad-up-course.component';
     HttpClientModule,
     BrowserAnimationsModule,
      RouterModule.forRoot([
-      { path: '', redirectTo: 'landing'},
+      { path: '', redirectTo: 'landing', pathMatch: 'full'},
       { path: 'contact', component: ContactComponent },
       { path: 'landing', component: LandingComponent },
       { path: 'header', component: HeaderComponent },
