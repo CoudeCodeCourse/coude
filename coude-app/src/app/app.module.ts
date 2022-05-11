@@ -75,6 +75,7 @@ import { GeneralInformationComponent } from './general-information/general-infor
       { path: 'admin/courses/:id', component: AdminCourseDetailsComponent },
       { path: 'admin', component: AdminHomeComponent },
       { path: 'uploadcourse', component: AdUpCourseComponent },
+      { path: 'generalinformation', component: GeneralInformationComponent },
        
       { path: '**', component: PageNotFoundComponent},
 
