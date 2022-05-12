@@ -34,6 +34,8 @@ import { AdUpCourseComponent } from './ad-up-course/ad-up-course.component';
 import { GeneralInformationComponent } from './general-information/general-information.component';
 
 
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -46,6 +48,7 @@ import { GeneralInformationComponent } from './general-information/general-infor
     LandingComponent,
     CatalogComponent,
     WhoWeAreComponent,
+
     Header1Component,
     StudyComponent,
     TestComponent,
@@ -69,6 +72,7 @@ import { GeneralInformationComponent } from './general-information/general-infor
      RouterModule.forRoot([
       { path: '', redirectTo: 'landing', pathMatch: 'full'},
       { path: 'contact', component: ContactComponent },
+
       { path: 'landing', component: LandingComponent },
       { path: 'header', component: HeaderComponent },
       { path: 'homepage', component: HomepageComponent },
