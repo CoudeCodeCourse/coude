@@ -31,6 +31,7 @@ import { AdminCourseDetailsComponent } from './admin-course-details/admin-course
 import {SearchFilterPipe} from '../pipes/searchFilter.pipe';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { AdUpCourseComponent } from './ad-up-course/ad-up-course.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
 
 
 @NgModule({
@@ -53,7 +54,8 @@ import { AdUpCourseComponent } from './ad-up-course/ad-up-course.component';
     AdminHomeComponent,
     AdminCourseDetailsComponent,
     PageNotFoundComponent,
-    AdUpCourseComponent
+    AdUpCourseComponent,
+    SidebarComponent
 
   ],
   imports: [
@@ -73,6 +75,8 @@ import { AdUpCourseComponent } from './ad-up-course/ad-up-course.component';
       { path: 'admin/courses/:id', component: AdminCourseDetailsComponent },
       { path: 'admin', component: AdminHomeComponent },
       { path: 'uploadcourse', component: AdUpCourseComponent },
+      { path: 'sidebar', component: SidebarComponent },
+
        
       { path: '**', component: PageNotFoundComponent},
 
