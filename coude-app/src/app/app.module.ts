@@ -65,7 +65,7 @@ import { AdUpCourseComponent } from './ad-up-course/ad-up-course.component';
     HttpClientModule,
     BrowserAnimationsModule,
      RouterModule.forRoot([
-      { path: '', redirectTo: 'landing'},
+      { path: '', redirectTo: 'landing',  pathMatch: 'full' },
       { path: 'contact', component: ContactComponent },
       { path: 'landing', component: LandingComponent },
       { path: 'header', component: HeaderComponent },
