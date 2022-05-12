@@ -32,6 +32,7 @@ import {SearchFilterPipe} from '../pipes/searchFilter.pipe';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { AdUpCourseComponent } from './ad-up-course/ad-up-course.component';
 import { GeneralInformationComponent } from './general-information/general-information.component';
+import { UpdateInformationComponent } from './update-information/update-information.component';
 
 
 
@@ -58,7 +59,8 @@ import { GeneralInformationComponent } from './general-information/general-infor
     AdminCourseDetailsComponent,
     PageNotFoundComponent,
     AdUpCourseComponent,
-    GeneralInformationComponent
+    GeneralInformationComponent,
+    UpdateInformationComponent
 
   ],
   imports: [
@@ -80,6 +82,7 @@ import { GeneralInformationComponent } from './general-information/general-infor
       { path: 'admin', component: AdminHomeComponent },
       { path: 'uploadcourse', component: AdUpCourseComponent },
       { path: 'generalinformation', component: GeneralInformationComponent },
+      { path: 'updateinformation', component: UpdateInformationComponent },
        
       { path: '**', component: PageNotFoundComponent},
 
