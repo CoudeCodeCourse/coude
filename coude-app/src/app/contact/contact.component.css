@@ -1,9 +1,13 @@
-h1{
-    color: #199B80;
+.container-fluid{
+    margin-top: 60px;
+}
+h2{
+    font-weight: bold;
+    color: var(--green-deep);
 }
 hr{
     border: 2px solid black;
-    width: 30%;
+    width: 35%;
 }
 button{
     display: block;
@@ -16,7 +20,15 @@ button{
     padding: 10px;
     text-align: center;
 }
-#socialMedia > button{
+#socialMedia button{
     border: none;
     background-color: white;
 }
+#socialMedia img{
+    width: 64px;
+}
+#slogan-left{
+    font-weight: bold;
+    color: black;
+}
+  

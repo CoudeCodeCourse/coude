@@ -1,0 +1,40 @@
+<div class="d-flex">
+    <app-header1></app-header1>
+    <div class="p-2 col-10">
+        <div>
+            <div>
+                <i class="bi bi-person text-success fs-2"></i>
+                <span>UserName</span>
+                <p>Hello Welcome Back!</p>
+            </div>
+        </div>
+        <div>
+            <h2>Courses</h2>
+            <table class="text-center table table-hover table-bordered border-dark rounded-top">
+                <thead>
+                    <tr class="bg-secondary text-white">
+                        <th></th>
+                        <th class="col-4">NAME</th>
+                        <th class="col-2">INSTRUCTOR</th>
+                        <th>START DATE</th>
+                        <th>STATUS</th>
+                        <th>OPTION</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let c of courses; let i = index" (click)="onSelected(c)">
+                        <td>{{i + 1}}</td>
+                        <td class="text-truncate">{{c.title}}</td>
+                        <td>{{c.instructor}}</td>
+                        <td>2022-02-20</td>
+                        <!-- <td style="color: var(--green)">{{c.status | titlecase}}</td> -->
+                        <td class="green fw-bold">{{c.status | titlecase}}</td>
+                        <!-- <td class="green" [ngClass]="{'red': (this.document. == 'Hidden')}">{{c.status | titlecase}}</td> -->
+                        <td></td>
+                    </tr>
+                </tbody>
+                
+            </table>
+        </div>
+    </div>
+</div>

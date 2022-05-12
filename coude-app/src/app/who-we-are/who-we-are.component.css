@@ -1,0 +1,71 @@
+.container-fluid{
+    margin: 0px;
+    padding: 0px;
+}
+h2 {
+    color: var(--green-deep);
+    font-family: MontserratBold;
+}
+h3, h4 {
+    font-family: MontserratBold;
+}
+
+img {
+    width: 100%;
+}
+
+p {
+    margin: 20px;
+}
+
+#vision {
+    font-family: RobotoBold;
+}
+
+#item-footer {
+    margin: 5px;
+    font-size: 10px;
+}
+
+#line-top {
+    background-color: black;
+    width: 15%;
+    height: 10px;
+    top: 0px;
+}
+
+#sub-title {
+    font-size: 13px;
+}
+
+#vision-item {
+    text-align: left;
+    width: 25%;
+    margin: 10px;
+}
+
+#vision-item h3 {
+    margin-left: 10px;
+}
+
+#vision-item img{
+    width: 32px;
+}
+
+.item {
+    border: 1px solid black;
+    width: 18%;
+}
+
+@media only screen and (max-width: 600px) {
+    #meaning{
+        display: flex;
+        flex-direction: column;
+     }  
+    .item{
+        width: 70%;
+        display: block;
+        margin: auto;
+        margin-bottom: 10px;
+     } 
+}

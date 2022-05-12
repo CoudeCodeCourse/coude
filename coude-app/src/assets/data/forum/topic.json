@@ -1,0 +1,139 @@
+[{
+        "tag": "c#",
+        "user": [{
+            "last_name": "",
+            "firstname": "",
+            "avatar": ""
+        }],
+        "replies": 13,
+        "views": 584,
+        "likes": 34,
+        "date": "2022-05-02",
+        "title": "Get int value from enum in C#",
+        "content": "I have a class called Questions (plural). In this class there is an enum called Question (singular) which looks like this. In the Questions class I have a get(int foo) function that returns a Questions object for that foo. Is there an easy way to get the integer value off the enum so I can do something like this Questions.Get(Question.Role)?",
+        "reply": [{
+            "user": [{
+                "last_name": "",
+                "firstname": "",
+                "avatar": ""
+            }],
+            "reply_content": "The above will work for the vast majority of enums you see in the wild, as the default underlying type for an enum is int. However, as cecilphillip points out, enums can have different underlying types",
+            "like": 0
+        }]
+    },
+    {
+        "tag": "c#",
+        "user": [{
+            "last_name": "",
+            "firstname": "",
+            "avatar": ""
+        }],
+        "replies": 12,
+        "views": 233,
+        "likes": 232,
+        "date": "2022-02-21",
+        "title": "How to enumerate an enum",
+        "content": "How can you enumerate an enum in C#? And it gives the following compile-time error: 'Suit' is a 'type' but is used like a 'variable'. It fails on the Suit keyword, the second one.",
+        "reply": [{
+            "user": [{
+                "last_name": "",
+                "firstname": "",
+                "avatar": ""
+            }],
+            "reply_content": "It looks to me like you really want to print out the names of each enum, rather than the values. In which case Enum.GetNames() seems to be the right approach.",
+            "like": 0
+        }]
+    },
+    {
+        "tag": "c++",
+        "user": [{
+            "last_name": "",
+            "firstname": "",
+            "avatar": ""
+        }],
+        "replies": 0,
+        "views": 0,
+        "likes": 0,
+        "date": "2022-05-02",
+        "title": "C++11 introduced a standardized memory model. What does it mean? And how is it going to affect C++ programming?",
+        "content": "C++11 introduced a standardized memory model, but what exactly does that mean? And how is it going to affect C++ programming?",
+        "reply": [{
+            "user": [{
+                "last_name": "",
+                "firstname": "",
+                "avatar": ""
+            }],
+            "reply_content": "It means that the standard now defines multi-threading, and it defines what happens in the context of multiple threads. Of course, people used varying implementations, but that's like asking why we should have a std::string when we could all be using a home-rolled string class.",
+            "like": 0
+        }]
+    },
+    {
+        "tag": "c++",
+        "user": [{
+            "last_name": "",
+            "firstname": "",
+            "avatar": ""
+        }],
+        "replies": 0,
+        "views": 0,
+        "likes": 0,
+        "date": "2022-05-02",
+        "title": "What is the copy-and-swap idiom?",
+        "content": "What is this idiom and when should it be used? Which problems does it solve? Does the idiom change when C++11 is used? Although it's been mentioned in many places, we didn't have any singular 'what is it' question and answer, so here it is",
+        "reply": [{
+            "user": [{
+                "last_name": "",
+                "firstname": "",
+                "avatar": ""
+            }],
+            "reply_content": "The purpose of both functions fs and fm is to give a the state that b had initially. However, there is a hidden question: What happens if a.get_allocator() != b.get_allocator()? The answer is: It depends. Let's write AT = std::allocator_traits<A>.",
+            "like": 0
+        }]
+    },
+    {
+        "tag": "javascript",
+        "user": [{
+            "last_name": "",
+            "firstname": "",
+            "avatar": ""
+        }],
+        "replies": 100,
+        "views": 430,
+        "likes": 20,
+        "date": "2021-10-20",
+        "title": "What is DOM Event delegation?",
+        "content": "Can anyone please explain event delegation in JavaScript and how is it useful?",
+        "reply": [{
+            "user": [{
+                "last_name": "",
+                "firstname": "",
+                "avatar": ""
+            }],
+            "reply_content": "dom event delegation is something different from the computer science definition. It refers to handling bubbling events from many elements, like table cells, from a parent object, like the table. It can keep the code simpler, especially when adding or removing elements, and saves some memory.",
+            "like": 30
+        }]
+    },
+    {
+        "tag": "java",
+        "user": [{
+            "last_name": "",
+            "firstname": "",
+            "avatar": ""
+        }],
+        "replies": 10,
+        "views": 300,
+        "likes": 1030,
+        "date": "2021-04-30",
+        "title": "How should I use servlets and Ajax?",
+        "content": "Whenever I print something inside the servlet and call it by the webbrowser, it returns a new page containing that text. Is there a way to print the text in the current page using Ajax?",
+        "reply": [{
+            "user": [{
+                "last_name": "",
+                "firstname": "",
+                "avatar": ""
+            }],
+            "reply_content": "Normally you can’t update a page from a servlet. The client (browser) has to request an update. Either the client loads a whole new page or it requests an update to a part of an existing page. This technique is called Ajax.",
+            "like": 10
+        }]
+    }
+]

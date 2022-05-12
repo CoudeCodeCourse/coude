@@ -1,12 +1,14 @@
-<!-- <body ng-app="angularApp" ng-controller="TopicDetailsController">
     <div class="forum__intro">
         <div class="coude__intro">
             <h2>Coudé Forum</h2>
             <p>Welcome to the friendliest place for anyone learning code!</p>
         </div>
         <div class="topic__search-box">
-            <input type="text" class="topic__search-input" id="" placeholder="Search the topic here">
-            <i class="bi bi-search topic__search-icon"></i>
+            <input type="text" class="topic__search-input" placeholder="Search the topic here">
+            <svg class=" topic__search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                <path
+                    d="M500.3 443.7l-119.7-119.7c27.22-40.41 40.65-90.9 33.46-144.7C401.8 87.79 326.8 13.32 235.2 1.723C99.01-15.51-15.51 99.01 1.724 235.2c11.6 91.64 86.08 166.7 177.6 178.9c53.8 7.189 104.3-6.236 144.7-33.46l119.7 119.7c15.62 15.62 40.95 15.62 56.57 0C515.9 484.7 515.9 459.3 500.3 443.7zM79.1 208c0-70.58 57.42-128 128-128s128 57.42 128 128c0 70.58-57.42 128-128 128S79.1 278.6 79.1 208z" />
+            </svg>
         </div>
     </div>
     <div class="content"> -->
@@ -15,8 +17,9 @@
             <div class="topic__title">
                 <span><i class="bi bi-three-dots-vertical"></i></span>
                 <div>
-                    <div class="name " id="title "></div>
-                    <div class="tags " id="tag "></div>
+                    <div class="name " id="title ">How do I get a consistent byte representation of strings in C#
+                        without manually specifying an encoding?</div>
+                    <div class="tags " id="tag ">c#</div>
                 </div>
             </div>
         </div> -->
@@ -24,29 +27,33 @@
 <!-- <div class="div-background">
             <div class="topic__infor ">
                 <div class="topic__infor-user ">
-                    <img class="user-avt" src="" alt="">
-                    <div class="user-name "></div>
+                    <img class="user-avt" src="../../assets/images/avatar/blue_man.png" alt="">
+                    <div class="user-name ">Adam</div>
                 </div>
-                <div class="topic__infor-history  ">
+                <div class="topic__infor-history">
                     <span><i class="bi bi-pencil-fill"></i></span>
-                    <span id="history" class="history-txt"></span>
+                    <span id="history" class="history-txt">22/02/2022</span>
                 </div>
             </div>
-            <div class="topic__content ">
-                <p>{{selectedTopic.content}}</p>
+            <div class="topic__content">
+                How do I convert a string to a byte[] in .NET (C#) without manually specifying a specific encoding? I'm
+                going to encrypt the string. I can encrypt it without converting, but I'd still like to know why
+                encoding comes to play here. Also, why should encoding even be taken into consideration? Can't I simply
+                get what bytes the string has been stored in? Why is there a dependency on character encodings?
+
             </div>
         </div>
         <div class="topic__interacts">
             <div class="topic__interacts--data">
-                <div class="data-number" id="replies"></div>
+                <div class="data-number" id="replies">12</div>
                 <div>replies</div>
             </div>
             <div class="topic__interacts--data">
-                <div class="data-number" id="views"></div>
+                <div class="data-number" id="views">21</div>
                 <div>views</div>
             </div>
             <div class="topic__interacts--data">
-                <div class="data-number" id="likes"></div>
+                <div class="data-number" id="likes">32</div>
                 <div>likes</div>
             </div>
             <div class="reply__operation">
@@ -56,7 +63,7 @@
                 </div>
                 <button class="reply__btn" id="myCreateTopicBtn" type="button">
                     <i class="bi bi-reply"></i>
-                    <span>Reply</span>    
+                    <span>Reply</span>
                 </button>
             </div>
         </div>
@@ -64,31 +71,37 @@
             <div class="topic__infor">
                 <div class="topic__infor-user">
                     <div class="user-avt">
-                        <i class="bi bi-person-circle"></i>
+                        <img class="user-avt" src="../../assets/images/avatar/blue_man.png" alt="">
                     </div>
-                    <div class="user-name"></div>
+                    <div class="user-name">Abelrdc</div>
                 </div>
-                <div class="topic__infor-history"></div>
+                <div class="topic__infor-history">12/01/2021</div>
             </div>
             <div class="topic__content">
-                <p></p>
+                <p>Contrary to the answers here, you DON'T need to worry about encoding if the bytes don't need to be
+                    interpreted! Like you mentioned, your goal is, simply, to 'get what bytes the string has been stored
+                    in'. (And, of course, to be able to re-construct the string from the bytes.) For those goals, I
+                    honestly do not understand why people keep telling you that you need the encodings. You certainly do
+                    NOT need to worry about encodings for this.</p>
             </div>
             <div class="reply__operation">
                 <div class="interacts">
-                    <span>10</span>
+                    <span></span>
                     <i class="bi bi-heart"></i>
                     <i class="bi bi-bookmark"></i>
                     <button class="reply__btn no-bg" id="myCreateTopicBtn" type="button">
-                        <i class="bi bi-reply" ></i>
+                        <i class="bi bi-reply"></i>
                     </button>
                 </div>
 
             </div>
-        </div> -->
-<!-- Popup -->
-<!-- <div id="myPopup" class="popup-div"> -->
-<!-- Popup content -->
-<!-- <div class="popup-content">
+
+        </div>
+        <!-- Popup -->
+        <div id="myPopup" class="popup-div">
+            <!-- Popup content -->
+            <!-- <div class="popup-content">
+
                 <div class="popup-header">
                     <i class="bi bi-x-circle close"></i>
                     <div class="popup-header--title">[Reply to] </div>
@@ -101,11 +114,11 @@
                     <button class="cancel__btn">Cancel</button>
                     <div class="create-topic">
                         <button class="createTopic__btn" id="myCreateTopicBtn" type="button">
-                            <span>Reply</span>  
+                            <span>Reply</span>
                             <i class="bi bi-reply"></i>
                         </button>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div> -->

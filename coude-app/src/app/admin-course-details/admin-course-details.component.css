@@ -1,0 +1,16 @@
+.info>div>div:first-child{
+    flex: 0.15;
+    font-weight: bold;
+}
+.info>div>div:nth-child(2){
+    flex: 0.85;
+    text-align: justify;
+}
+.btn-edit{
+    display: none;
+    vertical-align: middle;
+}
+tbody>tr:hover .btn-edit, 
+.assignment-item:hover .btn-edit{
+    display: block!important;
+}
