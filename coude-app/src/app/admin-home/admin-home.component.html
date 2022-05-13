@@ -1,10 +1,10 @@
-<div class="d-flex">
+<div class="d-flex justify-content-between">
     <app-header1></app-header1>
-    <div class="p-2 col-10">
+    <div class="py-2 px-5 col-10">
         <div>
             <div>
                 <i class="bi bi-person text-success fs-2"></i>
-                <span>UserName</span>
+                <span class="username">Nkeeboo Boo Boo</span>
                 <p>Hello Welcome Back!</p>
             </div>
         </div>
@@ -14,26 +14,26 @@
                 <thead>
                     <tr class="bg-secondary text-white">
                         <th></th>
-                        <th class="col-4">NAME</th>
+                        <th class="col-lg-4 col-md-3">NAME</th>
                         <th class="col-2">INSTRUCTOR</th>
                         <th>START DATE</th>
                         <th>STATUS</th>
-                        <th>OPTION</th>
+                        <!-- <th>OPTION</th> -->
                     </tr>
                 </thead>
                 <tbody>
                     <tr *ngFor="let c of courses; let i = index" (click)="onSelected(c)">
-                        <td>{{i + 1}}</td>
-                        <td class="text-truncate">{{c.title}}</td>
+                        <td class="px-sm-1 px-md-2">{{i + 1}}</td>
+                        <td class="text-truncated">{{c.title}}</td>
                         <td>{{c.instructor}}</td>
                         <td>2022-02-20</td>
                         <!-- <td style="color: var(--green)">{{c.status | titlecase}}</td> -->
                         <td class="green fw-bold">{{c.status | titlecase}}</td>
                         <!-- <td class="green" [ngClass]="{'red': (this.document. == 'Hidden')}">{{c.status | titlecase}}</td> -->
-                        <td></td>
+                        <!-- <td></td> -->
                     </tr>
                 </tbody>
-                
+
             </table>
         </div>
     </div>

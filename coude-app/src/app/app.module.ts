@@ -8,7 +8,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations'
 import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
-
+//các compoment của app
 import { HeaderComponent } from './header/header.component';
 import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
@@ -65,16 +65,18 @@ import { AdUpCourseComponent } from './ad-up-course/ad-up-course.component';
     HttpClientModule,
     BrowserAnimationsModule,
      RouterModule.forRoot([
-      { path: '', redirectTo: 'landing'},
+      { path: '', pathMatch: 'full', redirectTo: 'landing', },
       { path: 'contact', component: ContactComponent },
       { path: 'landing', component: LandingComponent },
       { path: 'header', component: HeaderComponent },
-      { path: 'homepage', component: HomepageComponent },
+      { path: 'home', component: HomepageComponent },
       { path: 'admin/courses/:id', component: AdminCourseDetailsComponent },
       { path: 'admin', component: AdminHomeComponent },
       { path: 'uploadcourse', component: AdUpCourseComponent },
        
-      { path: '**', component: PageNotFoundComponent},
+
+      //tất cả các path đều phải nằm trên path của PageNotFound
+      { path: '**', component: PageNotFoundComponent, pathMatch: "full"},
 
     ]),
   ],

@@ -15,7 +15,12 @@ export class AdminHomeComponent implements OnInit {
   selectedCourse: any;
   constructor(private _service: CoursesDataService,
               private _router: Router,
-              private _activeRouter: ActivatedRoute) { }
+              private _activeRouter: ActivatedRoute) { 
+              //   this._activeRouter.queryParams.subscribe(params => {
+              //     this.selectedCourse = params;
+              //     console.log("tiel:",this.selectedCourse); // Print the parameter to the console. 
+              // });
+              }
 
   ngOnInit(): void {
     this.getCourses();
@@ -28,6 +33,7 @@ export class AdminHomeComponent implements OnInit {
       next: data => this.courses = data,
       error: err => this.errMessage = err
     })
+    console.log("cou",this.courses);
   }
   // getCourseId(){
   //   this._activeRouter.paramMap.subscribe(
@@ -42,9 +48,11 @@ export class AdminHomeComponent implements OnInit {
   //     }
   //   )
   // }
-  onSelected(data: Course){
+  onSelected(course: Course){
     // console.log(data._id);
     // console.log(data._id);
-    this._router.navigate(['/admin/courses', data._id])
+    this._router.navigate(['/admin/courses', course._id],
+      {queryParams: {course: course},
+     })
   }
 }
