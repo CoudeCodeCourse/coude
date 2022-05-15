@@ -32,6 +32,8 @@ import {SearchFilterPipe} from '../pipes/searchFilter.pipe';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { AdUpCourseComponent } from './ad-up-course/ad-up-course.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
+import { AssignmentComponent } from './assignment/assignment.component';
+import { AssignmentFbComponent } from './assignment-fb/assignment-fb.component';
 
 
 @NgModule({
@@ -55,7 +57,9 @@ import { SidebarComponent } from './sidebar/sidebar.component';
     AdminCourseDetailsComponent,
     PageNotFoundComponent,
     AdUpCourseComponent,
-    SidebarComponent
+    SidebarComponent,
+    AssignmentComponent,
+    AssignmentFbComponent
 
   ],
   imports: [
@@ -76,7 +80,8 @@ import { SidebarComponent } from './sidebar/sidebar.component';
       { path: 'admin', component: AdminHomeComponent },
       { path: 'uploadcourse', component: AdUpCourseComponent },
       { path: 'sidebar', component: SidebarComponent },
-
+      { path: 'assignment', component: AssignmentComponent },
+      { path: 'assignmentfb', component: AssignmentFbComponent },
        
       { path: '**', component: PageNotFoundComponent},
 
