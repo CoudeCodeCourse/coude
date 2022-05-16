@@ -1,104 +1,40 @@
-<div class="d-flex">
+<div class="d-flex justify-content-between">
     <app-header1></app-header1>
-<div class="p-2 col-10">
-    <div class="d-flex justify-content-between">
-        <h2>Course Details</h2>
+    <div class="py-2 px-5 col-10">
         <div>
-            <button class="btn button--green " (click)="{}">Learner</button>
-            <button class="btn button--green ms-2" (click)="{}" >Edit</button>
-            <button class="btn button--grey ms-2" (click)="{}">Hide</button>
+            <div>
+                <i class="bi bi-person text-success fs-2"></i>
+                <span class="username">Nkeeboo Boo Boo</span>
+                <p>Hello Welcome Back!</p>
+            </div>
         </div>
-    </div>
-
-    <div class="info border border-success rounded px-5 py-3">
-        <div class="d-flex mb-2">
-            <div>Title</div>
-            <div>Course name</div>
-        </div>
-        <div class="d-flex mb-2">
-            <div>Instructor</div>
-            <div>Andrew Ng</div>
-        </div>
-        <div class="d-flex mb-2">
-            <div>Description</div>
-            <div>No matter what you’re building, having a strong foundation is crucial — that’s where back-end engineers come in. In this Career Path, you’ll start with programming servers and client-side interfaces, then level up to designing databases. By the end, you’ll have everything you need to start your career as a back-end engineer.</div>
-        </div>
-        <div class="d-flex mb-2">
-            <div>Tuition fee</div>
-            <div>40.99$</div>
-        </div>
-        <div class="d-flex mb-2">
-            <div>Skills</div>
-            <div>Node.JS, Express.JS, PostgreSQL, Back-End, SQL, Security</div>
-        </div>
-    </div>
-
-    <div>
-        <h2>Learning Program</h2>
-        <ul class="list-unstyled">
-            <li>Lesson 1: Hahahahhaha</li>
-            <li>Lesson 1: Hahahahhaha</li>
-            <li>Lesson 1: Hahahahhaha</li>
-        </ul>
-        <table class="table table-bordered border-secondary table-hover">
-            <thead>
-                <tr>
-                    <th>Video</th>
-                    <th>Date</th>
-                    <th>View</th>
-                    <th>Lesson</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td class="col-video col-5">a</td>
-                    <td class="col-date">s</td>
-                    <td class="col-view">s</td>
-                    <td class="col-lesson col-4">
-                            <button class="btn btn-edit float-end p-0" (click)="{}">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="fill:black; width: 15px;"><path d="M490.3 40.4C512.2 62.27 512.2 97.73 490.3 119.6L460.3 149.7L362.3 51.72L392.4 21.66C414.3-.2135 449.7-.2135 471.6 21.66L490.3 40.4zM172.4 241.7L339.7 74.34L437.7 172.3L270.3 339.6C264.2 345.8 256.7 350.4 248.4 353.2L159.6 382.8C150.1 385.6 141.5 383.4 135 376.1C128.6 370.5 126.4 361 129.2 352.4L158.8 263.6C161.6 255.3 166.2 247.8 172.4 241.7V241.7zM192 63.1C209.7 63.1 224 78.33 224 95.1C224 113.7 209.7 127.1 192 127.1H96C78.33 127.1 64 142.3 64 159.1V416C64 433.7 78.33 448 96 448H352C369.7 448 384 433.7 384 416V319.1C384 302.3 398.3 287.1 416 287.1C433.7 287.1 448 302.3 448 319.1V416C448 469 405 512 352 512H96C42.98 512 0 469 0 416V159.1C0 106.1 42.98 63.1 96 63.1H192z"/></svg>
-                            </button>
-                        ssss
-                    </td>
-
-                </tr>
-                <tr>
-                    <td scope="row">a</td>
-                    <td>s</td>
-                    <td>s</td>
-                    <td>s</td>
-                </tr>
-            </tbody>
-           
-        </table>
-    </div>
-
-    <div>
-        <h2>Assignment</h2>
         <div>
-            <div class="assignment-item border px-4 py-2">
-                <svg style="fill: var(--green); width: 20px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M448 336v-288C448 21.49 426.5 0 400 0H96C42.98 0 0 42.98 0 96v320c0 53.02 42.98 96 96 96h320c17.67 0 32-14.33 32-31.1c0-11.72-6.607-21.52-16-27.1v-81.36C441.8 362.8 448 350.2 448 336zM143.1 128h192C344.8 128 352 135.2 352 144C352 152.8 344.8 160 336 160H143.1C135.2 160 128 152.8 128 144C128 135.2 135.2 128 143.1 128zM143.1 192h192C344.8 192 352 199.2 352 208C352 216.8 344.8 224 336 224H143.1C135.2 224 128 216.8 128 208C128 199.2 135.2 192 143.1 192zM384 448H96c-17.67 0-32-14.33-32-32c0-17.67 14.33-32 32-32h288V448z"/></svg>
-                <label class="ms-3">Lesson 1: huhuhu</label>
-                <button class="btn btn-edit p-0 float-end" (click)="{}">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="fill:black; width: 15px;"><path d="M490.3 40.4C512.2 62.27 512.2 97.73 490.3 119.6L460.3 149.7L362.3 51.72L392.4 21.66C414.3-.2135 449.7-.2135 471.6 21.66L490.3 40.4zM172.4 241.7L339.7 74.34L437.7 172.3L270.3 339.6C264.2 345.8 256.7 350.4 248.4 353.2L159.6 382.8C150.1 385.6 141.5 383.4 135 376.1C128.6 370.5 126.4 361 129.2 352.4L158.8 263.6C161.6 255.3 166.2 247.8 172.4 241.7V241.7zM192 63.1C209.7 63.1 224 78.33 224 95.1C224 113.7 209.7 127.1 192 127.1H96C78.33 127.1 64 142.3 64 159.1V416C64 433.7 78.33 448 96 448H352C369.7 448 384 433.7 384 416V319.1C384 302.3 398.3 287.1 416 287.1C433.7 287.1 448 302.3 448 319.1V416C448 469 405 512 352 512H96C42.98 512 0 469 0 416V159.1C0 106.1 42.98 63.1 96 63.1H192z"/></svg>
-                </button>
-            </div>
-            <div class="assignment-item border px-4 py-2">
-                <svg style="fill: var(--green); width: 20px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M448 336v-288C448 21.49 426.5 0 400 0H96C42.98 0 0 42.98 0 96v320c0 53.02 42.98 96 96 96h320c17.67 0 32-14.33 32-31.1c0-11.72-6.607-21.52-16-27.1v-81.36C441.8 362.8 448 350.2 448 336zM143.1 128h192C344.8 128 352 135.2 352 144C352 152.8 344.8 160 336 160H143.1C135.2 160 128 152.8 128 144C128 135.2 135.2 128 143.1 128zM143.1 192h192C344.8 192 352 199.2 352 208C352 216.8 344.8 224 336 224H143.1C135.2 224 128 216.8 128 208C128 199.2 135.2 192 143.1 192zM384 448H96c-17.67 0-32-14.33-32-32c0-17.67 14.33-32 32-32h288V448z"/></svg>
-                <label class="ms-3">Lesson 1: huhuhu</label>
-                <button class="btn btn-edit p-0 float-end" (click)="{}">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="fill:black; width: 15px;"><path d="M490.3 40.4C512.2 62.27 512.2 97.73 490.3 119.6L460.3 149.7L362.3 51.72L392.4 21.66C414.3-.2135 449.7-.2135 471.6 21.66L490.3 40.4zM172.4 241.7L339.7 74.34L437.7 172.3L270.3 339.6C264.2 345.8 256.7 350.4 248.4 353.2L159.6 382.8C150.1 385.6 141.5 383.4 135 376.1C128.6 370.5 126.4 361 129.2 352.4L158.8 263.6C161.6 255.3 166.2 247.8 172.4 241.7V241.7zM192 63.1C209.7 63.1 224 78.33 224 95.1C224 113.7 209.7 127.1 192 127.1H96C78.33 127.1 64 142.3 64 159.1V416C64 433.7 78.33 448 96 448H352C369.7 448 384 433.7 384 416V319.1C384 302.3 398.3 287.1 416 287.1C433.7 287.1 448 302.3 448 319.1V416C448 469 405 512 352 512H96C42.98 512 0 469 0 416V159.1C0 106.1 42.98 63.1 96 63.1H192z"/></svg>
-                </button>
-            </div>
-            <div class="assignment-item border px-4 py-2">
-                <svg style="fill: var(--green); width: 20px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M448 336v-288C448 21.49 426.5 0 400 0H96C42.98 0 0 42.98 0 96v320c0 53.02 42.98 96 96 96h320c17.67 0 32-14.33 32-31.1c0-11.72-6.607-21.52-16-27.1v-81.36C441.8 362.8 448 350.2 448 336zM143.1 128h192C344.8 128 352 135.2 352 144C352 152.8 344.8 160 336 160H143.1C135.2 160 128 152.8 128 144C128 135.2 135.2 128 143.1 128zM143.1 192h192C344.8 192 352 199.2 352 208C352 216.8 344.8 224 336 224H143.1C135.2 224 128 216.8 128 208C128 199.2 135.2 192 143.1 192zM384 448H96c-17.67 0-32-14.33-32-32c0-17.67 14.33-32 32-32h288V448z"/></svg>
-                <label class="ms-3">Lesson 1: huhuhu</label>
-                <button class="btn btn-edit p-0 float-end" (click)="{}">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" style="fill:black; width: 15px;"><path d="M490.3 40.4C512.2 62.27 512.2 97.73 490.3 119.6L460.3 149.7L362.3 51.72L392.4 21.66C414.3-.2135 449.7-.2135 471.6 21.66L490.3 40.4zM172.4 241.7L339.7 74.34L437.7 172.3L270.3 339.6C264.2 345.8 256.7 350.4 248.4 353.2L159.6 382.8C150.1 385.6 141.5 383.4 135 376.1C128.6 370.5 126.4 361 129.2 352.4L158.8 263.6C161.6 255.3 166.2 247.8 172.4 241.7V241.7zM192 63.1C209.7 63.1 224 78.33 224 95.1C224 113.7 209.7 127.1 192 127.1H96C78.33 127.1 64 142.3 64 159.1V416C64 433.7 78.33 448 96 448H352C369.7 448 384 433.7 384 416V319.1C384 302.3 398.3 287.1 416 287.1C433.7 287.1 448 302.3 448 319.1V416C448 469 405 512 352 512H96C42.98 512 0 469 0 416V159.1C0 106.1 42.98 63.1 96 63.1H192z"/></svg>
-                </button>
-            </div>
-        </div>
+            <h2>Courses</h2>
+            <table class="text-center table table-hover table-bordered border-dark rounded-top">
+                <thead>
+                    <tr class="bg-secondary text-white">
+                        <th></th>
+                        <th class="col-lg-4 col-md-3">NAME</th>
+                        <th class="col-2">INSTRUCTOR</th>
+                        <th>START DATE</th>
+                        <th>STATUS</th>
+                        <!-- <th>OPTION</th> -->
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let c of courses; let i = index" (click)="onSelected(c)">
+                        <td class="px-sm-1 px-md-2">{{i + 1}}</td>
+                        <td class="text-truncated">{{c.title}}</td>
+                        <td>{{c.instructor}}</td>
+                        <td>2022-02-20</td>
+                        <!-- <td style="color: var(--green)">{{c.status | titlecase}}</td> -->
+                        <td class="green fw-bold">{{c.status | titlecase}}</td>
+                        <!-- <td class="green" [ngClass]="{'red': (this.document. == 'Hidden')}">{{c.status | titlecase}}</td> -->
+                        <!-- <td></td> -->
+                    </tr>
+                </tbody>
 
+            </table>
+        </div>
     </div>
-</div>
 </div>
