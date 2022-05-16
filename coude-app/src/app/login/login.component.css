@@ -13,13 +13,18 @@
     display: block;
     margin: auto;
 }
+#logo{
+    width: 32px;
+}
+
 .form-content{
     display: block;
     margin: auto;
     width: 70%;
 }
-#logo{
-    width: 32px;
+input{
+    background-color: #C4C4C4;
+    opacity: 30%;
 }
 #smart-login button{
     border: none;
@@ -28,4 +33,9 @@
 #button-block button{
     min-width: 100px;
     padding: 5px 10px;
+}
+.form-label{
+    font: RobotoLight;
+    color: black;
+    opacity: 75%;
 }

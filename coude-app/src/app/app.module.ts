@@ -67,6 +67,8 @@ import { LoginComponent } from './login/login.component';
       { path: 'adminCourseDetails', component: AdminCourseDetailsComponent },
       { path: 'admin', component: AdminHomeComponent },
       { path: '**', redirectTo: 'landing' },
+      { path: 'login', component: LoginComponent},
+      { path: 'whoweare', component: WhoWeAreComponent}
     ]),
   ],
   providers: [],
