@@ -33,6 +33,8 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { AdUpCourseComponent } from './ad-up-course/ad-up-course.component';
 import { GeneralInformationComponent } from './general-information/general-information.component';
 import { UpdateInformationComponent } from './update-information/update-information.component';
+import { SignUpComponent } from './sign-up/sign-up.component';
+import { BillingComponent } from './billing/billing.component';
 
 
 
@@ -60,7 +62,9 @@ import { UpdateInformationComponent } from './update-information/update-informat
     PageNotFoundComponent,
     AdUpCourseComponent,
     GeneralInformationComponent,
-    UpdateInformationComponent
+    UpdateInformationComponent,
+    SignUpComponent,
+    BillingComponent
 
   ],
   imports: [
@@ -81,8 +85,10 @@ import { UpdateInformationComponent } from './update-information/update-informat
       { path: 'admin/courses/:id', component: AdminCourseDetailsComponent },
       { path: 'admin', component: AdminHomeComponent },
       { path: 'uploadcourse', component: AdUpCourseComponent },
-      { path: 'generalinformation', component: GeneralInformationComponent },
-      { path: 'updateinformation', component: UpdateInformationComponent },
+      { path: 'general-information', component: GeneralInformationComponent },
+      { path: 'update-information', component: UpdateInformationComponent },
+      { path: 'sign-up', component: SignUpComponent },
+      { path: 'billing', component: BillingComponent },
        
       { path: '**', component: PageNotFoundComponent},
 
