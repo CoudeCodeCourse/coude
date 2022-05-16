@@ -29,6 +29,9 @@ import { AdminCourseDetailsComponent } from './admin-course-details/admin-course
 
 
 import {SearchFilterPipe} from '../pipes/searchFilter.pipe';
+import { ScheduleComponent } from './schedule/schedule.component';
+import { MyCourseComponent } from './my-course/my-course.component';
+import { LoginComponent } from './login/login.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { AdUpCourseComponent } from './ad-up-course/ad-up-course.component';
 
@@ -52,9 +55,11 @@ import { AdUpCourseComponent } from './ad-up-course/ad-up-course.component';
     EnrollCourseComponent,
     AdminHomeComponent,
     AdminCourseDetailsComponent,
+    ScheduleComponent,
+    MyCourseComponent,
+    LoginComponent
     PageNotFoundComponent,
     AdUpCourseComponent
-
   ],
   imports: [
     BrowserModule,
@@ -72,12 +77,14 @@ import { AdUpCourseComponent } from './ad-up-course/ad-up-course.component';
       { path: 'home', component: HomepageComponent },
       { path: 'admin/courses/:id', component: AdminCourseDetailsComponent },
       { path: 'admin', component: AdminHomeComponent },
+      { path: '**', redirectTo: 'landing' },
+      { path: 'login', component: LoginComponent},
+      { path: 'whoweare', component: WhoWeAreComponent}
       { path: 'uploadcourse', component: AdUpCourseComponent },
        
 
       //tất cả các path đều phải nằm trên path của PageNotFound
       { path: '**', component: PageNotFoundComponent, pathMatch: "full"},
-
     ]),
   ],
 
