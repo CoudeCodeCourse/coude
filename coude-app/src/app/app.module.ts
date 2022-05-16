@@ -34,6 +34,9 @@ import { AdUpCourseComponent } from './ad-up-course/ad-up-course.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { AssignmentComponent } from './assignment/assignment.component';
 import { AssignmentFbComponent } from './assignment-fb/assignment-fb.component';
+import { AssignmentStartComponent } from './assignment-start/assignment-start.component';
+import{CourseFilterPipe} from '../pipes/courseFilter.pipe';
+import{CourseFilter2Pipe} from '../pipes/courseFilter2.pipe';
 
 
 @NgModule({
@@ -59,7 +62,12 @@ import { AssignmentFbComponent } from './assignment-fb/assignment-fb.component';
     AdUpCourseComponent,
     SidebarComponent,
     AssignmentComponent,
-    AssignmentFbComponent
+    AssignmentFbComponent,
+    AssignmentStartComponent,
+    CourseFilterPipe,
+    CourseFilter2Pipe,
+
+
 
   ],
   imports: [
@@ -82,7 +90,8 @@ import { AssignmentFbComponent } from './assignment-fb/assignment-fb.component';
       { path: 'sidebar', component: SidebarComponent },
       { path: 'assignment', component: AssignmentComponent },
       { path: 'assignmentfb', component: AssignmentFbComponent },
-       
+      { path: 'assignmentstr', component: AssignmentStartComponent },
+      { path: 'catalog', component: CatalogComponent },  
       { path: '**', component: PageNotFoundComponent},
 
     ]),

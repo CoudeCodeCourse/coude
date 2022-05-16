@@ -5,7 +5,7 @@ import { ICatalog } from './interfaces/courses';
 @Injectable({
   providedIn: 'root'
 })
-export class DataService {
+export class CatalogService {
   url: string = "/assets/data/courses/coursever1.json";
   constructor(private _http: HttpClient) { }
 
