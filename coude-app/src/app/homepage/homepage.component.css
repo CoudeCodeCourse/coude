@@ -1,5 +1,4 @@
 /* style bao xung quanh các element trong homepage */
-
 .page-container {
     display: flex;
     justify-content: space-between;
@@ -10,7 +9,6 @@
 
 
 /* Mỗi mục sẽ là một item */
-
 .container__item {
     margin-bottom: 40px;
 }

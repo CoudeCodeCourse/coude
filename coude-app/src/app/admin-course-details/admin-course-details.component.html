@@ -10,27 +10,27 @@
             </div>
         </div>
     
-        <div class="info border border-success rounded px-md-5 px-sm-3 py-3">
+        <div class="info border border-success rounded mb-3 px-md-5 px-sm-3 py-3">
             <div class="d-flex mb-2">
                 <div>Title</div>
-                <div>{{selectedCourse}}</div>
+                <div>{{selectedCourse.title}}</div>
             </div>
             <div class="d-flex mb-2">
                 <div>Instructor</div>
-                <div>Andrew Ng</div>
+                <div>{{selectedCourse.instructor}}</div>
             </div>
             <div class="d-flex mb-2">
                 <div>Description</div>
-                <div>No matter what you’re building, having a strong foundation is crucial — that’s where back-end engineers come in. In this Career Path, you’ll start with programming servers and client-side interfaces, then level up to designing databases. By the end, you’ll have everything you need to start your career as a back-end engineer.</div>
+                <div>{{selectedCourse.hiw}}</div>
             </div>
             <div class="d-flex mb-2">
                 <div>Tuition fee</div>
-                <div>40.99$</div>
+                <div>{{selectedCourse.fee}}$</div>
             </div>
-            <div class="d-flex mb-2">
+            <!-- <div class="d-flex mb-2">
                 <div>Skills</div>
                 <div>Node.JS, Express.JS, PostgreSQL, Back-End, SQL, Security</div>
-            </div>
+            </div> -->
         </div>
     
         <div>
