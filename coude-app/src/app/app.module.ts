@@ -37,7 +37,7 @@ import { AssignmentFbComponent } from './assignment-fb/assignment-fb.component';
 import { AssignmentStartComponent } from './assignment-start/assignment-start.component';
 import{CourseFilterPipe} from '../pipes/courseFilter.pipe';
 import{CourseFilter2Pipe} from '../pipes/courseFilter2.pipe';
-
+import { GeneralInformationComponent } from './general-information/general-information.component';
 
 @NgModule({
   declarations: [
@@ -51,6 +51,7 @@ import{CourseFilter2Pipe} from '../pipes/courseFilter2.pipe';
     LandingComponent,
     CatalogComponent,
     WhoWeAreComponent,
+
     Header1Component,
     StudyComponent,
     TestComponent,
@@ -66,9 +67,7 @@ import{CourseFilter2Pipe} from '../pipes/courseFilter2.pipe';
     AssignmentStartComponent,
     CourseFilterPipe,
     CourseFilter2Pipe,
-
-
-
+    GeneralInformationComponent
   ],
   imports: [
     BrowserModule,
@@ -92,6 +91,10 @@ import{CourseFilter2Pipe} from '../pipes/courseFilter2.pipe';
       { path: 'assignmentfb', component: AssignmentFbComponent },
       { path: 'assignmentstr', component: AssignmentStartComponent },
       { path: 'catalog', component: CatalogComponent },  
+      { path: 'generalinformation', component: GeneralInformationComponent },  
+      
+      
+      
       { path: '**', component: PageNotFoundComponent},
 
     ]),
