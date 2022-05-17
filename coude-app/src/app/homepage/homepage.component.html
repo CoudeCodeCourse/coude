@@ -54,10 +54,10 @@
         <div class="container__item">
             <h2>Popular Now</h2>
             <div class="course-container d-flex" >
-                <div class="course__item" *ngFor="let c of courses | slice:5:9;">
+                <div class="course__item text-truncate" *ngFor="let c of courses | slice:5:9;">
                     <div class="course__tag">Pro</div>
                     <div class="course__content">
-                        <ul class="d-block text-truncate">{{c.title}}
+                        <ul class="d-block-inline text-truncate">{{c.title}}
                             <li>{{c.level}}</li>
                             <li>4 lessons</li>
                         </ul>

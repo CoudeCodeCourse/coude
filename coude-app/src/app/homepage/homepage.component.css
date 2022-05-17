@@ -45,7 +45,8 @@
     font-size: 14px;
     margin: 5px;
     width: 25%;
-    min-width: max-content;
+    /* min-width: max-content; */
+    /* text-overflow: ; */
 }
 
 .course__item:hover {
