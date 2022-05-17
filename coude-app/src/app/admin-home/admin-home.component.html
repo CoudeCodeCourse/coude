@@ -22,9 +22,9 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr *ngFor="let c of courses; let i = index" (click)="onSelected(c)">
+                    <tr *ngFor="let c of courses | slice:0:10; let i = index " (click)="onSelected(c)">
                         <td class="px-sm-1 px-md-2">{{i + 1}}</td>
-                        <td class="text-truncated">{{c.title}}</td>
+                        <td class="text-truncate" style="text-align:left; padding: 10px">{{c.title}}</td>
                         <td>{{c.instructor}}</td>
                         <td>2022-02-20</td>
                         <!-- <td style="color: var(--green)">{{c.status | titlecase}}</td> -->

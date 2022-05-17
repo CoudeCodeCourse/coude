@@ -8,7 +8,8 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 })
 
 export class LoginComponent implements OnInit {
-
+  isLoggedIn: boolean = false;
+  form: any;
 
   constructor(private _formBuilder: FormBuilder) {}
 

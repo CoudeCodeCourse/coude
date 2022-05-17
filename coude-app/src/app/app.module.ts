@@ -57,7 +57,7 @@ import { AdUpCourseComponent } from './ad-up-course/ad-up-course.component';
     AdminCourseDetailsComponent,
     ScheduleComponent,
     MyCourseComponent,
-    LoginComponent
+    LoginComponent,
     PageNotFoundComponent,
     AdUpCourseComponent
   ],
@@ -79,7 +79,7 @@ import { AdUpCourseComponent } from './ad-up-course/ad-up-course.component';
       { path: 'admin', component: AdminHomeComponent },
       { path: '**', redirectTo: 'landing' },
       { path: 'login', component: LoginComponent},
-      { path: 'whoweare', component: WhoWeAreComponent}
+      { path: 'whoweare', component: WhoWeAreComponent},
       { path: 'uploadcourse', component: AdUpCourseComponent },
        
 
