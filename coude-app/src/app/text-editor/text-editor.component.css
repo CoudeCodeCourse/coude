@@ -1,0 +1,40 @@
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+form {
+    margin: 10px 0;
+}
+
+.edit {
+    display: flex;
+    flex-direction: row;
+}
+
+.edit__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #303342;
+    outline: none;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    margin: 5px;
+}
+.edit__btn .bi {
+    width: 30px;
+    height: 30px;
+}
+#output {
+    width: 100%;
+    border: 1px solid #303342;
+    padding: 10px;
+}
+
+.active {
+    border: 1px solid #303342;
+}

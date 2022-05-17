@@ -25,7 +25,11 @@ import { HomepageComponent } from './homepage/homepage.component';
 import { EnrollCourseComponent } from './enroll-course/enroll-course.component';
 import { AdminHomeComponent } from './admin-home/admin-home.component';
 import { AdminCourseDetailsComponent } from './admin-course-details/admin-course-details.component';
-
+import { FeedbackComponent } from './feedback/feedback.component';
+import { CompletedCourseComponent } from './completed-course/completed-course.component';
+import { AdminStudentComponent } from './admin-student/admin-student.component';
+import { TextEditorComponent } from './text-editor/text-editor.component';
+import { AdminStudent1Component } from './admin-student1/admin-student1.component';
 
 
 import {SearchFilterPipe} from '../pipes/searchFilter.pipe';
@@ -41,6 +45,8 @@ import { AssignmentStartComponent } from './assignment-start/assignment-start.co
 import{CourseFilterPipe} from '../pipes/courseFilter.pipe';
 import{CourseFilter2Pipe} from '../pipes/courseFilter2.pipe';
 import { GeneralInformationComponent } from './general-information/general-information.component';
+import {ForumFilterPipe} from '../pipes/forumFilter.pipe';
+
 
 @NgModule({
   declarations: [
@@ -51,6 +57,7 @@ import { GeneralInformationComponent } from './general-information/general-infor
     FooterComponent,
     ForumMainComponent,
     ForumViewtopicComponent,
+    FeedbackComponent,
     LandingComponent,
     CatalogComponent,
     WhoWeAreComponent,
@@ -74,7 +81,12 @@ import { GeneralInformationComponent } from './general-information/general-infor
     CourseFilterPipe,
     CourseFilter2Pipe,
     GeneralInformationComponent,
-    AdUpCourseComponent
+    AdUpCourseComponent,
+    CompletedCourseComponent,
+    AdminStudentComponent,
+    TextEditorComponent,
+    ForumFilterPipe,
+    AdminStudent1Component
   ],
   imports: [
     BrowserModule,
@@ -93,7 +105,13 @@ import { GeneralInformationComponent } from './general-information/general-infor
       { path: 'home', component: HomepageComponent },
       { path: 'admin/courses/:id', component: AdminCourseDetailsComponent },
       { path: 'admin', component: AdminHomeComponent },
-      { path: '**', redirectTo: 'landing' },
+      { path: 'homepage', component: HomepageComponent },
+      { path: 'adminCouseDetails', component: AdminCourseDetailsComponent },
+      { path: 'forum', component: ForumMainComponent },
+      { path: 'view-topic', component: ForumViewtopicComponent },
+      { path: 'feedback', component: FeedbackComponent },
+      { path: 'completed-course', component: CompletedCourseComponent },
+      { path: 'admin-student', component: AdminStudentComponent },
       { path: 'login', component: LoginComponent},
       { path: 'whoweare', component: WhoWeAreComponent},
       { path: 'uploadcourse', component: AdUpCourseComponent },

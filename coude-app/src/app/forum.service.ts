@@ -1,16 +1,17 @@
 import { Injectable } from '@angular/core';
 import {HttpClient, HttpErrorResponse} from '@angular/common/http';
-import { catchError, Observable, retry, throwError } from 'rxjs';
-import { ICatalog } from './interfaces/courses';
+import { catchError, map, Observable, retry, throwError } from 'rxjs';
+import { ITopic } from './interfaces/forum';
 @Injectable({
   providedIn: 'root'
 })
-export class DataService {
-  url: string = "/assets/data/courses/coursever1.json";
+export class ForumService {
+  url: string = "/assets/data/forum/forum.json";
+  // url_server: 'http://localhost:3000/forum';
   constructor(private _http: HttpClient) { }
 
-  getSampleData(): Observable<ICatalog[]> {
-    return this._http.get<ICatalog[]>(this.url).pipe(
+  getTopics(): Observable<ITopic[]> {
+    return this._http.get<ITopic[]>(this.url).pipe(
       retry(2),
       catchError(this.handleError)
     )
