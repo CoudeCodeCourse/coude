@@ -23,9 +23,13 @@ import { HomepageComponent } from './homepage/homepage.component';
 import { AdminHomeComponent } from './admin-home/admin-home.component';
 import { AdminCourseDetailsComponent } from './admin-course-details/admin-course-details.component';
 import { FeedbackComponent } from './feedback/feedback.component';
+import { CompletedCourseComponent } from './completed-course/completed-course.component';
+import { AdminStudentComponent } from './admin-student/admin-student.component';
+import { TextEditorComponent } from './text-editor/text-editor.component';
+import { AdminStudent1Component } from './admin-student1/admin-student1.component';
 
 import {SearchFilterPipe} from '../pipes/searchFilter.pipe';
-import { CompletedCourseComponent } from './completed-course/completed-course.component';
+import {ForumFilterPipe} from '../pipes/forumFilter.pipe';
 
 
 @NgModule({
@@ -47,7 +51,10 @@ import { CompletedCourseComponent } from './completed-course/completed-course.co
     AdminHomeComponent,
     AdminCourseDetailsComponent,
     CompletedCourseComponent,
-    
+    AdminStudentComponent,
+    TextEditorComponent,
+    ForumFilterPipe,
+    AdminStudent1Component
   ],
   imports: [
     BrowserModule,
@@ -63,9 +70,10 @@ import { CompletedCourseComponent } from './completed-course/completed-course.co
       { path: 'homepage', component: HomepageComponent },
       { path: 'adminCouseDetails', component: AdminCourseDetailsComponent },
       { path: 'forum', component: ForumMainComponent },
-      { path: 'forum-viewtopic', component: ForumViewtopicComponent },
+      { path: 'view-topic', component: ForumViewtopicComponent },
       { path: 'feedback', component: FeedbackComponent },
       { path: 'completed-course', component: CompletedCourseComponent },
+      { path: 'admin-student', component: AdminStudentComponent },
       { path: '**', redirectTo: 'landing' },
     ]),
   ],

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ForumService } from '../forum.service';
 
 @Component({
   selector: 'app-forum-viewtopic',
@@ -6,10 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./forum-viewtopic.component.css']
 })
 export class ForumViewtopicComponent implements OnInit {
-
-  constructor() { }
+  topics: any;
+  constructor(private _service: ForumService) { }
 
   ngOnInit(): void {
+    this.topics = this._service.getTopics();
   }
 
 }
