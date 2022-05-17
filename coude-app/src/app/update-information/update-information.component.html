@@ -6,14 +6,17 @@
         <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9 col-xl-9 main-content">
             <div class="container">
                 <div class="row">
-                    <div>
-                        <img class="ava-img" src="/assets/images/avatar/no_face.png" alt="">
+                        <div >
+                            <div class="overlay"></div>
+                            <img class="ava-img" src="/assets/images/avatar/no_face.png" alt="">
+                            <p class="title">card title</p>
+                            <div class="button"><a href="#"> BUTTON </a></div> 
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5 col-xl-5">
                         <form>
-                            <fieldset disabled>
+                            <fieldset>
                                 <div class="form-group">
                                     <label for="disabledTextInput">First name</label> 
                                     <input type="text" id="disabledTextInput" class="form-control" placeholder="First name">
@@ -21,7 +24,7 @@
 
                                 <div class="form-group">
                                     <label for="disabledTextInput">Account name</label> 
-                                    <input type="text" id="disabledTextInput" class="form-control" placeholder="Account name">
+                                    <input type="text" id="disabledTextInput" class="form-control" placeholder="Account name" disabled>
                                 </div>
 
                                 <div class="form-group">
@@ -41,7 +44,7 @@
                     </div>
                     <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5 col-xl-5">
                         <form>
-                            <fieldset disabled>
+                            <fieldset>
                                 <div class="form-group">
                                     <label for="disabledTextInput">Last name</label> 
                                     <input type="text" id="disabledTextInput" class="form-control" placeholder="Last name">
@@ -49,7 +52,7 @@
 
                                 <div class="form-group">
                                     <label for="disabledTextInput">Email</label> 
-                                    <input type="text" id="disabledTextInput" class="form-control" placeholder="Email">
+                                    <input type="text" id="disabledTextInput" class="form-control" placeholder="Email" disabled>
                                 </div>
 
                                 <div class="form-group">
@@ -57,11 +60,8 @@
                                     <input type="text" id="disabledTextInput" class="form-control" placeholder="Phone number">
                                 </div>
                                 <div class="form-group">
-                                    <label for="disabledTextInput">Payment</label> 
-                                    <div class="payment-img">
-                                        <img src="/assets/images/billing/paypal.png" alt="Error" width="50">
-                                        <img src="/assets/images/billing/mastercard.png" width="50" alt="Error"> <img src="/assets/images/billing/visa.png" width="50" alt="Error">
-                                    </div>
+                                    <label for="disabledTextInput">Repeat password</label>
+                                    <input type="password" id="disabledTextInput" class="form-control" placeholder="Password">
                                 </div>
                             </fieldset>
                         </form>
@@ -69,9 +69,10 @@
                 </div>
                 <div class="row">
                     <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5 col-xl-5"></div>
-                    <a class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2" href="updateinformation">
-                        <button class="button--green btn-update">Update</button> </a>
+                    <button class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 button--green btn-update">Next</button>
                     <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5 col-xl-5"></div>
+
+                   
                 </div>
             </div>
         </div>

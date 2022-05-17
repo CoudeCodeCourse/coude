@@ -46,6 +46,11 @@ import{CourseFilterPipe} from '../pipes/courseFilter.pipe';
 import{CourseFilter2Pipe} from '../pipes/courseFilter2.pipe';
 import { GeneralInformationComponent } from './general-information/general-information.component';
 import {ForumFilterPipe} from '../pipes/forumFilter.pipe';
+import { UpdateInformationComponent } from './update-information/update-information.component';
+import { SignUpComponent } from './sign-up/sign-up.component';
+import { BillingComponent } from './billing/billing.component';
+
+
 
 
 @NgModule({
@@ -87,6 +92,11 @@ import {ForumFilterPipe} from '../pipes/forumFilter.pipe';
     TextEditorComponent,
     ForumFilterPipe,
     AdminStudent1Component
+    GeneralInformationComponent,
+    UpdateInformationComponent,
+    SignUpComponent,
+    BillingComponent
+
   ],
   imports: [
     BrowserModule,
@@ -126,6 +136,13 @@ import {ForumFilterPipe} from '../pipes/forumFilter.pipe';
       
       //tất cả các path đều phải nằm trên path của PageNotFound
       { path: '**', component: PageNotFoundComponent, pathMatch: "full"},
+      { path: 'general-information', component: GeneralInformationComponent },
+      { path: 'update-information', component: UpdateInformationComponent },
+      { path: 'sign-up', component: SignUpComponent },
+      { path: 'billing', component: BillingComponent },
+       
+      { path: '**', component: PageNotFoundComponent},
+
     ]),
   ],
 
