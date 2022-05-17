@@ -131,16 +131,13 @@ import { BillingComponent } from './billing/billing.component';
       { path: 'assignmentstr', component: AssignmentStartComponent },
       { path: 'catalog', component: CatalogComponent },  
       { path: 'generalinformation', component: GeneralInformationComponent },  
-      
-      
-      
-      //tất cả các path đều phải nằm trên path của PageNotFound
-      { path: '**', component: PageNotFoundComponent, pathMatch: "full"},
       { path: 'general-information', component: GeneralInformationComponent },
       { path: 'update-information', component: UpdateInformationComponent },
       { path: 'sign-up', component: SignUpComponent },
       { path: 'billing', component: BillingComponent },
-       
+
+      
+      //tất cả các path đều phải nằm trên path của PageNotFound
       { path: '**', component: PageNotFoundComponent},
 
     ]),
