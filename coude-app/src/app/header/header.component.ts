@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Course } from 'src/models/course';
+import { CoursesDataService } from '../services/courses-data.service';
 // import { SearchFilterPipe } from '../pipe/searchFilter.pipe';
 
 
@@ -13,32 +15,43 @@ export class HeaderComponent implements OnInit {
   admin = false;
   isAdmin = true;
   searchText = "";
-  courses = [{
-    "name": "Back-end Engineer",
-    "image": "https://winerp.vn/wp-content/uploads/2022/01/nt.jpg"
-  },
-    {
-      "name": "Learn HTML",
-    "image": "https://tmarketing.vn/wp-content/uploads/2021/09/html.jpg"
-  },
-  {
-    "name": "Learn Javascript",
-  "image": "https://tmarketing.vn/wp-content/uploads/2021/09/html.jpg"
-  },
-  {
-    "name": "Learn Angular",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/1200px-Angular_full_color_logo.svg.png"
-  },
-  {
-    "name": "Master C#, C+ bla bla bla bla bla bla bla blaaaa",
-    "image": "https://fasttrack.edu.vn/wp-content/uploads/2021/06/C-Sharp-1920x960.jpeg"
-  },
-  ]
-  constructor() { }
+  // courses = [{
+  //   "name": "Back-end Engineer",
+  //   "image": "https://winerp.vn/wp-content/uploads/2022/01/nt.jpg"
+  // },
+  //   {
+  //     "name": "Learn HTML",
+  //   "image": "https://tmarketing.vn/wp-content/uploads/2021/09/html.jpg"
+  // },
+  // {
+  //   "name": "Learn Javascript",
+  // "image": "https://tmarketing.vn/wp-content/uploads/2021/09/html.jpg"
+  // },
+  // {
+  //   "name": "Learn Angular",
+  //   "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/1200px-Angular_full_color_logo.svg.png"
+  // },
+  // {
+  //   "name": "Master C#, C+ bla bla bla bla bla bla bla blaaaa",
+  //   "image": "https://fasttrack.edu.vn/wp-content/uploads/2021/06/C-Sharp-1920x960.jpeg"
+  // },
+  // ]
+  courses!: Course[];
+  errMessage = "";
+  selectedId: any;
+  selectedCourse: any;
+  constructor(private _service: CoursesDataService){
+  }
   
   ngOnInit(): void {
     // console.log(this.login);
     // console.log(this.searchText)
+    this.getCourses();
   }
-  
+  getCourses(){
+    this._service.getCourses().subscribe({
+      next: data => this.courses = data,
+      error: err => this.errMessage = err
+    })
+  }
 }

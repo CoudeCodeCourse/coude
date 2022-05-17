@@ -1,259 +1,259 @@
-       ::-webkit-scrollbar {
-          display: none;
-      }
-      
-      .rec-frame__shape {
-          border: 8px solid rgba(255, 255, 255, 0.86);
-          height: fit-content;
-          min-width: 300px;
-          filter: drop-shadow(0px 10px 4px rgba(0, 0, 0, 0.25));
-          width: 38%
-      }
-      
-      .rec-frame__shape>p {
-          font-size: 18px;
-      }
-      
-      .frame {
-          font-family: MontserratRegular;
-      }
-      
-      .frame__clr--dark {
-          background-color: var(--header-color);
-          color: white;
-      }
-      
-      .frame__top {
-          padding-top: calc(70vh - 240px);
-      }
-      
-      .frame__mid {
-          padding-top: 10%;
-          padding-bottom: 10%;
-      }
-      /* .sub-container {
+         ::-webkit-scrollbar {
+            display: none;
+        }
+        
+        .rec-frame__shape {
+            border: 8px solid rgba(255, 255, 255, 0.86);
+            height: fit-content;
+            min-width: 300px;
+            filter: drop-shadow(0px 10px 4px rgba(0, 0, 0, 0.25));
+            width: 38%
+        }
+        
+        .rec-frame__shape>p {
+            font-size: 18px;
+        }
+        
+        .frame {
+            font-family: MontserratRegular;
+        }
+        
+        .frame__clr--dark {
+            background-color: var(--header-color);
+            color: white;
+        }
+        
+        .frame__top {
+            padding-top: calc(70vh - 240px);
+        }
+        
+        .frame__mid {
+            padding-top: 10%;
+            padding-bottom: 10%;
+        }
+        /* .sub-container {
     justify-content: space-evenly;
     align-self: center;
 } */
-      /* .sub-container>div{
+        /* .sub-container>div{
     margin-right: 40px;
     margin-bottom: 20px;
 } */
-      
-      .cta-container {
-          width: 280px;
-      }
-      
-      .slogan p,
-      h2 {
-          margin: 0;
-          padding: 0;
-          width: fit-content;
-      }
-      
-      .slogan p {
-          position: relative;
-          top: 10px;
-          left: calc(40% + 5em);
-          display: inline-block
-      }
-      
-      .slogan span {
-          letter-spacing: 2px;
-          font-size: 35px;
-          font-weight: 600;
-      }
-      
-      .btn-create-account {
-          background-color: #2EA44F;
-          color: white;
-          border-radius: 5px;
-          border: none;
-          padding: 10px 20px;
-          vertical-align: middle;
-          position: relative;
-          top: 150px;
-      }
-      
-      .logo-container {
-          justify-content: center;
-          margin-top: 80px;
-      }
-      
-      .logo-container>img:nth-child(n) {
-          width: 60px;
-          height: 60px;
-          margin-left: 35px;
-      }
-      
-      .logo-container>img:first-child {
-          margin-left: 0;
-      }
-      
-      .search-box {}
-      
-      .row--align-bottom {
-          align-items: flex-end;
-          justify-content: space-evenly;
-      }
-      
-      svg {
-          color: white;
-          display: inline-block
-      }
-      
-      .course-container {
-          font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-          width: 100%;
-          width: max-content;
-      }
-      
-      .course__right-col .course-container__item {
-          height: max-content;
-      }
-      
-      .course-container__item {
-          background-color: white;
-          color: black;
-          border: 2.5px solid black;
-          margin: 10px 5px;
-          padding: 5px 5px 10px 0px;
-          flex: 1;
-          min-width: 250px;
-      }
-      
-      .course-container__item>div:nth-child(2) {
-          margin: auto 20px;
-          text-align: center;
-      }
-      
-      .button__create-account:hover,
-      .course-container__item:hover,
-      a:hover {
-          opacity: 0.8;
-          cursor: pointer;
-      }
-      
-      .course__tag {
-          background-color: black;
-          color: white;
-          width: fit-content;
-          padding: 0 10px 0 5px;
-      }
-      
-      .course__coude-tag {
-          text-align: right;
-          font-size: 11px;
-      }
-      
-      .field-container {
-          font-size: 20px;
-          margin-top: 30px;
-          list-style-position: inside;
-      }
-      
-      .field-container li {
-          font-size: 20px;
-          margin-left: 15px;
-          font-family: 'Courier New', Courier, monospace;
-      }
-      
-      .field-container a {
-          color: white;
-      }
-      
-      .people img {
-          border-radius: 50%;
-          width: 80px;
-          height: 80px;
-          margin-right: 10px;
-      }
-      
-      .people *,
-      .milestone__item * {
-          margin: 0;
-      }
-      
-      .people h1 {
-          letter-spacing: 2px;
-      }
-      
-      .people p {
-          font-size: 10px;
-          text-align: justify;
-      }
-      
-      .title,
-      .milestone__item p {
-          width: fit-content;
-      }
-      
-      .title p {
-          font-size: 16px;
-      }
-      
-      .people-container {
-          width: 400px;
-      }
-      
-      .people-container__item {
-          width: fit-content;
-          margin: 20px 10px!important;
-      }
-      
-      .people-container__item h5 {
-          font-size: 14px;
-      }
-      
-      .milestone-container {
-          min-width: 200px;
-      }
-      
-      .milestone__content {
-          border-left: 1.8px solid lightslategray;
-          height: fit-content;
-      }
-      
-      .milestone__item {
-          margin: 15px 10px;
-      }
-      
-      .milestone__item p:first-child {
-          font-weight: bold;
-          font-size: 20px;
-      }
-      
-      .milestone__item p:nth-child(2) {
-          font-size: 10px;
-      }
-      
-      iframe {
-          width: 80%;
-          height: 80vh;
-      }
-      
-      @media only screen and (max-width: 600px) {
-          .code-frame>iframe {
-              display: none;
-          }
-          .search-box svg {
-              display: block;
-          }
-          #login {
-              right: 5%;
-              bottom: 30%;
-              background: transparent;
-              border: 1px solid white;
-              color: white;
-              height: 30px;
-              line-height: 1;
-              right: 5%;
-              top: 12px
-              /* vertical-align: -webkit-baseline-middle; */
-              /* position: absolute */
-          }
-          .row--align-bottom {
-              align-items: flex-end;
-              justify-content: space-evenly;
-          }
-      }
+        
+        .cta-container {
+            width: 280px;
+        }
+        
+        .slogan p,
+        h2 {
+            margin: 0;
+            padding: 0;
+            width: fit-content;
+        }
+        
+        .slogan p {
+            position: relative;
+            top: 10px;
+            left: calc(40% + 5em);
+            display: inline-block
+        }
+        
+        .slogan span {
+            letter-spacing: 2px;
+            font-size: 35px;
+            font-weight: 600;
+        }
+        
+        .btn-create-account {
+            background-color: #2EA44F;
+            color: white;
+            border-radius: 5px;
+            border: none;
+            padding: 10px 20px;
+            vertical-align: middle;
+            position: relative;
+            top: 150px;
+        }
+        
+        .logo-container {
+            justify-content: center;
+            margin-top: 80px;
+        }
+        
+        .logo-container>img:nth-child(n) {
+            width: 60px;
+            height: 60px;
+            margin-left: 35px;
+        }
+        
+        .logo-container>img:first-child {
+            margin-left: 0;
+        }
+        
+        .search-box {}
+        
+        .row--align-bottom {
+            align-items: flex-end;
+            justify-content: space-evenly;
+        }
+        
+        svg {
+            color: white;
+            display: inline-block
+        }
+        
+        .course-container {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            width: 100%;
+            width: max-content;
+        }
+        
+        .course__right-col .course-container__item {
+            height: max-content;
+        }
+        
+        .course-container__item {
+            background-color: white;
+            color: black;
+            border: 2.5px solid black;
+            margin: 10px 5px;
+            padding: 5px 5px 10px 0px;
+            flex: 1;
+            min-width: 250px;
+        }
+        
+        .course-container__item>div:nth-child(2) {
+            margin: auto 20px;
+            text-align: center;
+        }
+        
+        .button__create-account:hover,
+        .course-container__item:hover,
+        a:hover {
+            opacity: 0.8;
+            cursor: pointer;
+        }
+        
+        .course__tag {
+            background-color: black;
+            color: white;
+            width: fit-content;
+            padding: 0 10px 0 5px;
+        }
+        
+        .course__coude-tag {
+            text-align: right;
+            font-size: 11px;
+        }
+        
+        .field-container {
+            font-size: 20px;
+            margin-top: 30px;
+            list-style-position: inside;
+        }
+        
+        .field-container li {
+            font-size: 20px;
+            margin-left: 15px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        
+        .field-container a {
+            color: white;
+        }
+        
+        .people img {
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
+            margin-right: 10px;
+        }
+        
+        .people *,
+        .milestone__item * {
+            margin: 0;
+        }
+        
+        .people h1 {
+            letter-spacing: 2px;
+        }
+        
+        .people p {
+            font-size: 10px;
+            text-align: justify;
+        }
+        
+        .title,
+        .milestone__item p {
+            width: fit-content;
+        }
+        
+        .title p {
+            font-size: 16px;
+        }
+        
+        .people-container {
+            width: 400px;
+        }
+        
+        .people-container__item {
+            width: fit-content;
+            margin: 20px 10px!important;
+        }
+        
+        .people-container__item h5 {
+            font-size: 14px;
+        }
+        
+        .milestone-container {
+            min-width: 200px;
+        }
+        
+        .milestone__content {
+            border-left: 1.8px solid lightslategray;
+            height: fit-content;
+        }
+        
+        .milestone__item {
+            margin: 15px 10px;
+        }
+        
+        .milestone__item p:first-child {
+            font-weight: bold;
+            font-size: 20px;
+        }
+        
+        .milestone__item p:nth-child(2) {
+            font-size: 10px;
+        }
+        
+        iframe {
+            width: 80%;
+            height: 80vh;
+        }
+        
+        @media only screen and (max-width: 600px) {
+            .code-frame>iframe {
+                display: none;
+            }
+            .search-box svg {
+                display: block;
+            }
+            #login {
+                right: 5%;
+                bottom: 30%;
+                background: transparent;
+                border: 1px solid white;
+                color: white;
+                height: 30px;
+                line-height: 1;
+                right: 5%;
+                top: 12px
+                /* vertical-align: -webkit-baseline-middle; */
+                /* position: absolute */
+            }
+            .row--align-bottom {
+                align-items: flex-end;
+                justify-content: space-evenly;
+            }
+        }
