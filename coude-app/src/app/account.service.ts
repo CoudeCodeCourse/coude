@@ -12,11 +12,11 @@ export class ExampleService {
   constructor(private _http: HttpClient) { }
   
 
-  getProducts(): Observable<User[]> {
-    return this._http.get<User[]>(this.url).pipe(
-    retry(3),
-    catchError(this.handleError));
-  }
+  // getProducts(): Observable<User[]> {
+  //   return this._http.get<User[]>(this.url).pipe(
+  //   retry(3),
+  //   catchError(this.handleError));
+  // }
 
   handleError(error: HttpErrorResponse){
     return throwError(() => {new Error(error.message)})
