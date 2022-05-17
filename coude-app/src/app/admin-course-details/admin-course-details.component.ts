@@ -19,7 +19,7 @@ export class AdminCourseDetailsComponent implements OnInit {
   errMessage = "";
   // courseDetails: any;
   selectedId: any;
-  selectedCourse: any;
+  selectedCourse!: Course;
   constructor(private _activeRoute: ActivatedRoute,
               private _router: Router,
               private _service: CoursesDataService,
@@ -42,33 +42,8 @@ export class AdminCourseDetailsComponent implements OnInit {
     // this._title.setTitle(this.selectedCourse.title);
     this._title.setTitle(this.selectedCourse.title);
     console.log(this._title);
-    // this._activeRoute.params.subscribe((params)=>{
-    //   this.selectedId = params['id'];
-    //   console.log(this.selectedId);
-    // })
+  }
 
-      // this.getCourses();
-             // this.selectedCourse = {...param.keys, ...param};
-          // this.selectedCourse = param;
-          // console.log("nnene", this.selectedCourse)
-   
-        // console.log(this._activeRoute.snapshot.params['course']);
-        
-        // console.log("nnene", this.selectedCourse)
-        // this.getCourses();
-        // this.getSelectedCourse();
-        // console.log("id", this.selectedId)
-        
-  }
-  getCourses(){
-    this._service.getCourses().subscribe({
-      next: data => this.courses = data,
-      error: err => this.errMessage = err
-    })
-    
-    // console.log(this.courses)
-    // console.log("Array", Array.isArray(this.courses))
-  }
   getCoursesById(){
     this._service.GetCourseById(this.selectedId).subscribe(
       {
@@ -89,19 +64,6 @@ export class AdminCourseDetailsComponent implements OnInit {
   //   )
   //   console.log(this.selectedCourse)
   // }
-  getSelectedCourse(){
-    // console.log(this.courses)
-    this.selectedCourse = this.courses.filter((c: Course) => {
-       return String(c._id) == this.selectedId} );
-      // for(let i = 0; i<this.courses.length; i++){
-      //   console.log(this.courses[i])
-      //   if (this.courses[i]._id === this.selectedId){
-      //     this.selectedCourse = this.courses[i]; break;
-      //   }
-      // }
-      console.log("selected là:", this.selectedCourse);
-    // return this.selectedCourse;
-  }
 
   goBack(): void {
     this._router.navigate(['/admin/courses', {id: this.selectedId}])

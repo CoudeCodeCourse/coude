@@ -53,8 +53,4 @@ export class CoursesDataService {
   //   return of(course);
   // }
 }
-export interface GetCourseResponse {
-  _embedded:{
-    courses: Course[];
-  }
-}
+
