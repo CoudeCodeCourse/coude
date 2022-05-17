@@ -1,0 +1,473 @@
+[{
+        "_id": 1,
+        "title": "Front-End Engineer",
+        "category": { "$oid": "6270e5c2b36232bdf8426d13" },
+        "admin_id": "",
+        "status": "available",
+        "time": "New",
+        "level": "Beginner",
+        "instructor": "Ben Camden",
+        "user_avt": "glass_woman.png",
+        "instruc_descript": "They rushed out the door, grabbing anything and everything they could think of they might need. There was no time to double-check to make sure they weren't leaving something important behind. Everything was thrown into the car and they sped off. Thirty minutes later they were safe and that was when it dawned on them that they had forgotten the most important thing of all.",
+        "languages": ["English", "Vietnamese"],
+        "learners": [],
+        "fee": 150,
+        "atc": "WHAT YOU WILL LEARN Learn what data science is, the various activities of a data scientist’s job, and methodology to think and work like a data scientist Develop hands-on skills using the tools, languages, and libraries used by professional data scientists Import and clean data sets, analyze and visualize data, and build and evaluate machine learning models and pipelines using Python Apply various data science skills, techniques, and tools to complete a project and publish a report",
+        "hiw": "Build the Skills to Get Job Ready Whether you’re looking to start a new career, or change your current one, Professional Certificates on Coursera help you become job ready. Learn at your own pace, whenever and wherever it’s most convenient for you. Enroll today and explore a new career path with a 7 day free trial. You can pause your learning or end your subscription at any time.",
+        "degree": "degree1.png",
+        "feedbacks": [{
+                "user_id": "",
+                "rate": 4,
+                "content": "This course helped me a lot in my career path",
+                "createdAt": "2020-09-21T18:25:43-05:00"
+            },
+            {
+                "user_id": "",
+                "rate": 5,
+                "content": "This course teaches you the simple principles expert managers use to improve and motivate employee performance. You’ll never have to avoid telling an employee “the truth” again, because the seven techniques we teach will not make employees defensive or afraid. As a manager, or someone who would like to be a manager, you’ll also learn specifically what feedback is, how negative feedback is weighed more heavily than positive, and how positive feedback can super-charge behaviors such as creativity and teamwork. Giving feedback is a skill which develops over time. We give you a process you can use to improve your feedback skills and deliver it with confidence. You will find that there is a scientific basis for many of your observations and intuitions about feedback—such as, it is hard to give correctly, people don’t like it, and more. This will be reassuring as you learn how to overcome these difficulties. We hope you have a fantastic time becoming a better manager!",
+                "createdAt": "2021-03-17T18:25:43-05:00"
+            }
+        ]
+    },
+    {
+        "_id": 2,
+        "title": "Learn HTML",
+        "category": { "$oid": "6270e5c2b36232bdf8426d13" },
+        "admin_id": "",
+        "status": "available",
+        "time": "New",
+        "level": "Beginner",
+        "instructor": "Aurora Diana",
+        "user_avt": "glass_woman.png",
+        "instruc_descript": "The chair sat in the corner where it had been for over 25 years. The only difference was there was someone actually sitting in it. How long had it been since someone had done that? Ten years or more he imagined. Yet there was no denying the presence in the chair now.",
+        "languages": ["English", "Vietnamese"],
+        "learners": [],
+        "fee": 150,
+        "atc": "WHAT YOU WILL LEARN Learn what data science is, the various activities of a data scientist’s job, and methodology to think and work like a data scientist Develop hands-on skills using the tools, languages, and libraries used by professional data scientists Import and clean data sets, analyze and visualize data, and build and evaluate machine learning models and pipelines using Python Apply various data science skills, techniques, and tools to complete a project and publish a report",
+        "hiw": "Build the Skills to Get Job Ready Whether you’re looking to start a new career, or change your current one, Professional Certificates on Coursera help you become job ready. Learn at your own pace, whenever and wherever it’s most convenient for you. Enroll today and explore a new career path with a 7 day free trial. You can pause your learning or end your subscription at any time.",
+        "degree": "degree1.png",
+        "feedbacks": [{
+                "user_id": "",
+                "rate": 5,
+                "content": "I enjoyed the course and learned a lot from it. The content is well organised and focused on practical situations. I particularly enjoyed the bits of psychological research shared in the content.",
+                "createdAt": "2022-02-11T18:25:43-05:00"
+            },
+            {
+                "user_id": "",
+                "rate": 5,
+                "content": "This course teaches you the simple principles expert managers use to improve and motivate employee performance. You’ll never have to avoid telling an employee “the truth” again, because the seven techniques we teach will not make employees defensive or afraid. As a manager, or someone who would like to be a manager, you’ll also learn specifically what feedback is, how negative feedback is weighed more heavily than positive, and how positive feedback can super-charge behaviors such as creativity and teamwork. Giving feedback is a skill which develops over time. We give you a process you can use to improve your feedback skills and deliver it with confidence. You will find that there is a scientific basis for many of your observations and intuitions about feedback—such as, it is hard to give correctly, people don’t like it, and more. This will be reassuring as you learn how to overcome these difficulties. We hope you have a fantastic time becoming a better manager!",
+                "createdAt": "2021-03-15T18:25:43-05:00"
+            }
+        ]
+    },
+    {
+        "_id": 3,
+        "title": "How to Make a Website with NameCheap",
+        "category": { "$oid": "6270e5c2b36232bdf8426d13" },
+        "admin_id": "",
+        "status": "available",
+        "time": "New",
+        "level": "Beginner",
+        "instructor": "Abel Abram",
+        "user_avt": "glass_woman.png",
+        "instruc_descript": "Cake or pie? I can tell a lot about you by which one you pick. It may seem silly, but cake people and pie people are really different. I know which one I hope you are, but that's not for me to decide. So, what is it? Cake or pie?",
+        "languages": ["English", "Vietnamese"],
+        "learners": [],
+        "fee": 200,
+        "atc": "WHAT YOU WILL LEARN Learn what data science is, the various activities of a data scientist’s job, and methodology to think and work like a data scientist Develop hands-on skills using the tools, languages, and libraries used by professional data scientists Import and clean data sets, analyze and visualize data, and build and evaluate machine learning models and pipelines using Python Apply various data science skills, techniques, and tools to complete a project and publish a report",
+        "hiw": "Build the Skills to Get Job Ready Whether you’re looking to start a new career, or change your current one, Professional Certificates on Coursera help you become job ready. Learn at your own pace, whenever and wherever it’s most convenient for you. Enroll today and explore a new career path with a 7 day free trial. You can pause your learning or end your subscription at any time.",
+        "degree": "degree1.png",
+        "feedbacks": [{
+                "user_id": "",
+                "rate": 4,
+                "content": "A very good course which teach about how to give feedback in a systematic and practical manner in professional setting and personal life.",
+                "createdAt": "2022-02-11T18:25:43-05:00"
+            },
+            {
+                "user_id": "",
+                "rate": 5,
+                "content": "This course is very relatable in the work arena. Many examples are provided that you can use as a manager and improve your feedback skills.",
+                "createdAt": "2021-09-15T18:25:43-05:00"
+            },
+            {
+                "user_id": "",
+                "rate": 4,
+                "content": "This course teaches you the simple principles expert managers use to improve and motivate employee performance. You’ll never have to avoid telling an employee “the truth” again, because the seven techniques we teach will not make employees defensive or afraid. As a manager, or someone who would like to be a manager, you’ll also learn specifically what feedback is, how negative feedback is weighed more heavily than positive, and how positive feedback can super-charge behaviors such as creativity and teamwork. Giving feedback is a skill which develops over time. We give you a process you can use to improve your feedback skills and deliver it with confidence. You will find that there is a scientific basis for many of your observations and intuitions about feedback—such as, it is hard to give correctly, people don’t like it, and more. This will be reassuring as you learn how to overcome these difficulties. We hope you have a fantastic time becoming a better manager!",
+                "createdAt": "2021-12-18T18:25:43-05:00"
+            }
+        ]
+    },
+    {
+        "title": "Learn Bootstrap",
+        "category": { "$oid": "6270e5c2b36232bdf8426d13" },
+        "admin_id": "",
+        "status": "available",
+        "time": "Popular",
+        "level": "Beginner",
+        "instructor": "Alica Katherine",
+        "user_avt": "glass_woman.png",
+        "instruc_descript": "He knew what he was supposed to do. That had been apparent from the beginning. That was what made the choice so difficult. What he was supposed to do and what he would do were not the same. This would have been fine if he were willing to face the inevitable consequences, but he wasn't.",
+        "languages": ["English", "Vietnamese"],
+        "learners": [],
+        "fee": 300,
+        "atc": "WHAT YOU WILL LEARN Learn what data science is, the various activities of a data scientist’s job, and methodology to think and work like a data scientist Develop hands-on skills using the tools, languages, and libraries used by professional data scientists Import and clean data sets, analyze and visualize data, and build and evaluate machine learning models and pipelines using Python Apply various data science skills, techniques, and tools to complete a project and publish a report",
+        "hiw": "Build the Skills to Get Job Ready Whether you’re looking to start a new career, or change your current one, Professional Certificates on Coursera help you become job ready. Learn at your own pace, whenever and wherever it’s most convenient for you. Enroll today and explore a new career path with a 7 day free trial. You can pause your learning or end your subscription at any time.",
+        "degree": "degree1.png",
+        "feedbacks": [{
+            "user_id": "",
+            "rate": 3,
+            "content": "Muy completo, de verdad que te hace pensar y dar cuenta de cuán importante es dar un correcto feedback negativo para que sea eficiente.",
+            "createdAt": "2022-03-15T18:25:43-05:00"
+        }]
+
+    },
+    {
+        "title": "Visualize Data with Python",
+        "category": { "$oid": "6270e5c2b36232bdf8426d14" },
+        "admin_id": "",
+        "status": "available",
+        "time": "New",
+        "level": "Intermediate",
+        "instructor": "Cary Grant",
+        "user_avt": "glass_woman.png",
+        "instruc_descript": "He is a Clinical Professor at the University of Michigan School of Information, where he teaches various technology-oriented courses including programming, database design, and Web development. Chuck has written a number of books including Using Google App Engine, and Python for Everybody. His research field is in the building of learning management systems such as Sakai, Moodle, Blackboard, ANGEL, and others. He was the chief architect for the Sakai Project, a learning management system used at about 300 schools worldwide and wrote the book Sakai: Free as in Freedom, that describes his experiences as one of the leaders of the project. In the mid-1990s he was the host of Internet:TCI, a national television talk show about the Internet that ran for several years on the TCI cable system.",
+        "languages": ["English"],
+        "learners": [],
+        "fee": "150",
+        "atc": "WHAT YOU WILL LEARN Learn what data science is, the various activities of a data scientist’s job, and methodology to think and work like a data scientist Develop hands-on skills using the tools, languages, and libraries used by professional data scientists Import and clean data sets, analyze and visualize data, and build and evaluate machine learning models and pipelines using Python Apply various data science skills, techniques, and tools to complete a project and publish a report",
+        "hiw": "Build the Skills to Get Job Ready Whether youre looking to start a new career, or change your current one, Professional Certificates on Coursera help you become job ready. Learn at your own pace, whenever and wherever it’s most convenient for you. Enroll today and explore a new career path with a 7 day free trial. You can pause your learning or end your subscription at any time.",
+        "degree": "degree1.png",
+        "feedbacks": [{
+                "user_id": "",
+                "rate": 3,
+                "content": "Its a very good Learning about giving feedback and also understand how to Give Positive or Negative Feedback to Employees or Friends.",
+                "createdAt": "2022-05-15T18:25:43-05:00"
+            },
+            {
+                "user_id": "",
+                "rate": 4,
+                "content": "This course is very relatable in the work arena. Many examples are provided that you can use as a manager and improve your feedback skills.",
+                "createdAt": "2022-01-12T18:25:43-05:00"
+            },
+            {
+                "user_id": "",
+                "rate": 5,
+                "content": "The session was very interesting and useful. And I`ll be able to use giving feedback to my students with more creative and efficiency",
+                "createdAt": "2021-11-01T18:25:43-05:00"
+            }
+        ]
+
+    },
+    {
+        "title": "Build Python Web Apps with Flask",
+        "category": { "$oid": "6270e5c2b36232bdf8426d14" },
+        "admin_id": "",
+        "status": "available",
+        "time": "New",
+        "level": "Intermediate",
+        "instructor": "Marlon Brando",
+        "user_avt": "glass_woman.png",
+        "instruc_descript": "I recently discovered I could make fudge with just chocolate chips, sweetened condensed milk, vanilla extract, and a thick pot on slow heat. I tried it with dark chocolate chunks and I tried it with semi-sweet chocolate chips. It's better with both kinds. It comes out pretty bad with just the dark chocolate. The best add-ins are crushed almonds and marshmallows -- what you get from that is Rocky Road. It takes about twenty minutes from start to fridge, and then it takes about six months to work off the twenty pounds you gain from eating it. All things in moderation, friends. All things in moderation.",
+        "languages": ["English", "Vietnamese"],
+        "learners": [],
+        "fee": 150,
+        "atc": "WHAT YOU WILL LEARN Learn what data science is, the various activities of a data scientist’s job, and methodology to think and work like a data scientist Develop hands-on skills using the tools, languages, and libraries used by professional data scientists Import and clean data sets, analyze and visualize data, and build and evaluate machine learning models and pipelines using Python Apply various data science skills, techniques, and tools to complete a project and publish a report",
+        "hiw": "Build the Skills to Get Job Ready Whether you’re looking to start a new career, or change your current one, Professional Certificates on Coursera help you become job ready. Learn at your own pace, whenever and wherever it’s most convenient for you. Enroll today and explore a new career path with a 7 day free trial. You can pause your learning or end your subscription at any time.",
+        "degree": "degree2.png",
+        "feedbacks": [{
+            "user_id": "",
+            "rate": 4,
+            "content": "This course is very relatable in the work arena. Many examples are provided that you can use as a manager and improve your feedback skills.",
+            "createdAt": "2022-04-12T18:25:43-05:00"
+        }]
+
+    },
+    {
+        "title": "Build Deep Learning Models with TensorFlow",
+        "category": { "$oid": "6270e5c2b36232bdf8426d14" },
+        "admin_id": "",
+        "status": "available",
+        "time": "Popular",
+        "level": "Beginner",
+        "instructor": "Henry Fonda",
+        "user_avt": "glass_woman.png",
+        "instruc_descript": "It was going to rain. The weather forecast didn't say that, but the steel plate in his hip did. He had learned over the years to trust his hip over the weatherman. It was going to rain, so he better get outside and prepare.",
+        "languages": ["English", "Vietnamese"],
+        "learners": [],
+        "fee": 250,
+        "atc": "WHAT YOU WILL LEARN Learn what data science is, the various activities of a data scientist’s job, and methodology to think and work like a data scientist Develop hands-on skills using the tools, languages, and libraries used by professional data scientists Import and clean data sets, analyze and visualize data, and build and evaluate machine learning models and pipelines using Python Apply various data science skills, techniques, and tools to complete a project and publish a report",
+        "hiw": "Build the Skills to Get Job Ready Whether you’re looking to start a new career, or change your current one, Professional Certificates on Coursera help you become job ready. Learn at your own pace, whenever and wherever it’s most convenient for you. Enroll today and explore a new career path with a 7 day free trial. You can pause your learning or end your subscription at any time.",
+        "degree": "degree2.png",
+        "feedbacks": [{
+            "user_id": "",
+            "rate": 5,
+            "content": "This course is very relatable in the work arena. Many examples are provided that you can use as a manager and improve your feedback skills.",
+            "createdAt": "2022-04-12T18:25:43-05:00"
+        }]
+    },
+    {
+        "title": "Build Chatbots with Python",
+        "category": { "$oid": "6270e5c2b36232bdf8426d14" },
+        "admin_id": "",
+        "status": "available",
+        "time": "Popular",
+        "level": "Beginner",
+        "instructor": "James Cagney",
+        "user_avt": "glass_woman.png",
+        "instruc_descript": "It was a rat's nest. Not a literal one, but that is what her hair seemed to resemble every morning when she got up. It was going to take at least an hour to get it under control and she was sick and tired of it. She peered into the mirror and wondered if it was worth it. It wasn't. She opened the drawer and picked up the hair clippers.",
+        "languages": ["English", "Vietnamese"],
+        "learners": [],
+        "fee": 350,
+        "atc": "WHAT YOU WILL LEARN Learn what data science is, the various activities of a data scientist’s job, and methodology to think and work like a data scientist Develop hands-on skills using the tools, languages, and libraries used by professional data scientists Import and clean data sets, analyze and visualize data, and build and evaluate machine learning models and pipelines using Python Apply various data science skills, techniques, and tools to complete a project and publish a report",
+        "hiw": "Build the Skills to Get Job Ready Whether you’re looking to start a new career, or change your current one, Professional Certificates on Coursera help you become job ready. Learn at your own pace, whenever and wherever it’s most convenient for you. Enroll today and explore a new career path with a 7 day free trial. You can pause your learning or end your subscription at any time.",
+        "degree": "degree3.png",
+        "feedback": [{
+            "user_id": "",
+            "rate": 4,
+            "content": "This course is very relatable in the work arena. Many examples are provided that you can use as a manager and improve your feedback skills.",
+            "createdAt": "2022-04-12T18:25:43-05:00"
+        }]
+    },
+    {
+        "title": "Create a Front-End App with React",
+        "category": { "$oid": "6270e5c2b36232bdf8426d15" },
+        "admin_id": "",
+        "status": "available",
+        "time": "Popular",
+        "level": "Intermediate",
+        "instructor": "Charles Chaplin",
+        "user_avt": "glass_woman.png",
+        "instruc_descript": "MaryLou wore the tiara with pride. There was something that made doing anything she didn't really want to do a bit easier when she wore it. She really didn't care what those staring through the window were thinking as she vacuumed her apartment.",
+        "languages": ["English", "Vietnamese"],
+        "learners": [],
+        "fee": 450,
+        "atc": "WHAT YOU WILL LEARN Learn what data science is, the various activities of a data scientist’s job, and methodology to think and work like a data scientist Develop hands-on skills using the tools, languages, and libraries used by professional data scientists Import and clean data sets, analyze and visualize data, and build and evaluate machine learning models and pipelines using Python Apply various data science skills, techniques, and tools to complete a project and publish a report",
+        "hiw": "Build the Skills to Get Job Ready Whether you’re looking to start a new career, or change your current one, Professional Certificates on Coursera help you become job ready. Learn at your own pace, whenever and wherever it’s most convenient for you. Enroll today and explore a new career path with a 7 day free trial. You can pause your learning or end your subscription at any time.",
+        "degree": "degree1.png",
+        "feedback": [{
+                "user_id": "",
+                "rate": 4,
+                "content": "This course is very relatable in the work arena. Many examples are provided that you can use as a manager and improve your feedback skills.",
+                "createdAt": "2022-04-12T18:25:43-05:00"
+            },
+            {
+                "user_id": "",
+                "rate": 5,
+                "content": "E​xcellent course content.! Practical examples help with the learning process, making it smoother and applying concepts easily.",
+                "createdAt": "2022-05-20T18:25:43-05:00"
+            }
+        ]
+    },
+    {
+        "title": "Create a Advanced Web App with React and Relux",
+        "category": { "$oid": "6270e5c2b36232bdf8426d15" },
+        "admin_id": "",
+        "status": "available",
+        "time": "New",
+        "level": "Intermediate",
+        "instructor": "Gregory Peck",
+        "user_avt": "glass_woman.png",
+        "instruc_descript": "Do you think you're living an ordinary life? You are so mistaken it's difficult to even explain. The mere fact that you exist makes you extraordinary. The odds of you existing are less than winning the lottery, but here you are. Are you going to let this extraordinary opportunity pass?",
+        "languages": ["English", "Vietnamese"],
+        "learners": [],
+        "fee": 300,
+        "atc": "WHAT YOU WILL LEARN Learn what data science is, the various activities of a data scientist’s job, and methodology to think and work like a data scientist Develop hands-on skills using the tools, languages, and libraries used by professional data scientists Import and clean data sets, analyze and visualize data, and build and evaluate machine learning models and pipelines using Python Apply various data science skills, techniques, and tools to complete a project and publish a report",
+        "hiw": "Build the Skills to Get Job Ready Whether you’re looking to start a new career, or change your current one, Professional Certificates on Coursera help you become job ready. Learn at your own pace, whenever and wherever it’s most convenient for you. Enroll today and explore a new career path with a 7 day free trial. You can pause your learning or end your subscription at any time.",
+        "degree": "degree1.png",
+        "feedback": []
+
+    },
+    {
+        "title": "Learn React",
+        "category": { "$oid": "6270e5c2b36232bdf8426d15" },
+        "admin_id": "",
+        "status": "available",
+        "time": "Popular",
+        "level": "Beginner",
+        "instructor": "John Wayne",
+        "user_avt": "glass_woman.png",
+        "instruc_descript": "MaryLou wore the tiara with pride. There was something that made doing anything she didn't really want to do a bit easier when she wore it. She really didn't care what those staring through the window were thinking as she vacuumed her apartment.",
+        "languages": ["English", "Vietnamese"],
+        "learners": [],
+        "fee": 300,
+        "atc": "WHAT YOU WILL LEARN Learn what data science is, the various activities of a data scientist’s job, and methodology to think and work like a data scientist Develop hands-on skills using the tools, languages, and libraries used by professional data scientists Import and clean data sets, analyze and visualize data, and build and evaluate machine learning models and pipelines using Python Apply various data science skills, techniques, and tools to complete a project and publish a report",
+        "hiw": "Build the Skills to Get Job Ready Whether you’re looking to start a new career, or change your current one, Professional Certificates on Coursera help you become job ready. Learn at your own pace, whenever and wherever it’s most convenient for you. Enroll today and explore a new career path with a 7 day free trial. You can pause your learning or end your subscription at any time.",
+        "degree": "degree1.png",
+        "feedback": []
+    },
+    {
+        "title": "Full-Stack Engineer",
+        "category": { "$oid": "6270e5c2b36232bdf8426d15" },
+        "admin_id": "",
+        "status": "available",
+        "time": "Popular",
+        "level": "Intermediate",
+        "instructor": "Vivien Leigh",
+        "user_avt": "glass_woman.png",
+        "instruc_descript": "I'm going to hire professional help tomorrow. I can't handle this anymore. She fell over the coffee table and now there is blood in her catheter. This is much more than I ever signed up to do.",
+        "languages": ["English", "Vietnamese"],
+        "learners": [],
+        "fee": 300,
+        "atc": "WHAT YOU WILL LEARN Learn what data science is, the various activities of a data scientist’s job, and methodology to think and work like a data scientist Develop hands-on skills using the tools, languages, and libraries used by professional data scientists Import and clean data sets, analyze and visualize data, and build and evaluate machine learning models and pipelines using Python Apply various data science skills, techniques, and tools to complete a project and publish a report",
+        "hiw": "Build the Skills to Get Job Ready Whether you’re looking to start a new career, or change your current one, Professional Certificates on Coursera help you become job ready. Learn at your own pace, whenever and wherever it’s most convenient for you. Enroll today and explore a new career path with a 7 day free trial. You can pause your learning or end your subscription at any time.",
+        "degree": "degree1.png",
+        "feedback": [{
+                "user_id": "",
+                "rate": 5,
+                "content": "This course is very relatable in the work arena. Many examples are provided that you can use as a manager and improve your feedback skills.",
+                "createdAt": "2021-04-12T18:25:43-05:00"
+            },
+            {
+                "user_id": "",
+                "rate": 3,
+                "content": "Poor course content.! Practical examples help with the learning process, making it smoother and applying concepts easily.",
+                "createdAt": "2021-05-20T18:25:43-05:00"
+            }
+        ]
+    },
+    {
+        "title": "Create REST APIs with Spring and Java",
+        "category": { "$oid": "6270e5c2b36232bdf8426d16" },
+        "admin_id": "",
+        "status": "available",
+        "time": "New",
+        "level": "Intermediate",
+        "instructor": "Lauren Bacall",
+        "user_avt": "glass_woman.png",
+        "instruc_descript": "I guess we could discuss the implications of the phrase meant to be.That is if we wanted to drown ourselves in a sea of backwardly referential semantics and other mumbo-jumbo. Maybe such a discussion would result in the determination that meant to be is exactly as meaningless a phrase as it seems to be, and that none of us is actually meant to be doing anything at all. But that's my existential underpants underpinnings showing. It's the way the cookie crumbles. And now I want a cookie.",
+        "languages": ["English", "Vietnamese"],
+        "learners": [],
+        "fee": 350,
+        "atc": "WHAT YOU WILL LEARN Learn what data science is, the various activities of a data scientist’s job, and methodology to think and work like a data scientist Develop hands-on skills using the tools, languages, and libraries used by professional data scientists Import and clean data sets, analyze and visualize data, and build and evaluate machine learning models and pipelines using Python Apply various data science skills, techniques, and tools to complete a project and publish a report",
+        "hiw": "Build the Skills to Get Job Ready Whether you’re looking to start a new career, or change your current one, Professional Certificates on Coursera help you become job ready. Learn at your own pace, whenever and wherever it’s most convenient for you. Enroll today and explore a new career path with a 7 day free trial. You can pause your learning or end your subscription at any time.",
+        "degree": "degree1.png",
+        "feedback": [{
+                "user_id": "",
+                "rate": 5,
+                "content": "This course is very relatable in the work arena. Many examples are provided that you can use as a manager and improve your feedback skills.",
+                "createdAt": "2022-04-13T18:25:43-05:00"
+            },
+            {
+                "user_id": "",
+                "rate": 5,
+                "content": "E​xcellent course content.! Practical examples help with the learning process, making it smoother and applying concepts easily.",
+                "createdAt": "2021-07-20T18:25:43-05:00"
+            }
+        ]
+
+    },
+
+    {
+        "title": "Pass the Technical Interview with Java",
+        "category": { "$oid": "6270e5c2b36232bdf8426d16" },
+        "admin_id": "",
+        "status": "available",
+        "time": "New",
+        "level": "Intermediate",
+        "instructor": "Jean Harlow",
+        "user_avt": "glass_woman.png",
+        "instruc_descript": "Out of another, I get a lovely view of the bay and a little private wharf belonging to the estate. There is a beautiful shaded lane that runs down there from the house. I always fancy I see people walking in these numerous paths and arbors, but John has cautioned me not to give way to fancy in the least. He says that with my imaginative power and habit of story-making a nervous weakness like mine is sure to lead to all manner of excited fancies and that I ought to use my will and good sense to check the tendency. So I try.",
+        "languages": ["English", "Vietnamese"],
+        "learners": [],
+        "fee": 450,
+        "atc": "WHAT YOU WILL LEARN Learn what data science is, the various activities of a data scientist’s job, and methodology to think and work like a data scientist Develop hands-on skills using the tools, languages, and libraries used by professional data scientists Import and clean data sets, analyze and visualize data, and build and evaluate machine learning models and pipelines using Python Apply various data science skills, techniques, and tools to complete a project and publish a report",
+        "hiw": "Build the Skills to Get Job Ready Whether you’re looking to start a new career, or change your current one, Professional Certificates on Coursera help you become job ready. Learn at your own pace, whenever and wherever it’s most convenient for you. Enroll today and explore a new career path with a 7 day free trial. You can pause your learning or end your subscription at any time.",
+        "degree": "degree1.png",
+        "feedback": [{
+                "user_id": "",
+                "rate": 4,
+                "content": "This course is very relatable in the work arena. Many examples are provided that you can use as a manager and improve your feedback skills.",
+                "createdAt": "2022-04-12T18:25:43-05:00"
+            },
+            {
+                "user_id": "",
+                "rate": 5,
+                "content": "Curso muy práctico para llevar a cabo retroalimentación con tus empleados, compañeros, incluso en la familia. Excelente curso!",
+                "createdAt": "2022-05-20T18:25:43-05:00"
+            }
+        ]
+    },
+    {
+        "title": "Data Analyst Interview Preparation",
+        "category": { "$oid": "6270e5c2b36232bdf8426d17" },
+        "admin_id": "",
+        "status": "available",
+        "time": "Popular",
+        "level": "Intermediate",
+        "instructor": "Sidney Poitier",
+        "user_avt": "glass_woman.png",
+        "instruc_descript": "There was a time when he would have embraced the change that was coming. In his youth, he sought adventure and the unknown, but that had been years ago. He wished he could go back and learn to find the excitement that came with change but it was useless. That curiosity had long left him to where he had come to loathe anything that put him out of his comfort zone.",
+        "languages": ["English"],
+        "learners": [],
+        "fee": "150",
+        "atc": "WHAT YOU WILL LEARN Learn what data science is, the various activities of a data scientist’s job, and methodology to think and work like a data scientist Develop hands-on skills using the tools, languages, and libraries used by professional data scientists Import and clean data sets, analyze and visualize data, and build and evaluate machine learning models and pipelines using Python Apply various data science skills, techniques, and tools to complete a project and publish a report",
+        "hiw": "Build the Skills to Get Job Ready Whether you’re looking to start a new career, or change your current one, Professional Certificates on Coursera help you become job ready. Learn at your own pace, whenever and wherever it’s most convenient for you. Enroll today and explore a new career path with a 7 day free trial. You can pause your learning or end your subscription at any time.",
+        "degree": "degree3.png",
+        "feedback": [{
+            "user_id": "",
+            "rate": 4,
+            "content": "It was really useful to understand what, why, when and how to give feedback.",
+            "createdAt": "2022-11-12T18:25:43-05:00"
+        }]
+    },
+    {
+        "title": "Learn C++ Programming from Zero to Mastery in 2022 (FAANG)",
+        "category": { "$oid": "6270e5c2b36232bdf8426d18" },
+        "admin_id": "",
+        "status": "available",
+        "time": "New",
+        "level": "Beginner",
+        "instructor": "Jefferson Hall",
+        "user_avt": "glass_woman.png",
+        "instruc_descript": "The computer wouldn't start. She banged on the side and tried again. Nothing. She lifted it up and dropped it to the table. Still nothing. She banged her closed fist against the top. It was at this moment she saw the irony of trying to fix the machine with violence.",
+        "languages": ["English", "Vietnamese"],
+        "learners": [],
+        "fee": 500,
+        "atc": "WHAT YOU WILL LEARN Learn what data science is, the various activities of a data scientist’s job, and methodology to think and work like a data scientist Develop hands-on skills using the tools, languages, and libraries used by professional data scientists Import and clean data sets, analyze and visualize data, and build and evaluate machine learning models and pipelines using Python Apply various data science skills, techniques, and tools to complete a project and publish a report",
+        "hiw": "Build the Skills to Get Job Ready Whether you’re looking to start a new career, or change your current one, Professional Certificates on Coursera help you become job ready. Learn at your own pace, whenever and wherever it’s most convenient for you. Enroll today and explore a new career path with a 7 day free trial. You can pause your learning or end your subscription at any time.",
+        "degree": "degree4.png",
+        "feedback": [{
+                "user_id": "",
+                "rate": 5,
+                "content": "It was really useful to understand what, why, when and how to give feedback.",
+                "createdAt": "2022-11-12T18:25:43-05:00"
+            },
+            {
+                "user_id": "",
+                "rate": 5,
+                "content": "Good! Thank you for the course.",
+                "createdAt": "2022-04-12T18:25:43-05:00"
+            }
+        ]
+    },
+    {
+        "title": "Crash Course on C++ Standard Template Library (STL)",
+        "category": { "$oid": "6270e5c2b36232bdf8426d18" },
+        "admin_id": "",
+        "status": "hidden",
+        "time": "New",
+        "level": "Intermediate",
+        "instructor": "Andrew Wilde",
+        "user_avt": "glass_woman.png",
+        "instruc_descript": "The computer wouldn't start. She banged on the side and tried again. Nothing. She lifted it up and dropped it to the table. Still nothing. She banged her closed fist against the top. It was at this moment she saw the irony of trying to fix the machine with violence.",
+        "languages": ["English"],
+        "learners": [],
+        "fee": 250,
+        "atc": "WHAT YOU WILL LEARN Learn what data science is, the various activities of a data scientist’s job, and methodology to think and work like a data scientist Develop hands-on skills using the tools, languages, and libraries used by professional data scientists Import and clean data sets, analyze and visualize data, and build and evaluate machine learning models and pipelines using Python Apply various data science skills, techniques, and tools to complete a project and publish a report",
+        "hiw": "Build the Skills to Get Job Ready Whether you’re looking to start a new career, or change your current one, Professional Certificates on Coursera help you become job ready. Learn at your own pace, whenever and wherever it’s most convenient for you. Enroll today and explore a new career path with a 7 day free trial. You can pause your learning or end your subscription at any time.",
+        "degree": "degree4.png",
+        "feedback": [{
+                "user_id": "",
+                "rate": 3,
+                "content": "Not worthy",
+                "createdAt": "2021-11-12T18:25:43-05:00"
+            },
+            {
+                "user_id": "",
+                "rate": 3,
+                "content": "Good! Thank you for the course.",
+                "createdAt": "2022-04-12T18:25:43-05:00"
+            }
+        ]
+    }
+]
