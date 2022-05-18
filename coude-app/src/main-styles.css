@@ -1,3 +1,5 @@
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+
 @font-face {
     font-family: RobotoBlack;
     src: url(./assets/fonts/roboto/Roboto-Black.ttf);
@@ -42,14 +44,17 @@
 }
 
 .button--green{
-    background-color: var(--green)!important;
-    font-family: RobotoMedium;
-    color: white!important;
-    border: none
+    background-color: #2ea44f;
+    color: white;
+    font-family: RobotoBold;
+    border-radius: 5px;
+    border: none;
 }
 .button--grey{
     background-color: #DFDFE1!important;  
     font-family: RobotoMedium;
+    border-radius: 10px;
+    border: none;
 }
 .background__whale--color{
     background-color: #000000;
@@ -59,12 +64,12 @@
     --footer-color: #757682;
     --heart-color: #FF0F0F;
     --input-style: #E7E7EA;
+    --login-color: #F2F2F9;
     --background-login-frame: #F5F5FA;
     --green: #2ea44f;
+    --green-deep: #199B80;
 }
-.btn{
-    border-radius: 10px;
-}
+
 .box__course{
     border: 3px;
 }
@@ -81,6 +86,6 @@
     background: var(--green); 
     border-radius: 10px;
   }
-.fluid-container{
+html{
     margin-top: 55px;
 }

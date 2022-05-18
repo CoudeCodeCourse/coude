@@ -1,0 +1,41 @@
+.form-container{
+    width: 40%;
+    min-height: 80vh;
+    display: block;
+    margin: auto;
+    background-color: var(--login-color);
+    border-radius: 5px;
+    margin-top: 50px;
+    padding-bottom: 50px;
+}
+.coude-logo{
+    width: 30%;
+    display: block;
+    margin: auto;
+}
+#logo{
+    width: 32px;
+}
+
+.form-content{
+    display: block;
+    margin: auto;
+    width: 70%;
+}
+input{
+    background-color: #C4C4C4;
+    opacity: 30%;
+}
+#smart-login button{
+    border: none;
+    background-color: transparent;
+}
+#button-block button{
+    min-width: 100px;
+    padding: 5px 10px;
+}
+.form-label{
+    font: RobotoLight;
+    color: black;
+    opacity: 75%;
+}

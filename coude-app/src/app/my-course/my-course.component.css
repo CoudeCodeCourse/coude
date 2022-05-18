@@ -1,0 +1,82 @@
+h1 {
+    font-family: MontserratBold;
+    color: #199B80;
+}
+
+fieldset {
+    margin-bottom: 20px;
+}
+
+legend {
+    font-family: RobotoMedium;
+    font-size: 22px;
+}
+
+input[type=button]:hover {
+    color: black;
+}
+
+input[type=button] {
+    background: #2EA44F;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-family: RobotoMedium;
+    font-size: 15px;
+    padding: 10px;
+}
+
+.instructor-text {
+    font-family: RobotoLight;
+    margin-top: 0px;
+}
+
+#myTopnav {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(0deg, rgba(55, 73, 168, 0.2), rgba(55, 73, 168, 0.2)), rgba(0, 0, 0, 0.76);
+    padding: 20px;
+    width: 20%;
+}
+
+#content {
+    width: 80%;
+    padding: 0px 100px;
+}
+
+#class {
+    width: 70%;
+    margin-right: 30px;
+}
+
+#class-label {
+    font-family: RobotoMedium;
+    margin-right: 20px;
+}
+
+#class div {
+    background-color: #C4C4C4;
+    margin: 30px;
+    padding: 0px 15px;
+    font-family: RobotoLight;
+}
+
+#button {
+    margin-left: 25px;
+    justify-content: right;
+    justify-items: self-end;
+}
+
+@media only screen and (max-width: 600px) {
+   
+}
+
+@media screen and (max-width: 768px) {
+    
+}
+
+@media screen and (max-width: 768px) {
+    
+}
+
+@media screen and (max-width: 992px) {
+    
+}
