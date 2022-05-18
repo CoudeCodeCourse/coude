@@ -107,7 +107,7 @@ import { GeneralInformationComponent } from './general-information/general-infor
       
       
       //tất cả các path đều phải nằm trên path của PageNotFound
-      { path: '**', component: PageNotFoundComponent, pathMatch: "full"},
+      { path: '**', component: PageNotFoundComponent},
     ]),
   ],
 
