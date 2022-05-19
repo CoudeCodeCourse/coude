@@ -22,7 +22,9 @@ export class ForumMainComponent implements OnInit {
   //   name: ['', Validators.required, Validators.minLength(3)],
   //   file: [''],
   // })
-  constructor(private _formBuilder: FormBuilder, private _service: ForumService, private _router: Router, private _activatedRoute: ActivatedRoute, private _activeRoute: ActivatedRoute) {
+  constructor(
+    // private _formBuilder: FormBuilder, 
+    private _service: ForumService, private _router: Router, private _activatedRoute: ActivatedRoute, private _activeRoute: ActivatedRoute) {
     this._activeRoute.queryParams.subscribe(params => {
       this.selectedId = params;
       console.log("tiel:", this.selectedId); // Print the parameter to the console. 
@@ -49,7 +51,7 @@ export class ForumMainComponent implements OnInit {
       })
   }
   onSelect(data: any): void {
-    this._router.navigate(['/view-topic', data.id])
+    this._router.navigate(['/forum', data.id])
   }
   // isSelected(data: any) {
   //   return data.id === this.selectedId
@@ -61,9 +63,10 @@ export class ForumMainComponent implements OnInit {
     this.topics = this.topics.date.sort();
   }
   onSelected(topic: ITopic) {
-    this._router.navigate(['/view-topic', topic.id],
-      {queryParams: {topic: topic},
-     })
+    this._router.navigate(['/forum', topic.id],
+      // {queryParams: {topic: topic},
+    //  }
+     )
   }
   // onSubmit(data: any) {}
 }

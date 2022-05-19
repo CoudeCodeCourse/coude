@@ -12,9 +12,9 @@
     <ng-template #userView>
         <div class="navbar__link-container collapse navbar-collapse justify-content-between" id="navbarContent">
             <ul class="navbar-nav">
-                <li *ngIf="login" class="nav-item"><a class="nav-link" href="#">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="/catalog">Catalog</a></li>
-                <li class="nav-item"><a class="nav-link" href="/forum">Forum</a></li>
+                <li *ngIf="login" class="nav-item"><a class="nav-link" routerLink="/home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" routerLink="/catalog">Catalog</a></li>
+                <li class="nav-item"><a class="nav-link" routerLink="/forum">Forum</a></li>
             </ul>
 
 
@@ -43,8 +43,8 @@
 
         <div *ngIf="!login">
             <div class="header__button-container d-flex">
-                <button id="login">Log in</button>
-                <button id="signup">Sign up</button>
+                <button id="login" routerLink="/login">Log in</button>
+                <button id="signup" routerLink="/sign-up">Sign up</button>
             </div>
         </div>
         <div *ngIf="login">
@@ -62,7 +62,7 @@
                         <!-- <span class="rounded-circle"></span> -->
                     </button>
                     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
-                        <li><a class="dropdown-item" href="#">Personal Info</a></li>
+                        <li><a class="dropdown-item" routerLink="/generalinformation">Personal Info</a></li>
                         <li><a class="dropdown-item" href="#">My Learning</a></li>
                         <li><a class="dropdown-item" href="#">My Purchase</a></li>
                         <li><a class="dropdown-item" href="#">Setting</a></li>

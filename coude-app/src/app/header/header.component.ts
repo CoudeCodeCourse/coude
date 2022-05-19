@@ -11,7 +11,7 @@ import { CoursesDataService } from '../services/courses-data.service';
   })
 export class HeaderComponent implements OnInit {
   // guest = false;
-  login = true;
+  login = false;
   admin = false;
   isAdmin = true;
   searchText = "";

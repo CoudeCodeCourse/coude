@@ -42,10 +42,10 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { AssignmentComponent } from './assignment/assignment.component';
 import { AssignmentFbComponent } from './assignment-fb/assignment-fb.component';
 import { AssignmentStartComponent } from './assignment-start/assignment-start.component';
-import{CourseFilterPipe} from '../pipes/courseFilter.pipe';
-import{CourseFilter2Pipe} from '../pipes/courseFilter2.pipe';
+import { CourseFilterPipe} from '../pipes/courseFilter.pipe';
+import { CourseFilter2Pipe} from '../pipes/courseFilter2.pipe';
 import { GeneralInformationComponent } from './general-information/general-information.component';
-import {ForumFilterPipe} from '../pipes/forumFilter.pipe';
+import { ForumFilterPipe} from '../pipes/forumFilter.pipe';
 import { UpdateInformationComponent } from './update-information/update-information.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { BillingComponent } from './billing/billing.component';
@@ -91,7 +91,7 @@ import { BillingComponent } from './billing/billing.component';
     AdminStudentComponent,
     TextEditorComponent,
     ForumFilterPipe,
-    AdminStudent1Component
+    AdminStudent1Component,
     GeneralInformationComponent,
     UpdateInformationComponent,
     SignUpComponent,
@@ -116,9 +116,8 @@ import { BillingComponent } from './billing/billing.component';
       { path: 'admin/courses/:id', component: AdminCourseDetailsComponent },
       { path: 'admin', component: AdminHomeComponent },
       { path: 'homepage', component: HomepageComponent },
-      { path: 'adminCouseDetails', component: AdminCourseDetailsComponent },
       { path: 'forum', component: ForumMainComponent },
-      { path: 'view-topic', component: ForumViewtopicComponent },
+      { path: 'forum/:id', component: ForumViewtopicComponent },
       { path: 'feedback', component: FeedbackComponent },
       { path: 'completed-course', component: CompletedCourseComponent },
       { path: 'admin-student', component: AdminStudentComponent },
@@ -135,7 +134,6 @@ import { BillingComponent } from './billing/billing.component';
       { path: 'update-information', component: UpdateInformationComponent },
       { path: 'sign-up', component: SignUpComponent },
       { path: 'billing', component: BillingComponent },
-
       
       //tất cả các path đều phải nằm trên path của PageNotFound
       { path: '**', component: PageNotFoundComponent},

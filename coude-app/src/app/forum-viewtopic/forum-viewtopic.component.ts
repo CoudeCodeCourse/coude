@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { ForumService } from '../forum.service';
 
 @Component({
@@ -8,7 +9,14 @@ import { ForumService } from '../forum.service';
 })
 export class ForumViewtopicComponent implements OnInit {
   topics: any;
-  constructor(private _service: ForumService) { }
+  selectedTopic: any;
+  id: any;
+  constructor(private _service: ForumService, 
+            private _router: ActivatedRoute) { 
+    this._router.params.subscribe(params => {
+      this.id = params['id'];
+    })
+  }
 
   ngOnInit(): void {
     this.topics = this._service.getTopics();
