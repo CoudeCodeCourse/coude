@@ -23,8 +23,8 @@ import { StudyComponent } from './study/study.component';
 import { TestComponent } from './test/test.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { EnrollCourseComponent } from './enroll-course/enroll-course.component';
-import { AdminHomeComponent } from './admin-home/admin-home.component';
-import { AdminCourseDetailsComponent } from './admin-course-details/admin-course-details.component';
+// import { AdminHomeComponent } from './admin-home/admin-home.component';
+// import { AdminCourseDetailsComponent } from './admin-course-details/admin-course-details.component';
 
 
 
@@ -41,6 +41,8 @@ import { AssignmentStartComponent } from './assignment-start/assignment-start.co
 import{CourseFilterPipe} from '../pipes/courseFilter.pipe';
 import{CourseFilter2Pipe} from '../pipes/courseFilter2.pipe';
 import { GeneralInformationComponent } from './general-information/general-information.component';
+import { AdminRoutingComponents } from './admin/admin-routing.module';
+import { AdminModule } from './admin/admin.module';
 
 @NgModule({
   declarations: [
@@ -55,13 +57,13 @@ import { GeneralInformationComponent } from './general-information/general-infor
     CatalogComponent,
     WhoWeAreComponent,
 
-    Header1Component,
+    // Header1Component,
     StudyComponent,
     TestComponent,
     HomepageComponent,
     EnrollCourseComponent,
-    AdminHomeComponent,
-    AdminCourseDetailsComponent,
+    // AdminHomeComponent,
+    // AdminCourseDetailsComponent,
     ScheduleComponent,
     MyCourseComponent,
     LoginComponent,
@@ -74,7 +76,8 @@ import { GeneralInformationComponent } from './general-information/general-infor
     CourseFilterPipe,
     CourseFilter2Pipe,
     GeneralInformationComponent,
-    AdUpCourseComponent
+    AdUpCourseComponent,
+    // AdminRoutingComponents
   ],
   imports: [
     BrowserModule,
@@ -91,8 +94,8 @@ import { GeneralInformationComponent } from './general-information/general-infor
       { path: 'landing', component: LandingComponent },
       { path: 'header', component: HeaderComponent },
       { path: 'home', component: HomepageComponent },
-      { path: 'admin/courses/:id', component: AdminCourseDetailsComponent },
-      { path: 'admin', component: AdminHomeComponent },
+      // { path: 'admin/courses/:id', component: AdminCourseDetailsComponent },
+      // { path: 'admin', component: AdminHomeComponent },
       { path: 'login', component: LoginComponent},
       { path: 'whoweare', component: WhoWeAreComponent},
       { path: 'uploadcourse', component: AdUpCourseComponent },
@@ -108,6 +111,7 @@ import { GeneralInformationComponent } from './general-information/general-infor
       //tất cả các path đều phải nằm trên path của PageNotFound
       { path: '**', component: PageNotFoundComponent},
     ]),
+    AdminModule
   ],
 
   providers: [],
