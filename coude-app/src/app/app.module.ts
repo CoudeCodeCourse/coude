@@ -137,6 +137,8 @@ import { CatalogDetailComponent } from './catalog-detail/catalog-detail.componen
       { path: 'sign-up', component: SignUpComponent },
       { path: 'billing', component: BillingComponent },
       { path: 'catalogdetails', component: CatalogDetailComponent },
+      { path: 'enroll', component: EnrollCourseComponent },
+
 
       //tất cả các path đều phải nằm trên path của PageNotFound
      
