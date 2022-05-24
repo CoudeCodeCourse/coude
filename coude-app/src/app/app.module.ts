@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { RouterModule, Routes } from '@angular/router';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations'
 import { HttpClientModule } from '@angular/common/http';
@@ -34,6 +34,7 @@ import { MyCourseComponent } from './my-course/my-course.component';
 import { LoginComponent } from './login/login.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { AdUpCourseComponent } from './ad-up-course/ad-up-course.component';
+import { BillingComponent } from './billing/billing.component';
 
 
 @NgModule({
@@ -57,34 +58,35 @@ import { AdUpCourseComponent } from './ad-up-course/ad-up-course.component';
     AdminCourseDetailsComponent,
     ScheduleComponent,
     MyCourseComponent,
-    LoginComponent
+    LoginComponent,
     PageNotFoundComponent,
-    AdUpCourseComponent
+    AdUpCourseComponent,
+    BillingComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
     FormsModule,
+    ReactiveFormsModule,
     NgbModule,
     HttpClientModule,
     BrowserAnimationsModule,
      RouterModule.forRoot([
-      { path: '', pathMatch: 'full', redirectTo: 'landing', },
+      { path: '', redirectTo: 'landing', pathMatch: 'full'},
       { path: 'contact', component: ContactComponent },
       { path: 'landing', component: LandingComponent },
       { path: 'header', component: HeaderComponent },
       { path: 'home', component: HomepageComponent },
       { path: 'admin/courses/:id', component: AdminCourseDetailsComponent },
       { path: 'admin', component: AdminHomeComponent },
-      { path: '**', redirectTo: 'landing' },
       { path: 'login', component: LoginComponent},
-      { path: 'whoweare', component: WhoWeAreComponent}
+      { path: 'whoweare', component: WhoWeAreComponent},
       { path: 'uploadcourse', component: AdUpCourseComponent },
        
 
       //tất cả các path đều phải nằm trên path của PageNotFound
-      { path: '**', component: PageNotFoundComponent, pathMatch: "full"},
+      { path: '**', component: PageNotFoundComponent},
     ]),
   ],
 
