@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CatalogService } from '../catalog.service';
+import { PipeTransform } from '@angular/core';
+import { CourseFilterPipe } from 'src/pipes/courseFilter.pipe';
 
 @Component({
   selector: 'app-catalog',

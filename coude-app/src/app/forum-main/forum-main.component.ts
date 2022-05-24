@@ -22,7 +22,7 @@ export class ForumMainComponent implements OnInit {
   //   name: ['', Validators.required, Validators.minLength(3)],
   //   file: [''],
   // })
-  constructor(private _formBuilder: FormBuilder, private _service: ForumService, private _router: Router, private _activatedRoute: ActivatedRoute, private _activeRoute: ActivatedRoute) {
+  constructor( private _service: ForumService, private _router: Router, private _activatedRoute: ActivatedRoute, private _activeRoute: ActivatedRoute) {
     this._activeRoute.queryParams.subscribe(params => {
       this.selectedId = params;
       console.log("tiel:", this.selectedId); // Print the parameter to the console. 

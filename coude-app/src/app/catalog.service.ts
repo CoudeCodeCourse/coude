@@ -6,7 +6,9 @@ import { ICatalog } from './interfaces/courses';
   providedIn: 'root'
 })
 export class CatalogService {
-  url: string = "/assets/data/courses/coursever1.json";
+  // url: string = "http://localhost:3000/courses";
+  url: string = "/assets/data/courses/courserver1.json";
+
   constructor(private _http: HttpClient) { }
 
   getSampleData(): Observable<ICatalog[]> {

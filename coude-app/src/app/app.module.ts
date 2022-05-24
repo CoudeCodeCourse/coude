@@ -49,6 +49,7 @@ import {ForumFilterPipe} from '../pipes/forumFilter.pipe';
 import { UpdateInformationComponent } from './update-information/update-information.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { BillingComponent } from './billing/billing.component';
+import { CatalogDetailComponent } from './catalog-detail/catalog-detail.component';
 
 
 
@@ -66,7 +67,6 @@ import { BillingComponent } from './billing/billing.component';
     LandingComponent,
     CatalogComponent,
     WhoWeAreComponent,
-
     Header1Component,
     StudyComponent,
     TestComponent,
@@ -91,11 +91,12 @@ import { BillingComponent } from './billing/billing.component';
     AdminStudentComponent,
     TextEditorComponent,
     ForumFilterPipe,
-    AdminStudent1Component
+    AdminStudent1Component,
     GeneralInformationComponent,
     UpdateInformationComponent,
     SignUpComponent,
-    BillingComponent
+    BillingComponent,
+    CatalogDetailComponent,
 
   ],
   imports: [
@@ -131,15 +132,14 @@ import { BillingComponent } from './billing/billing.component';
       { path: 'assignmentstr', component: AssignmentStartComponent },
       { path: 'catalog', component: CatalogComponent },  
       { path: 'generalinformation', component: GeneralInformationComponent },  
-      
-      
-      
-      //tất cả các path đều phải nằm trên path của PageNotFound
-      { path: '**', component: PageNotFoundComponent, pathMatch: "full"},
       { path: 'general-information', component: GeneralInformationComponent },
       { path: 'update-information', component: UpdateInformationComponent },
       { path: 'sign-up', component: SignUpComponent },
       { path: 'billing', component: BillingComponent },
+      { path: 'catalogdetails', component: CatalogDetailComponent },
+
+      //tất cả các path đều phải nằm trên path của PageNotFound
+     
        
       { path: '**', component: PageNotFoundComponent},
 
