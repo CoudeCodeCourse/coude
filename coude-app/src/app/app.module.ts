@@ -41,7 +41,7 @@ import { AssignmentStartComponent } from './assignment-start/assignment-start.co
 import{CourseFilterPipe} from '../pipes/courseFilter.pipe';
 import{CourseFilter2Pipe} from '../pipes/courseFilter2.pipe';
 import { GeneralInformationComponent } from './general-information/general-information.component';
-import { AdminRoutingComponents } from './admin/admin-routing.module';
+// import { AdminRoutingComponents } from './admin/admin-routing.module';
 import { AdminModule } from './admin/admin.module';
 
 @NgModule({

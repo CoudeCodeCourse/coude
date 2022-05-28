@@ -8,8 +8,8 @@
     <a class="navbar-brand p-0 mx-lg-5 ms-xs-0" href="#" id="logo">
         <img class="p-0" src="../../assets/images/logo.png" alt="Logo">
     </a>
-    <div *ngIf="admin && login; then adminView; else userView;"></div>
-    <ng-template #userView>
+    <!-- <div *ngIf="admin && login; then adminView; else userView;"></div> -->
+    <!-- <ng-template #userView> -->
         <div class="navbar__link-container collapse navbar-collapse justify-content-between" id="navbarContent">
             <ul class="navbar-nav">
                 <li *ngIf="login" class="nav-item"><a class="nav-link" href="#">Home</a></li>
@@ -77,11 +77,9 @@
                 </div>
             </div>
         </div>
-    </ng-template>
+    <!-- </ng-template> -->
 
-    <!-- <div class=""> -->
-    <!-- admin -->
-    <ng-template #adminView>
+    <!-- <ng-template #adminView>
         <div class="d-flex header__button-container me-0">
             <div class="btn-noti">
                 <svg style="fill: white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
@@ -92,8 +90,7 @@
             <div class="dropdown">
                 <button class="btn-user dropdown rounded-circle text-white" href="#" id="userDropdown" role="button"
                     data-bs-toggle="dropdown" aria-expanded="false">
-                    <!-- <span class="rounded-circle"></span> -->
-                </button>
+                <!-- </button> 
                 <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
                     <li><a class="dropdown-item" href="#">Personal Info</a></li>
                     <li><a class="dropdown-item" href="#">My Learning</a></li>
@@ -116,6 +113,6 @@
                 </ul>
             </div>
         </div>
-    </ng-template>
+    </ng-template> -->
     <!-- *ngIf="!admin; then #userView; else #adminView" -->
 </nav>
