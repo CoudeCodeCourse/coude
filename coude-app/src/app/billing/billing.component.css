@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+}
+
+.main-content {
+    margin-right: 15px;
+}
+
+.total {
+    margin: auto;
+    padding: 20px 10px;
+    border: 1px solid grey;
+    font-family: RobotoRegular;
+}
+
+.button-confirm {
+    width: auto;
+    padding: 15px 30px;
+    margin: auto;
+}
+
+h6 {
+    font-family: RobotoLight;
+}
+
+h3 {
+    font-family: MontserratExtraBold;
+}
+
+#div-mid {
+    margin-left: 0px;
+}
+
+.content-left-top {
+    border: 1px solid grey;
+    padding: 5px;
+}
+
+.btn-next {
+    margin-top: 10px;
+}
+
+#btnnext {
+    padding: 15px 20px;
+    font-family: MontserratExtraBold;
+}
+
+
+
+@media screen and (max-width: 768px) {
+   
+}
+
+@media screen and (max-width: 768px) {
+    
+}
