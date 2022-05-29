@@ -9,7 +9,7 @@ export class Course{
     instructor?: string;
     user_avt?: any;
     instruc_descript!: string;
-    language?: string[];
+    languages?: string[];
     learners?: string[];
     fee!: number;
     atc!: string;

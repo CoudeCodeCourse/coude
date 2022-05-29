@@ -39,18 +39,14 @@ export class CoursesDataService {
     //   catchError(this.handleError)
     // )
   }
-  // getACourse(id: any): Observable<Course> {
-  //   let courses: any;
-  //   let  errMessage = "";
-
-  //   this.getCourses().subscribe({
-  //     next: data => courses = data,
-  //     error: err => errMessage = err
-  //   })
-  //   console.log("get courses:", courses)
-  //   const course = courses.find((c: Course) => c._id === id)!;
-    
-  //   return of(course);
-  // }
+  updateCourse(id: any, data:any){
+    return this._http.patch(`${url_server}/courses/course/${id}`, data);
+  }
+  hideCourse(id: any, data:any){
+    return this._http.patch(`${url_server}/courses/course/hide/${id}`, data);
+  }
+  showCourse(id: any, data:any){
+    return this._http.patch(`${url_server}/courses/course/show/${id}`, data);
+  }
 }
 
