@@ -11,7 +11,13 @@
                 <div>
                     <button class="btn btn-success" (click)="GoToLearnPage()">Learner</button>
                     <button class="btn btn-success ms-2" (click)="switchMode()">Edit</button>
-                    <button class="btn btn-secondary ms-2" data-bs-toggle="modal" data-bs-target="#confirmHidePopup">Hide</button>
+                    <div *ngIf="isCourseHide == true; then hide; else show"></div>
+                    <ng-template #hide>
+                        <button class="btn btn-secondary ms-2" data-bs-toggle="modal" data-bs-target="#confirmHidePopup">Hide</button>
+                    </ng-template>
+                    <ng-template #show>
+                        <button class="btn btn-secondary ms-2" (click)="showCourse()">Show</button>
+                    </ng-template>
                 </div>
             </div>
 

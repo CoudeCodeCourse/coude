@@ -4,7 +4,6 @@
     <div class="sub-container d-flex justify-content-evenly flex-wrap align-self-center">
         <div class="rec-frame__shape  py-5 px-5 w-md-75">
             <p class="text-center">
-                <!-- margin: 50px 30px; -->
                 We envision a world where anyone, anywhere has the power to transform their life through learning. Make things possible with us!
             </p>
         </div>
@@ -13,17 +12,14 @@
                 <h2>No Pain No Gain</h2>
                 <p class="position-relative d-inline-block">with <span>Coudé</span></p>
             </div>
-            <!-- <button class="btn-create-account button--green text-white" (click)="window.location.href='/app/Signup/sign-up.html'"> -->
 
-                <button class="btn btn-create-account text-white vertical-align-middle position-relative">
-
-                Create An Account
+            <button class="btn btn-create-account text-white vertical-align-middle position-relative" routerLink="/signup">
+                    Create An Account
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                     class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
                     <path fill-rule="evenodd"
                         d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z" />
                 </svg>
-                <!-- <i class="bi bi-arrow-right-circle" style="width: 16px;"></i> -->
             </button>
         </div>
     </div>
@@ -88,7 +84,7 @@
                 <li>Develop your carreer</li>
                 <li>Explore something new</li>
             </ul>
-            <a class="text-white" href="/app/Catalog/Catalog.html">Go to our catalog →</a>
+            <a class="text-white" routerLink="/catalog">Go to our catalog →</a>
         </div>
     </div>
     <div class="">
@@ -110,27 +106,27 @@
             </div>
             <div class="people-container align-items-center"> 
                 <div class="people-container__item d-flex">
-                    <img src="/assets/images/landing/people.png" alt="avatar">
+                    <img src="https://afamilycdn.com/150157425591193600/2021/12/27/chu-tich-vinfast-le-thi-thu-thuy-1640600517369769955882.jpg" alt="avatar">
                     <div>
-                        <h5>Sara Hahaha</h5>
+                        <h5>Sara Harper</h5>
                         <p>IT Director</p>
-                        <p> Coude là một nền tảng tốt cho những ai đam mê lập trình và mong muốn trở thành một developer.</p>
+                        <p> Coude is a good website for those who have passion on programming.</p>
                     </div>
                 </div>
                 <div class="people-container__item d-flex">
-                    <img src="/assets/images/landing/people.png" alt="avatar">
+                    <img src="https://assets.euromoneydigital.com/dims4/default/38c21d2/2147483647/strip/true/crop/995x559+0+0/resize/840x472!/quality/90/?url=http%3A%2F%2Feuromoney-brightspot.s3.amazonaws.com%2F81%2F01%2F26de113706a1e3fcf036f4475b4c%2Fserveimage" alt="avatar">
                     <div>
-                        <h5>Sara Hahaha</h5>
-                        <p>IT Director</p>
-                        <p> Coude là một nền tảng tốt cho những ai đam mê lập trình và mong muốn trở thành một developer.</p>
+                        <h5>Tony Smith</h5>
+                        <p>Data Analyst</p>
+                        <p> Coude gives me a lot of knowledge of my career. It realy works for me!</p>
                     </div>
                 </div>
                 <div class="people-container__item d-flex">
-                    <img src="/assets/images/landing/people.png" alt="avatar">
+                    <img src="https://vn.jugomobile.com/wp-content/uploads/2022/04/The-Girl-from-Plainvilles-Creator-and-Star-Break-Down-That.jpg" alt="avatar">
                     <div>
-                        <h5>Sara Hahaha</h5>
-                        <p>IT Director</p>
-                        <p>Khóa học thât bổ ích. Coude là một nền tảng tốt cho những ai đam mê lập trình và mong muốn trở thành một developer.</p>
+                        <h5>Jane Doe</h5>
+                        <p>College Student</p>
+                        <p>The courses provided by Coudé are really helpful. I think this is a effective investment to join Coudé.</p>
                     </div>
                 </div>
                 <div class="people-container__item"></div>
@@ -157,7 +153,7 @@
                 </div>
             </div>
             <div class="text-end">
-                <a href="/contact" style="color: var(--green)">Explore more ↳</a>
+                <a routerLink="/contact" style="color: var(--green)">Explore more ↳</a>
             </div>
         </div>
     </div>

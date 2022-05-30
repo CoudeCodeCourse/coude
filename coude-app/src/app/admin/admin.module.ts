@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { AdminRoutingComponents, AdminRoutingModule } from './admin-routing.module';
 import { Header1Component } from '../header1/header1.component';
-import { AdminHeaderComponent } from '../admin-header/admin-header.component';
+// import { AdminHeaderComponent } from '../admin-header/admin-header.component';
 import { AdminComponent } from './admin.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
@@ -12,7 +12,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
   declarations: [
     AdminRoutingComponents,
     Header1Component,
-    AdminHeaderComponent,
+    // AdminHeaderComponent,
     AdminComponent
   ],
   imports: [

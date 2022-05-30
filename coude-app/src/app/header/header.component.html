@@ -12,7 +12,7 @@
     <!-- <ng-template #userView> -->
         <div class="navbar__link-container collapse navbar-collapse justify-content-between" id="navbarContent">
             <ul class="navbar-nav">
-                <li *ngIf="login" class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                <li *ngIf="login" class="nav-item"><a class="nav-link" href="/landing">Home</a></li>
                 <li class="nav-item"><a class="nav-link" href="/catalog">Catalog</a></li>
                 <li class="nav-item"><a class="nav-link" href="/forum">Forum</a></li>
             </ul>
@@ -35,7 +35,7 @@
 
             <ul class="search-list d-flex flex-column p-0 m-0 position-absolute">
                 <li class="text-truncate" *ngFor="let c of courses | searchFilter: searchText">
-                    <img src="" alt="img" style="width: 40px; height: 23px">
+                    <img src="../../assets/images/logo.png" alt="img" style="width: 40px; height: 23px">
                     {{c.title}}
                 </li>
             </ul>
@@ -62,16 +62,16 @@
                         <!-- <span class="rounded-circle"></span> -->
                     </button>
                     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
-                        <li><a class="dropdown-item" href="#">Personal Info</a></li>
+                        <li><a class="dropdown-item" routerLink="/generalinformation">Personal Info</a></li>
                         <li><a class="dropdown-item" href="#">My Learning</a></li>
                         <li><a class="dropdown-item" href="#">My Purchase</a></li>
-                        <li><a class="dropdown-item" href="#">Setting</a></li>
-                        <li *ngIf="isAdmin"><a class="dropdown-item" href="#">Administrator</a></li>
-                        <li><a class="dropdown-item" href="#">Support</a></li>
+                        <!-- <li><a class="dropdown-item" href="#">Setting</a></li> -->
+                        <li *ngIf="isAdmin"><a class="dropdown-item" routerLink="/admin">Administrator</a></li>
+                        <li><a class="dropdown-item" routerLink="/contact">Support</a></li>
                         <li>
                             <hr class="dropdown-divider">
                         </li>
-                        <li><a class="dropdown-item" href="#">Sign out</a></li>
+                        <li><a class="dropdown-item" routerLink="/catalog">Sign out</a></li>
 
                     </ul>
                 </div>

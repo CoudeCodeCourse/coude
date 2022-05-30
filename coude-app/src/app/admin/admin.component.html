@@ -4,7 +4,7 @@
         data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false"
         aria-label="Toggle navigation">☰</button>
 
-    <a class="navbar-brand p-0 mx-lg-5 ms-xs-0" href="#" id="logo">
+    <a class="navbar-brand p-0 mx-lg-5 ms-xs-0" routerLink="/admin" id="logo">
         <img class="p-0" src="../../assets/images/logo.png" alt="Logo">
     </a>
     <div class="d-flex header__button-container me-0">
@@ -20,10 +20,10 @@
                 <!-- <span class="rounded-circle"></span> -->
             </button>
             <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
-                <li><a class="dropdown-item" href="#">Personal Info</a></li>
+                <li><a class="dropdown-item" routerLink="/generalinformation">Personal Info</a></li>
                 <li><a class="dropdown-item" href="#">My Learning</a></li>
                 <li><a class="dropdown-item" href="#">My Purchase</a></li>
-                <li><a class="dropdown-item" href="#">Setting</a></li>
+                <!-- <li><a class="dropdown-item" href="#">Setting</a></li> -->
                 <li><a class="dropdown-item" href="#">
                         <span>Administrator</span>
                         <span class="ms-3"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="16"
@@ -33,11 +33,11 @@
                             </svg> </span>
                     </a>
                 </li>
-                <li><a class="dropdown-item" href="#">Support</a></li>
+                <li><a class="dropdown-item" routerLink="/contact">Support</a></li>
                 <li>
                     <hr class="dropdown-divider">
                 </li>
-                <li><a class="dropdown-item" href="#">Sign out</a></li>
+                <li><a class="dropdown-item" href="/catalog">Sign out</a></li>
             </ul>
         </div>
     </div>

@@ -21,6 +21,7 @@ export class AdminCourseDetailsComponent implements OnInit {
 
   public selectedCourse!: Course;
   show = true;
+  isCourseHide: boolean = false;
   // public formCourse = this._formBuilder.group({
   //   title: [this.selectedCourse.title, 
   //     [Validators.required, Validators.minLength(10)]],
@@ -62,6 +63,7 @@ export class AdminCourseDetailsComponent implements OnInit {
     // this._title.setTitle(this.selectedCourse.title);
     this._title.setTitle(this.selectedCourse.title);
     console.log(this._title);
+    this.getStatusOfCourse()
   }
 
   getCoursesById(){
@@ -115,6 +117,24 @@ export class AdminCourseDetailsComponent implements OnInit {
         alert("Error");
       }
     })
+  }
+  showCourse(){
+    this._service.showCourse(this.selectedCourse._id, this.selectedCourse).subscribe(res => {
+      let resData = JSON.parse(JSON.stringify(res));
+      if(resData.message === 'success'){
+        alert("You made this course available again. Now learners can get access to it!");
+      }
+      else{
+        alert("Error");
+      }
+    })
+  }
+  getStatusOfCourse(){
+    if (this.selectedCourse.status === "available"){
+      this.isCourseHide = false;
+    } else {
+      this.isCourseHide = true;
+    }
   }
   // getCourses(){
   //   const id = this._activeRoute.snapshot.paramMap.get('id');
