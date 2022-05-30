@@ -1,9 +1,9 @@
+.container{
+    margin: auto;
+    display: block;
+}
 * {
     box-sizing: border-box;
-}
-
-.main-content {
-    margin-right: 15px;
 }
 
 .total {
@@ -24,7 +24,7 @@ h6 {
 }
 
 h3 {
-    font-family: MontserratExtraBold;
+    font-family: MontserratSemiBold;
 }
 
 #div-mid {
@@ -42,7 +42,7 @@ h3 {
 
 #btnnext {
     padding: 15px 20px;
-    font-family: MontserratExtraBold;
+    font-family: MontserratSemiBold;
 }
 
 
