@@ -11,29 +11,35 @@ export class EnrollCourseComponent implements OnInit {
 
   courses: any; // get data course
   errMess: string ="";
-  selectedId:  string =""; // get course id from url
+  selectedCourses:  any; // get course id from url
 
 
   constructor(private _services: CatalogService,
     private router: Router,
-    private actRoute: ActivatedRoute) { }
+    private actRoute: ActivatedRoute) { 
+      this.actRoute.params.subscribe((params)=>{
+        this.selectedCourses = params['id'];
+        console.log(this.selectedCourses);
+      })     
+
+    }
 
   ngOnInit(): void {
     this.actRoute.paramMap.subscribe(
       (param) => {
         let id = param.get('id');
         if (id != null) {
-          this.selectedId = id;
+          this.selectedCourses = id;
         }
       }
     )
-    this.getSampleData(this.selectedId)
+    this.getSampleData(this.selectedCourses)
   }
 
   getSampleData(id: any){
     this._services.getProductsById(id).subscribe(
       {
-        next: data => this.courses = data,
+        next: data => {this.courses = data},
         error: err => this.errMess = err
       })
   }

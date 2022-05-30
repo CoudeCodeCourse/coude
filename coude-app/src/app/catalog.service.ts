@@ -21,16 +21,16 @@ export class CatalogService {
   handleError(err: HttpErrorResponse) {
     return throwError(() => new Error(err.message))
   }
-  getProductsById(id:string): Observable<ICatalog[]> {
-    return this._http.get<ICatalog[]>(`${this.url}/enroll/:${id}`)
+  getProductsById(id:any): Observable<ICatalog[]> {
+    return this._http.get<ICatalog[]>(`${this.url}+ "/enroll"+ ${id}`)
       .pipe(
         retry(2), catchError(this.handleError)
       )
   }
-  getCatalogType(a:string): Observable<ICatalog[]> {
-    return this._http.get<ICatalog[]>(`${this.url}/catalog/?type=${a}`)
-      .pipe(
-        retry(2), catchError(this.handleError)
-      )
-  }
+  // getCatalogType(a:string): Observable<ICatalog[]> {
+  //   return this._http.get<ICatalog[]>(`${this.url}/catalog/?type=${a}`)
+  //     .pipe(
+  //       retry(2), catchError(this.handleError)
+  //     )
+  // }
 }

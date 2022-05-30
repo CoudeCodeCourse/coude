@@ -12,7 +12,6 @@ import { ICatalog } from '../interfaces/courses';
 })
 export class CatalogComponent implements OnInit {
 
-  // term: string;
   courses: any;
   errMess: string ="";
   selectedId: any;
@@ -24,14 +23,11 @@ export class CatalogComponent implements OnInit {
    }
 
   ngOnInit(): void {
-    this.selectedId = this._activeRoute.snapshot.params['id'];
     this._services.getSampleData().subscribe({
       next: data => this.courses = data,
       error: err => this.errMess = err
      })
   }
-
- 
   getNavigation(link :any , id : any){
     if(id === ''){
         this._router.navigate(["/enroll"]);
@@ -39,5 +35,4 @@ export class CatalogComponent implements OnInit {
         this._router.navigate(["/enroll" + '/' + id]);
     }
 }
-
 }
