@@ -15,35 +15,29 @@ export class CatalogComponent implements OnInit {
   // term: string;
   courses: any;
   errMess: string ="";
-  selectedTag: any;
   selectedId: any;
 
 
 
   constructor(private _services: CatalogService, private _activeRoute: ActivatedRoute, private _router: Router) {
-    this._activeRoute.queryParams.subscribe(params => {
-      this.selectedId = params;
-      console.log("tiel:", this.selectedId); 
-    });
+  
    }
 
   ngOnInit(): void {
-
-    this._activeRoute.params.subscribe((params) => {
-      // console.log(typeof(params['id']))
-      this.selectedId = params['id'];
-      console.log(this.selectedId);
-    })
-
+    this.selectedId = this._activeRoute.snapshot.params['id'];
     this._services.getSampleData().subscribe({
       next: data => this.courses = data,
       error: err => this.errMess = err
      })
   }
 
-  onSelect(courses : ICatalog): void {
-    this._router.navigate(['/enroll', courses.title],
-    {queryParams: {courses: courses},})
-  }
+ 
+  getNavigation(link :any , id : any){
+    if(id === ''){
+        this._router.navigate(["/enroll"]);
+    } else {
+        this._router.navigate(["/enroll" + '/' + id]);
+    }
+}
 
 }

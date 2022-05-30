@@ -86,11 +86,11 @@
         </div>
         <!-- header 1-->
         <div class="row">
-            <h4 class="header mt-5">Most Popular</h4>
+            <h4 class="header mt-5">Our Courses</h4>
         </div>
         <!-- courses popular-->
         <div class="row">
-            <div class="col-12 col-sm-6 col-md-4" *ngFor="let c of courses" (click)="onSelect(c)">
+            <div class="col-12 col-sm-6 col-md-4" *ngFor="let c of courses" (click)="getNavigation('enroll', c._id)">
                 <a class="text-decoration-none text-dark" target="blank">
                     <div class="txtcourse">
                         <div class="tag">
@@ -108,13 +108,13 @@
                 </a>
             </div>
         </div>
-        <!-- header 2-->
+        <!-- header 2
         <div class="row">
             <h4 class="header mt-5">New</h4>
         </div>
-        <!-- courses new -->
+        courses new 
         <div class="row">
-            <div class="col-12 col-sm-6 col-md-4" *ngFor="let c of courses" (click)="onSelect(c)">
+            <div class="col-12 col-sm-6 col-md-4" *ngFor="let c of courses" (click)="getNavigation('enroll', c._id)">
                 <a class="text-decoration-none text-dark" target="blank">
                     <div class="txtcourse">
                         <div class="tag">
@@ -131,6 +131,6 @@
                     </div>
                 </a>
             </div>
-        </div>
+        </div> -->
     </div>
 </div>
