@@ -83,6 +83,8 @@ import { BillingComponent } from './billing/billing.component';
       { path: 'login', component: LoginComponent},
       { path: 'whoweare', component: WhoWeAreComponent},
       { path: 'uploadcourse', component: AdUpCourseComponent },
+      { path: 'study', component: StudyComponent},
+      { path: 'billing', component: BillingComponent},
        
 
       //tất cả các path đều phải nằm trên path của PageNotFound
