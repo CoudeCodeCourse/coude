@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { CatalogService } from '../catalog.service';
+import { Course } from 'src/models/course';
+import { CoursesDataService} from '../services/courses-data.service';
 
 @Component({
   selector: 'app-enroll-course',
@@ -9,12 +10,12 @@ import { CatalogService } from '../catalog.service';
 })
 export class EnrollCourseComponent implements OnInit {
 
-  courses: any; // get data course
+  course!: Course; // get data course
   errMess: string ="";
   selectedCourses:  any; // get course id from url
 
 
-  constructor(private _services: CatalogService,
+  constructor(private _services: CoursesDataService,
     private router: Router,
     private actRoute: ActivatedRoute) { 
       this.actRoute.params.subscribe((params)=>{
@@ -25,23 +26,22 @@ export class EnrollCourseComponent implements OnInit {
     }
 
   ngOnInit(): void {
-    this.actRoute.paramMap.subscribe(
-      (param) => {
-        let id = param.get('id');
-        if (id != null) {
-          this.selectedCourses = id;
-        }
-      }
-    )
+    // this.actRoute.paramMap.subscribe(
+    //   (param) => {
+    //     let id = param.get('id');
+    //     if (id != null) {
+    //       this.selectedCourses = id;
+    //     }
+    //   }
+    // )
     this.getSampleData(this.selectedCourses)
   }
 
   getSampleData(id: any){
-    this._services.getProductsById(id).subscribe(
-      {
-        next: data => {this.courses = data},
-        error: err => this.errMess = err
-      })
+    this._services.GetCourseById(id).subscribe(res =>{
+      this.course = res
+    })
+      console.log(this.course);
   }
 
 }

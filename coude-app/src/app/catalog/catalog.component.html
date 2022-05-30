@@ -90,7 +90,7 @@
         </div>
         <!-- courses popular-->
         <div class="row">
-            <div class="col-12 col-sm-6 col-md-4" *ngFor="let c of courses" (click)="getNavigation('enroll', c._id)">
+            <div class="col-12 col-sm-6 col-md-4" *ngFor="let c of courses" (click)="getNavigation(c)">
                 <a class="text-decoration-none text-dark" target="blank">
                     <div class="txtcourse">
                         <div class="tag">

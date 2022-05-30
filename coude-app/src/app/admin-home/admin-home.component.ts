@@ -37,6 +37,6 @@ export class AdminHomeComponent implements OnInit {
   }
 
   onSelected(course: Course){
-    this._router.navigate(['/enroll/', course._id])
+    this._router.navigate(['/admin/courses', course._id])
   }
 }
