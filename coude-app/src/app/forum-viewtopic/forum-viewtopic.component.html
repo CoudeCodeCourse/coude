@@ -11,20 +11,19 @@
             </svg>
         </div>
     </div>
-    <div class="content"> -->
+    <div class="content"> 
 <!-- topic's title -->
-<!-- <div class="div-background ">
+<div class="div-background ">
             <div class="topic__title">
                 <span><i class="bi bi-three-dots-vertical"></i></span>
                 <div>
-                    <div class="name " id="title ">How do I get a consistent byte representation of strings in C#
-                        without manually specifying an encoding?</div>
-                    <div class="tags " id="tag ">c#</div>
+                    <div class="name " id="title ">{{selectedTopic.title}}</div>
+                    <div class="tags " id="tag ">{{selectedTopic.tag}}</div>
                 </div>
             </div>
-        </div> -->
+        </div>
 <!-- topic's content -->
-<!-- <div class="div-background">
+<div class="div-background">
             <div class="topic__infor ">
                 <div class="topic__infor-user ">
                     <img class="user-avt" src="../../assets/images/avatar/blue_man.png" alt="">
@@ -32,28 +31,22 @@
                 </div>
                 <div class="topic__infor-history">
                     <span><i class="bi bi-pencil-fill"></i></span>
-                    <span id="history" class="history-txt">22/02/2022</span>
+                    <span id="history" class="history-txt">{{selectedTopic.date}}</span>
                 </div>
             </div>
-            <div class="topic__content">
-                How do I convert a string to a byte[] in .NET (C#) without manually specifying a specific encoding? I'm
-                going to encrypt the string. I can encrypt it without converting, but I'd still like to know why
-                encoding comes to play here. Also, why should encoding even be taken into consideration? Can't I simply
-                get what bytes the string has been stored in? Why is there a dependency on character encodings?
-
-            </div>
+            <div class="topic__content">{{selectedTopic.content}}</div>
         </div>
         <div class="topic__interacts">
             <div class="topic__interacts--data">
-                <div class="data-number" id="replies">12</div>
+                <div class="data-number" id="replies">{{selectedTopic.replies}}</div>
                 <div>replies</div>
             </div>
             <div class="topic__interacts--data">
-                <div class="data-number" id="views">21</div>
+                <div class="data-number" id="views">{{selectedTopic.views}}</div>
                 <div>views</div>
             </div>
             <div class="topic__interacts--data">
-                <div class="data-number" id="likes">32</div>
+                <div class="data-number" id="likes">{{selectedTopic.likes}}</div>
                 <div>likes</div>
             </div>
             <div class="reply__operation">
@@ -97,28 +90,4 @@
             </div>
 
         </div>
-        <!-- Popup -->
-        <div id="myPopup" class="popup-div">
-            <!-- Popup content -->
-            <!-- <div class="popup-content">
-
-                <div class="popup-header">
-                    <i class="bi bi-x-circle close"></i>
-                    <div class="popup-header--title">[Reply to] </div>
-                </div>
-                <div class="popup-body">
-                    <div class="input-content" w3-include-html='./text-editor.html'>
-                    </div>
-                </div>
-                <div class="popup-footer">
-                    <button class="cancel__btn">Cancel</button>
-                    <div class="create-topic">
-                        <button class="createTopic__btn" id="myCreateTopicBtn" type="button">
-                            <span>Reply</span>
-                            <i class="bi bi-reply"></i>
-                        </button>
-                    </div>
-                </div>
-            </div> -->
-        </div>
-    </div> -->
+    </div>

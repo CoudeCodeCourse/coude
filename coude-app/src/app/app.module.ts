@@ -46,6 +46,7 @@ import{CourseFilterPipe} from '../pipes/courseFilter.pipe';
 import{CourseFilter2Pipe} from '../pipes/courseFilter2.pipe';
 import { GeneralInformationComponent } from './general-information/general-information.component';
 import {ForumFilterPipe} from '../pipes/forumFilter.pipe';
+import {ForumSortPipe} from '../pipes/forumSort.pipe';
 import { UpdateInformationComponent } from './update-information/update-information.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { BillingComponent } from './billing/billing.component';
@@ -83,7 +84,7 @@ import { BillingComponent } from './billing/billing.component';
     AssignmentComponent,
     AssignmentFbComponent,
     AssignmentStartComponent,
-    CourseFilterPipe,
+    CourseFilterPipe, 
     CourseFilter2Pipe,
     GeneralInformationComponent,
     AdUpCourseComponent,
@@ -91,7 +92,8 @@ import { BillingComponent } from './billing/billing.component';
     AdminStudentComponent,
     TextEditorComponent,
     ForumFilterPipe,
-    AdminStudent1Component
+    ForumSortPipe,
+    AdminStudent1Component,
     GeneralInformationComponent,
     UpdateInformationComponent,
     SignUpComponent,
@@ -118,10 +120,10 @@ import { BillingComponent } from './billing/billing.component';
       { path: 'homepage', component: HomepageComponent },
       { path: 'adminCouseDetails', component: AdminCourseDetailsComponent },
       { path: 'forum', component: ForumMainComponent },
-      { path: 'view-topic', component: ForumViewtopicComponent },
+      { path: 'view-topic/:id', component: ForumViewtopicComponent },
       { path: 'feedback', component: FeedbackComponent },
       { path: 'completed-course', component: CompletedCourseComponent },
-      { path: 'admin-student', component: AdminStudentComponent },
+      { path: 'admin/student', component: AdminStudentComponent },
       { path: 'login', component: LoginComponent},
       { path: 'whoweare', component: WhoWeAreComponent},
       { path: 'uploadcourse', component: AdUpCourseComponent },

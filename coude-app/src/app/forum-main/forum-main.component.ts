@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router, Params } from '@angular/router';
-import { ForumService } from '../forum.service';
-import { ITopic } from '../interfaces/forum';
+import { ForumService } from '../services/forum.service';
+import {Topic} from 'src/models/topic';
 import { FormBuilder, Validators } from '@angular/forms';
 
 @Component({
@@ -10,11 +10,12 @@ import { FormBuilder, Validators } from '@angular/forms';
   styleUrls: ['./forum-main.component.css']
 })
 export class ForumMainComponent implements OnInit {
-  topics: any;
+  topics!: Topic[];
   errorMsg: string = "";
   selectedTag: any;
   selectedId: any;
-
+  //khai báo biến cho các bên filter
+  filteredString: string = '';
 
   // check FE form
   // title: any =null;
@@ -22,48 +23,23 @@ export class ForumMainComponent implements OnInit {
   //   name: ['', Validators.required, Validators.minLength(3)],
   //   file: [''],
   // })
-  constructor(private _service: ForumService, private _router: Router, private _activatedRoute: ActivatedRoute, private _activeRoute: ActivatedRoute) {
-    this._activeRoute.queryParams.subscribe(params => {
-      this.selectedId = params;
-      console.log("tiel:", this.selectedId); // Print the parameter to the console. 
-    });
-  }
+  constructor(private _service: ForumService, 
+              private _router: Router, 
+              private _activeRoute: ActivatedRoute) {  }
   ngOnInit(): void {
-    this._activeRoute.params.subscribe((params) => {
-      // console.log(typeof(params['id']))
-      this.selectedId = params['id'];
-      console.log(this.selectedId);
+    this.getTopics();
+  }
+  getTopics(){
+    this._service.getAllTopics().subscribe({
+      next: data => this.topics = data,
+      error: err => this.errorMsg = err
     })
-    // this._activatedRoute.paramMap.subscribe(
-    //   (param) => {
-    //     let id = param.get('id')
-    //     if (id != null) {
-    //       this.selectedId = parseInt(id);
-    //     }
-    //   }
-    // ) 
-    this._service.getTopics().subscribe(
-      {
-        next: data => this.topics = data,
-        error: err => this.errorMsg = err.message,
-      })
+    console.log("topics: ",this.topics);
   }
-  onSelect(data: any): void {
-    this._router.navigate(['/view-topic', data.id])
+
+  onSelected(topic: Topic){
+    this._router.navigate(['/view-topic', topic._id]
+     )
   }
-  // isSelected(data: any) {
-  //   return data.id === this.selectedId
-  // }
-  viewsSort() {
-    this.topics = this.topics.views.sort();
-  }
-  dateSort() {
-    this.topics = this.topics.date.sort();
-  }
-  onSelected(topic: ITopic) {
-    this._router.navigate(['/view-topic', topic.id],
-      {queryParams: {topic: topic},
-     })
-  }
-  // onSubmit(data: any) {}
+  
 }
