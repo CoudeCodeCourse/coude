@@ -13,6 +13,8 @@ export class EnrollCourseComponent implements OnInit {
   course!: Course; // get data course
   errMess: string ="";
   selectedCourses:  any; // get course id from url
+  text: any;
+  imageSource: any;
 
 
   constructor(private _services: CoursesDataService,
@@ -42,6 +44,33 @@ export class EnrollCourseComponent implements OnInit {
       this.course = res
     })
       console.log(this.course);
+  }
+  goToPay(){
+    this.router.navigate(["/billing"]);
+  }
+  showAtc(){
+    this.text = this.course.atc;
+    return this.text;
+  }
+  showHiw()
+  {
+    this.text = this.course.hiw;
+    return this.text;
+  }
+  showLn(){
+    this.text = this.course.language;
+    return this.text;
+  }
+  showTF(){
+    this.text = this.course.fee;
+    return this.text;
+  }
+  showInstructor(){
+    this.text = this.course.instruc_descript;
+    return this.text;
+  }
+  showDegree(){
+   
   }
 
 }

@@ -25,6 +25,20 @@ export class CoursesDataService {
     return throwError(() => {new Error(error.message)});
   }
 
+  getNewCourse(): Observable<Course[]>{
+    return this._http.get<Course[]>(`${url_server}/courses/find-new-courses`).pipe(
+      retry(3),
+      catchError(this.handleError)
+    )
+  }
+
+  getPopularCourse(): Observable<Course[]>{
+    return this._http.get<Course[]>(`${url_server}/courses/find-popular-courses`).pipe(
+      retry(3),
+      catchError(this.handleError)
+    )
+  }
+
   GetCourseById(id:any): Observable<Course> {
     // let API_URL = `${this.REST_API}/read-book/${id}`;
     return this._http.get<Course>(`${url_server}/courses/${id}`, { headers: this.httpHeaders })
@@ -52,5 +66,16 @@ export class CoursesDataService {
     
   //   return of(course);
   // }
+
+  //get course by category
+  getCatalogType(category:any): Observable<Course> {
+    return this._http.get<Course>(`${url_server}/courses/${category}`)
+    .pipe(
+      map((res: Course) => {
+        return res
+      }),
+      catchError(this.handleError)
+    )
+    }
 }
 

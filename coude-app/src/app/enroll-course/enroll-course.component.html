@@ -1,4 +1,3 @@
-<div>{{course.title}}</div>
 <div class="container-fluid ">
     <div class="container">
         <div class="container-fluid" style="background-color: rgba(196, 196, 196, 0.5);">
@@ -19,76 +18,61 @@
                     </div>
                     <div class="instructor my-1 fs-5 fw-bold">{{course.instructor}}</div>
                     <div class="offered my-1 fs-6 fw-light">Offered By Coudé</div>
-                    <div class="btn btn-success text-light text-center mx-auto d-block my-1 fw-bold">
-                        Enroll for Free
-                        <br> Starts Nov 7
-                    </div>
+                    <button class="btn btn-success text-light text-center mx-auto d-block my-1 fw-bold" (click)="goToPay()">
+                        Enroll Now
+                        <br> Starts trial for 7 days free
+                    </button>
                     <div class="enrol-number my-3 fw-normal">3000 already enrolled</div>
                 </div>
                 <div class="col-md-7 d-flex justify-content-center
                 align-items-center">
-                    <img src="{{course.user_avt}}" class="imgintro img-thumbnail" alt="">
+                    <img src="../../assets/images/avatar/{{course.user_avt}}" class="imgintro img-thumbnail" alt="">
                     <div class="ms-4">
                         {{course.instruc_descript}}
                     </div>
                 </div>
+
             </div>
         </div>
     </div>
+
+
     <div class="container-fluid p-5">
-        <div class="row row-cols-6 justify-content-center border border-dark">
-            <div class="col text-center">
-                <a href="">About the course</a>
+        <div class="d-flex  justify-content-between">
+            <button class=" btn btn-link btn-sm btn-outline-light" (click)="showAtc()">About the course</button>
+            <button class="btn btn-link btn-sm btn-outline-light" (click)="showHiw()">How it work</button>
+            <button class="btn btn-link btn-sm btn-outline-light" (click)="showLn()">Language</button>
+            <button class="btn btn-link btn-sm btn-outline-light" (click)="showTF()">Tution Fee</button>
+            <button class="btn btn-link btn-sm btn-outline-light" (click)="showInstructor()">Instructor</button>
+            <button class="btn btn-link btn-sm btn-outline-light" (click)="imageSource='../../assets/images/degree/degree1.jpg'">Degree/Certificate</button>
 
-            </div>
-            <div class="col text-center">
-                <a href="">How it work</a>
-
-            </div>
-            <div class="col text-center">
-                <a href="">Language</a>
-
-            </div>
-            <div class="col text-center">
-                <a href="">Tution Fee</a>
-            </div>
-            <div class="col text-center">
-                <a href="">Instructor</a>
-            </div>
-            <div class="col text-center">
-                <a href="">Degree/Certificate</a>
-            </div>
         </div>
-        <div class="detail">
-            <div class="row border border-dark">
-                <div class="col-md-9 mt-4">
-                    This course teaches you the simple principles expert managers use to improve and motivate employee performance. You’ll never have to avoid telling an employee “the truth” again, because the seven techniques we teach will not make employees defensive or
-                    afraid. As a manager, or someone who would like to be a manager, you’ll also learn specifically what feedback is, how negative feedback is weighed more heavily than positive, and how positive feedback can super-charge behaviors such
-                    as creativity and teamwork. Giving feedback is a skill which develops over time. We give you a process you can use to improve your feedback skills and deliver it with confidence. You will find that there is a scientific basis for many
-                    of your observations and intuitions about feedback—such as, it is hard to give correctly, people don’t like it, and more. This will be reassuring as you learn how to overcome these difficulties. We hope you have a fantastic time becoming
-                    a better manager!
+        <div class="row border border-dark">
+            <div class="col-md-9 mt-4">
+                {{text}}
+                <img [src]="imageSource" />
+            </div>
+            <div class="col-md-3 border-start mt-4 border-dark fw-bold fs-5">
+                <div class="txtinforrg ms-3">
+                    <i class="bi bi-patch-check me-3"></i> Shareable Certificate
                 </div>
-                <div class="col-md-3 border-start mt-4 border-dark fw-bold fs-5">
-                    <div class="txtinforrg ms-3">
-                        <i class="bi bi-patch-check me-3"></i> Shareable Certificate
-                    </div>
-                    <div class="txtinforrg m-3">
-                        <i class="bi bi-person-plus me-3"></i> Beginner Level
-                    </div>
-                    <div class="txtinforrg m-3">
-                        <i class="bi bi-table me-3"></i> Flexible Schedule
-                    </div>
-                    <div class="txtinforrg m-3">
-                        <i class="bi bi-calendar3 me-3"></i> Approximately 4 months complete
-                    </div>
-                    <div class="txtinforrg m-3">
-                        <i class="bi bi-translate me-3"></i> English
-                    </div>
-                    <div class="txtinforrg m-3">
-                        <i class="bi bi-laptop me-3"></i> 100% online course
-                    </div>
+                <div class="txtinforrg m-3">
+                    <i class="bi bi-person-plus me-3"></i> Beginner Level
+                </div>
+                <div class="txtinforrg m-3">
+                    <i class="bi bi-table me-3"></i> Flexible Schedule
+                </div>
+                <div class="txtinforrg m-3">
+                    <i class="bi bi-calendar3 me-3"></i> Approximately 4 months complete
+                </div>
+                <div class="txtinforrg m-3">
+                    <i class="bi bi-translate me-3"></i> English
+                </div>
+                <div class="txtinforrg m-3">
+                    <i class="bi bi-laptop me-3"></i> 100% online course
                 </div>
             </div>
         </div>
     </div>
 </div>
+<div></div>

@@ -14,11 +14,11 @@ import { Course } from 'src/models/course';
 })
 export class CatalogComponent implements OnInit {
 
-  courses!: Course[];
+  courses1!: Course[];
+  courses2!: Course[];
   errMess: string ="";
   selectedId: any;
-
-
+  category: any;
 
   constructor(private _services: CoursesDataService, 
         private _router: Router) {
@@ -26,17 +26,16 @@ export class CatalogComponent implements OnInit {
    }
 
   ngOnInit(): void {
-    this._services.getCourses().subscribe({
-      next: data => this.courses = data,
-      error: err => this.errMess = err
+    this._services.getNewCourse().subscribe({
+      next: data => this.courses1 = data,
+      error: err => this.errMess = err,
+     }),
+     this._services.getPopularCourse().subscribe({
+      next: data => this.courses2 = data,
+      error: err => this.errMess = err,
      })
   }
-  // getNavigation(link :any, id : any){
     getNavigation(data:any){
-    // if(id === ''){
         this._router.navigate(["/enroll", data._id]);
-    // } else {
-    //     this._router.navigate(["/enroll" + '/' + id]);
-    // }
-}
+    }
 }
