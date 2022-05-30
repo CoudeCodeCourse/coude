@@ -35,24 +35,13 @@ export class AdminHomeComponent implements OnInit {
     })
     console.log("cou",this.courses);
   }
-  // getCourseId(){
-  //   this._activeRouter.paramMap.subscribe(
-  //     (param) => {
-  //       let id = param.get('id');
-  //       // let course = {...param.keys, ...param}
-  //       if (id != null){
-  //         // this.selectedId = parseInt(id);
-  //       this.selectedCourse = param.get('course');          
-  //       console.log("sâsa", this.selectedCourse)
-  //       }
-  //     }
-  //   )
-  // }
+
   onSelected(course: Course){
     // console.log(data._id);
     // console.log(data._id);
-    this._router.navigate(['/admin/courses', course._id],
-      {queryParams: {course: course},
-     })
+    this._router.navigate(['/admin/courses', course._id]
+      // {queryParams: {course: course},
+    //  }
+     )
   }
 }
