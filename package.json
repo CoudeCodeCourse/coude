@@ -1,5 +1,6 @@
 {
   "dependencies": {
-    "jquery": "^3.6.0"
+    "ngx-toastr": "^14.3.0",
+    "toastr": "^2.1.4"
   }
 }
