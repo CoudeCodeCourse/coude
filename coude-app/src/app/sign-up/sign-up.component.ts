@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
-import { ToastrService } from 'ngx-toastr';
+//import { ToastrService } from 'ngx-toastr';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { customValidator, passwordValidator } from '../validators/check.validator';
+
 import { UserService } from '../services/user.service';
 import { User } from '../model/user';
 
@@ -16,21 +17,25 @@ export class SignUpComponent implements OnInit {
 public regForm: any;
 
 user:User=new User;
-users:any
+users:any;
 errMessage: string=""
-  onReset: any;
+ 
 
 constructor(private _formBuilder: FormBuilder, private _service:UserService) { }
-// userModel = new User("BN","Bn@gmail.com","123","123")
-errFlag = false
-
 
 ngOnInit(): void {
-  this.getUser()
- }
+  this.regForm = this._formBuilder.group({
+    accountName:['',[Validators.required,Validators.minLength(3), customValidator(/\@|\#|\$|\%|\^|\&/g)]],
+    email:['',[Validators.required]],
+    pw:[''],
+    confirmPw:['']
+  },{validators:[passwordValidator]}) 
+  this.getUser();
+};
 
-submitData(form:NgForm){
- console.log("form", form.value)
+
+submitData(regForm:NgForm){
+ console.log("form", regForm.value)
   if(this.user._id==''){
       this._service.postUser(this.user).subscribe(res=>{
     let resData=JSON.parse(JSON.stringify(res));       
@@ -49,7 +54,7 @@ submitData(form:NgForm){
     if(resData.message==="success"){
       //  alert("Updated successfully!");
       // this._toast.info("Updated successfully!","Update")
-      this.onReset;
+      //this.onReset;
       this.getUser();
       }else{
         alert("Fail!");
@@ -64,7 +69,7 @@ getUser(){
     error: err => this.errMessage = err
   })
 }
-// get accountName(){
-//   return this.regForm.controls['accountName']
-// }
+get accountName(){
+  return this.regForm.controls['accountName']
+}
 }

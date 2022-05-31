@@ -20,16 +20,17 @@
                 <small class="text-danger" *ngIf="email.errors['email'] ">Invalid email</small>
                 <small class="text-danger" *ngIf="email.errors['required'] ">Email is required</small>
             </div>
-            <label>Password</label>
-            <input type="password" class="form-text"  name="pw" id="pw" placeholder="Password" #pw="ngModel" [(ngModel)]="user.pw" >
-            <label>Confirm Password</label>
-            <input type="password" id="confirmPw" class="form-text" name="confirmPw"  formControlName="confirmPw" [class.is-invalid]="regForm.errors?.['misMatch']" placeholder="Confirm password">
+            <label for="pw">Password</label>
+            <input type="password" class="form-control"  name="pw" id="pw" formControlName="pw" placeholder="Password"  [(ngModel)]="user.pw" >
+            <label for="confirmPw">Confirm Password</label>
+            <input type="password" id="confirmPw" class="form-control" name="confirmPw"  formControlName="confirmPw" [class.is-invalid]="regForm.errors?.['misMatch']" placeholder="Confirm password">
             <small class="text-danger" *ngIf="regForm.errors?.['misMatch']">Password does not match</small>
         </div>
+       
         <br>
         <div class="text-center">
             <input type="checkbox" id="agree" name="agree" class="form-check-input" ngModel #agree="ngModel" [class.is-invalid]="agree.value==false && agree.touched">
-            <label class="form-check-label mb-3">Agree to our terms & privacy</label>
+            <label class="form-check-label ms-3">Agree to our terms & privacy</label>
             <!-- <input type="checkbox" name="agree" id="agree"> Agree to our terms & privacy -->
         </div>
         <br>

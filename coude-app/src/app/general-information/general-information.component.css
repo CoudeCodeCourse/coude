@@ -6,6 +6,28 @@
     height: 100%;
 }
 
+.navbar {
+   width: 100%;
+   height: 100%;
+   padding: 20px;
+    /* position: fixed; */
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(0deg, rgba(55, 73, 168, 0.2), rgba(55, 73, 168, 0.2)), rgba(0, 0, 0, 0.76);
+}
+
+.nav-link {
+    font-size: 15px;
+    font-family: RobotoRegular;
+}
+
+.nav-link:active,
+.nav-link:focus,
+.nav-link:hover {
+    background-color: #ffffff26;
+}
+
+.navbar-brand {
+    font-family: RobotoMedium;
+}
 .ava-img {
     width: 150px;
     height: 150px;
