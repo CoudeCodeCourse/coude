@@ -51,7 +51,7 @@ export class ForumMainComponent implements OnInit {
       })
   }
   onSelect(data: any): void {
-    this._router.navigate(['/forum', data.id])
+    this._router.navigate(['/forum', data._id])
   }
   // isSelected(data: any) {
   //   return data.id === this.selectedId
@@ -63,7 +63,7 @@ export class ForumMainComponent implements OnInit {
     this.topics = this.topics.date.sort();
   }
   onSelected(topic: ITopic) {
-    this._router.navigate(['/forum', topic.id],
+    this._router.navigate(['/forum', topic._id],
       // {queryParams: {topic: topic},
     //  }
      )

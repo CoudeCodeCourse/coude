@@ -33,10 +33,7 @@ export class AdminCourseDetailsComponent implements OnInit {
                 this.selectedId = params['id'];
                 console.log(this.selectedId);
               })     
-
   }
-
-
   ngOnInit(): void {
     this.getCoursesById();
     // this._title.setTitle(this.selectedCourse.title);
