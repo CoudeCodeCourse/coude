@@ -81,171 +81,36 @@
         <div class="col py-3">
             <div class="containter-fluid">
                 <a href="/catalog" class="text-decoration-none fs-5"><i class="bi bi-arrow-left me-2">Go Back</i></a>
-                <h3 class="fw-bold fs-2">HTML&CSS</h3>
-                <div class="mb-5">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis doloribus repudiandae corrupti, temporibus, fugiat quos obcaecati blanditiis dicta reprehenderit architecto fuga necessitatibus, exercitationem voluptatum natus! Deleniti amet rerum molestiae
-                    nam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum est necessitatibus repudiandae placeat? Quia, error natus magnam quisquam delectus numquam nesciunt aliquid hic excepturi illo facere voluptates nemo impedit id.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed dicta nam sint nihil, suscipit sit vel facilis deserunt iure placeat quod pariatur commodi repudiandae facere doloribus enim eveniet eaque temporibus!
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="title fw-bold fs-1 my-1">HTML&CSS</div>
+                        <div class="ms-4">
+                            HTML is the foundation of all web pages. It defines the structure of a page, while CSS defines its style. HTML and CSS are the beginning of everything you need to know to make your first web page! Learn both and start creating amazing websites.CSS is
+                            the language for describing the presentation of Web pages, including colors, layout, and fonts. It allows one to adapt the presentation to different types of devices, such as large screens, small screens, or printers. CSS is
+                            independent of HTML and can be used with any XML-based markup language. The separation of HTML from CSS makes it easier to maintain sites, share style sheets across pages, and tailor pages to different environments. This is
+                            referred to as the separation of structure (or: content) from presentation.
+                        </div>
+                    </div>
+                    <div class="col-md-4 rounded float-end">
+                        <img src="../../assets/images/catalog/blog1.PNG" class="imgintro img-thumbnail" style="width: 300px ; height:250px" alt="">
+                    </div>
+
                 </div>
-                <h4>For Beginner</h4>
-                <div class="d-flex overflow-auto  align-items-center" style="width:1000px; height: 250px">
-                    <div class="">
+                <div class="row mt-5">
+                    <div class="col-12 col-sm-6 col-md-4" *ngFor="let c of course" (click)="getNavigation(c)">
                         <a class="text-decoration-none text-dark" target="blank">
-                            <div class="txtcourse me-2">
+                            <div class="txtcourse">
+                                <div class="tag">
+                                    <p class="txttag">Pro</p>
+                                </div>
                                 <div class="information">
-                                    <p class="box--course_header">Front-End Engineer</p>
+                                    <p class="box--course_header">{{c.title}}</p>
                                     <ul>
-                                        <li>Beginner</li>
+                                        <li>{{c.level}}</li>
                                         <li>121 Lessons</li>
                                     </ul>
                                 </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="">
-                        <a class="text-decoration-none text-dark" target="blank">
-                            <div class="txtcourse me-2">
-                                <div class="information">
-                                    <p class="box--course_header">Front-End Engineer</p>
-                                    <ul>
-                                        <li>Beginner</li>
-                                        <li>121 Lessons</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="">
-                        <a class="text-decoration-none text-dark" target="blank">
-                            <div class="txtcourse me-2">
-                                <div class="information">
-                                    <p class="box--course_header">Front-End Engineer</p>
-                                    <ul>
-                                        <li>Beginner</li>
-                                        <li>121 Lessons</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="">
-                        <a class="text-decoration-none text-dark" target="blank">
-                            <div class="txtcourse me-2">
-                                <div class="information">
-                                    <p class="box--course_header">Front-End Engineer</p>
-                                    <ul>
-                                        <li>Beginner</li>
-                                        <li>121 Lessons</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="">
-                        <a class="text-decoration-none text-dark" target="blank">
-                            <div class="txtcourse me-2">
-                                <div class="information">
-                                    <p class="box--course_header">Front-End Engineer</p>
-                                    <ul>
-                                        <li>Beginner</li>
-                                        <li>121 Lessons</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="">
-                        <a class="text-decoration-none text-dark" target="blank">
-                            <div class="txtcourse me-2">
-                                <div class="information">
-                                    <p class="box--course_header">Front-End Engineer</p>
-                                    <ul>
-                                        <li>Beginner</li>
-                                        <li>121 Lessons</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <br>
-                <h4>For Intermediate</h4>
-                <div class="d-flex overflow-auto align-items-center" style="width:1000px; height: 250px">
-                    <div class="">
-                        <a class="text-decoration-none text-dark" target="blank">
-                            <div class="txtcourse me-2">
-                                <div class="information">
-                                    <p class="box--course_header">Front-End Engineer</p>
-                                    <ul>
-                                        <li>Beginner</li>
-                                        <li>121 Lessons</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="">
-                        <a class="text-decoration-none text-dark" target="blank">
-                            <div class="txtcourse me-2">
-                                <div class="information">
-                                    <p class="box--course_header">Front-End Engineer</p>
-                                    <ul>
-                                        <li>Beginner</li>
-                                        <li>121 Lessons</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="">
-                        <a class="text-decoration-none text-dark" target="blank">
-                            <div class="txtcourse me-2">
-                                <div class="information">
-                                    <p class="box--course_header">Front-End Engineer</p>
-                                    <ul>
-                                        <li>Beginner</li>
-                                        <li>121 Lessons</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="">
-                        <a class="text-decoration-none text-dark" target="blank">
-                            <div class="txtcourse me-2">
-                                <div class="information">
-                                    <p class="box--course_header">Front-End Engineer</p>
-                                    <ul>
-                                        <li>Beginner</li>
-                                        <li>121 Lessons</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="">
-                        <a class="text-decoration-none text-dark" target="blank">
-                            <div class="txtcourse me-2">
-                                <div class="information">
-                                    <p class="box--course_header">Front-End Engineer</p>
-                                    <ul>
-                                        <li>Beginner</li>
-                                        <li>121 Lessons</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="">
-                        <a class="text-decoration-none text-dark" target="blank">
-                            <div class="txtcourse me-2">
-                                <div class="information">
-                                    <p class="box--course_header">Front-End Engineer</p>
-                                    <ul>
-                                        <li>Beginner</li>
-                                        <li>121 Lessons</li>
-                                    </ul>
-                                </div>
+                                <p class="coude">Coudé</p>
                             </div>
                         </a>
                     </div>

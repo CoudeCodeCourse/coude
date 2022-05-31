@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Course } from 'src/models/course';
-import { CatalogService } from '../catalog.service';
 import { CoursesDataService } from '../services/courses-data.service';
 
 @Component({
@@ -10,17 +9,20 @@ import { CoursesDataService } from '../services/courses-data.service';
   styleUrls: ['./catalog-detail.component.css']
 })
 export class CatalogDetailComponent implements OnInit {
-  courses!: Course[];
+  course!: Course[];
   errMess: string ="";
-  selectedId: any;
   category: any;
 
   constructor(private _services: CoursesDataService, 
     private _router: Router) { }
 
     ngOnInit(): void {
-      this._services.getCourses().subscribe({
-        next: data => this.courses = data,
+      this._services.getHTMLCourse().subscribe({
+        next: data => this.course = data,
         error: err => this.errMess = err })
     }
+
+    getNavigation(data:any){
+      this._router.navigate(["/enroll", data._id]);
+  }
 }

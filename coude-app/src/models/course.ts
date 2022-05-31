@@ -1,7 +1,8 @@
 export class Course{
     _id!: any;
     title!: string;
-    category!: any;
+    category!: string;
+    cat_description!: string;
     admin_id!: any;
     status!: string;
     time?: string;
