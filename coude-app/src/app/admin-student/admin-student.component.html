@@ -1,156 +1,55 @@
-<div class="fluid-container p-2 ">
-    <h2>Back-End Engineer</h2>
-    <div class="d-flex">
-        <div class="search-box">
-            <input type="text" class="search-input" placeholder="Search here...">
-            <button class="search-button">
-                <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                    <path
-                        d="M500.3 443.7l-119.7-119.7c27.22-40.41 40.65-90.9 33.46-144.7C401.8 87.79 326.8 13.32 235.2 1.723C99.01-15.51-15.51 99.01 1.724 235.2c11.6 91.64 86.08 166.7 177.6 178.9c53.8 7.189 104.3-6.236 144.7-33.46l119.7 119.7c15.62 15.62 40.95 15.62 56.57 0C515.9 484.7 515.9 459.3 500.3 443.7zM79.1 208c0-70.58 57.42-128 128-128s128 57.42 128 128c0 70.58-57.42 128-128 128S79.1 278.6 79.1 208z" />
-                </svg>
-            </button>
-        </div>
-        <div class="d-flex vertical-align-middle">
-            <button class="function-button justify-content-center align-self-center">
-                <svg class="function-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                    <path
-                        d="M32 32C49.67 32 64 46.33 64 64V400C64 408.8 71.16 416 80 416H480C497.7 416 512 430.3 512 448C512 465.7 497.7 480 480 480H80C35.82 480 0 444.2 0 400V64C0 46.33 14.33 32 32 32zM160 224C177.7 224 192 238.3 192 256V320C192 337.7 177.7 352 160 352C142.3 352 128 337.7 128 320V256C128 238.3 142.3 224 160 224zM288 320C288 337.7 273.7 352 256 352C238.3 352 224 337.7 224 320V160C224 142.3 238.3 128 256 128C273.7 128 288 142.3 288 160V320zM352 192C369.7 192 384 206.3 384 224V320C384 337.7 369.7 352 352 352C334.3 352 320 337.7 320 320V224C320 206.3 334.3 192 352 192zM480 320C480 337.7 465.7 352 448 352C430.3 352 416 337.7 416 320V96C416 78.33 430.3 64 448 64C465.7 64 480 78.33 480 96V320z" />
-                </svg>
-            </button>
-            <button class="function-button justify-content-center align-self-center">
-                <svg class="function-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                    <path
-                        d="M0 96C0 60.65 28.65 32 64 32H448C483.3 32 512 60.65 512 96V416C512 451.3 483.3 480 448 480H64C28.65 480 0 451.3 0 416V96zM64 160H128V96H64V160zM448 96H192V160H448V96zM64 288H128V224H64V288zM448 224H192V288H448V224zM64 416H128V352H64V416zM448 352H192V416H448V352z" />
-                </svg>
-            </button>
-            <button class="function-button justify-content-center align-self-center">
-                <svg class="function-icon justify-content-center" xmlns="http://www.w3.org/2000/svg" width="16"
-                    height="16" fill="currentColor" class="bi bi-grid-fill" viewBox="0 0 16 16">
-                    <path
-                        d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5v-3zm8 0A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5v-3zm-8 8A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5v-3zm8 0A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5v-3z" />
-                </svg>
-            </button>
-            <button type="button" class="createTopic__btn" id="myCreateTopicBtn">Add Learner <i class="bi bi-plus"></i>
-            </button>
-        </div>
-    </div>
-    <div class="body">
-        <div class="d-flex justify-content-center">
-            <div class="py-2 px-5 col-10">
-                <table class="tableLearner">
-                    <thead>
-                        <tr class="bg-secondary text-white">
-                            <th>STT</th>
-                            <th class="col-lg-4 col-md-3">NAME</th>
-                            <th class="col-2">EMAIL</th>
-                            <th>START DATE</th>
-                            <th>STATUS</th>
-                            <th>OPTION</th>
-                        </tr>
-                    </thead>
-                    <!-- <tbody>
-                        <tr *ngFor="let s of students; let i = index" (click)="{}">
-                            <td class="px-sm-1 px-md-2">{{i + 1}}</td>
-                            <td class="text-truncated">{{s.name}}</td>
-                            <td>{{s.email}}</td>
-                            <td>2022-02-20</td>
-                            <td class="green fw-bold">{{s.status | titlecase}}</td>
-                        </tr>
-                    </tbody> -->
-                    <tbody>
-                        <tr style="padding: 15px; min-height: fit-content">
-                            <td>1</td>
-                            <td>Nguyễn Hoàng Tuyết Nhi</td>
-                            <td>nkeeboo@gmail.com</td>
-                            <td>2022-02-02</td>
-                            <td>Completed</td>
-                            <td>
-                                <button class="btn btn-light">
-                                    <i class="bi bi-pencil"></i>
-                                </button>
-                                <button class="btn btn-light">
-                                    <i class="bi bi-trash"></i>
-                                </button>
-                            </td>
-                        </tr>
-                        <tr style="padding: 5px; min-height: fit-content">
-                            <td>1</td>
-                            <td>Nguyễn Hoàng Tuyết Nhi</td>
-                            <td>nkeeboo@gmail.com</td>
-                            <td>2022-02-02</td>
-                            <td>Completed</td>
-                            <td>
-                                <button class="btn btn-light">
-                                    <i class="bi bi-pencil"></i>
-                                </button>
-                                <button class="btn btn-light">
-                                    <i class="bi bi-trash"></i>
-                                </button>
-                            </td>
-                        </tr>
-                        <tr style="padding: 5px; min-height: fit-content">
-                            <td>1</td>
-                            <td>Nguyễn Hoàng Tuyết Nhi</td>
-                            <td>nkeeboo@gmail.com</td>
-                            <td>2022-02-02</td>
-                            <td>Completed</td>
-                            <td>
-                                <button class="btn btn-light">
-                                    <i class="bi bi-pencil"></i>
-                                </button>
-                                <button class="btn btn-light">
-                                    <i class="bi bi-trash"></i>
-                                </button>
-                            </td>
-                        </tr>
-                        <tr style="padding: 5px; min-height: fit-content">
-                            <td>1</td>
-                            <td>Nguyễn Hoàng Tuyết Nhi</td>
-                            <td>nkeeboo@gmail.com</td>
-                            <td>2022-02-02</td>
-                            <td>Completed</td>
-                            <td>
-                                <button class="btn btn-light">
-                                    <i class="bi bi-pencil"></i>
-                                </button>
-                                <button class="btn btn-light">
-                                    <i class="bi bi-trash"></i>
-                                </button>
-                            </td>
-                        </tr>
-                        <tr style="padding: 5px; min-height: fit-content">
-                            <td>1</td>
-                            <td>Nguyễn Hoàng Tuyết Nhi</td>
-                            <td>nkeeboo@gmail.com</td>
-                            <td>2022-02-02</td>
-                            <td>Completed</td>
-                            <td>
-                                <button class="btn btn-light">
-                                    <i class="bi bi-pencil"></i>
-                                </button>
-                                <button class="btn btn-light">
-                                    <i class="bi bi-trash"></i>
-                                </button>
-                            </td>
-                        </tr>
-                        <tr style="padding: 5px; min-height: fit-content">
-                            <td>1</td>
-                            <td>Nguyễn Hoàng Tuyết Nhi</td>
-                            <td>nkeeboo@gmail.com</td>
-                            <td>2022-02-02</td>
-                            <td>Completed</td>
-                            <td>
-                                <button class="btn btn-light">
-                                    <i class="bi bi-pencil"></i>
-                                </button>
-                                <button class="btn btn-light">
-                                    <i class="bi bi-trash"></i>
-                                </button>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+<!-- <app-admin></app-admin> -->
+<div class="d-flex justify-content-between">
+    <!-- <app-header1></app-header1> -->
+    <div class="py-2 px-5 col-10">
+        <div>
+            <div>
+                <h3 class="username">Course Management </h3>
+                <h5>Learner List!</h5>
             </div>
         </div>
-    </div>
-</div>
+        <div class="d-flex justify-content-between align-items-center" style="margin: 20px">
+            <div class="search-box ">
+                <input type="text" class="search-input" placeholder="Search here...">
+                <button class="search-button">
+                    <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path
+                            d="M500.3 443.7l-119.7-119.7c27.22-40.41 40.65-90.9 33.46-144.7C401.8 87.79 326.8 13.32 235.2 1.723C99.01-15.51-15.51 99.01 1.724 235.2c11.6 91.64 86.08 166.7 177.6 178.9c53.8 7.189 104.3-6.236 144.7-33.46l119.7 119.7c15.62 15.62 40.95 15.62 56.57 0C515.9 484.7 515.9 459.3 500.3 443.7zM79.1 208c0-70.58 57.42-128 128-128s128 57.42 128 128c0 70.58-57.42 128-128 128S79.1 278.6 79.1 208z" />
+                    </svg>
+                </button>
+            </div> 
+            <button type="button" class="addStudent__btn" id="myCreateTopicBtn">Add Learner<i class="bi bi-plus"></i></button>
+            
+        </div>
+        <div>
+            <table class="text-center table table-hover table-bordered border-dark rounded-top">
+                <thead>
+                    <tr class="bg-secondary text-white">
+                        <th></th>
+                        <!-- (sort)="onSort($event)" -->
+                        <th scope="col" sortable="name"  class="col-lg-4 col-md-3"> NAME
+                            <i class="bi bi-filter"></i>
+                        </th>
+                        <th scope="col" sortabe="email" class="col-2">EMAIL</th>
+                        <th scope="col" sortabe="startdate" >START DATE</th>
+                        <th scope="col" sortabe="status" >STATUS</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- <tr *ngFor="let c of sortCourses | slice:0:10; let i = index"> -->
+                    <tr>
+                        <td scope="row" class="px-sm-1 px-md-2 "></td>
+                        <td class="text-wrap" style="text-align:left; padding: 10px"></td>
+                        <td></td>
+                        <td></td>
+                        <!-- <td style="color: var(--green)">{{c.status | titlecase}}</td> -->
+                        <td></td>
+                        <!-- <td class="fw-bold" [class.red]="c.status=='not passing'" [class.purple]="c.status=='studying'" [class.green]="c.status=='completed'"></td> -->
+                    </tr>
+                </tbody>
+
+            </table>
+        </div>
+
+
+

@@ -54,7 +54,7 @@ export class ForumMainComponent implements OnInit {
     formData.append("content", this.topic.content);
     this._service.uploadData(this.topic).subscribe(res => {
       let resData = JSON.parse(JSON.stringify(res));
-      if (resData.message === "Success!") {
+      if (resData.message === "success") {
         alert("Insert successfully >v<");
         this.onReset();
         this.getTopics();
@@ -89,5 +89,13 @@ export class ForumMainComponent implements OnInit {
       form.reset();
     }
     this.topic = new Topic();
+  }
+
+  //sort views
+  sortViews() {
+    this._service.getAPISortViews().subscribe({
+      next: data => this.topics = data,
+      error: err => this.errorMsg = err
+    })
   }
 }

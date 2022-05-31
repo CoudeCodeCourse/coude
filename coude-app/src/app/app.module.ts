@@ -17,7 +17,7 @@ import { ForumViewtopicComponent } from './forum-viewtopic/forum-viewtopic.compo
 import { LandingComponent } from './landing/landing.component';
 import { CatalogComponent } from './catalog/catalog.component';
 import { WhoWeAreComponent } from './who-we-are/who-we-are.component';
-import { Header1Component } from './header1/header1.component';
+// import { Header1Component } from './header1/header1.component';
 import { StudyComponent } from './study/study.component';
 
 import { TestComponent } from './test/test.component';
@@ -26,18 +26,16 @@ import { EnrollCourseComponent } from './enroll-course/enroll-course.component';
 
 // import { AdminHomeComponent } from './admin-home/admin-home.component';
 // import { AdminCourseDetailsComponent } from './admin-course-details/admin-course-details.component';
-import { AdminHomeComponent } from './admin-home/admin-home.component';
-import { AdminCourseDetailsComponent } from './admin-course-details/admin-course-details.component';
 import { FeedbackComponent } from './feedback/feedback.component';
 import { CompletedCourseComponent } from './completed-course/completed-course.component';
-import { AdminStudentComponent } from './admin-student/admin-student.component';
+// import { AdminStudentComponent } from './admin-student/admin-student.component';
 import { TextEditorComponent } from './text-editor/text-editor.component';
-import { AdminStudent1Component } from './admin-student1/admin-student1.component';
+// import { AdminStudent1Component } from './admin-student1/admin-student1.component';
 import { ScheduleComponent } from './schedule/schedule.component';
 import { MyCourseComponent } from './my-course/my-course.component';
 import { LoginComponent } from './login/login.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
-import { AdUpCourseComponent } from './ad-up-course/ad-up-course.component';
+// import { AdUpCourseComponent } from './ad-up-course/ad-up-course.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { AssignmentComponent } from './assignment/assignment.component';
 import { AssignmentFbComponent } from './assignment-fb/assignment-fb.component';
@@ -57,8 +55,8 @@ import {CourseFilterPipe} from '../pipes/courseFilter.pipe';
 import {CourseFilter2Pipe} from '../pipes/courseFilter2.pipe';
 // import { AdminRoutingComponents } from './admin/admin-routing.module';
 import { AdminModule } from './admin/admin.module';
+import { AdminStudentComponent } from './admin-student/admin-student.component';
 // import { NgbdSortableHeader } from 'src/directives/sortable.directive';
-import {ForumFilterPipe} from '../pipes/forumFilter.pipe';
 
 @NgModule({
   declarations: [
@@ -73,18 +71,15 @@ import {ForumFilterPipe} from '../pipes/forumFilter.pipe';
     LandingComponent,
     CatalogComponent,
     WhoWeAreComponent,
-    Header1Component,
+    // Header1Component,
     StudyComponent,
     TestComponent,
     HomepageComponent,
     EnrollCourseComponent,
-    // AdminHomeComponent,
-    // AdminCourseDetailsComponent,
     ScheduleComponent,
     MyCourseComponent,
     LoginComponent,
     PageNotFoundComponent,
-    AdUpCourseComponent,
     SidebarComponent,
     AssignmentComponent,
     AssignmentFbComponent,
@@ -92,13 +87,13 @@ import {ForumFilterPipe} from '../pipes/forumFilter.pipe';
     CourseFilterPipe, 
     CourseFilter2Pipe,
     GeneralInformationComponent,
-    AdUpCourseComponent,
+    // AdUpCourseComponent,
     CompletedCourseComponent,
-    AdminStudentComponent,
+    // AdminStudentComponent,
     TextEditorComponent,
     ForumFilterPipe,
     ForumSortPipe,
-    AdminStudent1Component,
+    // AdminStudent1Component,
     GeneralInformationComponent,
     UpdateInformationComponent,
     SignUpComponent,
@@ -115,6 +110,7 @@ import {ForumFilterPipe} from '../pipes/forumFilter.pipe';
     HttpClientModule,
     BrowserAnimationsModule,
     ReactiveFormsModule,
+    AdminModule,
      RouterModule.forRoot([
       { path: '', redirectTo: 'landing',  pathMatch: 'full' },
       { path: 'contact', component: ContactComponent },
@@ -131,7 +127,7 @@ import {ForumFilterPipe} from '../pipes/forumFilter.pipe';
       { path: 'admin/student', component: AdminStudentComponent },
       { path: 'login', component: LoginComponent},
       { path: 'whoweare', component: WhoWeAreComponent},
-      { path: 'uploadcourse', component: AdUpCourseComponent },
+      // { path: 'uploadcourse', component: AdUpCourseComponent },
       { path: 'sidebar', component: SidebarComponent },
       { path: 'assignment', component: AssignmentComponent },
       { path: 'assignmentfb', component: AssignmentFbComponent },

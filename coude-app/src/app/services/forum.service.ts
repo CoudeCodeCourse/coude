@@ -39,7 +39,13 @@ export class ForumService {
         catchError(this.handleError)
       )
   }
-  
+  //get API sort views
+  getAPISortViews() : Observable<Topic[]> {
+    return this._http.get<Topic[]>(`${url_server}/topics/topics/sortbyviews`).pipe(
+      retry(3),
+      catchError(this.handleError)
+    )
+  }
   // getAllTopics(){
   //   return this._http.get(`${this.url_server}/topics`).pipe(
   //     retry(3),

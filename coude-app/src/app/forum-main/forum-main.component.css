@@ -64,9 +64,10 @@ body {
     font-weight: bolder;
 }
 
-.nav__btn:focus {
-    background-color: #303342;
-    color: #fff;
+.nav__btn:hover {
+    background-color: #303342 !important;
+    color: #fff !important;
+    cursor: pointer;
 }
 
 .bi-chevron-down {
