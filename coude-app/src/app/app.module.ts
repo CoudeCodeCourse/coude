@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
-import { RouterModule, Routes } from '@angular/router';
-import { FormsModule } from '@angular/forms';
-import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations'
+import { RouterModule } from '@angular/router';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
@@ -23,6 +23,9 @@ import { StudyComponent } from './study/study.component';
 import { TestComponent } from './test/test.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { EnrollCourseComponent } from './enroll-course/enroll-course.component';
+
+// import { AdminHomeComponent } from './admin-home/admin-home.component';
+// import { AdminCourseDetailsComponent } from './admin-course-details/admin-course-details.component';
 import { AdminHomeComponent } from './admin-home/admin-home.component';
 import { AdminCourseDetailsComponent } from './admin-course-details/admin-course-details.component';
 import { FeedbackComponent } from './feedback/feedback.component';
@@ -30,9 +33,6 @@ import { CompletedCourseComponent } from './completed-course/completed-course.co
 import { AdminStudentComponent } from './admin-student/admin-student.component';
 import { TextEditorComponent } from './text-editor/text-editor.component';
 import { AdminStudent1Component } from './admin-student1/admin-student1.component';
-
-
-import {SearchFilterPipe} from '../pipes/searchFilter.pipe';
 import { ScheduleComponent } from './schedule/schedule.component';
 import { MyCourseComponent } from './my-course/my-course.component';
 import { LoginComponent } from './login/login.component';
@@ -42,17 +42,23 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { AssignmentComponent } from './assignment/assignment.component';
 import { AssignmentFbComponent } from './assignment-fb/assignment-fb.component';
 import { AssignmentStartComponent } from './assignment-start/assignment-start.component';
-import{CourseFilterPipe} from '../pipes/courseFilter.pipe';
-import{CourseFilter2Pipe} from '../pipes/courseFilter2.pipe';
 import { GeneralInformationComponent } from './general-information/general-information.component';
-import {ForumFilterPipe} from '../pipes/forumFilter.pipe';
-import {ForumSortPipe} from '../pipes/forumSort.pipe';
+
+
 import { UpdateInformationComponent } from './update-information/update-information.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { BillingComponent } from './billing/billing.component';
+import { CatalogDetailComponent } from './catalog-detail/catalog-detail.component';
 
-
-
+import {ForumFilterPipe} from '../pipes/forumFilter.pipe';
+import {ForumSortPipe} from '../pipes/forumSort.pipe';
+import {SearchFilterPipe} from '../pipes/searchFilter.pipe';
+import {CourseFilterPipe} from '../pipes/courseFilter.pipe';
+import {CourseFilter2Pipe} from '../pipes/courseFilter2.pipe';
+// import { AdminRoutingComponents } from './admin/admin-routing.module';
+import { AdminModule } from './admin/admin.module';
+// import { NgbdSortableHeader } from 'src/directives/sortable.directive';
+import {ForumFilterPipe} from '../pipes/forumFilter.pipe';
 
 @NgModule({
   declarations: [
@@ -67,14 +73,13 @@ import { BillingComponent } from './billing/billing.component';
     LandingComponent,
     CatalogComponent,
     WhoWeAreComponent,
-
     Header1Component,
     StudyComponent,
     TestComponent,
     HomepageComponent,
     EnrollCourseComponent,
-    AdminHomeComponent,
-    AdminCourseDetailsComponent,
+    // AdminHomeComponent,
+    // AdminCourseDetailsComponent,
     ScheduleComponent,
     MyCourseComponent,
     LoginComponent,
@@ -97,8 +102,9 @@ import { BillingComponent } from './billing/billing.component';
     GeneralInformationComponent,
     UpdateInformationComponent,
     SignUpComponent,
-    BillingComponent
-
+    BillingComponent,
+    CatalogDetailComponent,
+    
   ],
   imports: [
     BrowserModule,
@@ -108,17 +114,16 @@ import { BillingComponent } from './billing/billing.component';
     NgbModule,
     HttpClientModule,
     BrowserAnimationsModule,
+    ReactiveFormsModule,
      RouterModule.forRoot([
       { path: '', redirectTo: 'landing',  pathMatch: 'full' },
-
       { path: 'contact', component: ContactComponent },
       { path: 'landing', component: LandingComponent },
       { path: 'header', component: HeaderComponent },
       { path: 'home', component: HomepageComponent },
-      { path: 'admin/courses/:id', component: AdminCourseDetailsComponent },
-      { path: 'admin', component: AdminHomeComponent },
+      // { path: 'admin/courses/:id', component: AdminCourseDetailsComponent },
+      // { path: 'admin', component: AdminHomeComponent },
       { path: 'homepage', component: HomepageComponent },
-      { path: 'adminCouseDetails', component: AdminCourseDetailsComponent },
       { path: 'forum', component: ForumMainComponent },
       { path: 'view-topic/:id', component: ForumViewtopicComponent },
       { path: 'feedback', component: FeedbackComponent },
@@ -137,12 +142,16 @@ import { BillingComponent } from './billing/billing.component';
       { path: 'update-information', component: UpdateInformationComponent },
       { path: 'sign-up', component: SignUpComponent },
       { path: 'billing', component: BillingComponent },
+      { path: 'catalogdetails', component: CatalogDetailComponent },
+      { path: 'enroll/:id', component: EnrollCourseComponent },
 
-      
+
+
       //tất cả các path đều phải nằm trên path của PageNotFound
+    
       { path: '**', component: PageNotFoundComponent},
-
     ]),
+  
   ],
 
   providers: [],

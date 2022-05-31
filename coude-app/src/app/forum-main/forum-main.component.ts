@@ -26,9 +26,11 @@ export class ForumMainComponent implements OnInit {
   // 	//name:['',[Validators.required,Validators.minLength(3)]],
   // 	file: ['']
   // })
-  constructor(private _service: ForumService,
-    private _router: Router,
-    private _activeRoute: ActivatedRoute) { }
+
+  constructor(private _service: ForumService, 
+              private _router: Router, 
+              private _activeRoute: ActivatedRoute) {  }
+
   ngOnInit(): void {
     this.getTopics();
   }
