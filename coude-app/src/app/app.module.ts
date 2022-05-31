@@ -34,7 +34,11 @@ import { MyCourseComponent } from './my-course/my-course.component';
 import { LoginComponent } from './login/login.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { AdUpCourseComponent } from './ad-up-course/ad-up-course.component';
+import { GeneralInformationComponent } from './general-information/general-information.component';
+import { UpdateInformationComponent } from './update-information/update-information.component';
+import { SignUpComponent } from './sign-up/sign-up.component';
 import { BillingComponent } from './billing/billing.component';
+
 
 
 @NgModule({
@@ -49,6 +53,7 @@ import { BillingComponent } from './billing/billing.component';
     LandingComponent,
     CatalogComponent,
     WhoWeAreComponent,
+
     Header1Component,
     StudyComponent,
     TestComponent,
@@ -62,6 +67,10 @@ import { BillingComponent } from './billing/billing.component';
     PageNotFoundComponent,
     AdUpCourseComponent,
     BillingComponent
+    GeneralInformationComponent,
+    UpdateInformationComponent,
+    SignUpComponent,
+    BillingComponent
   ],
   imports: [
     BrowserModule,
@@ -72,6 +81,7 @@ import { BillingComponent } from './billing/billing.component';
     NgbModule,
     HttpClientModule,
     BrowserAnimationsModule,
+    ReactiveFormsModule,
      RouterModule.forRoot([
       { path: '', redirectTo: 'landing', pathMatch: 'full'},
       { path: 'contact', component: ContactComponent },
@@ -85,6 +95,10 @@ import { BillingComponent } from './billing/billing.component';
       { path: 'uploadcourse', component: AdUpCourseComponent },
       { path: '/enroll/courses/study', component: StudyComponent},
       { path: 'billing', component: BillingComponent},
+      { path: 'general-information', component: GeneralInformationComponent },
+      { path: 'update-information', component: UpdateInformationComponent },
+      { path: 'sign-up', component: SignUpComponent },
+
        
 
       //tất cả các path đều phải nằm trên path của PageNotFound
