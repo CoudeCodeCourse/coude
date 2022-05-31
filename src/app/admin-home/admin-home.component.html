@@ -1,3 +1,4 @@
+<app-admin></app-admin>
 <div class="d-flex justify-content-between">
     <app-header1></app-header1>
     <div class="py-2 px-5 col-10">
@@ -25,12 +26,25 @@
                     <tr *ngFor="let c of courses | slice:0:10; let i = index " (click)="onSelected(c)">
                         <td class="px-sm-1 px-md-2">{{i + 1}}</td>
                         <td class="text-truncate" style="text-align:left; padding: 10px">{{c.title}}</td>
+                        <th scope="col" sortable="title" (sort)="onSort($event)" class="col-lg-4 col-md-3">NAME 
+                            <i class="bi bi-filter"></i>
+                        </th>
+                        <th scope="col" sortabe="instructor" class="col-2">INSTRUCTOR</th>
+                        <th scope="col" sortabe="startdate" >START DATE</th>
+                        <th scope="col" sortabe="status" >STATUS</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let c of sortCourses | slice:0:10; let i = index" (click)="onSelected(c)">
+                        <td scope="row" class="px-sm-1 px-md-2 ">{{i + 1}}</td>
+                        <td class="text-wrap" style="text-align:left; padding: 10px">{{c.title}}</td>
                         <td>{{c.instructor}}</td>
-                        <td>2022-02-20</td>
+                        <td>{{c.startdate | date}}</td>
                         <!-- <td style="color: var(--green)">{{c.status | titlecase}}</td> -->
                         <td class="green fw-bold">{{c.status | titlecase}}</td>
                         <!-- <td class="green" [ngClass]="{'red': (this.document. == 'Hidden')}">{{c.status | titlecase}}</td> -->
                         <!-- <td></td> -->
+                        <td class="fw-bold" [class.red]="c.status=='hidden'" [class.green]="c.status!='hidden'">{{c.status | titlecase}}</td>
                     </tr>
                 </tbody>
 

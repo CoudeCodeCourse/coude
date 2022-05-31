@@ -1,7 +1,28 @@
 <div class="wrapper">
     <div class="row main-content">
         <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3" id="div-sidebar">
-           
+            <nav class="navbar navbar-expand d-flex flex-column align-item-start" id="sidebar">
+                <ul class="navbar-nav d-flex flex-column mt-2 w-100">
+                    <li class="nav-item w-100">
+                        <a href="#" class="nav-link text-light pl-4">General information</a>
+                    </li>
+                    <li class="nav-item w-100">
+                        <a href="#" class="nav-link text-light pl-4">Change information</a>
+                    </li>
+                    <li class="nav-item w-100">
+                        <a href="#" class="nav-link text-light pl-4">Payment</a>
+                    </li>
+                    <li class="nav-item w-100">
+                        <a href="#" class="nav-link text-light pl-4">My Course</a>
+                    </li>
+                    <li class="nav-item w-100">
+                        <a href="#" class="nav-link text-light pl-4">My favorite course</a>
+                    </li>
+                    <li class="nav-item w-100">
+                        <a href="#" class="nav-link text-light pl-4">Setting</a>
+                    </li>
+                    </ul>
+            </nav>
         </div>
         <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9 col-xl-9">
             <div class="container-fluid">
@@ -108,63 +129,58 @@
                         </div>
                         <div class="row justify-content-center">
                             <div class="text-center">
-                                <button class="mb-3 mt-3 button--green" id="btnnext" name="btnnext" data-toggle="modal" data-target="#myModal1">Next</button>
+                        
+                                <button class="mb-3 mt-3 button--green" id="btnnext" name="btnnext" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Next</button>
                             </div>
                         </div>
 
-                        <!-- Modal -->
-                        <!-- <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h3>Choose OTP code</h3>
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-
-                                    </div>
-                                    <div class="modal-body">
-                                        <div class="choose-element">
-                                            <input type="radio" name="choose-input" id="phone">
-                                            <label for="phone">Phone number</label>
-                                        </div>
-                                        <div class="choose-element">
-                                            <input type="radio" name="choose-input" id="email">
-                                            <label for="email">Email</label>
-                                        </div>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-default btn-next">Next</button>
-                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                    </div>
+                     <!-- Modal -->
+                     <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                        <div class="modal-dialog modal-dialog-centered">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalToggleLabel">Choose OTP code</h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="choose-element">
+                                    <input type="radio" name="choose-input" id="phone">
+                                    <label class="ms-3" for="phone">Phone number</label>
+                                </div>
+                                <div class="choose-element">
+                                    <input type="radio" name="choose-input" id="email">
+                                    <label class="ms-3" for="email">Email</label>
                                 </div>
                             </div>
-                        </div> -->
-
-                        <!-- Modal -->
-                        <!-- <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                            <div class="modal-dialog">
-
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h3>Confirm an OTP code</h3>
-                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                    </div>
-
-                                    <div class="modal-body">
-                                        <div class="enter-otp">
-                                            <p id="popup-content "></p>
-                                            <input id="enterotp " type="text " class="form-control " placeholder="OTP " required name=" ">
-                                        </div>
-                                    </div>
-
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-default btn-prev">Resend code</button>
-                                        <button type="button" class="btn btn-default btn-next" onclick="window.location.href='../My-course/my-course.html'">Confirm</button>
-                                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                    </div>
+                            <div class="modal-footer">
+                              <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal" data-bs-dismiss="modal">Next</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+                        <div class="modal-dialog modal-dialog-centered">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalToggleLabel2">Confirm OTP code</h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="enter-otp">
+                                    <p id="popup-content "></p>
+                                    <input id="enterotp " type="text " class="form-control " placeholder="OTP " required name=" ">
                                 </div>
                             </div>
-                        </div> -->
-
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default btn-prev">Resend code</button>
+                                <button type="button" class="btn btn-default btn-next" onclick="window.location.href=''">Confirm</button>
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                              <!-- <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal" data-bs-dismiss="modal">Back to first</button> -->
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      
                     </div>
                 </div>
             </div>

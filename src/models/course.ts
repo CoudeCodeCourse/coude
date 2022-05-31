@@ -3,13 +3,13 @@ export class Course{
     title!: string;
     category!: any;
     admin_id!: any;
-    status!: "available" | "hidden";
+    status!: string;
     time?: string;
     level!: "Intermediate" | "Beginner";
     instructor?: string;
     user_avt?: any;
     instruc_descript!: string;
-    language?: string[];
+    languages?: string[];
     learners?: string[];
     fee!: number;
     atc!: string;
@@ -21,7 +21,13 @@ export class Course{
         content: string, 
         createdAt: Date
     ];
-    start_date?: Date
+    lessons?: [
+        {_id: any,
+        name: string,
+        thumbPath: string,
+        date: Date}
+    ]
+    startdate?: Date
     
     // _id: any;
     // title: string;

@@ -3,19 +3,21 @@ export interface ITopic {
     name: string,
     price: number,
     tag: string,
-    user_id: number,
+    title: string,
+    content: string,
+    user_id: any,
     user_name: string,
-    user_avt: "blue_man.png",
+    user_avt: any,
     replies: number,
     views: number,
     likes: number,
-    date: any,
+    createdAt: Date,
+    updatedAt: Date,
     marked: boolean,
-    title: string,
-    content: string,
     reply: [{
         reply_content: string,
         user_name: string,
-        user_avt: "blue_man.png"
+        user_avt: string,
+        likes: number,
     }]
 }

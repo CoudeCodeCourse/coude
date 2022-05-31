@@ -65,14 +65,16 @@
                     <button class="button--green">Next</button>
                 </div>
                 <div id="lesson">
-                    <p id="lesson-title">Lesson1 : Introduction about IT</p>
-                    <iframe src="https://www.youtube.com/embed/V3ZPPPKEipA" title="Lesson 1" allowfullscreen></iframe>
+                    <tr *ngFor="let l of selectedCourse.lessons">
+                        <video width="80" height="50" controls>
+                            <source src="http://localhost:3000/{{l.thumbPath}}" type="video/mp4">
+                        </video>
+                    </tr>
                 </div>
                 <br>
                 <div class="d-flex justify-content-evenly">
                     <button class="button--green">Save like favourite</button>
-                    <button class="button--green">Try it</button>
-                    <button class="button--green">Take Notes</button>
+                    <button class="button--green" onclick="window.open('https://codepen.io/')">Try it</button>
                 </div>
             </div>
         </div>

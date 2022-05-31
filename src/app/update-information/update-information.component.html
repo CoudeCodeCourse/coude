@@ -2,20 +2,39 @@
 
     <div class="row">
         <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+            <nav class="navbar navbar-expand d-flex flex-column align-item-start" id="sidebar">
+                <ul class="navbar-nav d-flex flex-column mt-2 w-100">
+                    <li class="nav-item w-100">
+                        <a href="#" class="nav-link text-light pl-4">General information</a>
+                    </li>
+                    <li class="nav-item w-100">
+                        <a href="#" class="nav-link text-light pl-4">Change information</a>
+                    </li>
+                    <li class="nav-item w-100">
+                        <a href="#" class="nav-link text-light pl-4">Payment</a>
+                    </li>
+                    <li class="nav-item w-100">
+                        <a href="#" class="nav-link text-light pl-4">My Course</a>
+                    </li>
+                    <li class="nav-item w-100">
+                        <a href="#" class="nav-link text-light pl-4">My favorite course</a>
+                    </li>
+                    <li class="nav-item w-100">
+                        <a href="#" class="nav-link text-light pl-4">Setting</a>
+                    </li>
+                    </ul>
+            </nav>
         </div>
         <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9 col-xl-9 main-content">
             <div class="container">
                 <div class="row">
                         <div >
-                            <div class="overlay"></div>
                             <img class="ava-img" src="/assets/images/avatar/no_face.png" alt="">
-                            <p class="title">card title</p>
-                            <div class="button"><a href="#"> BUTTON </a></div> 
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5 col-xl-5">
-                        <form>
+                        <form #registerForm="ngForm" (ngSubmit)="submitData(registerForm)" class="form-container d-flex flex-column">
                             <fieldset>
                                 <div class="form-group">
                                     <label for="disabledTextInput">First name</label> 
@@ -29,7 +48,7 @@
 
                                 <div class="form-group">
                                     <label for="disabledTextInput">Date of birth</label>
-                                    <input type="text" id="disabledTextInput" class="form-control" placeholder="Date of birth">
+                                    <input type="date" id="disabledTextInput" class="form-control" placeholder="Date of birth">
                                 </div>
 
                                 <div class="form-group">
@@ -69,10 +88,8 @@
                 </div>
                 <div class="row">
                     <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5 col-xl-5"></div>
-                    <button class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 button--green btn-update">Next</button>
-                    <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5 col-xl-5"></div>
-
-                   
+                    <button type="submit"  class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 button--green btn-update">Next</button>
+                    <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5 col-xl-5"></div> 
                 </div>
             </div>
         </div>
