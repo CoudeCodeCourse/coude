@@ -7,39 +7,39 @@
                         <i class="fs-4 bi bi-terminal d-block d-sm-none"></i> <span class="ms-1 d-none d-sm-inline">Language</span> </a>
                     <ul class="collapse show nav flex-column ms-1" id="submenu1" data-bs-parent="#menu">
                         <li class="w-100">
-                            <a href="#" class="nav-link px-0 text-light "> <span class="d-block d-sm-none text-light">1</span>
+                            <a routerLink="/catalogdetails" class="nav-link px-0 text-light "> <span class="d-block d-sm-none text-light">1</span>
                                 <span class="d-none d-sm-inline text-light">HTML&CSS</span></a>
                         </li>
                         <li>
-                            <a href="#" class="nav-link px-0 text-light "> <span class="d-block d-sm-none text-light">2</span>
+                            <a routerLink="/catalogdetails" class="nav-link px-0 text-light "> <span class="d-block d-sm-none text-light">2</span>
                                 <span class="d-none d-sm-inline text-light">Python</span></a>
                         </li>
                         <li>
-                            <a href="#" class="nav-link px-0 text-light "> <span class="d-block d-sm-none text-light">3</span>
+                            <a routerLink="/catalogdetails" class="nav-link px-0 text-light "> <span class="d-block d-sm-none text-light">3</span>
                                 <span class="d-none d-sm-inline text-light">JavaScript</span></a>
                         </li>
                         <li>
-                            <a href="#" class="nav-link px-0 text-light "> <span class="d-block d-sm-none text-light">4</span>
+                            <a routerLink="/catalogdetails" class="nav-link px-0 text-light "> <span class="d-block d-sm-none text-light">4</span>
                                 <span class="d-none d-sm-inline text-light">Java</span></a>
                         </li>
                         <li>
-                            <a href="#" class="nav-link px-0 text-light "> <span class="d-block d-sm-none text-light">5</span>
+                            <a routerLink="/catalogdetails" class="nav-link px-0 text-light "> <span class="d-block d-sm-none text-light">5</span>
                                 <span class="d-none d-sm-inline text-light">SQL</span></a>
                         </li>
                         <li>
-                            <a href="#" class="nav-link px-0 text-light "> <span class="d-block d-sm-none text-light">6</span>
+                            <a routerLink="/catalogdetails" class="nav-link px-0 text-light "> <span class="d-block d-sm-none text-light">6</span>
                                 <span class="d-none d-sm-inline text-light">C++</span></a>
                         </li>
                         <li>
-                            <a href="#" class="nav-link px-0 text-light "> <span class="d-block d-sm-none text-light">7</span>
+                            <a routerLink="/catalogdetails" class="nav-link px-0 text-light "> <span class="d-block d-sm-none text-light">7</span>
                                 <span class="d-none d-sm-inline text-light">C#</span></a>
                         </li>
                         <li>
-                            <a href="#" class="nav-link px-0 text-light "> <span class="d-block d-sm-none text-light">8</span>
+                            <a routerLink="/catalogdetails" class="nav-link px-0 text-light "> <span class="d-block d-sm-none text-light">8</span>
                                 <span class="d-none d-sm-inline text-light">R</span></a>
                         </li>
                         <li>
-                            <a href="#" class="nav-link px-0 text-light "> <span class="d-block d-sm-none text-light">9</span>
+                            <a routerLink="/catalogdetails" class="nav-link px-0 text-light "> <span class="d-block d-sm-none text-light">9</span>
                                 <span class="d-none d-sm-inline text-light">Kotlin</span></a>
                         </li>
 
@@ -50,7 +50,7 @@
                         <i class="fs-4 bi bi-briefcase d-block d-sm-none"></i> <span class="ms-1 d-none d-sm-inline">Subjects</span> </a>
                     <ul class="collapse show nav flex-column ms-1" id="submenu1" data-bs-parent="#menu">
                         <li class="w-100">
-                            <a href="#" class="nav-link px-0 text-light "> <span class="d-block d-sm-none text-light">1</span>
+                            <a href="/catalogdetails" class="nav-link px-0 text-light "> <span class="d-block d-sm-none text-light">1</span>
                                 <span class="d-none d-sm-inline text-light">Web Design</span></a>
                         </li>
                         <li>
@@ -86,20 +86,20 @@
         </div>
         <!-- header 1-->
         <div class="row">
-            <h4 class="header mt-5">Most Popular</h4>
+            <h4 class="header mt-5">Popular</h4>
         </div>
         <!-- courses popular-->
         <div class="row">
-            <div class="col-12 col-sm-6 col-md-4" *ngFor="let c of courses | coursefilter2">
-                <a class="linkenroll" target="blank">
+            <div class="col-12 col-sm-6 col-md-4" *ngFor="let c2 of courses2" (click)="getNavigation(c2)">
+                <a class="text-decoration-none text-dark" target="blank">
                     <div class="txtcourse">
                         <div class="tag">
                             <p class="txttag">Pro</p>
                         </div>
                         <div class="information">
-                            <p class="box--course_header">{{c.title}}</p>
+                            <p class="box--course_header">{{c2.title}}</p>
                             <ul>
-                                <li>{{c.level}}</li>
+                                <li>{{c2.level}}</li>
                                 <li>121 Lessons</li>
                             </ul>
                         </div>
@@ -108,14 +108,15 @@
                 </a>
             </div>
         </div>
-        <!-- header 2-->
+
+        <!-- header 2 -->
         <div class="row">
             <h4 class="header mt-5">New</h4>
         </div>
-        <!-- courses new -->
+        <!-- courses new  -->
         <div class="row">
-            <div class="col-12 col-sm-6 col-md-4" *ngFor="let c of courses | coursefilter">
-                <a class="linkenroll" target="blank">
+            <div class="col-12 col-sm-6 col-md-4" *ngFor="let c of courses1" (click)="getNavigation(c)">
+                <a class="text-decoration-none text-dark" target="blank">
                     <div class="txtcourse">
                         <div class="tag">
                             <p class="txttag">Pro</p>
@@ -132,25 +133,5 @@
                 </a>
             </div>
         </div>
-        <!-- header 3 -->
-        <!-- <div class="row">
-            <h4 class="header mt-5">Blog</h4>
-        </div>
-        blog line 1
-        <div class="row">
-            <div class="col-lg-4 text-center">
-                <img class="blog_img--up">
-                <p>Attributes</p>
-            </div>
-        </div>
-        blogline 2
-        <div class="row">
-            <div class="col-lg-6">
-                <img class="blog_img" src="">
-            </div>
-            <div class="col-lg-6">
-                <p class="txtblog">Attributes</p>
-            </div>
-        </div> -->
     </div>
 </div>
