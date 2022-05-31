@@ -40,13 +40,13 @@
                         "production": {
                             "budgets": [{
                                     "type": "initial",
-                                    "maximumWarning": "1kb",
-                                    "maximumError": "1mb"
+                                    "maximumWarning": "2MB",
+                                    "maximumError": "2MB"
                                 },
                                 {
                                     "type": "anyComponentStyle",
-                                    "maximumWarning": "2kb",
-                                    "maximumError": "4kb"
+                                    "maximumWarning": "2MB",
+                                    "maximumError": "2MB"
                                 }
                             ],
                             "fileReplacements": [{
@@ -100,6 +100,9 @@
                         ],
                         "scripts": []
                     }
+                },
+                "deploy": {
+                    "builder": "angular-cli-ghpages:deploy"
                 }
             }
         }
