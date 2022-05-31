@@ -24,6 +24,7 @@ import { TestComponent } from './test/test.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { EnrollCourseComponent } from './enroll-course/enroll-course.component';
 
+
 // import { AdminHomeComponent } from './admin-home/admin-home.component';
 // import { AdminCourseDetailsComponent } from './admin-course-details/admin-course-details.component';
 import { FeedbackComponent } from './feedback/feedback.component';
@@ -76,8 +77,6 @@ import { AdminModule } from './admin/admin.module';
     TestComponent,
     HomepageComponent,
     EnrollCourseComponent,
-    // AdminHomeComponent,
-    // AdminCourseDetailsComponent,
     ScheduleComponent,
     MyCourseComponent,
     LoginComponent,
@@ -107,6 +106,7 @@ import { AdminModule } from './admin/admin.module';
     HttpClientModule,
     AppRoutingModule,
     FormsModule,
+    ReactiveFormsModule,
     NgbModule,
     HttpClientModule,
     BrowserAnimationsModule,
@@ -119,8 +119,7 @@ import { AdminModule } from './admin/admin.module';
       { path: 'landing', component: LandingComponent },
       { path: 'header', component: HeaderComponent },
       { path: 'home', component: HomepageComponent },
-      // { path: 'admin/courses/:id', component: AdminCourseDetailsComponent },
-      // { path: 'admin', component: AdminHomeComponent },
+      { path: '/enroll/courses/study/:id', component: StudyComponent},
       { path: 'homepage', component: HomepageComponent },
       { path: 'forum', component: ForumMainComponent },
       { path: 'view-topic/:id', component: ForumViewtopicComponent },
@@ -135,7 +134,6 @@ import { AdminModule } from './admin/admin.module';
       { path: 'assignmentstr', component: AssignmentStartComponent },
       { path: 'catalog', component: CatalogComponent },  
       { path: 'generalinformation', component: GeneralInformationComponent },  
-      { path: 'general-information', component: GeneralInformationComponent },
       { path: 'update-information', component: UpdateInformationComponent },
       { path: 'sign-up', component: SignUpComponent },
       { path: 'billing', component: BillingComponent },
@@ -145,7 +143,6 @@ import { AdminModule } from './admin/admin.module';
 
 
       //tất cả các path đều phải nằm trên path của PageNotFound
-    
       { path: '**', component: PageNotFoundComponent},
     ]),
 

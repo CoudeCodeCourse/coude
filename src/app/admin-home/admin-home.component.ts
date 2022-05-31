@@ -69,6 +69,10 @@ export class AdminHomeComponent implements OnInit {
   constructor(private _service: CoursesDataService,
               private _router: Router,
               private _activeRouter: ActivatedRoute) { 
+              //   this._activeRouter.queryParams.subscribe(params => {
+              //     this.selectedCourse = params;
+              //     console.log("tiel:",this.selectedCourse); // Print the parameter to the console. 
+              // });
 
               this.headers = new QueryList();
               }
@@ -93,7 +97,6 @@ export class AdminHomeComponent implements OnInit {
     })
     console.log("sort",this.sortCourses)
   }
-
   onSelected(course: Course){
     // console.log(data._id);
     this._router.navigate(['/admin/courses', course._id]

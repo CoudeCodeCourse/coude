@@ -25,7 +25,7 @@ export class ForumService {
 
   //Load data từ server (local 3000)
   uploadData(data: any){
-    return this._http.post(`${url_server}/topics/topics`,data).pipe(
+    return this._http.post(`${url_server}/topics/post-topic`,data).pipe(
       retry(3),
       catchError(this.handleError)
     )
@@ -39,7 +39,13 @@ export class ForumService {
         catchError(this.handleError)
       )
   }
-
+  //get API sort views
+  getAPISortViews() : Observable<Topic[]> {
+    return this._http.get<Topic[]>(`${url_server}/topics/topics/sortbyviews`).pipe(
+      retry(3),
+      catchError(this.handleError)
+    )
+  }
   // getAllTopics(){
   //   return this._http.get(`${this.url_server}/topics`).pipe(
   //     retry(3),

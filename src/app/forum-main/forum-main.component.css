@@ -64,9 +64,10 @@ body {
     font-weight: bolder;
 }
 
-.nav__btn:focus {
-    background-color: #303342;
-    color: #fff;
+.nav__btn:hover {
+    background-color: #303342 !important;
+    color: #fff !important;
+    cursor: pointer;
 }
 
 .bi-chevron-down {
@@ -195,6 +196,20 @@ a {
     text-align: center;
     width: fit-content;
     padding: 10px;
+}
+#output {
+    width: 100%;
+    border: 1px solid #303342;
+    padding: 10px;
+}
+.cancel__btn {
+    border: none !important;
+    color: darkgray;
+    margin-right: 10px;
+    margin-left: auto;
+    text-align: right;
+    background-color: #fff;
+    font-weight: bold;
 }
 
 @media only screen and (max-width: 490px) {

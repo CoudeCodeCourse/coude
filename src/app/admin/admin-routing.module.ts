@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AdUpCourseComponent } from '../ad-up-course/ad-up-course.component';
+// import { AdUpCourseComponent } from '../ad-up-course/ad-up-course.component';
 import { AdminCourseDetailsComponent } from '../admin-course-details/admin-course-details.component';
 import { AdminHomeComponent } from '../admin-home/admin-home.component';
 import { AdminStudentComponent } from '../admin-student/admin-student.component';
@@ -11,9 +11,8 @@ const routes: Routes = [
   {path: 'admin', component: AdminHomeComponent},
   {path: 'admin/courses/:id', component: AdminCourseDetailsComponent},
   {path: 'admin/header', component: AdminComponent},
-  {path: 'admin/student', component: AdminStudentComponent},
   { path: 'admin/uploadcourse', component: AdUpCourseComponent },
-
+  {path: 'admin/courses/student', component: AdminStudentComponent},
 
 ];
 
@@ -22,6 +21,7 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AdminRoutingModule { }
+
 export const AdminRoutingComponents = [
     AdminHomeComponent, 
     AdminCourseDetailsComponent,
