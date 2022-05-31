@@ -52,7 +52,7 @@ import {SearchFilterPipe} from '../pipes/searchFilter.pipe';
 import {CourseFilterPipe} from '../pipes/courseFilter.pipe';
 import {CourseFilter2Pipe} from '../pipes/courseFilter2.pipe';
 // import { AdminRoutingComponents } from './admin/admin-routing.module';
-import { AdminModule } from './admin/admin.module';
+// import { AdminModule } from './admin/admin.module';
 // import { NgbdSortableHeader } from 'src/directives/sortable.directive';
 import {ForumFilterPipe} from '../pipes/forumFilter.pipe';
 
@@ -145,7 +145,6 @@ import {ForumFilterPipe} from '../pipes/forumFilter.pipe';
     
       { path: '**', component: PageNotFoundComponent},
     ]),
-    AdminModule
   ],
 
   providers: [],
