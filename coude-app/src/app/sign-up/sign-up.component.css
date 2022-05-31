@@ -1,0 +1,28 @@
+.form-container{
+    width: 40%;
+    min-height: 80vh;
+    display: block;
+    margin: auto;
+    background-color: var(--login-color);
+    border-radius: 5px;
+    margin-top: 50px;
+    padding-bottom: 50px;
+}
+.coude-logo{
+    width: 30%;
+    display: block;
+    margin: auto;
+}
+.form-content{
+    display: block;
+    margin: auto;
+    width: 70%;
+}
+#logo{
+    width: 32px;
+}
+ 
+#button-block button{
+    min-width: 100px;
+    padding: 5px 5px;
+}

@@ -96,11 +96,6 @@ export class AdminHomeComponent implements OnInit {
   }
 
   onSelected(course: Course){
-    // console.log(data._id);
-    // console.log(data._id);
-    this._router.navigate(['/admin/courses', course._id]
-      // {queryParams: {course: course},
-    //  }
-     )
+    this._router.navigate(['/admin/courses', course._id])
   }
 }
