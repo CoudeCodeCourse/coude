@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { LandingComponent } from './landing/landing.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule } from '@angular/forms'
 
 @Component({
   selector: 'app-root',

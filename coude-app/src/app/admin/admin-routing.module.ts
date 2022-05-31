@@ -18,6 +18,7 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AdminRoutingModule { }
+
 export const AdminRoutingComponents = [
     AdminHomeComponent, 
     AdminCourseDetailsComponent]

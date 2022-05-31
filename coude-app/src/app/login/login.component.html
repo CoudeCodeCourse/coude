@@ -6,19 +6,20 @@
             <div class="form-group">
                 <label class="form-label" for="username">Email/ Account name</label>
                 <input type="text" class="form-control" id="username" name="username" [(ngModel)]="form.username" required #username="ngModel">
-                <div class="alert alert-danger" role="alert" *ngIf="username.errors && f.submitted">
-                    Username is required!
-                  </div>
+                <small class="alert text-danger" role="alert" *ngIf="username.errors && f.submitted" style="background-color: none;">
+                    Email/ Account name is required!
+                </small>
             </div>
+            <br>
             <div class="form-group">
                 <label class="form-label" for="password">Password</label>
                 <input type="password" class="form-control" id="password" name="password" [(ngModel)]="form.password" required minlength="6" #password="ngModel">
-                <div class="alert alert-danger" role="alert" *ngIf="password.errors && f.submitted">
-                    <div *ngIf="password.errors['required']">Password is required</div>
-                    <div *ngIf="password.errors['minlength']">
+                <small class="alert text-danger" role="alert" *ngIf="password.errors && f.submitted" style="background-color: none;">
+                    <small *ngIf="password.errors['required']">Password is required</small>
+                    <small *ngIf="password.errors['minlength']">
                       Password must be at least 6 characters
-                    </div>
-                  </div>
+                    </small>
+                </small>
             </div>           
         </div>
         <br>
@@ -35,7 +36,7 @@
         <br>
         <div id="button-block" class="d-flex justify-content-evenly">
             <button class="button--grey">Forgot password?</button>
-            <button type="submit" class="button--green">Sign in</button>
+            <button class="button--green" href="">Sign in</button>
         </div>
     </form>
 </div>

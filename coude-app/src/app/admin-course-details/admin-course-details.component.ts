@@ -1,8 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router, Params } from '@angular/router';
-import { Course } from 'src/models/course';
+import { Location } from '@angular/common';
 import { CoursesDataService } from '../services/courses-data.service';
 import { Title } from '@angular/platform-browser';
+import { Course } from 'src/models/course';
+import { CoursesDataService } from '../services/courses-data.service';
 import { FormBuilder, NgForm, Validators } from '@angular/forms';
 // import 'rxjs/add/operator/filter';
 
@@ -16,8 +18,14 @@ import { FormBuilder, NgForm, Validators } from '@angular/forms';
 
 export class AdminCourseDetailsComponent implements OnInit {
   courses: Array<Course> = []; 
+  // courses!: Course[];
   errMessage = "";
   selectedId: any;
+  selectedCourse!: Course;
+  constructor(private _activeRoute: ActivatedRoute,
+              private _router: Router,
+              private _service: CoursesDataService,
+              private _title: Title) { 
   public selectedCourse!: Course;
   show = true;
   isCourseHide!: boolean;
@@ -49,9 +57,10 @@ export class AdminCourseDetailsComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.getCourseById();
+    this.getCoursesById();
     // this._title.setTitle(this.selectedCourse.title);
-    // console.log(this._title);
+    this._title.setTitle(this.selectedCourse.title);
+    console.log(this._title);
   }
 
   getCourseById(){
@@ -66,6 +75,15 @@ export class AdminCourseDetailsComponent implements OnInit {
     );
     console.log("selected course: ",this.selectedCourse);
   }
+  // getCourses(){
+  //   const id = this._activeRoute.snapshot.paramMap.get('id');
+  //   console.log("id:",id)
+  //   this._service.getACourse(id).subscribe(
+  //     course => this.selectedCourse = course
+  //   )
+  //   console.log(this.selectedCourse)
+  // }
+
   goBack(): void {
     this._router.navigate(['/admin/courses', {id: this.selectedId}])
   }
