@@ -4,6 +4,7 @@ import { Course } from 'src/models/course';
 import { CoursesDataService } from '../services/courses-data.service';
 import { Title } from '@angular/platform-browser';
 import { FormBuilder, NgForm, Validators } from '@angular/forms';
+import { AdminModule } from '../admin/admin.module';
 // import 'rxjs/add/operator/filter';
 
 
