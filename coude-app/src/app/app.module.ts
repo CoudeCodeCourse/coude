@@ -43,11 +43,15 @@ import { AssignmentComponent } from './assignment/assignment.component';
 import { AssignmentFbComponent } from './assignment-fb/assignment-fb.component';
 import { AssignmentStartComponent } from './assignment-start/assignment-start.component';
 import { GeneralInformationComponent } from './general-information/general-information.component';
+
+
 import { UpdateInformationComponent } from './update-information/update-information.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { BillingComponent } from './billing/billing.component';
 import { CatalogDetailComponent } from './catalog-detail/catalog-detail.component';
 
+import {ForumFilterPipe} from '../pipes/forumFilter.pipe';
+import {ForumSortPipe} from '../pipes/forumSort.pipe';
 import {SearchFilterPipe} from '../pipes/searchFilter.pipe';
 import {CourseFilterPipe} from '../pipes/courseFilter.pipe';
 import {CourseFilter2Pipe} from '../pipes/courseFilter2.pipe';
@@ -85,7 +89,7 @@ import {ForumFilterPipe} from '../pipes/forumFilter.pipe';
     AssignmentComponent,
     AssignmentFbComponent,
     AssignmentStartComponent,
-    CourseFilterPipe,
+    CourseFilterPipe, 
     CourseFilter2Pipe,
     GeneralInformationComponent,
     AdUpCourseComponent,
@@ -93,6 +97,7 @@ import {ForumFilterPipe} from '../pipes/forumFilter.pipe';
     AdminStudentComponent,
     TextEditorComponent,
     ForumFilterPipe,
+    ForumSortPipe,
     AdminStudent1Component,
     GeneralInformationComponent,
     UpdateInformationComponent,
@@ -120,10 +125,10 @@ import {ForumFilterPipe} from '../pipes/forumFilter.pipe';
       // { path: 'admin', component: AdminHomeComponent },
       { path: 'homepage', component: HomepageComponent },
       { path: 'forum', component: ForumMainComponent },
-      { path: 'view-topic', component: ForumViewtopicComponent },
+      { path: 'view-topic/:id', component: ForumViewtopicComponent },
       { path: 'feedback', component: FeedbackComponent },
       { path: 'completed-course', component: CompletedCourseComponent },
-      { path: 'admin-student', component: AdminStudentComponent },
+      { path: 'admin/student', component: AdminStudentComponent },
       { path: 'login', component: LoginComponent},
       { path: 'whoweare', component: WhoWeAreComponent},
       { path: 'uploadcourse', component: AdUpCourseComponent },
@@ -139,6 +144,7 @@ import {ForumFilterPipe} from '../pipes/forumFilter.pipe';
       { path: 'billing', component: BillingComponent },
       { path: 'catalogdetails', component: CatalogDetailComponent },
       { path: 'enroll/:id', component: EnrollCourseComponent },
+
 
 
       //tất cả các path đều phải nằm trên path của PageNotFound
