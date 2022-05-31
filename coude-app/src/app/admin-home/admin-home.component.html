@@ -15,15 +15,16 @@
                 <thead>
                     <tr class="bg-secondary text-white">
                         <th></th>
-                        <th scope="col" sortable="title" (sort)="onSort($event)" class="col-lg-4 col-md-3">NAME</th>
+                        <th scope="col" sortable="title" (sort)="onSort($event)" class="col-lg-4 col-md-3">NAME 
+                            <i class="bi bi-filter"></i>
+                        </th>
                         <th scope="col" sortabe="instructor" class="col-2">INSTRUCTOR</th>
-                        <th scope="col" sortabe="startdate">START DATE</th>
-                        <th scope="col" sortabe="status" (sort)="onSort($any($event))">STATUS</th>
-                        <!-- <th>OPTION</th> -->
+                        <th scope="col" sortabe="startdate" >START DATE</th>
+                        <th scope="col" sortabe="status" >STATUS</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr *ngFor="let c of sortCourses | slice:0:10; let i = index  " (click)="onSelected(c)">
+                    <tr *ngFor="let c of sortCourses | slice:0:10; let i = index" (click)="onSelected(c)">
                         <td scope="row" class="px-sm-1 px-md-2 ">{{i + 1}}</td>
                         <td class="text-wrap" style="text-align:left; padding: 10px">{{c.title}}</td>
                         <td>{{c.instructor}}</td>

@@ -54,7 +54,7 @@ export class AdminHomeComponent implements OnInit {
         header.direction = '';
       }
     });
-    // console.log(this.headers)
+    console.log(this.headers)
     // sorting courses
     if (direction === '' || column === '') {
       this.sortCourses = this.courses; 
@@ -76,7 +76,6 @@ export class AdminHomeComponent implements OnInit {
   ngOnInit(): void {
     this.getCourses();
     console.log("sort",this.sortCourses)
-
     // this.getCourseId();
     // console.log("cous:",this.courses)
   }
@@ -96,7 +95,6 @@ export class AdminHomeComponent implements OnInit {
   }
 
   onSelected(course: Course){
-    // console.log(data._id);
     // console.log(data._id);
     this._router.navigate(['/admin/courses', course._id]
       // {queryParams: {course: course},

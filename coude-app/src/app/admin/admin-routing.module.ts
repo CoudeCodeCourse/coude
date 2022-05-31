@@ -8,6 +8,7 @@ const routes: Routes = [
   {path: 'admin', component: AdminHomeComponent},
   {path: 'admin/courses/:id', component: AdminCourseDetailsComponent},
   {path: 'admin/header', component: AdminComponent}
+
 ];
 
 @NgModule({

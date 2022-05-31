@@ -1,10 +1,11 @@
 import { Directive, EventEmitter, Input, Output } from "@angular/core";
 import { Course } from "src/models/course";
+
 export type SortColumn = keyof Course | '';
 export type SortDirection = 'asc' | 'desc' | '';
 const rotate: {[key: string]: SortDirection} = { 'asc': 'desc', 'desc': '', '': 'asc' };
 
-const compare = (v1: string | number, v2: string | number) => v1 < v2 ? -1 : v1 > v2 ? 1 : 0;
+// const compare = (v1: string | number, v2: string | number) => v1 < v2 ? -1 : v1 > v2 ? 1 : 0;
 
 export interface SortEvent {
   column: SortColumn;
