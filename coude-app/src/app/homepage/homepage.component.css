@@ -1,5 +1,4 @@
 /* style bao xung quanh các element trong homepage */
-
 .page-container {
     display: flex;
     justify-content: space-between;
@@ -10,7 +9,6 @@
 
 
 /* Mỗi mục sẽ là một item */
-
 .container__item {
     margin-bottom: 40px;
 }
@@ -47,7 +45,8 @@
     font-size: 14px;
     margin: 5px;
     width: 25%;
-    min-width: max-content;
+    /* min-width: max-content; */
+    /* text-overflow: ; */
 }
 
 .course__item:hover {

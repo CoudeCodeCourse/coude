@@ -1,3 +1,8 @@
+.container{
+    margin: auto;
+    display: block;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -27,6 +32,7 @@
  .navbar-brand {
      font-family: RobotoMedium;
  }
+
 .total {
     margin: auto;
     padding: 20px 10px;
@@ -45,7 +51,7 @@ h6 {
 }
 
 h3 {
-    font-family: MontserratExtraBold;
+    font-family: MontserratSemiBold;
 }
 
 #div-mid {
@@ -63,6 +69,17 @@ h3 {
 
 #btnnext {
     padding: 15px 20px;
+    font-family: MontserratSemiBold;
+}
+
+
+
+@media screen and (max-width: 768px) {
+   
+}
+
+@media screen and (max-width: 768px) {
+    
     font-family: MontserratExtraBold;
 }
 

@@ -1,0 +1,43 @@
+<div class="container-fluid">
+    <form class="form-container d-flex flex-column" *ngIf="!isLoggedIn" name="form" (ngSubmit)="f.form.valid && onSubmit()"
+    #f="ngForm">
+        <img src="../../assets/images/logo.png" class="coude-logo">
+        <div class="form-content d-flex flex-column">
+            <div class="form-group">
+                <label class="form-label" for="username">Email/ Account name</label>
+                <input type="text" class="form-control" id="username" name="username" [(ngModel)]="form.username" required #username="ngModel">
+                <small class="alert text-danger" role="alert" *ngIf="username.errors && f.submitted" style="background-color: none;">
+                    Email/ Account name is required!
+                </small>
+            </div>
+            <br>
+            <div class="form-group">
+                <label class="form-label" for="password">Password</label>
+                <input type="password" class="form-control" id="password" name="password" [(ngModel)]="form.password" required minlength="6" #password="ngModel">
+                <small class="alert text-danger" role="alert" *ngIf="password.errors && f.submitted" style="background-color: none;">
+                    <small *ngIf="password.errors['required']">Password is required</small>
+                    <small *ngIf="password.errors['minlength']">
+                      Password must be at least 6 characters
+                    </small>
+                </small>
+            </div>           
+        </div>
+        <br>
+        <div  class="text-center">
+            <hr style="width: 80%; display: block; margin: auto; color: #C4C4C4;">
+            <p>Or sign in with</p>
+        </div>
+        <div id="smart-login" class="d-flex justify-content-evenly">
+            <button><img id="logo" onclick="window.open('https://accounts.google.com/')" src="../../assets/icon/google-brands.svg"></button>
+            <button><img id="logo" onclick="window.open('https://www.facebook.com/')" src="../../assets/icon/facebook-square-brands.svg"></button>
+            <button><img id="logo" onclick="window.open('https://www.linkedin.com/')" src="../../assets/icon/linkedin-brands.svg"></button>
+        </div>
+        <br>
+        <br>
+        <div id="button-block" class="d-flex justify-content-evenly">
+            <button class="button--grey">Forgot password?</button>
+            <button class="button--green" href="">Sign in</button>
+        </div>
+    </form>
+</div>
+
