@@ -1,16 +1,21 @@
 <app-admin></app-admin>
 <div class="d-flex justify-content-between">
-    <app-header1></app-header1>
+    <!-- <app-header1></app-header1> -->
     <div class="py-2 px-5 col-10">
         <div>
             <div>
                 <i class="bi bi-person text-success fs-2"></i>
-                <span class="username">Nkeeboo Boo Boo</span>
-                <p>Hello Welcome Back!</p>
+                <span class="username">Sarah</span>
+                <p>Welcome Back!</p>
             </div>
         </div>
         <div>
-            <h2>Courses</h2>
+            <div class="d-flex justify-content-between mb-2">
+                <h2>Courses</h2>
+                <button type="button" class="btn__addCourse" routerLink="uploadcourse">
+                    <i class="bi bi-plus"></i>New Course
+                </button>
+            </div>
             <table class="text-center table table-hover table-bordered border-dark rounded-top">
                 <thead>
                     <tr class="bg-secondary text-white">
@@ -29,16 +34,18 @@
                         <th scope="col" sortable="title" (sort)="onSort($event)" class="col-lg-4 col-md-3">NAME 
                             <i class="bi bi-filter"></i>
                         </th>
-                        <th scope="col" sortabe="instructor" class="col-2">INSTRUCTOR</th>
-                        <th scope="col" sortabe="startdate" >START DATE</th>
-                        <th scope="col" sortabe="status" >STATUS</th>
+                        <th scope="col" sortabe="instructor" class="col-3">INSTRUCTOR</th>
+                        <th scope="col" sortabe="startdate">START DATE</th>
+                        <th scope="col" sortabe="status">STATUS</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr *ngFor="let c of sortCourses | slice:0:10; let i = index" (click)="onSelected(c)">
                         <td scope="row" class="px-sm-1 px-md-2 ">{{i + 1}}</td>
                         <td class="text-wrap" style="text-align:left; padding: 10px">{{c.title}}</td>
-                        <td>{{c.instructor}}</td>
+                        <td>
+                            <img class="rounded-circle" src="assets/images/avatar/{{c.user_avt}}" style="width:25px" alt="">
+                            {{c.instructor}}</td>
                         <td>{{c.startdate | date}}</td>
                         <!-- <td style="color: var(--green)">{{c.status | titlecase}}</td> -->
                         <td class="green fw-bold">{{c.status | titlecase}}</td>

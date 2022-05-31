@@ -1,7 +1,8 @@
 export class Course{
     _id!: any;
     title!: string;
-    category!: any;
+    category!: string;
+    cat_description!: string;
     admin_id!: any;
     status!: string;
     time?: string;
@@ -21,7 +22,7 @@ export class Course{
         content: string, 
         createdAt: Date
     ];
-    lessons?: [
+    lessons!: [
         {_id: any,
         name: string,
         thumbPath: string,

@@ -6,6 +6,7 @@ import { Title } from '@angular/platform-browser';
 import { Course } from 'src/models/course';
 import { CoursesDataService } from '../services/courses-data.service';
 import { FormBuilder, NgForm, Validators } from '@angular/forms';
+import { AdminModule } from '../admin/admin.module';
 // import 'rxjs/add/operator/filter';
 
 
@@ -29,6 +30,7 @@ export class AdminCourseDetailsComponent implements OnInit {
   public selectedCourse!: Course;
   show = true;
   isCourseHide!: boolean;
+  selectedLesson: any;
   // public formCourse = this._formBuilder.group({
   //   title: [this.selectedCourse.title, 
   //     [Validators.required, Validators.minLength(10)]],
@@ -143,7 +145,9 @@ export class AdminCourseDetailsComponent implements OnInit {
     }
     console.log("status", this.isCourseHide);
   }
-
+  onSelect(lesson: any){
+    this.selectedLesson = lesson;
+  }
 }
 
 

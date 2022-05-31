@@ -12,9 +12,9 @@
     <!-- <ng-template #userView> -->
         <div class="navbar__link-container collapse navbar-collapse justify-content-between" id="navbarContent">
             <ul class="navbar-nav">
-                <li *ngIf="login" class="nav-item"><a class="nav-link" href="/landing">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="/catalog">Catalog</a></li>
-                <li class="nav-item"><a class="nav-link" href="/forum">Forum</a></li>
+                <li *ngIf="login" class="nav-item"><a class="nav-link" routerLink="/home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" routerLink="/catalog">Catalog</a></li>
+                <li class="nav-item"><a class="nav-link" routerLink="/forum">Forum</a></li>
             </ul>
 
 
@@ -34,7 +34,7 @@
             <!-- <ul class="search-list d-flex flex-column" *ngFor="let c of courses | searchFilter: searchText"> -->
 
             <ul class="search-list d-flex flex-column p-0 m-0 position-absolute">
-                <li class="text-truncate" *ngFor="let c of courses | searchFilter: searchText">
+                <li class="text-truncate" *ngFor="let c of courses | searchFilter: searchText" (click)="navigateToACourse(c)">
                     <img src="../../assets/images/logo.png" alt="img" style="width: 40px; height: 23px">
                     {{c.title}}
                 </li>

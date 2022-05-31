@@ -2,7 +2,7 @@
     font-size: 25px ;
 }
 table {
-    width: 95%;
+    width: 100%;
 }
 th, td{
     padding: 10px 0;
@@ -18,4 +18,12 @@ table{
 }
 .green{
     color: var(--green)
+}
+.btn__addCourse {
+    border: 2px solid #2EA44F;
+    border-radius: 5px;
+    color: #2EA44F;
+    padding-left: 5px ;
+    background-color: white;
+    width: 120px;
 }

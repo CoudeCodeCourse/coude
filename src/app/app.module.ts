@@ -54,11 +54,10 @@ import {ForumSortPipe} from '../pipes/forumSort.pipe';
 import {SearchFilterPipe} from '../pipes/searchFilter.pipe';
 import {CourseFilterPipe} from '../pipes/courseFilter.pipe';
 import {CourseFilter2Pipe} from '../pipes/courseFilter2.pipe';
-// import { AdminRoutingComponents } from './admin/admin-routing.module';
 import { AdminModule } from './admin/admin.module';
-import { AdminStudentComponent } from './admin-student/admin-student.component';
+// import { AdminRoutingComponents } from './admin/admin-routing.module';
+// import { AdminModule } from './admin/admin.module';
 // import { NgbdSortableHeader } from 'src/directives/sortable.directive';
-
 
 @NgModule({
   declarations: [
@@ -95,7 +94,6 @@ import { AdminStudentComponent } from './admin-student/admin-student.component';
     TextEditorComponent,
     ForumFilterPipe,
     ForumSortPipe,
-    // AdminStudent1Component,
     GeneralInformationComponent,
     UpdateInformationComponent,
     SignUpComponent,
@@ -113,7 +111,8 @@ import { AdminStudentComponent } from './admin-student/admin-student.component';
     HttpClientModule,
     BrowserAnimationsModule,
     ReactiveFormsModule,
-    AdminModule,
+    AdminModule, 
+
      RouterModule.forRoot([
       { path: '', redirectTo: 'landing',  pathMatch: 'full' },
       { path: 'contact', component: ContactComponent },
@@ -126,7 +125,6 @@ import { AdminStudentComponent } from './admin-student/admin-student.component';
       { path: 'view-topic/:id', component: ForumViewtopicComponent },
       { path: 'feedback', component: FeedbackComponent },
       { path: 'completed-course', component: CompletedCourseComponent },
-      { path: 'admin/student', component: AdminStudentComponent },
       { path: 'login', component: LoginComponent},
       { path: 'whoweare', component: WhoWeAreComponent},
       // { path: 'uploadcourse', component: AdUpCourseComponent },
@@ -147,7 +145,7 @@ import { AdminStudentComponent } from './admin-student/admin-student.component';
       //tất cả các path đều phải nằm trên path của PageNotFound
       { path: '**', component: PageNotFoundComponent},
     ]),
-  
+
   ],
 
   providers: [],

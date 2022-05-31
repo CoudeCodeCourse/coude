@@ -1,65 +1,49 @@
 <div class="page-container">
     <div class="container__left-col">
         <div class="container__item">
-            <h2>My Learning <a href="../My-course/my-course.html">See all</a></h2>
-            <p>You haven't enrolled any course.</p>
+            <h2>My Learning <a routerLink="/mycourse">See all</a></h2>
+            <!-- <p>You haven't enrolled any course.</p> -->
+            <div class="my-course py-2  overflow-auto" style="height: 150px">
+                <li class="list-unstyled" *ngFor="let c of courses | slice: 0:3">
+                    <div class="d-flex justify-content-between">
+                    <div>{{c.title}}
+                        <span class="course__tag px-1" style="font-size: 10px">{{c.level}}</span>
+                    </div>
+                    <div class="progress" style="height: 8px; width: 150px;">
+                        <div class="progress-bar bg-success" role="progressbar" style=" width: 25px" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                    </div>
+                    <small>Lesson: {{c.lessons[0].name}}</small>
+                    
+                    <hr>
+                </li>
+            </div>
         </div>
         <div class="container__item">
             <h2>Coudé Recommendation </h2>
             <div class="course-container d-flex">
-                <div class="course__item text-truncate w-25" *ngFor="let c of courses | slice:0:4;" [routerLink]="['/catalog']">
+                <div class="course__item text-truncate" *ngFor="let c of courses | slice:0:4;" (click)="navigateToACourse(c)">
                     <div class="course__tag">Pro</div>
                     <div class="course__content">
                         <ul class="">{{c.title}}
                             <li>{{c.level}}</li>
-                            <li>35 lessons</li>
+                            <li>{{c.lessons.length}} lessons</li>
                         </ul>
                     </div>
                     <div class="course__coude">Coudé</div>
                 </div>
-                <!-- <div class="course__item">
-                    <div class="course__tag">Pro</div>
-                    <div class="course__content">
-                        <ul>Back-end Engineer
-                            <li>Beginner friendly</li>
-                            <li>35 lessons</li>
-                        </ul>
-                    </div>
-                    <div class="course__coude">Coudé</div>
-                </div>
-                <div class="course__item">
-                    <div class="course__tag">Pro</div>
-                    <div class="course__content">
-                        <ul>Back-end Engineer
-                            <li>Beginner friendly</li>
-                            <li>35 lessons</li>
-                        </ul>
-                    </div>
-                    <div class="course__coude">Coudé</div>
-                </div>
-                <div class="course__item">
-                    <div class="course__tag">Pro</div>
-                    <div class="course__content">
-                        <ul>Back-end Engineer
-                            <li>Beginner friendly</li>
-                            <li>35 lessons</li>
-                        </ul>
-                    </div>
-                    <div class="course__coude">Coudé</div>
-                </div> -->
-
             </div>
 
         </div>
         <div class="container__item">
             <h2>Popular Now</h2>
             <div class="course-container d-flex" >
-                <div class="course__item text-truncate" *ngFor="let c of courses | slice:5:9;">
+                <div class="course__item text-truncate" *ngFor="let c of courses | slice:5:9;" (click)="navigateToACourse(c)">
                     <div class="course__tag">Pro</div>
                     <div class="course__content">
                         <ul class="d-block-inline text-truncate">{{c.title}}
                             <li>{{c.level}}</li>
-                            <li>4 lessons</li>
+                            <li>{{c.lessons.length}} lessons</li>
                         </ul>
                     </div>
                     <div class="course__coude">Coudé</div>

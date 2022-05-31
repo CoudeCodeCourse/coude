@@ -51,6 +51,14 @@ export class CoursesDataService {
     //   catchError(this.handleError)
     // )
   }
+
+  getHTMLCourse(): Observable<Course[]>{
+    return this._http.get<Course[]>(`${url_server}/courses/find-html-courses`).pipe(
+      retry(3),
+      catchError(this.handleError)
+    )
+  }
+
   updateCourse(id: any, data:any){
     return this._http.patch(`${url_server}/courses/course/${id}`, data);
   }
@@ -70,5 +78,13 @@ export class CoursesDataService {
       catchError(this.handleError)
     )
     }
+    //get courses that are available
+    getAvailableCourses(){
+      return this._http.get<Course[]>(`${url_server}/courses/available`).pipe(
+        retry(3),
+        catchError(this.handleError)
+      )
+    }
+  
 }
 
