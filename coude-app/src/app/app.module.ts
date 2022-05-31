@@ -66,7 +66,7 @@ import { BillingComponent } from './billing/billing.component';
     LoginComponent,
     PageNotFoundComponent,
     AdUpCourseComponent,
-    BillingComponent
+    BillingComponent,
     GeneralInformationComponent,
     UpdateInformationComponent,
     SignUpComponent,
