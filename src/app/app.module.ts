@@ -119,7 +119,7 @@ import { AdminModule } from './admin/admin.module';
       { path: 'landing', component: LandingComponent },
       { path: 'header', component: HeaderComponent },
       { path: 'home', component: HomepageComponent },
-      { path: '/enroll/courses/study/:id', component: StudyComponent},
+      { path: 'enroll/courses/study/:id', component: StudyComponent},
       { path: 'homepage', component: HomepageComponent },
       { path: 'forum', component: ForumMainComponent },
       { path: 'view-topic/:id', component: ForumViewtopicComponent },

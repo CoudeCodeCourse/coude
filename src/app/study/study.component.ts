@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./study.component.css']
 })
 export class StudyComponent implements OnInit {
-
+  selectedCourse: any
   constructor() { }
 
   ngOnInit(): void {

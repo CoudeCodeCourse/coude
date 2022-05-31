@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router, Params } from '@angular/router';
 import { Location } from '@angular/common';
-import { CoursesDataService } from '../services/courses-data.service';
 import { Title } from '@angular/platform-browser';
 import { Course } from 'src/models/course';
 import { CoursesDataService } from '../services/courses-data.service';
@@ -23,12 +22,7 @@ export class AdminCourseDetailsComponent implements OnInit {
   errMessage = "";
   selectedId: any;
   selectedCourse!: Course;
-  constructor(private _activeRoute: ActivatedRoute,
-              private _router: Router,
-              private _service: CoursesDataService,
-              private _title: Title) { 
-  public selectedCourse!: Course;
-  show = true;
+   show = true;
   isCourseHide!: boolean;
   selectedLesson: any;
   // public formCourse = this._formBuilder.group({
@@ -59,7 +53,7 @@ export class AdminCourseDetailsComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.getCoursesById();
+    this.getCourseById();
     // this._title.setTitle(this.selectedCourse.title);
     this._title.setTitle(this.selectedCourse.title);
     console.log(this._title);
