@@ -7,9 +7,12 @@ table {
 th, td{
     padding: 10px 0;
 }
-/* table{
+th{
+    cursor: pointer;
+}
+table{
     border-radius: 5px 5px 0 0;
-} */
+}
 .red{
     color: red
 }

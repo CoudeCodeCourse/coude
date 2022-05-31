@@ -1,8 +1,8 @@
-.info>div>div:first-child{
+.info>div>:first-child{
     flex: 0.15;
     font-weight: bold;
 }
-.info>div>div:nth-child(2){
+.info>div>:nth-child(2){
     flex: 0.85;
     text-align: justify;
 }

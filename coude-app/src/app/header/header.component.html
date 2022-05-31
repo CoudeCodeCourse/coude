@@ -8,11 +8,11 @@
     <a class="navbar-brand p-0 mx-lg-5 ms-xs-0" href="#" id="logo">
         <img class="p-0" src="../../assets/images/logo.png" alt="Logo">
     </a>
-    <div *ngIf="admin && login; then adminView; else userView;"></div>
-    <ng-template #userView>
+    <!-- <div *ngIf="admin && login; then adminView; else userView;"></div> -->
+    <!-- <ng-template #userView> -->
         <div class="navbar__link-container collapse navbar-collapse justify-content-between" id="navbarContent">
             <ul class="navbar-nav">
-                <li *ngIf="login" class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                <li *ngIf="login" class="nav-item"><a class="nav-link" href="/landing">Home</a></li>
                 <li class="nav-item"><a class="nav-link" href="/catalog">Catalog</a></li>
                 <li class="nav-item"><a class="nav-link" href="/forum">Forum</a></li>
             </ul>
@@ -35,7 +35,7 @@
 
             <ul class="search-list d-flex flex-column p-0 m-0 position-absolute">
                 <li class="text-truncate" *ngFor="let c of courses | searchFilter: searchText">
-                    <img src="{{c.image}}" alt="img" style="width: 40px; height: 23px">
+                    <img src="../../assets/images/logo.png" alt="img" style="width: 40px; height: 23px">
                     {{c.title}}
                 </li>
             </ul>
@@ -62,26 +62,24 @@
                         <!-- <span class="rounded-circle"></span> -->
                     </button>
                     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
-                        <li><a class="dropdown-item" href="#">Personal Info</a></li>
-                        <li><a class="dropdown-item" href="#">My Learning</a></li>
+                        <li><a class="dropdown-item" routerLink="/generalinformation">Personal Info</a></li>
+                        <li><a class="dropdown-item" routerLink="/mycourse">My Learning</a></li>
                         <li><a class="dropdown-item" href="#">My Purchase</a></li>
-                        <li><a class="dropdown-item" href="#">Setting</a></li>
-                        <li *ngIf="isAdmin"><a class="dropdown-item" href="#">Administrator</a></li>
-                        <li><a class="dropdown-item" href="#">Support</a></li>
+                        <!-- <li><a class="dropdown-item" href="#">Setting</a></li> -->
+                        <li *ngIf="isAdmin"><a class="dropdown-item" routerLink="/admin">Administrator</a></li>
+                        <li><a class="dropdown-item" routerLink="/contact">Support</a></li>
                         <li>
                             <hr class="dropdown-divider">
                         </li>
-                        <li><a class="dropdown-item" href="#">Sign out</a></li>
+                        <li><a class="dropdown-item" routerLink="/catalog">Sign out</a></li>
 
                     </ul>
                 </div>
             </div>
         </div>
-    </ng-template>
+    <!-- </ng-template> -->
 
-    <!-- <div class=""> -->
-    <!-- admin -->
-    <ng-template #adminView>
+    <!-- <ng-template #adminView>
         <div class="d-flex header__button-container me-0">
             <div class="btn-noti">
                 <svg style="fill: white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
@@ -92,8 +90,7 @@
             <div class="dropdown">
                 <button class="btn-user dropdown rounded-circle text-white" href="#" id="userDropdown" role="button"
                     data-bs-toggle="dropdown" aria-expanded="false">
-                    <!-- <span class="rounded-circle"></span> -->
-                </button>
+                <!-- </button> 
                 <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
                     <li><a class="dropdown-item" href="#">Personal Info</a></li>
                     <li><a class="dropdown-item" href="#">My Learning</a></li>
@@ -116,6 +113,6 @@
                 </ul>
             </div>
         </div>
-    </ng-template>
+    </ng-template> -->
     <!-- *ngIf="!admin; then #userView; else #adminView" -->
 </nav>
