@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { Course } from 'src/models/course';
 import { User } from 'src/models/user';
 import { CoursesDataService } from '../services/courses-data.service';
@@ -12,7 +13,6 @@ import { CoursesDataService } from '../services/courses-data.service';
   })
 export class HeaderComponent implements OnInit {
   // guest = false;
-  login = false;
   userLogin?: User;
   
   login = true;
@@ -44,7 +44,8 @@ export class HeaderComponent implements OnInit {
   errMessage = "";
   selectedId: any;
   selectedCourse: any;
-  constructor(private _service: CoursesDataService){
+  constructor(private _service: CoursesDataService,
+            private _router: Router){
   }
   
   ngOnInit(): void {
@@ -53,9 +54,12 @@ export class HeaderComponent implements OnInit {
     this.getCourses();
   }
   getCourses(){
-    this._service.getCourses().subscribe({
+    this._service.getAvailableCourses().subscribe({
       next: data => this.courses = data,
       error: err => this.errMessage = err
     })
+  }
+  navigateToACourse(data: any){
+    this._router.navigate(['/enroll', data._id])
   }
 }

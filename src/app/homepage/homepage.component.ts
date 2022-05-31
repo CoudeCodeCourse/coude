@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
+import { Router } from '@angular/router';
 import { Course } from 'src/models/course';
 import { User } from 'src/models/user';
 import { CoursesDataService } from '../services/courses-data.service';
@@ -18,7 +19,8 @@ export class HomepageComponent implements OnInit {
   errorMsg="";
 
   constructor(private _title: Title, 
-              private _courseService: CoursesDataService) {
+              private _courseService: CoursesDataService,
+              private _router: Router) {
     this._title.setTitle("Homepage")
    }
 
@@ -58,9 +60,12 @@ export class HomepageComponent implements OnInit {
   }
 
   GetCourses(){
-    this._courseService.getCourses().subscribe({
+    this._courseService.getAvailableCourses().subscribe({
       next: data => this.courses = data,
       error: error => this.errorMsg = error
     })
+  }
+  navigateToACourse(data: any){
+    this._router.navigate(['/enroll', data._id])
   }
 }

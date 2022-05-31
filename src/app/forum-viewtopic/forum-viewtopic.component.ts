@@ -1,6 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
-import { ForumService } from '../forum.service';
 import { ActivatedRoute, Router, Params } from '@angular/router';
 import { Location } from '@angular/common';
 import { Topic } from 'src/models/topic';
@@ -14,18 +12,13 @@ import { Title } from '@angular/platform-browser';
   providers: [Title]
 })
 export class ForumViewtopicComponent implements OnInit {
-  topics: any;
-  selectedTopic: any;
   id: any;
-  constructor(private _service: ForumService, 
-            private _router: ActivatedRoute) { 
-    this._router.params.subscribe(params => {
-      this.id = params['id'];
-    })
-  }
-
   ngOnInit(): void {
-    this.topics = this._service.getTopics();
+    this._service.getAllTopics().subscribe( {
+      next: data => this.topics = data,
+      error: (error) => this.errMessage = error
+    });
+  }
   topics: Array<Topic> = [];
   errMessage = "";
   selectedId: any;
@@ -37,13 +30,6 @@ export class ForumViewtopicComponent implements OnInit {
     })
   }
 
-  ngOnInit(): void {
-    // this.topics = this._service.getAllTopics();
-    this.getTopicById();
-    // this._title.setTitle(this.selectedCourse.title);
-    this._title.setTitle(this.selectedTopic.title);
-    console.log(this._title);
-  }
   getTopicById(){
     this._service.GetTopicById(this.selectedId).subscribe(
       {

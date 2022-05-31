@@ -35,10 +35,7 @@ export class ForumMainComponent implements OnInit {
     });
   }
 
-  constructor(private _service: ForumService, 
-              private _router: Router, 
-              private _activeRoute: ActivatedRoute) {  }
-
+  
   ngOnInit(): void {
     this.getTopics();
   }
@@ -51,6 +48,7 @@ export class ForumMainComponent implements OnInit {
   }
   onSelect(data: any): void {
     this._router.navigate(['/forum', data._id])
+  }
   onSelected(topic: Topic) {
     this._router.navigate(['/view-topic', topic._id])
   }
@@ -107,11 +105,11 @@ export class ForumMainComponent implements OnInit {
       error: err => this.errorMsg = err
     })
   }
-  onSelected(topic: ITopic) {
-    this._router.navigate(['/forum', topic._id],
-      // {queryParams: {topic: topic},
-    //  }
-     )
-  }
+  // onSelected(topic: ITopic) {
+  //   this._router.navigate(['/forum', topic._id],
+  //     // {queryParams: {topic: topic},
+  //   //  }
+  //    )
+  // }
   // onSubmit(data: any) {}
 }

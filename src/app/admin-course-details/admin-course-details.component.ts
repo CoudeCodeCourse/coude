@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router, Params } from '@angular/router';
 import { Location } from '@angular/common';
-import { CoursesDataService } from '../services/courses-data.service';
 import { Title } from '@angular/platform-browser';
 import { Course } from 'src/models/course';
 import { CoursesDataService } from '../services/courses-data.service';
 import { FormBuilder, NgForm, Validators } from '@angular/forms';
+import { AdminModule } from '../admin/admin.module';
 // import 'rxjs/add/operator/filter';
 
 
@@ -22,13 +22,9 @@ export class AdminCourseDetailsComponent implements OnInit {
   errMessage = "";
   selectedId: any;
   selectedCourse!: Course;
-  constructor(private _activeRoute: ActivatedRoute,
-              private _router: Router,
-              private _service: CoursesDataService,
-              private _title: Title) { 
-  public selectedCourse!: Course;
-  show = true;
+   show = true;
   isCourseHide!: boolean;
+  selectedLesson: any;
   // public formCourse = this._formBuilder.group({
   //   title: [this.selectedCourse.title, 
   //     [Validators.required, Validators.minLength(10)]],
@@ -56,7 +52,7 @@ export class AdminCourseDetailsComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.getCoursesById();
+    this.getCourseById();
     // this._title.setTitle(this.selectedCourse.title);
     this._title.setTitle(this.selectedCourse.title);
     console.log(this._title);
@@ -86,9 +82,9 @@ export class AdminCourseDetailsComponent implements OnInit {
   goBack(): void {
     this._router.navigate(['/admin/courses', {id: this.selectedId}])
   }
-  GoToLearnPage(){
-    this._router.navigate(['/admin/student'])
-  }
+  // GoToLearnPage(){
+  //   this._router.navigate(['/admin/courses/student'])
+  // }
   switchMode(){
     this.show = !this.show; 
   }
@@ -142,7 +138,9 @@ export class AdminCourseDetailsComponent implements OnInit {
     }
     console.log("status", this.isCourseHide);
   }
-
+  onSelect(lesson: any){
+    this.selectedLesson = lesson;
+  }
 }
 
 

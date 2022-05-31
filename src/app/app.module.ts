@@ -45,24 +45,18 @@ import { CourseFilterPipe} from '../pipes/courseFilter.pipe';
 import { CourseFilter2Pipe} from '../pipes/courseFilter2.pipe';
 import { GeneralInformationComponent } from './general-information/general-information.component';
 import { ForumFilterPipe} from '../pipes/forumFilter.pipe';
-import { GeneralInformationComponent } from './general-information/general-information.component';
-
-
 import { UpdateInformationComponent } from './update-information/update-information.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { BillingComponent } from './billing/billing.component';
 import { CatalogDetailComponent } from './catalog-detail/catalog-detail.component';
 
-import {ForumFilterPipe} from '../pipes/forumFilter.pipe';
-import {ForumSortPipe} from '../pipes/forumSort.pipe';
 import {SearchFilterPipe} from '../pipes/searchFilter.pipe';
-import {CourseFilterPipe} from '../pipes/courseFilter.pipe';
-import {CourseFilter2Pipe} from '../pipes/courseFilter2.pipe';
-// import { AdminRoutingComponents } from './admin/admin-routing.module';
-import { AdminModule } from './admin/admin.module';
-import { AdminStudentComponent } from './admin-student/admin-student.component';
-// import { NgbdSortableHeader } from 'src/directives/sortable.directive';
 
+import { AdminModule } from './admin/admin.module';
+import { ForumSortPipe } from 'src/pipes/forumSort.pipe';
+// import { AdminRoutingComponents } from './admin/admin-routing.module';
+// import { AdminModule } from './admin/admin.module';
+// import { NgbdSortableHeader } from 'src/directives/sortable.directive';
 
 @NgModule({
   declarations: [
@@ -72,7 +66,7 @@ import { AdminStudentComponent } from './admin-student/admin-student.component';
     ContactComponent,
     FooterComponent,
     ForumMainComponent,
-    ForumViewtopicComponent,
+    // ForumViewtopicComponent,
     FeedbackComponent,
     LandingComponent,
     CatalogComponent,
@@ -98,11 +92,7 @@ import { AdminStudentComponent } from './admin-student/admin-student.component';
     // AdminStudentComponent,
     TextEditorComponent,
     ForumFilterPipe,
-    AdminStudent1Component,
     ForumSortPipe,
-    // AdminStudent1Component,
-    GeneralInformationComponent,
-    UpdateInformationComponent,
     SignUpComponent,
     BillingComponent,
     CatalogDetailComponent,
@@ -118,21 +108,21 @@ import { AdminStudentComponent } from './admin-student/admin-student.component';
     HttpClientModule,
     BrowserAnimationsModule,
     ReactiveFormsModule,
-    AdminModule,
+    AdminModule, 
+
      RouterModule.forRoot([
       { path: '', redirectTo: 'landing',  pathMatch: 'full' },
       { path: 'contact', component: ContactComponent },
       { path: 'landing', component: LandingComponent },
       { path: 'header', component: HeaderComponent },
       { path: 'home', component: HomepageComponent },
-      { path: '/enroll/courses/study/:id', component: StudyComponent},
+      { path: 'enroll/courses/study/:id', component: StudyComponent},
       { path: 'homepage', component: HomepageComponent },
       { path: 'forum', component: ForumMainComponent },
       { path: 'forum/:id', component: ForumViewtopicComponent },
       { path: 'view-topic/:id', component: ForumViewtopicComponent },
       { path: 'feedback', component: FeedbackComponent },
       { path: 'completed-course', component: CompletedCourseComponent },
-      { path: 'admin/student', component: AdminStudentComponent },
       { path: 'login', component: LoginComponent},
       { path: 'whoweare', component: WhoWeAreComponent},
       // { path: 'uploadcourse', component: AdUpCourseComponent },
@@ -154,7 +144,7 @@ import { AdminStudentComponent } from './admin-student/admin-student.component';
       //tất cả các path đều phải nằm trên path của PageNotFound
       { path: '**', component: PageNotFoundComponent},
     ]),
-  
+
   ],
 
   providers: [],

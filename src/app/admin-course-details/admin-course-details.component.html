@@ -2,18 +2,17 @@
 <div class="fluid-container">
     <!-- <app-header1></app-header1> -->
     <div class="p-md-5 p-sm-2">
-       
-   
-    <div *ngIf="show; then viewMode; else editMode"></div>
-    <ng-template #viewMode>
+        <div *ngIf="show; then viewMode; else editMode"></div>
+        <ng-template #viewMode>
             <div class="d-flex justify-content-between mb-2">
                 <h2>Course Details</h2>
                 <div class="d-flex">
-                    <button class="btn btn-success" (click)="GoToLearnPage()">Learner</button>
+                    <button class="btn btn-success" href="/admin/courses/student">Learner</button>
                     <button class="btn btn-success ms-2" (click)="switchMode()">Edit</button>
                     <div *ngIf="selectedCourse.status!=='hidden'; then hide; else show;"></div>
                     <ng-template #hide>
-                        <button class="btn btn-secondary ms-2" data-bs-toggle="modal" data-bs-target="#confirmHidePopup">Hide</button>
+                        <button class="btn btn-secondary ms-2" data-bs-toggle="modal"
+                            data-bs-target="#confirmHidePopup">Hide</button>
                     </ng-template>
                     <ng-template #show>
                         <button class="btn btn-secondary ms-2" (click)="showCourse()">Show</button>
@@ -86,9 +85,9 @@
                             <td class="col-video col-5">
                                 <p class="text-truncate d-block text-wrap">
                                     <video width="80" height="50" controls>
-                                    <source src="http://localhost:3000/{{l.thumbPath}}" type="video/mp4">
-                                </video>
-                                <span class="">{{l.thumbPath}}</span>
+                                        <source src="http://localhost:3000/{{l.thumbPath}}" type="video/mp4">
+                                    </video>
+                                    <span class="">{{l.thumbPath}}</span>
                                 </p>
                             </td>
                             <td class="col-date">{{l.date | date}}</td>
@@ -109,27 +108,28 @@
 
                 </table>
             </div>
-            <div class="modal fade" id="confirmHidePopup" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal fade" id="confirmHidePopup" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
                 <div class="modal-dialog">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLabel">Confirmation</h5>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Confirmation</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Are you sure to hide this course?</p>
+                            <p>Other learners can not see this course anymore.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">No</button>
+                            <button type="button" class="btn btn-primary" (click)="hideCourse()">Yes</button>
+                        </div>
                     </div>
-                    <div class="modal-body">
-                      <p>Are you sure to hide this course?</p>
-                      <p>Other learners can not see this course anymore.</p>
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">No</button>
-                      <button type="button" class="btn btn-primary" (close)="hideCourse()">Yes</button>
-                    </div>
-                  </div>
                 </div>
-              </div>
+            </div>
 
-              <!-- popup edit video -->
-              <!-- <div class="modal fade" id="editVideoPopup" tabindex="-1" aria-labelledby="editPopup" aria-hidden="true">
+            <!-- popup edit video -->
+            <!-- <div class="modal fade" id="editVideoPopup" tabindex="-1" aria-labelledby="editPopup" aria-hidden="true">
                 <div class="modal-dialog">
                   <div class="modal-content">
                     <div class="modal-header">
@@ -147,8 +147,8 @@
                   </div>
                 </div>
               </div> -->
-    </ng-template>
-    <!-- <div>
+        </ng-template>
+        <!-- <div>
             <h2>Assignment</h2>
             <div>
                 <div class="assignment-item border px-4 py-2">
@@ -178,59 +178,59 @@
         <!-- modal box for hide button -->
         <!-- Modal -->
 
-    <ng-template #editMode>
-        <!-- <form [formGroup]="formCourse" (ngSubmit)="saveChanges(formCourse.value)"> -->
+        <ng-template #editMode>
+            <!-- <form [formGroup]="formCourse" (ngSubmit)="saveChanges(formCourse.value)"> -->
             <form #formCourse="ngForm" (ngSubmit)="saveChanges(formCourse)">
-        <div class="d-flex justify-content-between">
-            <h2>Course Details</h2>
-            <div>
-                <button class="btn btn-secondary ms-2" (click)="switchMode()">Cancel</button>
-                <button class="btn btn-success ms-2" type="submit">Save</button>
-            </div>
-        </div>
-        <div class="info border border-success rounded mb-3 px-md-5 px-sm-3 py-3">
-            <div class="d-flex mb-2">
-                <label for="title">Title</label>
-                <input type="text" class="form-control border border-dark" id="title" 
-                name="title" required [(ngModel)]="selectedCourse.title">
-            </div>
-            <div class="d-flex mb-2">
-                <div>Instructor</div>
-                <input type="text" class="form-control border border-dark" 
-                name="instructor" required [(ngModel)]="selectedCourse.instructor">
-            </div>
-            <div class="d-flex mb-2">
-                <div>Description</div>
-                <textarea class="form-control border border-dark"
-                    name="descript" required [(ngModel)]="selectedCourse.atc" rows="4"></textarea>
-            </div>
-            <div class="d-flex mb-2">
-                <div>Tuition fee</div>
-                <input type="number" class="form-control border border-dark" 
-                    name="fee" required [(ngModel)]="selectedCourse.fee">
-            </div>
-            <div class="d-flex mb-2">
-                <div>Languague</div>
-                <input type="text" class="form-control border border-dark" 
-                    name="languages" required [(ngModel)]="selectedCourse.languages">
-            </div>
-        </div>
-        <div>
-            <h2>Learning Program</h2>
-            <div>
-                <div>
-                    <label>Lesson 1:</label>
-                <input type="text" class="form-control border border-dark" 
-                    name="lesson1" value="Hahahahhaha">
+                <div class="d-flex justify-content-between">
+                    <h2>Course Details</h2>
+                    <div>
+                        <button class="btn btn-secondary ms-2" (click)="switchMode()">Cancel</button>
+                        <button class="btn btn-success ms-2" type="submit">Save</button>
+                    </div>
                 </div>
-                
-                <label>Lesson 1:</label>
-                <input type="text" class="form-control border border-dark" value="Hahahahhaha">  
-                <label>Lesson 1:</label>
-                <input type="text" class="form-control border border-dark" value="Hahahahhaha">            
-            </div>
-        </div>
-    </form>
-    </ng-template>
-</div> 
+                <div class="info border border-success rounded mb-3 px-md-5 px-sm-3 py-3">
+                    <div class="d-flex mb-2">
+                        <label for="title">Title</label>
+                        <input type="text" class="form-control border border-dark" id="title" name="title" required
+                            [(ngModel)]="selectedCourse.title">
+                    </div>
+                    <div class="d-flex mb-2">
+                        <div>Instructor</div>
+                        <input type="text" class="form-control border border-dark" name="instructor" required
+                            [(ngModel)]="selectedCourse.instructor">
+                    </div>
+                    <div class="d-flex mb-2">
+                        <div>Description</div>
+                        <textarea class="form-control border border-dark" name="descript" required
+                            [(ngModel)]="selectedCourse.atc" rows="4"></textarea>
+                    </div>
+                    <div class="d-flex mb-2">
+                        <div>Tuition fee</div>
+                        <input type="number" class="form-control border border-dark" name="fee" required
+                            [(ngModel)]="selectedCourse.fee">
+                    </div>
+                    <div class="d-flex mb-2">
+                        <div>Languague</div>
+                        <input type="text" class="form-control border border-dark" name="languages" required
+                            [(ngModel)]="selectedCourse.languages">
+                    </div>
+                </div>
+                <div>
+                    <h2>Learning Program</h2>
+                    <div>
+                        <div>
+                            <label>Lesson 1:</label>
+                            <input type="text" class="form-control border border-dark" name="lesson1"
+                                value="Hahahahhaha">
+                        </div>
+
+                        <label>Lesson 1:</label>
+                        <input type="text" class="form-control border border-dark" value="Hahahahhaha">
+                        <label>Lesson 1:</label>
+                        <input type="text" class="form-control border border-dark" value="Hahahahhaha">
+                    </div>
+                </div>
+            </form>
+        </ng-template>
+    </div>
 </div>
