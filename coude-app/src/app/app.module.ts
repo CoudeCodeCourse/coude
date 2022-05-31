@@ -83,7 +83,7 @@ import { BillingComponent } from './billing/billing.component';
       { path: 'login', component: LoginComponent},
       { path: 'whoweare', component: WhoWeAreComponent},
       { path: 'uploadcourse', component: AdUpCourseComponent },
-      { path: 'study', component: StudyComponent},
+      { path: '/enroll/courses/study', component: StudyComponent},
       { path: 'billing', component: BillingComponent},
        
 
