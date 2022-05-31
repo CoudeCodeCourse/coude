@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router, Params } from '@angular/router';
-import { Location } from '@angular/common';
 import { Course } from 'src/models/course';
 import { CoursesDataService } from '../services/courses-data.service';
 import { Title } from '@angular/platform-browser';
@@ -14,14 +13,14 @@ import { FormBuilder, NgForm, Validators } from '@angular/forms';
   styleUrls: ['./admin-course-details.component.css'],
   providers: [Title]
 })
+
 export class AdminCourseDetailsComponent implements OnInit {
   courses: Array<Course> = []; 
   errMessage = "";
   selectedId: any;
-
   public selectedCourse!: Course;
   show = true;
-  isCourseHide: boolean = false;
+  isCourseHide!: boolean;
   // public formCourse = this._formBuilder.group({
   //   title: [this.selectedCourse.title, 
   //     [Validators.required, Validators.minLength(10)]],
@@ -31,15 +30,7 @@ export class AdminCourseDetailsComponent implements OnInit {
   //   languages: [this.selectedCourse.languages, Validators.required],
   //   lesson1: []
   // })
-  // public formCourse = this._formBuilder.group({
-  //   title: ['', 
-  //     [Validators.required, Validators.minLength(10)]],
-  //   instructor: ['', Validators.required],
-  //   descript: ['', Validators.required],
-  //   fee: ['', Validators.required],
-  //   languages: ['', Validators.required],
-  //   lesson1: ['']
-  // })
+
   constructor(private _activeRoute: ActivatedRoute,
               private _router: Router,
               private _service: CoursesDataService,
@@ -57,16 +48,13 @@ export class AdminCourseDetailsComponent implements OnInit {
 
   }
 
-
   ngOnInit(): void {
-    this.getCoursesById();
+    this.getCourseById();
     // this._title.setTitle(this.selectedCourse.title);
-    this._title.setTitle(this.selectedCourse.title);
-    console.log(this._title);
-    this.getStatusOfCourse()
+    // console.log(this._title);
   }
 
-  getCoursesById(){
+  getCourseById(){
     this._service.GetCourseById(this.selectedId).subscribe(
       {
       next: data => this.selectedCourse = data,
@@ -90,14 +78,14 @@ export class AdminCourseDetailsComponent implements OnInit {
   saveChanges(form: NgForm){
     console.log("Form data", form.value);
     // form.value.languages = form.value.languages.split(',');
-    console.log(form.value.languages);
+    // console.log(form.value.languages);
     // console.log("Form data2", form.value);
 
     this._service.updateCourse(this.selectedCourse._id, this.selectedCourse).subscribe(res => {
       let resData = JSON.parse(JSON.stringify(res));
       if(resData.message === 'success'){
         alert("Update!");
-        this.getCoursesById();
+        this.getCourseById();
         this.switchMode();
       }
       else{
@@ -130,21 +118,21 @@ export class AdminCourseDetailsComponent implements OnInit {
     })
   }
   getStatusOfCourse(){
-    if (this.selectedCourse.status === "available"){
-      this.isCourseHide = false;
-    } else {
+    if (this.selectedCourse.status == "hidden"){
       this.isCourseHide = true;
+    } else {
+      this.isCourseHide = false;
     }
+    console.log("status", this.isCourseHide);
   }
-  // getCourses(){
-  //   const id = this._activeRoute.snapshot.paramMap.get('id');
-  //   console.log("id:",id)
-  //   this._service.getACourse(id).subscribe(
-  //     course => this.selectedCourse = course
-  //   )
-  //   console.log(this.selectedCourse)
-  // }
-
 
 }
+
+
+
+
+
+
+
+
 

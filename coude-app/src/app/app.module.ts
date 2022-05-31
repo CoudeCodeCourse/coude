@@ -43,6 +43,7 @@ import {CourseFilter2Pipe} from '../pipes/courseFilter2.pipe';
 import { GeneralInformationComponent } from './general-information/general-information.component';
 // import { AdminRoutingComponents } from './admin/admin-routing.module';
 import { AdminModule } from './admin/admin.module';
+// import { NgbdSortableHeader } from 'src/directives/sortable.directive';
 
 @NgModule({
   declarations: [
@@ -56,8 +57,6 @@ import { AdminModule } from './admin/admin.module';
     LandingComponent,
     CatalogComponent,
     WhoWeAreComponent,
-
-    // Header1Component,
     StudyComponent,
     TestComponent,
     HomepageComponent,
@@ -78,6 +77,8 @@ import { AdminModule } from './admin/admin.module';
     GeneralInformationComponent,
     AdUpCourseComponent,
     // AdminRoutingComponents
+    // NgbdSortableHeader, 
+
   ],
   imports: [
     BrowserModule,
@@ -90,7 +91,6 @@ import { AdminModule } from './admin/admin.module';
     ReactiveFormsModule,
      RouterModule.forRoot([
       { path: '', redirectTo: 'landing',  pathMatch: 'full' },
-
       { path: 'contact', component: ContactComponent },
       { path: 'landing', component: LandingComponent },
       { path: 'header', component: HeaderComponent },

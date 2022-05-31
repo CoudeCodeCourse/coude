@@ -6,7 +6,7 @@
             <div>
                 <i class="bi bi-person text-success fs-2"></i>
                 <span class="username">Nkeeboo Boo Boo</span>
-                <p>Hello Welcome Back!</p>
+                <p>Welcome Back!</p>
             </div>
         </div>
         <div>
@@ -15,23 +15,21 @@
                 <thead>
                     <tr class="bg-secondary text-white">
                         <th></th>
-                        <th class="col-lg-4 col-md-3">NAME</th>
-                        <th class="col-2">INSTRUCTOR</th>
-                        <th>START DATE</th>
-                        <th>STATUS</th>
+                        <th scope="col" sortable="title" (sort)="onSort($event)" class="col-lg-4 col-md-3">NAME</th>
+                        <th scope="col" sortabe="instructor" class="col-2">INSTRUCTOR</th>
+                        <th scope="col" sortabe="startdate">START DATE</th>
+                        <th scope="col" sortabe="status" (sort)="onSort($any($event))">STATUS</th>
                         <!-- <th>OPTION</th> -->
                     </tr>
                 </thead>
                 <tbody>
-                    <tr *ngFor="let c of courses | slice:0:10; let i = index " (click)="onSelected(c)">
-                        <td class="px-sm-1 px-md-2">{{i + 1}}</td>
-                        <td class="text-truncate" style="text-align:left; padding: 10px">{{c.title}}</td>
+                    <tr *ngFor="let c of sortCourses | slice:0:10; let i = index  " (click)="onSelected(c)">
+                        <td scope="row" class="px-sm-1 px-md-2 ">{{i + 1}}</td>
+                        <td class="text-wrap" style="text-align:left; padding: 10px">{{c.title}}</td>
                         <td>{{c.instructor}}</td>
-                        <td>2022-02-20</td>
+                        <td>{{c.startdate | date}}</td>
                         <!-- <td style="color: var(--green)">{{c.status | titlecase}}</td> -->
-                        <td class="green fw-bold">{{c.status | titlecase}}</td>
-                        <!-- <td class="green" [ngClass]="{'red': (this.document. == 'Hidden')}">{{c.status | titlecase}}</td> -->
-                        <!-- <td></td> -->
+                        <td class="fw-bold" [class.red]="c.status=='hidden'" [class.green]="c.status!='hidden'">{{c.status | titlecase}}</td>
                     </tr>
                 </tbody>
 
