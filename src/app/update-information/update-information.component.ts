@@ -12,7 +12,7 @@ export class UpdateInformationComponent implements OnInit {
 
   
 public registerForm: any;
-user:User=new User;
+user: User=new User;
 users:any;
 errMessage: string=""
 

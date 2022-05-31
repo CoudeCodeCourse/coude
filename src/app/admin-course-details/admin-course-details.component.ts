@@ -82,9 +82,9 @@ export class AdminCourseDetailsComponent implements OnInit {
   goBack(): void {
     this._router.navigate(['/admin/courses', {id: this.selectedId}])
   }
-  GoToLearnPage(){
-    this._router.navigate(['/admin/student'])
-  }
+  // GoToLearnPage(){
+  //   this._router.navigate(['/admin/courses/student'])
+  // }
   switchMode(){
     this.show = !this.show; 
   }

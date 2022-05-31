@@ -8,13 +8,14 @@ import { AdminComponent } from './admin.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NgbdSortableHeader } from 'src/directives/sortable.directive';
 import { AdminHomeComponent } from '../admin-home/admin-home.component';
+import { Header1Component } from '../header1/header1.component';
 
 
 
 @NgModule({
   declarations: [
     AdminRoutingComponents,
-    // Header1Component,
+    Header1Component,
     // AdminHeaderComponent,
     AdminComponent, 
     NgbdSortableHeader, 
