@@ -41,20 +41,19 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { AssignmentComponent } from './assignment/assignment.component';
 import { AssignmentFbComponent } from './assignment-fb/assignment-fb.component';
 import { AssignmentStartComponent } from './assignment-start/assignment-start.component';
+import { CourseFilterPipe} from '../pipes/courseFilter.pipe';
+import { CourseFilter2Pipe} from '../pipes/courseFilter2.pipe';
 import { GeneralInformationComponent } from './general-information/general-information.component';
-
-
+import { ForumFilterPipe} from '../pipes/forumFilter.pipe';
 import { UpdateInformationComponent } from './update-information/update-information.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { BillingComponent } from './billing/billing.component';
 import { CatalogDetailComponent } from './catalog-detail/catalog-detail.component';
 
-import {ForumFilterPipe} from '../pipes/forumFilter.pipe';
-import {ForumSortPipe} from '../pipes/forumSort.pipe';
 import {SearchFilterPipe} from '../pipes/searchFilter.pipe';
-import {CourseFilterPipe} from '../pipes/courseFilter.pipe';
-import {CourseFilter2Pipe} from '../pipes/courseFilter2.pipe';
+
 import { AdminModule } from './admin/admin.module';
+import { ForumSortPipe } from 'src/pipes/forumSort.pipe';
 // import { AdminRoutingComponents } from './admin/admin-routing.module';
 // import { AdminModule } from './admin/admin.module';
 // import { NgbdSortableHeader } from 'src/directives/sortable.directive';
@@ -67,7 +66,7 @@ import { AdminModule } from './admin/admin.module';
     ContactComponent,
     FooterComponent,
     ForumMainComponent,
-    ForumViewtopicComponent,
+    // ForumViewtopicComponent,
     FeedbackComponent,
     LandingComponent,
     CatalogComponent,
@@ -94,8 +93,6 @@ import { AdminModule } from './admin/admin.module';
     TextEditorComponent,
     ForumFilterPipe,
     ForumSortPipe,
-    GeneralInformationComponent,
-    UpdateInformationComponent,
     SignUpComponent,
     BillingComponent,
     CatalogDetailComponent,
@@ -122,6 +119,7 @@ import { AdminModule } from './admin/admin.module';
       { path: 'enroll/courses/study/:id', component: StudyComponent},
       { path: 'homepage', component: HomepageComponent },
       { path: 'forum', component: ForumMainComponent },
+      { path: 'forum/:id', component: ForumViewtopicComponent },
       { path: 'view-topic/:id', component: ForumViewtopicComponent },
       { path: 'feedback', component: FeedbackComponent },
       { path: 'completed-course', component: CompletedCourseComponent },
@@ -137,6 +135,7 @@ import { AdminModule } from './admin/admin.module';
       { path: 'update-information', component: UpdateInformationComponent },
       { path: 'sign-up', component: SignUpComponent },
       { path: 'billing', component: BillingComponent },
+      
       { path: 'catalogdetails', component: CatalogDetailComponent },
       { path: 'enroll/:id', component: EnrollCourseComponent },
 

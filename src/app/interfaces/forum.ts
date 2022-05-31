@@ -1,4 +1,7 @@
 export interface ITopic {
+    _id: number,
+    name: string,
+    price: number,
     tag: string,
     title: string,
     content: string,

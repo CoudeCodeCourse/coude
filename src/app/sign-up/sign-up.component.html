@@ -1,28 +1,43 @@
 <div class="container-fluid">
-    <form class="form-container d-flex flex-column">
+    <form #registerForm="ngForm" (ngSubmit)="submitData(registerForm)" class="form-container d-flex flex-column">
         <img src="/assets/images/logo.png" class="coude-logo">
         <div  class="text-center">
             <p>Please fill in this form to create an account</p>
             <hr style="width: 80%; display: block; margin: auto;">
         </div>
         <div class="form-content d-flex flex-column">
-            <label>Account name</label>
-            <input type="text" class="form-text">
-            <label>Email</label>
-            <input type="text" class="form-text">
-            <label>Password</label>
-            <input type="password" class="form-text">
-            <label>Password</label>
-            <input type="password" class="form-text">
+            <!-- Account name -->
+            <label for="accountName">Account name</label>
+            <input type="text" class="form-control" id="accountName" placeholder="Account name" name="accountName" [(ngModel)]="user.accountName" #accountName="ngModel" required>
+            <small class="text-danger" *ngIf="accountName.invalid && accountName.touched">Account name is required</small>
+            
+            <!-- <small class="text-danger" *ngIf="accountName.errors?.['required']">Account name must have at least 3 characters</small>-->
+           
+            <!-- Email -->
+            <label for="email">Email</label>
+            <input type="email" [email]="true" class="form-control" id="email" placeholder="example@email.com" name="email" #email="ngModel" [(ngModel)]="user.email" [class.is-invalid]="email.errors && (email.invalid || email.touched)" required>
+            <div *ngIf="email.errors && (email.invalid || email.touched)">
+                <small class="text-danger" *ngIf="email.errors['email'] ">Invalid email</small>
+                <small class="text-danger" *ngIf="email.errors['required'] ">Email is required</small>
+            </div>
+            <label for="pw">Password</label>
+            <input type="password" class="form-control"  name="pw" id="pw" formControlName="pw" placeholder="Password"  [(ngModel)]="user.pw" >
+            <label for="confirmPw">Confirm Password</label>
+            <input type="password" id="confirmPw" class="form-control" name="confirmPw"  formControlName="confirmPw" [class.is-invalid]="regForm.errors?.['misMatch']" placeholder="Confirm password">
+            <small class="text-danger" *ngIf="regForm.errors?.['misMatch']">Password does not match</small>
         </div>
+       
         <br>
         <div class="text-center">
-            <input type="checkbox" name="agree" id="agree"> Agree to our terms & privacy
+            <input type="checkbox" id="agree" name="agree" class="form-check-input" ngModel #agree="ngModel" [class.is-invalid]="agree.value==false && agree.touched">
+            <label class="form-check-label ms-3">Agree to our terms & privacy</label>
+            <!-- <input type="checkbox" name="agree" id="agree"> Agree to our terms & privacy -->
         </div>
         <br>
         <br>
         <div id="button-block" class="d-flex justify-content-evenly">
-            <button type="subm  it" class="button--green">Sign up</button>
+            <button type="submit"  class="button--green">Sign up</button>
         </div>
     </form>
+    <!-- <p>{{userModel | json}}</p> -->
 </div>

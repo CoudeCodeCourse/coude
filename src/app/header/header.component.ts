@@ -12,6 +12,8 @@ import { CoursesDataService } from '../services/courses-data.service';
   styleUrls: ['./header.component.css'],
   })
 export class HeaderComponent implements OnInit {
+  // guest = false;
+  login = false;
   userLogin?: User;
   
   login = true;

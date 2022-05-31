@@ -1,5 +1,6 @@
 import { Component, OnInit, Directive, EventEmitter, Input, Output, QueryList, ViewChildren } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
+import { Course } from '../../models/course';
 import { NgbdSortableHeader, SortEvent } from 'src/directives/sortable.directive';
 import { Course } from 'src/models/course';
 import { CoursesDataService } from '../services/courses-data.service';

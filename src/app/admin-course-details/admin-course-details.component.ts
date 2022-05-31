@@ -49,7 +49,6 @@ export class AdminCourseDetailsComponent implements OnInit {
                 this.selectedId = params['id'];
                 console.log(this.selectedId);
               })     
-
   }
 
   ngOnInit(): void {
@@ -143,6 +142,7 @@ export class AdminCourseDetailsComponent implements OnInit {
     this.selectedLesson = lesson;
   }
 }
+
 
 
 
