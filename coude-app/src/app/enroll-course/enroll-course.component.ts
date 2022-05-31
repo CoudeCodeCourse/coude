@@ -58,7 +58,7 @@ export class EnrollCourseComponent implements OnInit {
     return this.text;
   }
   showLn(){
-    this.text = this.course.language;
+    this.text = this.course.languages;
     return this.text;
   }
   showTF(){

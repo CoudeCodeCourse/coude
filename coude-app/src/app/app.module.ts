@@ -17,7 +17,7 @@ import { ForumViewtopicComponent } from './forum-viewtopic/forum-viewtopic.compo
 import { LandingComponent } from './landing/landing.component';
 import { CatalogComponent } from './catalog/catalog.component';
 import { WhoWeAreComponent } from './who-we-are/who-we-are.component';
-import { Header1Component } from './header1/header1.component';
+// import { Header1Component } from './header1/header1.component';
 import { StudyComponent } from './study/study.component';
 
 import { TestComponent } from './test/test.component';
@@ -37,7 +37,7 @@ import { ScheduleComponent } from './schedule/schedule.component';
 import { MyCourseComponent } from './my-course/my-course.component';
 import { LoginComponent } from './login/login.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
-import { AdUpCourseComponent } from './ad-up-course/ad-up-course.component';
+// import { AdUpCourseComponent } from './ad-up-course/ad-up-course.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { AssignmentComponent } from './assignment/assignment.component';
 import { AssignmentFbComponent } from './assignment-fb/assignment-fb.component';
@@ -52,7 +52,7 @@ import {SearchFilterPipe} from '../pipes/searchFilter.pipe';
 import {CourseFilterPipe} from '../pipes/courseFilter.pipe';
 import {CourseFilter2Pipe} from '../pipes/courseFilter2.pipe';
 // import { AdminRoutingComponents } from './admin/admin-routing.module';
-import { AdminModule } from './admin/admin.module';
+// import { AdminModule } from './admin/admin.module';
 // import { NgbdSortableHeader } from 'src/directives/sortable.directive';
 import {ForumFilterPipe} from '../pipes/forumFilter.pipe';
 
@@ -69,7 +69,7 @@ import {ForumFilterPipe} from '../pipes/forumFilter.pipe';
     LandingComponent,
     CatalogComponent,
     WhoWeAreComponent,
-    Header1Component,
+    // Header1Component,
     StudyComponent,
     TestComponent,
     HomepageComponent,
@@ -80,7 +80,7 @@ import {ForumFilterPipe} from '../pipes/forumFilter.pipe';
     MyCourseComponent,
     LoginComponent,
     PageNotFoundComponent,
-    AdUpCourseComponent,
+    // AdUpCourseComponent,
     SidebarComponent,
     AssignmentComponent,
     AssignmentFbComponent,
@@ -88,7 +88,7 @@ import {ForumFilterPipe} from '../pipes/forumFilter.pipe';
     CourseFilterPipe,
     CourseFilter2Pipe,
     GeneralInformationComponent,
-    AdUpCourseComponent,
+    // AdUpCourseComponent,
     CompletedCourseComponent,
     AdminStudentComponent,
     TextEditorComponent,
@@ -123,10 +123,9 @@ import {ForumFilterPipe} from '../pipes/forumFilter.pipe';
       { path: 'view-topic', component: ForumViewtopicComponent },
       { path: 'feedback', component: FeedbackComponent },
       { path: 'completed-course', component: CompletedCourseComponent },
-      { path: 'admin-student', component: AdminStudentComponent },
       { path: 'login', component: LoginComponent},
       { path: 'whoweare', component: WhoWeAreComponent},
-      { path: 'uploadcourse', component: AdUpCourseComponent },
+      // { path: 'uploadcourse', component: AdUpCourseComponent },
       { path: 'sidebar', component: SidebarComponent },
       { path: 'assignment', component: AssignmentComponent },
       { path: 'assignmentfb', component: AssignmentFbComponent },

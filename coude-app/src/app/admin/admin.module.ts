@@ -18,7 +18,7 @@ import { AdminHomeComponent } from '../admin-home/admin-home.component';
     // AdminHeaderComponent,
     AdminComponent, 
     NgbdSortableHeader, 
-    AdminHomeComponent
+    AdminHomeComponent,
     // NgbdTableSortable 
   ],
   imports: [
