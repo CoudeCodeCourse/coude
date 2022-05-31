@@ -19,7 +19,6 @@ export class CoursesDataService {
       retry(3),
       catchError(this.handleError)
     )
-    
   }
   handleError(error: HttpErrorResponse){
     return throwError(() => {new Error(error.message)});
@@ -38,9 +37,7 @@ export class CoursesDataService {
       catchError(this.handleError)
     )
   }
-
   GetCourseById(id:any): Observable<Course> {
-    // let API_URL = `${this.REST_API}/read-book/${id}`;
     return this._http.get<Course>(`${url_server}/courses/${id}`, { headers: this.httpHeaders })
       .pipe(
         map((res: Course) => {
@@ -53,20 +50,15 @@ export class CoursesDataService {
     //   catchError(this.handleError)
     // )
   }
-  // getACourse(id: any): Observable<Course> {
-  //   let courses: any;
-  //   let  errMessage = "";
-
-  //   this.getCourses().subscribe({
-  //     next: data => courses = data,
-  //     error: err => errMessage = err
-  //   })
-  //   console.log("get courses:", courses)
-  //   const course = courses.find((c: Course) => c._id === id)!;
-    
-  //   return of(course);
-  // }
-
+  updateCourse(id: any, data:any){
+    return this._http.patch(`${url_server}/courses/course/${id}`, data);
+  }
+  hideCourse(id: any, data:any){
+    return this._http.patch(`${url_server}/courses/course/hide/${id}`, data);
+  }
+  showCourse(id: any, data:any){
+    return this._http.patch(`${url_server}/courses/course/show/${id}`, data);
+  }
   //get course by category
   getCatalogType(category:any): Observable<Course> {
     return this._http.get<Course>(`${url_server}/courses/${category}`)
