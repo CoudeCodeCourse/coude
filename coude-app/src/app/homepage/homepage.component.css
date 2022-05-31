@@ -37,10 +37,11 @@
 .course-container {
     justify-content: space-between;
 }
-
-.course__item {
+.my-course, .course__item{
     border: 2px solid black;
     padding: 5px;
+}
+.course__item {
     font-family: RobotoRegular;
     font-size: 14px;
     margin: 5px;

@@ -21,7 +21,7 @@ export class Course{
         content: string, 
         createdAt: Date
     ];
-    lessons?: [
+    lessons!: [
         {_id: any,
         name: string,
         thumbPath: string,

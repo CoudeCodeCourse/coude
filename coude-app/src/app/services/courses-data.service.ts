@@ -69,5 +69,13 @@ export class CoursesDataService {
       catchError(this.handleError)
     )
     }
+    //get courses that are available
+    getAvailableCourses(){
+      return this._http.get<Course[]>(`${url_server}/courses/available`).pipe(
+        retry(3),
+        catchError(this.handleError)
+      )
+    }
+  
 }
 

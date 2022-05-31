@@ -25,7 +25,7 @@ import { AdminHomeComponent } from '../admin-home/admin-home.component';
     CommonModule,
     AdminRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
   ],
   providers: [AdminComponent, AdminHomeComponent, NgbdSortableHeader],
   bootstrap: [AdminComponent]
