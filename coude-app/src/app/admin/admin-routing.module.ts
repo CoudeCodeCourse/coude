@@ -11,7 +11,7 @@ const routes: Routes = [
   {path: 'admin/courses/:id', component: AdminCourseDetailsComponent},
   {path: 'admin/header', component: AdminComponent},
   { path: 'admin-student', component: AdminStudentComponent },
-  { path: 'uploadcourse', component: AdUpCourseComponent },
+  { path: 'admin/uploadcourse', component: AdUpCourseComponent },
 
 ];
 

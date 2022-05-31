@@ -6,14 +6,14 @@
    
     <div *ngIf="show; then viewMode; else editMode"></div>
     <ng-template #viewMode>
-            <div class="d-flex justify-content-between">
+            <div class="d-flex justify-content-between mb-2">
                 <h2>Course Details</h2>
                 <div class="d-flex">
                     <button class="btn btn-success" (click)="GoToLearnPage()">Learner</button>
                     <button class="btn btn-success ms-2" (click)="switchMode()">Edit</button>
                     <div *ngIf="selectedCourse.status!=='hidden'; then hide; else show;"></div>
                     <ng-template #hide>
-                        <button class="btn btn-secondary ms-2"data-bs-toggle="modal" data-bs-target="#confirmHidePopup">Hide</button>
+                        <button class="btn btn-secondary ms-2" data-bs-toggle="modal" data-bs-target="#confirmHidePopup">Hide</button>
                     </ng-template>
                     <ng-template #show>
                         <button class="btn btn-secondary ms-2" (click)="showCourse()">Show</button>
@@ -96,6 +96,7 @@
                             <td class="col-view">307</td>
                             <td class="col-lesson col-4">
                                 {{l.name}}
+                                <!-- <button class="btn btn-edit float-end p-0" (click)="onSelect(l)" data-bs-toggle="modal" data-bs-target="editVideoPopup"> -->
                                 <button class="btn btn-edit float-end p-0" (click)="{}">
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
                                         style="fill:black; width: 15px;">
@@ -127,6 +128,26 @@
                   </div>
                 </div>
               </div>
+
+              <!-- popup edit video -->
+              <!-- <div class="modal fade" id="editVideoPopup" tabindex="-1" aria-labelledby="editPopup" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Edit</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <p>{{selectedLesson.name}}</p>
+                      <p></p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">No</button>
+                      <button type="button" class="btn btn-primary" (close)="hideCourse()">Yes</button>
+                    </div>
+                  </div>
+                </div>
+              </div> -->
     </ng-template>
     <!-- <div>
             <h2>Assignment</h2>

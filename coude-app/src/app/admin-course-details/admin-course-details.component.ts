@@ -21,6 +21,7 @@ export class AdminCourseDetailsComponent implements OnInit {
   public selectedCourse!: Course;
   show = true;
   isCourseHide!: boolean;
+  selectedLesson: any;
   // public formCourse = this._formBuilder.group({
   //   title: [this.selectedCourse.title, 
   //     [Validators.required, Validators.minLength(10)]],
@@ -125,7 +126,9 @@ export class AdminCourseDetailsComponent implements OnInit {
     }
     console.log("status", this.isCourseHide);
   }
-
+  onSelect(lesson: any){
+    this.selectedLesson = lesson;
+  }
 }
 
 
