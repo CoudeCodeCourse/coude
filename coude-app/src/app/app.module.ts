@@ -145,7 +145,7 @@ import {ForumFilterPipe} from '../pipes/forumFilter.pipe';
     
       { path: '**', component: PageNotFoundComponent},
     ]),
-    AdminModule
+  
   ],
 
   providers: [],
