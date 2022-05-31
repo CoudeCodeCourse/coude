@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Course } from 'src/models/course';
+import { User } from 'src/models/user';
 import { CoursesDataService } from '../services/courses-data.service';
 // import { SearchFilterPipe } from '../pipe/searchFilter.pipe';
 
@@ -10,7 +11,8 @@ import { CoursesDataService } from '../services/courses-data.service';
   styleUrls: ['./header.component.css'],
   })
 export class HeaderComponent implements OnInit {
-  // guest = false;
+  userLogin?: User;
+  
   login = true;
   admin = false;
   isAdmin = true;

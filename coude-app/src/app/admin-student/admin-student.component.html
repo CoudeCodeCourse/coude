@@ -1,0 +1,55 @@
+<!-- <app-admin></app-admin> -->
+<div class="d-flex justify-content-between">
+    <!-- <app-header1></app-header1> -->
+    <div class="py-2 px-5 col-10">
+        <div>
+            <div>
+                <h3 class="username">Course Management </h3>
+                <h5>Learner List!</h5>
+            </div>
+        </div>
+        <div class="d-flex justify-content-between align-items-center" style="margin: 20px">
+            <div class="search-box ">
+                <input type="text" class="search-input" placeholder="Search here...">
+                <button class="search-button">
+                    <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path
+                            d="M500.3 443.7l-119.7-119.7c27.22-40.41 40.65-90.9 33.46-144.7C401.8 87.79 326.8 13.32 235.2 1.723C99.01-15.51-15.51 99.01 1.724 235.2c11.6 91.64 86.08 166.7 177.6 178.9c53.8 7.189 104.3-6.236 144.7-33.46l119.7 119.7c15.62 15.62 40.95 15.62 56.57 0C515.9 484.7 515.9 459.3 500.3 443.7zM79.1 208c0-70.58 57.42-128 128-128s128 57.42 128 128c0 70.58-57.42 128-128 128S79.1 278.6 79.1 208z" />
+                    </svg>
+                </button>
+            </div> 
+            <button type="button" class="addStudent__btn" id="myCreateTopicBtn">Add Learner<i class="bi bi-plus"></i></button>
+            
+        </div>
+        <div>
+            <table class="text-center table table-hover table-bordered border-dark rounded-top">
+                <thead>
+                    <tr class="bg-secondary text-white">
+                        <th></th>
+                        <!-- (sort)="onSort($event)" -->
+                        <th scope="col" sortable="name"  class="col-lg-4 col-md-3"> NAME
+                            <i class="bi bi-filter"></i>
+                        </th>
+                        <th scope="col" sortabe="email" class="col-2">EMAIL</th>
+                        <th scope="col" sortabe="startdate" >START DATE</th>
+                        <th scope="col" sortabe="status" >STATUS</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- <tr *ngFor="let c of sortCourses | slice:0:10; let i = index"> -->
+                    <tr>
+                        <td scope="row" class="px-sm-1 px-md-2 "></td>
+                        <td class="text-wrap" style="text-align:left; padding: 10px"></td>
+                        <td></td>
+                        <td></td>
+                        <!-- <td style="color: var(--green)">{{c.status | titlecase}}</td> -->
+                        <td></td>
+                        <!-- <td class="fw-bold" [class.red]="c.status=='not passing'" [class.purple]="c.status=='studying'" [class.green]="c.status=='completed'"></td> -->
+                    </tr>
+                </tbody>
+
+            </table>
+        </div>
+
+
+

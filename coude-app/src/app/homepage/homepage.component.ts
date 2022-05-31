@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import { Course } from 'src/models/course';
+import { User } from 'src/models/user';
 import { CoursesDataService } from '../services/courses-data.service';
 
 @Component({
@@ -10,6 +11,7 @@ import { CoursesDataService } from '../services/courses-data.service';
   providers: [Title]
 })
 export class HomepageComponent implements OnInit {
+  @Input() user!: User;
   login: boolean = true;
   login_dates: boolean[] = [false, false, false, false, false, false, false, false]
   courses!: Course[];

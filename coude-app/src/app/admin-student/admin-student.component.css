@@ -1,0 +1,67 @@
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+.search-box {
+    position: relative;
+    background: #ddd;
+    width: fit-content;
+    display: block;
+    margin: auto;
+}
+
+.search-input {
+    height: fit-content;
+    padding: 3px;
+    border: 2px solid;
+    border-radius: 5px;
+    text-align: left;
+    padding-left: 10px;
+    padding-right: 25px;
+    width: 300px;
+}
+.search-button {
+    /* display: none; */
+    background-color: white;
+    border: none;
+    max-width: fit-content;
+    max-height: fit-content;
+    position: absolute;
+    right: 3px;
+    top: 2px;
+}
+.search-icon {
+    /* position: absolute;
+    top: 3px;
+    right: 3px;
+    margin: 5px; */
+    width: 20px;
+    height: 20px;
+}
+.function-icon {
+    width: 20px;
+    height: 20px;
+}
+.function-button{
+    background-color: white;
+    border: 1px solid;
+    max-width: 34px;
+    max-height: 34px;
+    margin: 5px;
+}
+.addStudent__btn {
+    border: 2px solid #2EA44F;
+    border-radius: 5px;
+    color: #2EA44F;
+    padding-left: 5px ;
+    background-color: white;
+    width: 120px;
+    height: fit-content;
+}
+.bi-plus {
+    fill: #2EA44F;
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+}
+/* .tableLearner {
+    border: 1px solid black;
+    border-radius: 10px;
+} */

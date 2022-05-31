@@ -1,0 +1,64 @@
+body {
+    padding: 100px 50px 50px 100px;
+    display: flex;
+}
+
+.container ngb-rating {
+
+    background: white;
+    outline: none !important;
+    max-height: 100px;
+}
+.container p {
+    margin-bottom: 0px;
+}
+.star {
+    font-size: 70px;
+    color: #b0c4de;
+}
+
+.bad {
+    color: rgb(196, 196, 191);
+    border: black;
+}
+
+.filled.bad {
+    color: #f8520a;
+}
+
+::ng-deep label {
+    font-size: larger;
+}
+.sendBtn {
+    border-radius: 5px;
+    border: none;
+    background-color: #2EA44F;
+    color: white;
+    margin: 20px;
+    float: right;
+}
+.container {
+    max-width: 60%;
+}
+.overview {
+    width: fit-content;
+    padding: 15px;
+    background-color:rgb(196, 196, 191);
+    height: fit-content;
+    min-width: 30%;
+}
+.star-fitted {
+    color: #f8520a;
+    font-size: 30px;
+    height: fit-content;
+}
+.feedbackTxt {
+    min-width: 90%;
+    height: 100px;
+}
+.topreview {
+    font-size: smaller;
+}
+.review {
+    margin-bottom: 15px;
+}
